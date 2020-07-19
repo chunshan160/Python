@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 #@Time :2020/1/8 16:49
 #@Author :春衫
-#@File :Index.py
+#@File :Index_Business.py
 
 #首页定位
 location=("id","com.ecloud.hobay:id/tv_city")
@@ -15,7 +15,7 @@ scan_code=("id","com.ecloud.hobay:id/ib_qr")
 # 首页询问城市定位
 # ask_location = ("id","//button[@class="van-button van-button--default van-button--large van-dialog__confirm van-hairline--left"]")
 #首页-我的
-home=("id","com.ecloud.hobay:id/rb_home")
+my_index=("id","com.ecloud.hobay:id/rb_home")
 #易货信用
 credit_good=("id","com.ecloud.hobay:id/rb_credit_good")
 #焕焕商机

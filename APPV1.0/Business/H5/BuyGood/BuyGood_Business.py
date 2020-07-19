@@ -4,10 +4,7 @@
 # @Author :春衫
 # @File :BuyGood.py
 
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from PageLocators.H5.za.BuyGoods import BuyGoods as BG
-import time
+
 
 class BuyGoods:
 
@@ -15,7 +12,7 @@ class BuyGoods:
         self.driver = driver
 
     # 购买商品
-    def BuyGood(self,payment_method):
+    def buy_entity_good(self,payment_method):
         time.sleep(3)
         # 立即购买
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.buy_now))).click()
@@ -58,21 +55,5 @@ class BuyGoods:
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.confirm_payment))).click()
         time.sleep(3)
         self.pay()
-
-    def pay(self):
-
-        # 支付按键
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.pay_1))).click()
-        time.sleep(0.3)
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.pay_2))).click()
-        time.sleep(0.3)
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.pay_3))).click()
-        time.sleep(0.3)
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.pay_4))).click()
-        time.sleep(0.3)
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.pay_5))).click()
-        time.sleep(0.3)
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.pay_6))).click()
-        time.sleep(0.3)
 
 

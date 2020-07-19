@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/7/10 16:07
 # @Author :春衫
-# @File :EntityGood_Page.py
+# @File :EntityGood_Handle.py
 
 import time
 from PageObjects.H5.PublishGood.EntityGood_Page import EntityGoodPage
