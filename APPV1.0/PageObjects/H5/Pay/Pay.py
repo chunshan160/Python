@@ -2,25 +2,49 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/7/17 18:08
 # @Author :春衫
-# @File :Pay.py
+# @File :Pay_Business.py
 
-'''
-支付
-'''
+from PageLocators.H5.Pay import Pay
+from Common.find_element import FindElement
 
-# 更换支付方式
-replace_pay = ("id", "com.ecloud.hobay:id/tv_replace_pay")
-# 易贝
-cbp_pay = ("id", "com.ecloud.hobay:id/view_cbp")
-# 易贝券
-voucher_pay = ("id", "com.ecloud.hobay:id/view_voucher")
-# 抵工资
-wages_pay = ("id", "com.ecloud.hobay:id/view_wages")
-# 现金
-cash_pay = ("id", "com.ecloud.hobay:id/tv_cash")
-# 微信
-wechat_pay = ("id", "com.ecloud.hobay:id/tv_wechat")
-# 支付宝
-alibaba_pay = ("id", "com.ecloud.hobay:id/tv_alibaba")
-# 确认支付
-pay = ("id", "com.ecloud.hobay:id/btn_pay")
+
+class PayPage:
+
+    def __init__(self, driver):
+        self.fd = FindElement(driver)
+
+    # 更换支付方式
+    def get_replace_pay_element(self):
+        return self.fd.find_element(Pay.replace_pay)
+
+    # 易贝
+    def get_cbp_pay_element(self):
+        return self.fd.find_element(Pay.cbp_pay)
+
+    # 易贝券
+    def get_voucher_pay_element(self):
+        return self.fd.find_element(Pay.voucher_pay)
+
+    # 抵工资
+    def get_wages_pay_element(self):
+        return self.fd.find_element(Pay.wages_pay)
+
+    #家人购
+    def get_family_pay_element(self):
+        return self.fd.find_element(Pay.family_pay)
+
+    # 现金
+    def get_cash_pay_element(self):
+        return self.fd.find_element(Pay.cash_pay)
+
+    # 微信
+    def get_wechat_pay_element(self):
+        return self.fd.find_element(Pay.wechat_pay)
+
+    # 支付宝
+    def get_alibaba_pay_element(self):
+        return self.fd.find_element(Pay.alibaba_pay)
+
+    # 确认支付
+    def get_confirm_pay_element(self):
+        return self.fd.find_element(Pay.confirm_pay)

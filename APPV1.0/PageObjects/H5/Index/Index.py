@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/1/8 16:49
 # @Author :春衫
-# @File :Index_Business.py
+# @File :Index.py
 
 from PageLocators.H5.Index import Index
 from Common.find_element import FindElement

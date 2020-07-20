@@ -2,17 +2,17 @@
 # -*- coding:utf-8 -*-
 #@Time :2020/7/13 13:53
 #@Author :春衫
-#@File :ToAuditOk_Page.py
+#@File :SubmitReviewOK_Page.py
 import time
 
-from PageObjects.H5.ToAuditOk_Page import ToAuditOkPage
+from PageObjects.H5.SystemPoint.SubmitReviewOK import SubmitReviewOKPage
 
 
 # 系统提示页面-商品审核中
-class ToAuditOkHandle:
+class SubmitReviewOKHandle:
 
     def __init__(self, driver):
-        self.to_audit_ok = ToAuditOkPage(driver)
+        self.to_audit_ok = SubmitReviewOKPage(driver)
 
     # 获取提示文字信息
     def get_text(self):

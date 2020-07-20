@@ -2,14 +2,14 @@
 # -*- coding:utf-8 -*-
 #@Time :2020/7/17 16:17
 #@Author :春衫
-#@File :Good.py
+#@File :GoodDetail_Business.py
 
 #顶部商品
-good=("android_uiautomator",'new UiSelector().text("商品")')
+top_good=("android_uiautomator",'new UiSelector().text("商品")')
 #顶部详情
-description=("android_uiautomator",'new UiSelector().text("详情")')
+top_detail=("android_uiautomator",'new UiSelector().text("详情")')
 #顶部评价
-evaluation=("android_uiautomator",'new UiSelector().text("评价")')
+top_evaluation=("android_uiautomator",'new UiSelector().text("评价")')
 #店铺
 shop=("id","com.ecloud.hobay:id/tv_shop")
 #收藏
@@ -26,3 +26,5 @@ less=("android_uiautomator",'new UiSelector().text("—")')
 add_munber=("android_uiautomator",'new UiSelector().text("0")')
 #+
 add=("android_uiautomator",'new UiSelector().text("＋")')
+#确定
+confirm=("id","com.ecloud.hobay:id/btn_confirm")

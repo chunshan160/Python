@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/7/17 17:59
 # @Author :春衫
-# @File :ConfirmOrder.py
+# @File :ConfirmOrder_Handle.py
 
 '''
 确认订单页面
@@ -21,4 +21,4 @@ coupon = ("id", "com.ecloud.hobay:id/tv_coupon_number")
 # 买家留言
 buyer_message = ("id", "com.ecloud.hobay:id/et_message")
 # 提交订单
-submit_order = ("id", "com.ecloud.hobay:id/btn_submit_order")
+submit_order = ("android_uiautomator",'new UiSelector().text("提交订单")')

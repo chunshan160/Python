@@ -2,13 +2,12 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/7/13 13:42
 # @Author :春衫
-# @File :ToAuditOk_Page.py
+# @File :SubmitReviewOK_Page.py
 
 
-
-# '''
-# 发布商品-立即上架-系统提示
-# '''
+'''
+发布商品-立即上架-系统提示
+'''
 
 # 商品审核中文本
 good_audit_text = ("id", "com.ecloud.hobay:id/tv_tips")

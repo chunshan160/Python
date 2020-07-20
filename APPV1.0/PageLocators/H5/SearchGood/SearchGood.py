@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 #@Time :2020/7/17 15:52
 #@Author :春衫
-#@File :SearchGood.py
+#@File :SearchGood_Business.py
 
 #搜索框-输入
 send_search=("id","com.ecloud.hobay:id/et_search")

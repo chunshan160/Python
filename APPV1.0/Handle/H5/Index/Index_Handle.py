@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/1/8 16:49
 # @Author :春衫
-# @File :Index_Business.py
+# @File :Index_Handle.py
 
 import time
 from PageObjects.H5.Index.Index import IndexPage
@@ -20,7 +20,7 @@ class IndexHandle:
 
     # 搜索框
     def click_search(self):
-        time.sleep(0.5)
+        time.sleep(1)
         self.index_p.get_search_element().click()
 
     # 易购车

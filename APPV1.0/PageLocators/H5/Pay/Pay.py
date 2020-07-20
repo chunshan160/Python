@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/7/17 18:08
 # @Author :春衫
-# @File :Pay.py
+# @File :Pay_Business.py
 
 '''
 支付
@@ -16,6 +16,8 @@ cbp_pay = ("id", "com.ecloud.hobay:id/view_cbp")
 voucher_pay = ("id", "com.ecloud.hobay:id/view_voucher")
 # 抵工资
 wages_pay = ("id", "com.ecloud.hobay:id/view_wages")
+#家人购
+family_pay=("class_name","android.view.ViewGroup")
 # 现金
 cash_pay = ("id", "com.ecloud.hobay:id/tv_cash")
 # 微信
@@ -23,4 +25,4 @@ wechat_pay = ("id", "com.ecloud.hobay:id/tv_wechat")
 # 支付宝
 alibaba_pay = ("id", "com.ecloud.hobay:id/tv_alibaba")
 # 确认支付
-pay = ("id", "com.ecloud.hobay:id/btn_pay")
+confirm_pay = ("id", "com.ecloud.hobay:id/btn_pay")
