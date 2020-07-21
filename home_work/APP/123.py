@@ -58,4 +58,38 @@ release().\
 perform()
 
 
+
+hybird混合应用自动化方案
+基于UiAutomator+Chromedriver
+native部分则uiautomator,webview部分走chromedriver,二者结合
+要求:
+android 4.4+
+webview必须为debug版本
+获取webview页面的三种方式:
+1、chrome://inspect，需要FQ
+2、使用driver.page_source获取html页面
+3、找开发人员要源文件
+4、uc-devtools 不需要FQ
+
+
+
+
+ariver.1ina_element_oy_anaro1a_ulautomator(1oc).cL1cKo
+#等待WebView元素出现-html
+time.sleep(1)
+#前提:代码可以识别到webview需要开启app的webview debug属性。
+#context#原生控件#webview
+#1\先列出所有的context
+cons = driver.contexts#t列表
+print(cons)
+#2、切换至webview
+driver.switch_to.context(cons[-1])
+#3、切换之后:当前的操作对象:html页面
+#等待元素可见
+lWebDriverlWait(driver, 20).until(EC.visibility_of_element_located(MobileBy.CLASS_NAME,’android.webkit.WebView
+WebDriverWait(driver,20). until(EC.visibility_of_element_located((MobileBy.XPATH ’//button[@class="bottom-btn
+driver.find_element_by_xpath('//button[@class="bottom-btn buy"]').click()
+
+
+
 '''
