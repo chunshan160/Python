@@ -4,47 +4,48 @@
 # @Author :春衫
 # @File :123.py
 
-from tools.project_path import *
-from openpyxl import load_workbook
-from tools.read_config import ReadConfig
-
-# wb = load_workbook(self.file_name)
-# sheet = wb[self.sheet_name]
-
-# wb = load_workbook(test_case_path)
-# sheet = wb["register"]
-# phone_number = eval(sheet.cell(2, 4).value)
-# print(phone_number)
-# print((type(phone_number)))
-# a = eval(phone_number["mobilephone"])
-# print(a)
-# print(type(a))
-# b = a + 1
-# print(b)
-# phone_number["mobilephone"] = b
-# print(phone_number)
-# sheet.cell(2, 4).value = str(phone_number)
-# wb.save(test_case_path)  # 保存结果
-
-# phone_number = {'mobilephone': "${tel_1}", 'pwd': '123456', 'regname': 'ceshi'}
-# a = eval(phone_number["mobilephone"])
-# # b = eval(ReadConfig().read_config(case_config_path, 'MODE', 'mode'))
-# print(a)
-# print(type(a))
-# b = a + 1
-# phone_number["mobilephone"] = b
-# print(phone_number)
-# print(type(phone_number))
+# !/usr/bin/env python
+# -*- coding:utf-8 -*-
+# @Time :2020/4/13 11:32
+# @Author :春衫
+# @File :http_request.py
 
 
+import requests
+from tools.my_log import MyLog
 
-wb = load_workbook(test_case_path)
-# mode = eval(ReadConfig().read_config(case_config_path, 'MODE', 'mode'))
-sheet = wb["register"]
-# case_id=1
-a=sheet.max_row + 1
-print(a)
+my_logger = MyLog()
 
-# # for i in range(2, sheet.max_row + 1):
-# if sheet.cell(3, 4).value.find('${tel_1}') != -1:
-#     print("lalalala")
+
+class HttpRequest:
+
+    def http_request(self, url, data, http_method, **args):
+        try:
+            if http_method.lower() == 'get':
+                res = requests.get(url, data, **args)
+            elif http_method.lower() == 'post':
+                res = requests.post(url, data, **args)
+            return res
+        except Exception as e:
+            my_logger.error("请求报错了：{0}".format(e))
+            raise e
+
+
+if __name__ == '__main__':
+    # url='http://8.129.65.165:8080/futureloan/mvc/api//member/register'
+    # data={'mobilephone': "13724765587", 'pwd': '123456', 'regname': 'ceshi'}
+    # login_res = HttpRequest().http_request(url, data, 'post')
+    # print("登录结果是：", login_res.json())
+
+    # 登录
+    login_url = 'http://8.129.65.165:8080/futureloan/mvc/api/member/login'
+    login_data = {"mobilephone": "13724765586", "pwd": "123456"}
+    login_res = HttpRequest().http_request(login_url, login_data, 'post')
+    print("登录结果是：", login_res.json())
+    #
+    # 充值
+    recharge_url = "http://8.129.65.165:8080/futureloan/mvc/api/member/recharge"
+    cookies = login_res.cookies
+    recharge_data = {"mobilephone": "13724765586", "amount": "1000"}
+    recharge_res = HttpRequest().http_request(recharge_url, recharge_data, 'get', cookies=cookies)
+    print("充值结果是：", recharge_res.json())

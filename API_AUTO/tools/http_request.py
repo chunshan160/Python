@@ -30,9 +30,9 @@ class HttpRequest:
 
 
 if __name__ == '__main__':
-    a='http://8.129.65.165:8080/futureloan/mvc/api//member/register'
+    url='http://8.129.65.165:8080/futureloan/mvc/api//member/register'
     data={'mobilephone': "13724765587", 'pwd': '123456', 'regname': 'ceshi'}
-    login_res = HttpRequest().http_request(a, data, 'post')
+    login_res = HttpRequest().http_request(url, data, 'post')
     print("登录结果是：", login_res.json())
 
     # # 登录
