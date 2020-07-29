@@ -8,10 +8,10 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.H5.Login import LoginPage as loc
-from web_test.PageLocators.H5.Login import Registered
-from web_test.PageLocators.H5.Login import common
-from web_test.PageLocators.H5.Login import Retrieve_Password as RP
+from PageLocators.H5.Login import LoginPage as loc
+from PageLocators.H5.Login import Registered
+from PageLocators.H5.Login import common
+from PageLocators.H5.Login import Retrieve_Password as RP
 import time
 
 

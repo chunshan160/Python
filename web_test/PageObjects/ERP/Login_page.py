@@ -6,7 +6,7 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.ERP.Login import LoginPage as LP
+from PageLocators.ERP.Login import LoginPage as LP
 
 class LoginPage:
 

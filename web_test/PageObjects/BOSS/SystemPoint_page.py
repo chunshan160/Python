@@ -8,7 +8,7 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.BOSS.PublishGoods import Pubilc
+from PageLocators.BOSS.PublishGoods import Pubilc
 
 
 # 系统提示页面，主要是为了断言用

@@ -6,16 +6,17 @@
 # @Software: PyCharm
 
 import unittest
+import pytest
 from selenium import webdriver
-from web_test.PageObjects.H5.MyIndex import MyPage
-from web_test.TestData import Common_Data as CD
-from web_test.TestData.H5 import Login_Data as LD
-from web_test.PageObjects.H5.SystemPoint_page import SystemPoint
-from web_test.PageObjects.H5.Login_page import LoginPage
+from PageObjects.H5 import MyIndex
+from TestData import Common_Data as CD
+from TestData.H5 import Login_Data as LD
+from PageObjects.H5.SystemPoint_page import SystemPoint
+from PageObjects.H5.Login_page import LoginPage
 import ddt
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.H5.MyIndex import My
+from PageLocators.H5.MyIndex import My
 
 
 @ddt.ddt
@@ -32,7 +33,7 @@ class TestLogin(unittest.TestCase):
         cls.driver.get(CD.H5_Login_url)
         cls.lg = LoginPage(cls.driver)
         cls.sp = SystemPoint(cls.driver)
-        cls.mp = MyPage(cls.driver)
+        cls.mp = MyIndex.MyPage(cls.driver)
 
     @classmethod
     def tearDownClass(cls):
@@ -61,6 +62,7 @@ class TestLogin(unittest.TestCase):
         cls.assertTrue(cls.sp.Login_ErrorMag(),data["check"])
 
 
+    @pytest.mark.smoke
     # 正常用例 -登录成功
     def test_3_Login_success(self):
         self.driver.get(CD.H5_Login_url)
@@ -69,7 +71,7 @@ class TestLogin(unittest.TestCase):
         #点击【我的】
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((My.myicon))).click()
         # 断言 在[我的]中 - 能否找到 [设置] 这个元素
-        self.assertTrue(MyPage(self.driver).isExist_back_ele())
+        self.assertTrue( MyIndex.MyPage(self.driver).isExist_back_ele())
 
     # # 注册
     # def test_4_Registered(self):

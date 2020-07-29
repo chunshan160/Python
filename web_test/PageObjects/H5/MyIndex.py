@@ -8,7 +8,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from web_test.PageLocators.H5.MyIndex import My
+from PageLocators.H5.MyIndex import My
 
 #判断【我的】页面是否存在【设置】，有的话可以判断登录成功
 class MyPage:

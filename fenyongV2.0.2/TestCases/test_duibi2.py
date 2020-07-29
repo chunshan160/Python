@@ -6,6 +6,7 @@
 
 from tools.project_path import *
 import unittest
+import pytest
 from ddt import ddt, data
 from DoExcel.do_excel import DoExcel
 from Do_mysql.sql import SQL
@@ -36,6 +37,7 @@ class DuiBi(unittest.TestCase):
         warnings.simplefilter("ignore", ResourceWarning)
         my_logger.info("=======开始进行对比==========")
 
+    @pytest.mark.smoke
     @data(*test_data)
     def test_2_duibi(self, item):
 
