@@ -5,7 +5,7 @@
 # @File :SuperShop_page.py
 
 from selenium.webdriver.common.action_chains import ActionChains
-from web_test.PageLocators.H5.SuperShop import SC
+from PageLocators.H5.SuperShop import SC
 
 class ShangChao:
     def __init__(self, driver):

@@ -8,12 +8,12 @@ import time
 import os
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.BOSS.SC import SC
-# from web_test.PageLocators.BOSS.PublishGood import Local_Life as LL
-# from web_test.PageLocators.BOSS.PublishGood import Business_Services as BS
-from web_test.PageLocators.BOSS.PublishGoods import Pubilc
-from web_test.PageLocators.BOSS.PublishGoods import Local_Life as LL
-from web_test.PageLocators.BOSS.PublishGoods import Business_Services as BS
+from PageLocators.BOSS.SC import SC
+# from PageLocators.BOSS.PublishGood import Local_Life as LL
+# from PageLocators.BOSS.PublishGood import Business_Services as BS
+from PageLocators.BOSS.PublishGoods import Pubilc
+from PageLocators.BOSS.PublishGoods import Local_Life as LL
+from PageLocators.BOSS.PublishGoods import Business_Services as BS
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains

@@ -6,16 +6,18 @@
 # @Software: PyCharm
 
 import unittest
+
 from selenium import webdriver
-from web_test.PageObjects.H5.MyIndex import MyPage
-from web_test.TestData import Common_Data as CD
-from web_test.TestData.H5 import Login_Data as LD
-from web_test.PageObjects.H5.SystemPoint_page import SystemPoint
-from web_test.PageObjects.H5.Login_page import LoginPage
+from PageObjects.H5.MyIndex import MyPage
+from TestData import Common_Data as CD
+from TestData.H5 import Login_Data as LD
+from PageObjects.H5.SystemPoint_page import SystemPoint
+from PageObjects.H5.Login_page import LoginPage
 import ddt
+import pytest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.H5.MyIndex import My
+from PageLocators.H5.MyIndex import My
 
 
 @ddt.ddt
@@ -60,7 +62,7 @@ class TestLogin(unittest.TestCase):
         # # 断言 登录页面 提示：手机号格式不对
         cls.assertTrue(cls.sp.Login_ErrorMag(),data["check"])
 
-
+    @pytest.mark.smoke
     # 正常用例 -登录成功
     def test_3_Login_success(self):
         self.driver.get(CD.H5_Login_url)

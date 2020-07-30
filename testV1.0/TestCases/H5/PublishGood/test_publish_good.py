@@ -7,6 +7,7 @@
 import ddt
 import time
 import unittest
+# import pytest
 from selenium import webdriver
 from TestData import Common_Data as CD
 from Handle.H5.za.Login_page import LoginPage
@@ -33,6 +34,7 @@ class PublishGood(unittest.TestCase):
         cls.driver.find_element(*PG.entity_good).click()
         time.sleep(2)
 
+    # @pytest.mark.smoke
     @ddt.data(*EntityGood_data)
     def test_1_publish_entity_good(self,data):
         EntityGoodBusiness(self.driver).publish_entity_good(data["product_title"], data["product_description"], data["property_1"],

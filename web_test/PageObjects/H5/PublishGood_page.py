@@ -8,10 +8,10 @@ import time
 import os
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.H5.PublishGood import Real_Goods as RG
-from web_test.PageLocators.H5.PublishGood import Local_Life as LL
-from web_test.PageLocators.H5.PublishGood import Business_Services as BS
-from web_test.PageLocators.H5.PublishGood import Pubilc
+from PageLocators.H5.PublishGood import Real_Goods as RG
+from PageLocators.H5.PublishGood import Local_Life as LL
+from PageLocators.H5.PublishGood import Business_Services as BS
+from PageLocators.H5.PublishGood import Pubilc
 
 
 # 发布商品-商品类型

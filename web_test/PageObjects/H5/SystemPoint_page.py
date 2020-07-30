@@ -9,10 +9,10 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.H5.Login import LoginPage as loc
-from web_test.PageLocators.H5.Login import Retrieve_Password as RP
-from web_test.PageLocators.H5.MyIndex import My
-from web_test.PageLocators.H5.SystemPoint import SystemPoint as SP
+from PageLocators.H5.Login import LoginPage as loc
+from PageLocators.H5.Login import Retrieve_Password as RP
+from PageLocators.H5.MyIndex import My
+from PageLocators.H5.SystemPoint import SystemPoint as SP
 
 
 # 系统提示页面，主要是为了断言用

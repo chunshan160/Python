@@ -6,7 +6,7 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.H5.BuyGoods import BuyGoods as BG
+from PageLocators.H5.BuyGoods import BuyGoods as BG
 import time
 
 class BuyGoods:

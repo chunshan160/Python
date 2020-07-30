@@ -5,16 +5,16 @@
 # @File :123.py
 
 from selenium import webdriver
-from web_test.PageObjects.H5.Login_page import LoginPage
-from web_test.TestData import Common_Data as CD
+from PageObjects.H5.Login_page import LoginPage
+from TestData import Common_Data as CD
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from web_test.PageObjects.H5 import PublishGood_page as PG
+from PageObjects.H5 import PublishGood_page as PG
 import unittest
-from web_test.TestData.H5 import Login_Data as LD, Publish_Data as PD
+from TestData.H5 import Login_Data as LD, Publish_Data as PD
 import ddt
-from web_test.PageObjects.H5.SystemPoint_page import SystemPoint
-from web_test.PageLocators.H5.PublishGood import Pubilc
+from PageObjects.H5.SystemPoint_page import SystemPoint
+from PageLocators.H5.PublishGood import Pubilc
 import time
 
 

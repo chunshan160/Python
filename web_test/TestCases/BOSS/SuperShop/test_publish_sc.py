@@ -5,25 +5,25 @@
 # @File :test_publish_sc.py
 
 from selenium import webdriver
-from web_test.PageObjects.BOSS.Login_page import LoginPage
-from web_test.PageObjects.ERP.Login_page import LoginPage as lp
-from web_test.PageObjects.BOSS import PublishGoods_page as PG
-from web_test.TestData.BOSS import Login_Data as LD
-from web_test.TestData.ERP import Login
-from web_test.TestData.BOSS import Publish_SC_Data as PD
-from web_test.PageObjects.BOSS.SystemPoint_page import SystemPoint
-from web_test.PageObjects.BOSS.shangchao import ShangChao
-from web_test.PageObjects.ERP.Check import Check
-from web_test.PageLocators.BOSS.SC import SC as sc
-from web_test.PageLocators.BOSS.PublishGoods import Pubilc
-from web_test.TestData.ERP import GoodCheck
+from PageObjects.BOSS.Login_page import LoginPage
+from PageObjects.ERP.Login_page import LoginPage as lp
+from PageObjects.BOSS import PublishGoods_page as PG
+from TestData.BOSS import Login_Data as LD
+from TestData.ERP import Login
+from TestData.BOSS import Publish_SC_Data as PD
+from PageObjects.BOSS.SystemPoint_page import SystemPoint
+from PageObjects.BOSS.shangchao import ShangChao
+from PageObjects.ERP.Check import Check
+from PageLocators.BOSS.SC import SC as sc
+from PageLocators.BOSS.PublishGoods import Pubilc
+from TestData.ERP import GoodCheck
 import unittest
-from web_test.TestData import Common_Data as CD
+from TestData import Common_Data as CD
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import ddt
-from web_test.PageLocators.ERP.Check import Check as CK
-from web_test.PageObjects.ERP.Good_checked_page import Check as ck
+from PageLocators.ERP.Check import Check as CK
+from PageObjects.ERP.Good_checked_page import Check as ck
 import time
 
 

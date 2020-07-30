@@ -5,7 +5,7 @@
 #@File :UploadImage.py
 
 import time
-from pywinauto.application import Application
+# from pywinauto.application import Application
 from Common.project_path import *
 from Common.find_element import FindElement
 from PageLocators.H5.PubilcGood import EntityGood as EG

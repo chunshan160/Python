@@ -59,7 +59,7 @@ sc_url='http://m.test.hobay.com.cn/ribbon-api/storage/queryOwnerStorage?page=1&p
 res_sc=requests.get(sc_url,cookies=res.cookies)
 print("响应正文：", res.json())
 
-# 请求头：res.request.headers
+# 请求头：res.learn_request.headers
 # 响应头：res.headers
 # 响应正文：res.json()
 
@@ -76,7 +76,7 @@ print("响应正文：", res.json())
 # recharge_res = requests.get(recharge_url, recharge_data, headers={}, cookies=res.cookies)
 # print("充值结果:", recharge_res.json())
 # print("状态码:", recharge_res.status_code)
-# print("代理user-agent", res.request.headers)
+# print("代理user-agent", res.learn_request.headers)
 
 #
 class HttpRequest:

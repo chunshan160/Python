@@ -6,7 +6,7 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from web_test.PageLocators.ERP.Check import Check as CK
+from PageLocators.ERP.Check import Check as CK
 
 
 class Check:

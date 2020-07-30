@@ -5,14 +5,14 @@
 # @File :123.py
 
 from selenium import webdriver
-from web_test.PageObjects.BOSS.Login_page import LoginPage
-from web_test.PageObjects.BOSS import PublishGoods_page as PG
-from web_test.TestData.BOSS import Login_Data as LD
-from web_test.PageObjects.BOSS.SystemPoint_page import SystemPoint
-from web_test.PageLocators.BOSS.PublishGoods import Pubilc
-from web_test.TestData.BOSS import Publish_Data as PD
+from PageObjects.BOSS.Login_page import LoginPage
+from PageObjects.BOSS import PublishGoods_page as PG
+from TestData.BOSS import Login_Data as LD
+from PageObjects.BOSS.SystemPoint_page import SystemPoint
+from PageLocators.BOSS.PublishGoods import Pubilc
+from TestData.BOSS import Publish_Data as PD
 import unittest
-from web_test.TestData import Common_Data as CD
+from TestData import Common_Data as CD
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import ddt
