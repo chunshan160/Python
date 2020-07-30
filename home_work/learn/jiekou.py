@@ -18,8 +18,8 @@ import requests
 # http请求分为哪几种:get post delete update head option
 
 
-# 1:剖析http request
-# 一个http request (http请求) 指从客户端到服务端的请求消息，包括了以下信息:
+# 1:剖析http leaen_request
+# 一个http leaen_request (http请求) 指从客户端到服务端的请求消息，包括了以下信息:
 # ●请求地址uri
 # ●请求方法: HEAD、GET、POST、PUT、OPTIONS、QELETE、PATCH
 # ●HTTP协议/版本:大家可以自己打开浏览器按F12去仔细查看
