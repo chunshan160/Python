@@ -6,7 +6,11 @@
 
 # 接口测试的本质  就是测试类里面的函数  通过数据驱动
 # 单元测试的本质  测试函数代码级别  通过代码级别
+<<<<<<< HEAD
 # 单元测试的框架 unittest+learn_request  pytest+WEB--》 learn_request
+=======
+# 单元测试的框架 unittest+leaen_request  pytest+WEB--》 leaen_request
+>>>>>>> origin/master
 # pytest+jenkins+allure
 
 # 功能测试

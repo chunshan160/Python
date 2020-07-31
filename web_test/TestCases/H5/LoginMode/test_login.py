@@ -6,9 +6,15 @@
 # @Software: PyCharm
 
 import unittest
+<<<<<<< HEAD
 
 from selenium import webdriver
 from PageObjects.H5.MyIndex import MyPage
+=======
+import pytest
+from selenium import webdriver
+from PageObjects.H5 import MyIndex
+>>>>>>> origin/master
 from TestData import Common_Data as CD
 from TestData.H5 import Login_Data as LD
 from PageObjects.H5.SystemPoint_page import SystemPoint
@@ -34,7 +40,7 @@ class TestLogin(unittest.TestCase):
         cls.driver.get(CD.H5_Login_url)
         cls.lg = LoginPage(cls.driver)
         cls.sp = SystemPoint(cls.driver)
-        cls.mp = MyPage(cls.driver)
+        cls.mp = MyIndex.MyPage(cls.driver)
 
     @classmethod
     def tearDownClass(cls):
@@ -62,6 +68,10 @@ class TestLogin(unittest.TestCase):
         # # 断言 登录页面 提示：手机号格式不对
         cls.assertTrue(cls.sp.Login_ErrorMag(),data["check"])
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     @pytest.mark.smoke
     # 正常用例 -登录成功
     def test_3_Login_success(self):
@@ -71,7 +81,7 @@ class TestLogin(unittest.TestCase):
         #点击【我的】
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((My.myicon))).click()
         # 断言 在[我的]中 - 能否找到 [设置] 这个元素
-        self.assertTrue(MyPage(self.driver).isExist_back_ele())
+        self.assertTrue( MyIndex.MyPage(self.driver).isExist_back_ele())
 
     # # 注册
     # def test_4_Registered(self):

@@ -6,7 +6,10 @@
 
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
+<<<<<<< HEAD
 import PageObjects
+=======
+>>>>>>> origin/master
 from PageObjects.H5.Login_page import LoginPage
 from TestData import Common_Data as CD
 from PageObjects.H5 import PublishGood_page as PG

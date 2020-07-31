@@ -12,3 +12,6 @@
 2020-05-23 14:35:40,278 - ERROR - my_log.py - 春衫 - 日志信息:获取到的结果是：{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
 2020-05-23 14:35:40,279 - INFO - my_log.py - 春衫 - 日志信息:开始执行用例4
 2020-05-23 14:35:40,357 - ERROR - my_log.py - 春衫 - 日志信息:获取到的结果是：{'status': 0, 'code': '11007', 'data': None, 'msg': '参数错误，投资金额必须是能被100整除的正整数'}
+2020-07-23 14:48:05,856 - ERROR - my_log.py - 春衫 - 日志信息:请求报错了：get() takes from 1 to 2 positional arguments but 3 were given
+2020-07-23 14:48:59,376 - ERROR - my_log.py - 春衫 - 日志信息:请求报错了：get() takes from 1 to 2 positional arguments but 3 were given
+2020-07-23 14:49:24,663 - ERROR - my_log.py - 春衫 - 日志信息:请求报错了：get() takes from 1 to 2 positional arguments but 3 were given
