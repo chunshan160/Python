@@ -2,12 +2,12 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/7/29 10:11
 # @Author :春衫
-# @File :购买商企服务商品.py
+# @File :BuyServerGoods.py
 
 from tools.http_request import HttpRequest
 
 
-def buy_goods(buyer_phone, seller_phone, product_name, payType):
+def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPassword):
 
     # 卖家登录
     seller_login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
@@ -46,10 +46,11 @@ def buy_goods(buyer_phone, seller_phone, product_name, payType):
     print("提交订单结果是：", SaveOrder_res.json())
 
     # 买家支付订单
+    orderNum = SaveOrder_res.json()['data']['orderNum']
     order = SaveOrder_res.json()['data']['tradeNum']
     pay_url = "http://m.test.hobay.com.cn/ribbon-api/batchOrders/payAllCBP"
     pay_data = {"tradeNUm": order, "payType": payType, "shareWalletUserId": "", "shareWalletId": ""}
-    pay_headers = {"login": "", "payPassword": "OH8lKuLTcZc="}
+    pay_headers = {"login": "", "payPassword": payPassword}
     pay_res = HttpRequest().http_request(pay_url, "post", json=pay_data, cookies=login_res.cookies,
                                          headers=pay_headers)
     print("支付订单的结果是：", pay_res.json())
@@ -69,10 +70,12 @@ def buy_goods(buyer_phone, seller_phone, product_name, payType):
     sellerUserId = seller_login_res.json()['userId']
     signed_url = f"http://m.test.hobay.com.cn/ribbon-api/orders/signed"
     data = {"orderId": orderId, "payType": payType, "sellerUserId": sellerUserId}
-    headers = {"login": "", "payPassword": "OH8lKuLTcZc="}
+    headers = {"login": "", "payPassword": payPassword}
     signed_res = HttpRequest().http_request(signed_url, "post", data=data, cookies=login_res.cookies,
                                             headers=headers)
     print("签约的结果是：", signed_res.json())
 
+    return orderNum
+
 if __name__ == '__main__':
-    buy_goods(17777777781, 17777777776, "普通焕商商企服务",3)
+    buy_server_goods(17777777781, 17777777776, "普通焕商商企服务",3)
