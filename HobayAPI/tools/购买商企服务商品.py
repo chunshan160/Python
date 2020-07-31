@@ -7,7 +7,7 @@
 from tools.http_request import HttpRequest
 
 
-def buy_goods(buyer_phone, seller_phone, productStockId):
+def buy_goods(buyer_phone, seller_phone, productStockId,payType):
     # 买家登录
     login_url = 'http://m.dev1.hobay.com.cn/api/app/user/login'  # 登录
     login_data = {"loginValidateType": "CODE", "phone": buyer_phone, "validateValue": "666666"}
