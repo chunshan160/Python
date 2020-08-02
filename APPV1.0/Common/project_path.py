@@ -28,3 +28,4 @@ image_path=os.path.join(project_path, "Source", "picture.jpg")
 #报错截图
 error_image=os.path.join(project_path,"Report", "Error_Image", datetime.datetime.now().strftime("%Y-%m-%d")+".png")
 
+caps_dir=os.path.join(project_path,"Desired_Caps")
