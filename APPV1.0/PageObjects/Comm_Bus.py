@@ -5,7 +5,7 @@
 # @File :Comm_Bus.py
 
 import time
-from Common.basepage import BasePage
+from Common.BasePage import BasePage
 
 class CommBus(BasePage):
     # 处理欢迎页面

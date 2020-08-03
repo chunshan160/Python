@@ -5,46 +5,102 @@
 # @File :Pay_Business.py
 
 from PageLocators.H5.Pay import Pay
-from Common.find_element import FindElement
+from Common.BasePage import BasePage
 
 
-class PayPage:
+class PayPage(BasePage):
 
     def __init__(self, driver):
-        self.fd = FindElement(driver)
+        self.driver=driver
 
     # 更换支付方式
-    def get_replace_pay_element(self):
-        return self.fd.find_element(Pay.replace_pay)
+    def replace_pay(self):
+        self.get_element(Pay.replace_pay).click()
 
     # 易贝
-    def get_cbp_pay_element(self):
-        return self.fd.find_element(Pay.cbp_pay)
+    def cbp_pay(self):
+        self.get_element(Pay.cbp_pay).click()
 
     # 易贝券
-    def get_voucher_pay_element(self):
-        return self.fd.find_element(Pay.voucher_pay)
+    def voucher_pay(self):
+        self.get_element(Pay.voucher_pay).click()
 
     # 抵工资
-    def get_wages_pay_element(self):
-        return self.fd.find_element(Pay.wages_pay)
+    def wages_pay(self):
+        self.get_element(Pay.wages_pay).click()
 
     #家人购
-    def get_family_pay_element(self):
-        return self.fd.find_element(Pay.family_pay)
+    def family_pay(self):
+        self.get_element(Pay.family_pay).click()
 
     # 现金
-    def get_cash_pay_element(self):
-        return self.fd.find_element(Pay.cash_pay)
+    def cash_pay(self):
+        self.get_element(Pay.cash_pay).click()
 
     # 微信
-    def get_wechat_pay_element(self):
-        return self.fd.find_element(Pay.wechat_pay)
+    def wechat_pay(self):
+        self.get_element(Pay.wechat_pay).click()
 
     # 支付宝
-    def get_alibaba_pay_element(self):
-        return self.fd.find_element(Pay.alibaba_pay)
+    def alibaba_pay(self):
+        self.get_element(Pay.alibaba_pay).click()
 
     # 确认支付
-    def get_confirm_pay_element(self):
-        return self.fd.find_element(Pay.confirm_pay)
+    def confirm_pay(self):
+        self.get_element(Pay.confirm_pay).click()
+
+    # 易贝-支付
+    def click_cbp_pay(self):
+        self.confirm_pay()
+        self.pay_password()
+
+    # 易贝券-支付
+    def click_voucher_pay(self):
+        self.replace_pay()
+        self.voucher_pay()
+        self.confirm_pay()
+        self.pay_password()
+
+    # 抵工资-支付
+    def click_wages_pay(self):
+        self.replace_pay()
+        self.wages_pay()
+        self.confirm_pay()
+        self.pay_password()
+
+    # 家人购-支付
+    def click_family_pay(self):
+        self.replace_pay()
+        self.family_pay()
+        self.confirm_pay()
+        self.pay_password()
+
+    # 现金-支付
+    def click_cash_pay(self):
+        self.replace_pay()
+        self.cash_pay()
+        self.confirm_pay()
+        self.pay_password()
+
+    # 微信-支付
+    def click_wechat_pay(self):
+        self.replace_pay()
+        self.wechat_pay()
+        self.confirm_pay()
+        self.pay_password()
+
+    # 支付宝-支付
+    def click_alibaba_pay(self):
+        self.replace_pay()
+        self.alibaba_pay()
+        self.confirm_pay()
+        self.pay_password()
+
+    # 输入支付密码
+    def pay_password(self):
+        self.driver.keyevent(8)
+        self.driver.keyevent(9)
+        self.driver.keyevent(10)
+        self.driver.keyevent(11)
+        self.driver.keyevent(12)
+        self.driver.keyevent(13)

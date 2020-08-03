@@ -33,9 +33,4 @@ subsist = ("id", "com.ecloud.hobay:id/et_product_price")
 stock = ("id", "com.ecloud.hobay:id/et_product_number")
 # 限购数量
 limit_quantity = ("id", "com.ecloud.hobay:id/et_buy_num")
-# 立即上架
-submit = ("id", "com.ecloud.hobay:id/btn_immediately_publish")
-# 放入仓库
-storage = ("id", "com.ecloud.hobay:id/btn_into_warehouse")
-# 错误提示
-error_toast = ("xpath", '//*[contains(text(),"请输入商品标题")]')
+

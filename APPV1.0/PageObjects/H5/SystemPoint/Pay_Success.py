@@ -9,43 +9,43 @@
 '''
 
 from PageLocators.H5.SystemPoint.Pay_Success import *
-from Common.find_element import FindElement
+from Common.BasePage import BasePage
 
 
 # 支付成功
-class PaySuccessPage:
+class PaySuccessPage(BasePage):
 
     def __init__(self, driver):
-        self.fd = FindElement(driver)
+        self.driver = driver
 
     # 加入焕商
-    def get_join_element(self):
-        return self.fd.find_element(join)
+    def join(self):
+        self.get_element(join).click()
 
     # 关闭弹窗
-    def get_close_elements(self):
-        return self.fd.find_element(close_pop_ups)
+    def close_elements(self):
+        self.get_element(close_pop_ups).click()
 
     # 支付成功
-    def get_title_element(self):
-        return self.fd.find_element(title)
+    def title_text(self):
+        return self.get_element(title).text
 
     # 支付方式
-    def get_pay_method_element(self):
-        return self.fd.find_element(pay_method)
+    def pay_method_text(self):
+        return self.get_element(pay_method).text
 
     # 支付金额
-    def get_pay_money_element(self):
-        return self.fd.find_element(pay_money)
+    def pay_money_text(self):
+        return self.get_element(pay_money).text
 
     # 支付服务费
-    def get_pay_service_element(self):
-        return self.fd.find_element(pay_service)
+    def pay_service_text(self):
+        return self.get_element(pay_service).text
 
     # 查看订单
-    def get_look_order_element(self):
-        return self.fd.find_element(look_order)
+    def look_order(self):
+        self.get_element(look_order).click()
 
     # 返回首页
-    def get_return_home_element(self):
-        return self.fd.find_element(return_home)
+    def return_home(self):
+        self.get_element(return_home).click()

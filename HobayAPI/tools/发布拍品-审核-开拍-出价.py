@@ -7,7 +7,7 @@
 import time
 from tools.http_request import HttpRequest
 
-def auction(buyer_phone, seller_phone,goods_name="发布拍品用"):
+def auction(buyer_phone, seller_phone,payPassword,goods_name="发布拍品用"):
     # 卖家登录
     login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
     login_data = {"loginValidateType": "CODE", "phone": seller_phone, "validateValue": "666666"}
@@ -88,13 +88,13 @@ def auction(buyer_phone, seller_phone,goods_name="发布拍品用"):
     order = SaveOrder_res.json()['data']['tradeNum']
     pay_url = "http://m.test.hobay.com.cn/ribbon-api/pay/payCash"
     pay_data = {"tradeNum": order}
-    pay_headers = {"login": "", "payPassword": "OH8lKuLTcZc="}
+    pay_headers = {"login": "", "payPassword": payPassword}
     pay_res = HttpRequest().http_request(pay_url, "post", data=pay_data, cookies=login3_res.cookies,
                                          headers=pay_headers)
     print("支付订单的结果是：", pay_res.json())
 
     # 出价
-    time.sleep(5)
+    time.sleep(8)
     chujia_url = "http://m.test.hobay.com.cn/ribbon-api/auctionOlBid/bidPrice"
     chujia_data = {"bidPrice": 2, "auctionOlProductId": data_id}
     chujia_headers = {"login": ""}
@@ -104,5 +104,5 @@ def auction(buyer_phone, seller_phone,goods_name="发布拍品用"):
 
 if __name__ == '__main__':
     # auction(17777777781, 13724765586,goods_name="37发布拍品测绑定用")
-    auction(17777777781, 17777777776, goods_name="76发布拍品测绑定用")
+    auction(13724765586, 17777777776,"qNlHQue5Y/U=", goods_name="76发布拍品测绑定用")
     # auction(17777777781, 17777777781, goods_name="81发布拍品测绑定用")

@@ -4,164 +4,260 @@
 # @Author :春衫
 # @File :publishcommodity_page.py
 
-
+import time
 from PageLocators.H5.PubilcGood import EntityGood as EG
-from Common.find_element import FindElement
+from Common.BasePage import BasePage
 
 
 # 发布实物商品
-class EntityGoodPage:
+class EntityGoodPage(BasePage):
 
     def __init__(self, driver):
-        self.fd=FindElement(driver)
+        self.driver = driver
 
-    #点击上传主图
-    def get_upload_image_element(self):
-        return self.fd.find_element(EG.product_image)
+    # 点击上传主图
+    def upload_image(self):
+        time.sleep(0.5)
+        self.get_element(EG.product_image).click()
 
     # 选择图片
-    def get_check_image_element(self):
-        return self.fd.find_element(EG.check_image)
+    def check_image(self):
+        time.sleep(0.5)
+        self.get_element(EG.check_image).click()
 
     # 点击确定
-    def get_btn_ok_element(self):
-        return self.fd.find_element(EG.btn_ok)
+    def btn_ok(self):
+        time.sleep(0.5)
+        self.get_element(EG.btn_ok).click()
 
     # 输入商品标题
-    def get_product_title_element(self):
-        return self.fd.find_element(EG.product_title)
-    
+    def product_title(self, product_title):
+        time.sleep(0.5)
+        self.logger.info("输入的商品标题是:" + product_title)
+        self.get_element(EG.product_title).send_keys(product_title)
+
     # 点击商品描述
-    def get_product_detail_element(self):
-        return self.fd.find_element(EG.product_detail)
-    
+    def product_detail(self):
+        time.sleep(0.5)
+        self.get_element(EG.product_detail).click()
+
     # 输入商品详情
-    def get_product_description_element(self):
-        return self.fd.find_element(EG.product_description)
+    def product_description(self, product_description):
+        time.sleep(0.5)
+        self.logger.info("输入商品详情:" + product_description)
+        self.get_element(EG.product_description).send_keys(product_description)
 
     # 商品详情页-上传商品图片
-    def get_description_image_element(self):
-        return self.fd.find_element(EG.description_image)
+    def description_image(self):
+        time.sleep(0.5)
+        self.get_element(EG.description_image).click()
 
     # 点击完成，回到商品详情页
-    def get_finish_element(self):
-        return self.fd.find_element(EG.finish)
+    def finish(self):
+        time.sleep(0.5)
+        self.get_element(EG.finish).click()
 
     # 点击品相
-    def get_quality_element(self):
-        return self.fd.find_element(EG.quality)
+    def quality(self):
+        time.sleep(0.5)
+        self.get_element(EG.quality).click()
 
     # 选择全新
-    def get_quality_new_element(self):
-        return self.fd.find_element(EG.quality_new)
+    def quality_new(self):
+        time.sleep(0.5)
+        self.get_element(EG.quality_new).click()
 
     # 选择分类
-    def get_category_element(self):
-        return self.fd.find_element(EG.category)
+    def category(self):
+        time.sleep(0.5)
+        self.get_element(EG.category).click()
 
     # 选择二级分类
-    def get_second_categpry_element(self):
-        return self.fd.find_element(EG.second_categpry)
+    def second_categpry(self):
+        time.sleep(0.5)
+        self.get_element(EG.second_categpry).click()
 
     # 选择三级分类
-    def get_third_categpry_element(self):
-        return self.fd.find_element(EG.third_categpry)
+    def third_categpry(self):
+        time.sleep(0.5)
+        self.get_element(EG.third_categpry).click()
 
     # 点击商品类型
-    def get_product_type_element(self):
-        return self.fd.find_element(EG.product_type)
+    def product_type(self):
+        time.sleep(0.5)
+        self.get_element(EG.product_type).click()
 
     # 选择商品类型
-    def get_product_type_select_element(self):
-        return self.fd.find_element(EG.product_type_select)
+    def product_type_select(self):
+        time.sleep(0.5)
+        self.get_element(EG.product_type_select).click()
 
     # 点击规格
-    def get_specification_element(self):
-        return self.fd.find_element(EG.specification)
+    def specification(self):
+        time.sleep(0.5)
+        self.get_element(EG.specification).click()
 
     # 进入商品规格页面，输入属性
-    def get_property_1_element(self):
-        return self.fd.find_element(EG.property_1)
+    def property_1(self, property_1):
+        time.sleep(0.5)
+        self.logger.info("输入的商品规格是:" + property_1)
+        self.get_element(EG.property_1).send_keys(property_1)
 
-    def get_property_2_element(self):
-        return self.fd.find_element(EG.property_2)
+    def property_2(self, property_2):
+        time.sleep(0.5)
+        self.logger.info("输入的商品属性是:" + property_2)
+        self.get_element(EG.property_2).send_keys(property_2)
 
     # 上传规格图片
-    def get_upload_specification_image_element(self):
-        return self.fd.find_element(EG.upload_specification_image)
+    def upload_specification_image(self):
+        time.sleep(0.5)
+        self.get_element(EG.upload_specification_image).click()
 
     # 选择规格图片
-    def get_check_specification_image_element(self):
-        return self.fd.find_element(EG.check_specification_image)
+    def check_specification_image(self):
+        time.sleep(0.5)
+        self.get_element(EG.check_specification_image).click()
 
     # 下一步
-    def get_next_element(self):
-        return self.fd.find_element(EG.next)
+    def next(self):
+        time.sleep(0.5)
+        self.get_element(EG.next).click()
 
     # 进货价
-    def get_purchase_price_element(self):
-        return self.fd.find_element(EG.purchase_price)
+    def purchase_price(self, purchase_price):
+        time.sleep(0.5)
+        self.logger.info("输入的商品进货价是:" + purchase_price)
+        self.get_element(EG.purchase_price).send_keys(purchase_price)
 
-    #出售价
-    def get_sell_price_element(self):
-        return self.fd.find_element(EG.sell_price)
+    # 出售价
+    def sell_price(self, sell_price):
+        time.sleep(0.5)
+        self.logger.info("输入的商品出售价是:" + sell_price)
+        self.get_element(EG.sell_price).send_keys(sell_price)
 
-    #库存
-    def get_stock_element(self):
-        return self.fd.find_element(EG.stock)
+    # 库存
+    def stock(self, stock):
+        time.sleep(0.5)
+        self.logger.info("输入的商品库存是:" + stock)
+        self.get_element(EG.stock).send_keys(stock)
 
     # 确定
-    def get_determine_element(self):
-        return self.fd.find_element(EG.determine)
+    def determine(self):
+        time.sleep(0.5)
+        self.get_element(EG.determine).click()
 
     # 运费
-    def get_fare_element(self):
-        return self.fd.find_element(EG.fare)
+    def fare(self):
+        time.sleep(0.5)
+        self.get_element(EG.fare).click()
 
     # 运费类型-包邮
-    def get_fare_manner_element(self):
-        return self.fd.find_element(EG.fare_manner)
+    def fare_manner(self):
+        time.sleep(0.5)
+        self.get_element(EG.fare_manner).click()
 
     # 限购数量
-    def get_limit_quantity_element(self):
-        return self.fd.find_element(EG.limit_quantity)
+    def limit_quantity(self, limit_quantity):
+        time.sleep(0.5)
+        self.logger.info("输入的商品限购数量是:" + limit_quantity)
+        self.get_element(EG.limit_quantity).send_keys(limit_quantity)
 
     # 品牌
-    def get_brand_element(self):
-        return self.fd.find_element(EG.brand)
+    def brand(self, brand):
+        time.sleep(0.5)
+        self.logger.info("输入的商品品牌是:" + brand)
+        self.get_element(EG.brand).send_keys(brand)
 
     # 生产日期
-    def get_production_Date_element(self):
-        return self.fd.find_element(EG.production_Date)
+    def production_Date(self):
+        time.sleep(0.5)
+        self.get_element(EG.production_Date)
 
     # 生产日期-完成
-    def production_Date_ok_element(self):
-        return self.fd.find_element(EG.production_Date_ok)
+    def production_Date_ok(self):
+        time.sleep(0.5)
+        self.get_element(EG.production_Date_ok)
 
     # 保质期
-    def get_shelf_life_element(self):
-        return self.fd.find_element(EG.shelf_life)
+    def shelf_life(self):
+        time.sleep(0.5)
+        self.get_element(EG.shelf_life)
 
     # 产地
-    def get_address_element(self):
-        return self.fd.find_element(EG.address)
+    def address(self):
+        time.sleep(0.5)
+        self.get_element(EG.address)
 
     # 制造商
-    def get_manufacturer_element(self):
-        return self.fd.find_element(EG.manufacturer)
+    def manufacturer(self):
+        time.sleep(0.5)
+        self.get_element(EG.manufacturer)
 
     # 生产许可证编号
-    def get_production_number_element(self):
-        return self.fd.find_element(EG.production_number)
+    def production_number(self):
+        time.sleep(0.5)
+        self.get_element(EG.production_number)
 
-    # 立即上架
-    def get_submit_element(self):
-        return self.fd.find_element(EG.submit)
 
-    # 放入仓库
-    def get_storage_element(self):
-        return self.fd.find_element(EG.storage)
-
-    # 获取错误提示元素
-    def get_error_text_element(self):
-        return self.fd.find_element(EG.error_toast)
+    # 发布实物商品
+    def publish_entity_good(self, product_title, product_description, property_1, property_2, purchase_price,
+             sell_price, stock, limit_quantity):
+        # 上传主图
+        self.upload_image()
+        # 选择图片
+        self.check_image()
+        # 点击确定
+        self.btn_ok()
+        # 输入商品标题
+        self.product_title(product_title)
+        # 点击商品描述
+        self.product_detail()
+        # 输入商品详情
+        self.product_description(product_description)
+        # 商品详情页上传商品
+        self.description_image()
+        # 选择图片
+        self.check_image()
+        # 点击确定
+        self.btn_ok()
+        # 点击完成，回到商品详情页
+        self.finish()
+        # 点击品相
+        self.quality()
+        # 选择全新
+        self.quality_new()
+        # 选择分类
+        self.category()
+        # 选择二级分类
+        self.second_categpry()
+        # 选择三级分类
+        self.third_categpry()
+        # 点击商品类型
+        self.product_type()
+        # 选择商品类型
+        self.product_type_select()
+        # 点击规格
+        self.specification()
+        # 进入商品规格页面，输入属性
+        self.property_1(property_1)
+        self.property_2(property_2)
+        # 上传规格图片
+        self.upload_specification_image()
+        # 选择规格图片
+        self.check_specification_image()
+        # 下一步
+        self.next()
+        # 进货价
+        self.purchase_price(purchase_price)
+        # 出售价
+        self.sell_price(sell_price)
+        # 库存
+        self.stock(stock)
+        # 确定
+        self.determine()
+        # 运费
+        self.fare()
+        # 运费类型
+        self.fare_manner()
+        # 限购数量
+        self.limit_quantity(limit_quantity)

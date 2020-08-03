@@ -71,3 +71,28 @@ class LoginPage:
     # 点击登录
     def click_login(self):
         Touch(self.driver).tap(self.local["登录"][0], self.local["登录"][1])
+
+    #登录
+    def main(self, phone,pwd=None, code="666666"):
+        # 点击输入框
+        self.click_phone_box()
+        # 输入手机号
+        self.nine_keys_key_board(phone)
+        # 点击下一步
+        self.click_next()
+        # 不输入密码，就用通用验证码登录
+        if pwd == None:
+            # 切换验证码登录
+            self.switch_code()
+            # 点击输入框
+            self.click_code_box()
+            # 默认666666  传值的话会变
+            self.nine_keys_key_board(code)
+        # 用密码登录
+        else:
+            # 点击输入框
+            self.click_pwd_box()
+            # 输入密码 默认qaz123
+            self.send_pwd()
+        # 点击登录
+        self.click_login()

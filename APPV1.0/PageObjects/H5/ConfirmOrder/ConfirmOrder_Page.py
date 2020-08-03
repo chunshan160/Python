@@ -5,37 +5,58 @@
 # @File :ConfirmOrder_Handle.py
 
 from PageLocators.H5.ConfirmOrder import ConfirmOrder as CO
-from Common.find_element import FindElement
+from Common.BasePage import BasePage
 
-class ConfirmOrderPage:
+class ConfirmOrderPage(BasePage):
 
     def __init__(self, driver):
-        self.fd = FindElement(driver)
+        self.driver = driver
 
     # 选择收货地址
-    def get_select_address_element(self):
-        return self.fd.find_element(CO.select_address)
+    def select_address(self):
+        self.get_element(CO.select_address).click()
 
     # 新建地址
-    def get_new_address_element(self):
-        return self.fd.find_element(CO.new_address)
+    def new_address(self):
+        self.get_element(CO.new_address).click()
+
+    #填写收货地址信息
+    def input_address(self):
+        pass
+
+    #选择收货地址
+    def choose_address(self):
+        pass
 
     # 管理地址
-    def get_manage_address_element(self):
-        return self.fd.find_element(CO.manage_address)
+    def manage_address(self):
+        self.get_element(CO.manage_address).click()
 
     # 默认地址
-    def get_default_address_element(self):
-        return self.fd.find_element(CO.default_address)
+    def default_address(self):
+        self.get_element(CO.default_address).click()
 
     # 优惠券
-    def get_coupon_element(self):
-        return self.fd.find_element(CO.coupon)
+    def coupon(self):
+        self.get_element(CO.coupon).click()
 
     # 买家留言
-    def get_buyer_message_element(self):
-        return self.fd.find_element(CO.buyer_message)
+    def buyer_message(self):
+        self.get_element(CO.buyer_message).click()
 
     # 提交订单
-    def get_submit_order_element(self):
-        return self.fd.find_element(CO.submit_order)
+    def submit_order(self):
+        self.get_element(CO.submit_order).click()
+
+
+    #提交订单
+    def submit_order_now(self):
+        text=self.get_element(CO.select_address).text
+        if text=="请选择收货地址":
+            self.select_address()
+            self.new_address()
+            self.input_address()
+            self.choose_address()
+        self.submit_order()
+    
+    

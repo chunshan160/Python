@@ -4,55 +4,58 @@
 # @Author :春衫
 # @File :SearchGood_Business.py
 
+import time
 from PageLocators.H5.SearchGood import SearchGood
-from Common.find_element import FindElement
+from Common.BasePage import BasePage
 
 
-class SearchGoodPage:
+class SearchGoodPage(BasePage):
 
     def __init__(self, driver):
-        self.fd = FindElement(driver)
+        self.driver = driver
 
     # 搜索框-输入
-    def get_send_search_element(self):
-        return self.fd.find_element(SearchGood.send_search)
+    def send_search(self, good_name):
+        time.sleep(0.5)
+        self.logger.info("搜索框-输入文字是:" + good_name)
+        self.get_element(SearchGood.send_search).send_keys(good_name)
 
     # 商品tap
-    def get_good_tap_element(self):
-        return self.fd.find_element(SearchGood.good_tap)
+    def good_tap(self):
+        self.get_element(SearchGood.good_tap).click()
 
     # 店铺tap
-    def get_shop_tap_element(self):
-        return self.fd.find_element(SearchGood.shop_tap)
+    def shop_tap(self):
+        self.get_element(SearchGood.shop_tap).click()
 
     # 综合
-    def get_Comprehensive_element(self):
-        return self.fd.find_element(SearchGood.Comprehensive)
+    def Comprehensive(self):
+        self.get_element(SearchGood.Comprehensive).click()
 
     # 全新
-    def get_new_element(self):
-        return self.fd.find_element(SearchGood.new)
+    def new(self):
+        self.get_element(SearchGood.new).click()
 
     # 人气
-    def get_hot_element(self):
-        return self.fd.find_element(SearchGood.hot)
+    def hot(self):
+        self.get_element(SearchGood.hot).click()
 
     # 价格
-    def get_price_element(self):
-        return self.fd.find_element(SearchGood.price)
+    def price(self):
+        self.get_element(SearchGood.price).click()
 
     # 筛选
-    def get_filter_element(self):
-        return self.fd.find_element(SearchGood.filter)
+    def filter(self):
+        self.get_element(SearchGood.filter).click()
 
     # 商品
-    def get_good_element(self):
-        return self.fd.find_element(SearchGood.good)
+    def good(self):
+        self.get_element(SearchGood.good).click()
 
     # 进店
-    def get_go_shop_element(self):
-        return self.fd.find_element(SearchGood.go_shop)
+    def go_shop(self):
+        self.get_element(SearchGood.go_shop).click()
 
     # 搜索-店铺-商品
-    def get_shop_good_element(self):
-        return self.fd.find_element(SearchGood.shop_good)
+    def shop_good(self):
+        self.get_element(SearchGood.shop_good).click()
