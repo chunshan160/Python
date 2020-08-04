@@ -11,14 +11,15 @@ from Common.BasePage import BasePage
 
 class SearchGoodPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver = driver
+
 
     # 搜索框-输入
     def send_search(self, good_name):
         time.sleep(0.5)
         self.logger.info("搜索框-输入文字是:" + good_name)
         self.get_element(SearchGood.send_search).send_keys(good_name)
+        self.driver.keyevent(66)
+        self.choose_first_good()
 
     # 商品tap
     def good_tap(self):
@@ -49,7 +50,7 @@ class SearchGoodPage(BasePage):
         self.get_element(SearchGood.filter).click()
 
     # 商品
-    def good(self):
+    def choose_first_good(self):
         self.get_element(SearchGood.good).click()
 
     # 进店

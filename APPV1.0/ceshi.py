@@ -6,8 +6,5 @@
 import datetime
 import time
 
-t1=time.time()
-time.sleep(5)
-t2=time.time()
-
-print("相差",(datetime.datetime.fromtimestamp(t2)-datetime.datetime.fromtimestamp(t1)).seconds,"秒")
+aaa = datetime.datetime.now()
+print(aaa)

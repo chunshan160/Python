@@ -12,8 +12,7 @@ from Common.BasePage import BasePage
 # 发布本地生活
 class CouponGoodPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver = driver
+
 
     # 点击上传主图
     def upload_image(self):

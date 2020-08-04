@@ -35,7 +35,7 @@ def loginApp():
 
 def baseDriver(server_port=4723, noReset=None, automationName=None, **kwargs):
     # 将默认的配置数据读取出来
-    fs = open(caps_dir + "/caps.yaml")
+    fs = open(caps_dir + "/Caps.yaml")
     desired_caps = yaml.load(fs, Loader=yaml.FullLoader)
     # 调整参数
     if noReset is not None:

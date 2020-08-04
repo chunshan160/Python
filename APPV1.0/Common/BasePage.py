@@ -15,11 +15,13 @@ import win32con
 from Common.user_log import UserLog
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from appium.webdriver.common.touch_action import TouchAction
+from Common.project_path import error_image
 
 
 class BasePage:
 
-    def _init_(self, driver):
+    def __init__(self, driver):
         self.driver = driver
         self.logger = UserLog()
 
@@ -194,12 +196,12 @@ class BasePage:
     def save_screenshot(self, name):
         time = datetime.datetime.now()
         # 图片名称+模块名+页面名称+操作名称+时间.png
-        file_name = "截屏存放的路径" + f"{name},{time}.png"
+        file_name = error_image + f"{name},{time}.png"
         self.driver.save_screenshot(file_name)
         self.logger.info(f"截取网页成功，文件路径为为：{file_name}")
 
-    #上传图片
-    def upload_file(self,filepath):
+    # 上传图片
+    def upload_file(self, filepath):
         # 一级窗口
         dialog = win32gui.FindWindow("#32770", "打开")
         # 二级窗口
@@ -215,6 +217,51 @@ class BasePage:
         # 点击打开按钮 上传文件
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
 
+    # 点击坐标
+    def touch(self, x, y, doc=""):
+        try:
+            self.logger.info(f"点击坐标{(x, y)}")
+            TouchAction(self.driver).tap(x=x, y=y).perform()
+        except:
+            self.logger.info("点击坐标失败")
+            # 截图
+            self.save_screenshot(doc)
+            raise
+
+    # 输入手机号
+    def send_phone_number(self, number):
+
+        for i in number:
+            if i == "1":
+                self.driver.keyevent(8)
+            elif i == "2":
+                self.driver.keyevent(9)
+            elif i == "3":
+                self.driver.keyevent(10)
+            elif i == "4":
+                self.driver.keyevent(11)
+            elif i == "5":
+                self.driver.keyevent(12)
+            elif i == "6":
+                self.driver.keyevent(13)
+            elif i == "7":
+                self.driver.keyevent(14)
+            elif i == "8":
+                self.driver.keyevent(15)
+            elif i == "9":
+                self.driver.keyevent(16)
+            elif i == "0":
+                self.driver.keyevent(7)
+
+    # 输入密码
+    def send_pwd(self):
+        # 输入密码 默认qaz123
+        self.driver.keyevent(45)
+        self.driver.keyevent(29)
+        self.driver.keyevent(54)
+        self.driver.keyevent(8)
+        self.driver.keyevent(9)
+        self.driver.keyevent(10)
 
 if __name__ == '__main__':
     pass

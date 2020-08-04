@@ -12,8 +12,7 @@ from Common.BasePage import BasePage
 # 发布商企服务
 class ServicesGoodPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver = driver
+
 
     # 上传图片
     def upload_image(self):

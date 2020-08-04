@@ -10,9 +10,6 @@ from Common.BasePage import BasePage
 
 class PayPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver=driver
-
     # 更换支付方式
     def replace_pay(self):
         self.get_element(Pay.replace_pay).click()

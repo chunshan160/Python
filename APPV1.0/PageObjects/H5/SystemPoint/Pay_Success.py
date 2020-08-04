@@ -15,15 +15,14 @@ from Common.BasePage import BasePage
 # 支付成功
 class PaySuccessPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver = driver
+
 
     # 加入焕商
     def join(self):
         self.get_element(join).click()
 
     # 关闭弹窗
-    def close_elements(self):
+    def close_windows(self):
         self.get_element(close_pop_ups).click()
 
     # 支付成功

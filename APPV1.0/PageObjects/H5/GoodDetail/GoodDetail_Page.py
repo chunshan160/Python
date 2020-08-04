@@ -11,8 +11,7 @@ from Common.BasePage import BasePage
 
 class GoodDetailPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver = driver
+
 
     # 顶部商品
     def top_good(self):
@@ -65,7 +64,7 @@ class GoodDetailPage(BasePage):
         self.get_element(GD.confirm).click()
 
     # 购买商品
-    def bug_good(self,munber=False):
+    def buy_good(self,munber=False):
         self.buy_now()
         if munber is not False:
             self.add_munber(munber)

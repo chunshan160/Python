@@ -10,16 +10,13 @@ from Common.BasePage import BasePage
 
 class IndexPage(BasePage):
 
-    def __init__(self, driver):
-        self.driver = driver
-
     # 首页定位
     def location(self):
         self.get_element(Index.location)
 
     # 搜索框
     def search(self):
-        self.get_element(Index.search)
+        self.get_element(Index.search).click()
 
     # 易购车
     def shopping_car(self):

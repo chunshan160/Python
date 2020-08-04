@@ -7,7 +7,7 @@
 import yaml
 
 # 打开yaml文件
-fs = open("caps.yaml")
+fs = open("Caps.yaml")
 # 2\转换成python对象
 res = yaml.load(fs,Loader=yaml.FullLoader)
 print(res)

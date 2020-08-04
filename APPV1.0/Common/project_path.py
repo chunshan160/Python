@@ -26,6 +26,7 @@ log_path = os.path.join(project_path, "Log")
 image_path=os.path.join(project_path, "Source", "picture.jpg")
 
 #报错截图
-error_image=os.path.join(project_path,"Report", "Error_Image", datetime.datetime.now().strftime("%Y-%m-%d")+".png")
+error_image=os.path.join(project_path,"Outputs", "Error_Image")
 
-caps_dir=os.path.join(project_path,"Desired_Caps")
+#appium配置
+caps_dir=os.path.join(project_path,"Desired_Caps","Caps.yaml")
