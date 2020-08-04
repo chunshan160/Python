@@ -7,10 +7,9 @@
 from tools.http_request import HttpRequest
 
 
-def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPassword):
-
+def buy_server_goods(surroundings, buyer_phone, seller_phone, product_name, payType, payPassword):
     # 卖家登录
-    seller_login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
+    seller_login_url = f'http://m.{surroundings}.hobay.com.cn/api/app/user/login'  # 登录
     seller_login_data = {"loginValidateType": "CODE", "phone": seller_phone, "validateValue": "666666"}
     seller_login_res = HttpRequest().http_request(seller_login_url, "post", json=seller_login_data)
     print("卖家登录结果是：", seller_login_res.json())
@@ -23,7 +22,7 @@ def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
                                              cookies=seller_login_res.cookies)
     print("商品管理出售中的商品是：", product_res.json())
 
-    #获取商品规格id
+    # 获取商品规格id
     product_data = product_res.json()['data']['result']
     for i in range(0, len(product_data)):
         if product_data[i]['title'] == product_name:
@@ -31,13 +30,13 @@ def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
             print("商品规格id是：", productStockId)
 
     # 买家登录
-    login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
+    login_url = f'http://m.{surroundings}.hobay.com.cn/api/app/user/login'  # 登录
     login_data = {"loginValidateType": "CODE", "phone": buyer_phone, "validateValue": "666666"}
     login_res = HttpRequest().http_request(login_url, "post", json=login_data)
     print("登录结果是：", login_res.json())
 
     # 买家提交订单
-    SaveOrder_url = 'http://m.test.hobay.com.cn/ribbon-api/batchOrders/immediatelySaveOrder'
+    SaveOrder_url = f'http://m.{surroundings}.hobay.com.cn/ribbon-api/batchOrders/immediatelySaveOrder'
     SaveOrder_data = {"message": "", "couponUserId": "", "addressId": "",
                       "productStockIdAndNums": [{"num": 1, "productStockId": productStockId}], "type": 3}
     SaveOrder_headers = {"login": ""}
@@ -48,7 +47,7 @@ def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
     # 买家支付订单
     orderNum = SaveOrder_res.json()['data']['orderNum']
     order = SaveOrder_res.json()['data']['tradeNum']
-    pay_url = "http://m.test.hobay.com.cn/ribbon-api/batchOrders/payAllCBP"
+    pay_url = f"http://m.{surroundings}.hobay.com.cn/ribbon-api/batchOrders/payAllCBP"
     pay_data = {"tradeNUm": order, "payType": payType, "shareWalletUserId": "", "shareWalletId": ""}
     pay_headers = {"login": "", "payPassword": payPassword}
     pay_res = HttpRequest().http_request(pay_url, "post", json=pay_data, cookies=login_res.cookies,
@@ -56,11 +55,9 @@ def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
     print("支付订单的结果是：", pay_res.json())
     print("订单编号", pay_res.json()['data']['orderNums'][0])
 
-
-
     # 确认订单
     orderId = SaveOrder_res.json()['data']['orderId']
-    AcceptOrder_url = f"http://m.test.hobay.com.cn/ribbon-api/orders/acceptOrder?orderId={orderId}"
+    AcceptOrder_url = f"http://m.{surroundings}.hobay.com.cn/ribbon-api/orders/acceptOrder?orderId={orderId}"
     AcceptOrder_headers = {"login": ""}
     AcceptOrder_res = HttpRequest().http_request(AcceptOrder_url, "get", cookies=seller_login_res.cookies,
                                                  headers=AcceptOrder_headers)
@@ -68,7 +65,7 @@ def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
 
     # 签约
     sellerUserId = seller_login_res.json()['userId']
-    signed_url = f"http://m.test.hobay.com.cn/ribbon-api/orders/signed"
+    signed_url = f"http://m.{surroundings}.hobay.com.cn/ribbon-api/orders/signed"
     data = {"orderId": orderId, "payType": payType, "sellerUserId": sellerUserId}
     headers = {"login": "", "payPassword": payPassword}
     signed_res = HttpRequest().http_request(signed_url, "post", data=data, cookies=login_res.cookies,
@@ -77,5 +74,7 @@ def buy_server_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
 
     return orderNum
 
+
 if __name__ == '__main__':
-    buy_server_goods(17777777781, 17777777776, "普通焕商商企服务",3)
+    # buy_server_goods("test", 13724765586, 17777777781, "一天两件商企服务", 3, "gQyzNznHAvc=")
+    buy_server_goods("test", 13724765586, 17777777781, "两天一件商企服务", 3, "gQyzNznHAvc=")

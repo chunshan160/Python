@@ -101,4 +101,5 @@ def bug_entity_goods(surroundings, buyer_phone, seller_phone, product_name, payT
 
 
 if __name__ == '__main__':
-    bug_entity_goods(17777777781, 17777777776, "普通焕商实物商品", 3)
+    # bug_entity_goods("test", 13724765586,17777777781, "一天两件商超商品", 3,"gQyzNznHAvc=")
+    bug_entity_goods("test", 13724765586,17777777781, "两天一件商超商品", 3,"gQyzNznHAvc=")

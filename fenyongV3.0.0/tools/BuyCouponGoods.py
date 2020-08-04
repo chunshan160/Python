@@ -8,9 +8,9 @@ import time
 from tools.http_request import HttpRequest
 
 
-def buy_coupon_goods(buyer_phone, seller_phone, product_name, payType,payPassword):
+def buy_coupon_goods(surroundings,buyer_phone, seller_phone, product_name, payType,payPassword):
     # 卖家登录
-    login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
+    login_url = f'http://m.{surroundings}.hobay.com.cn/api/app/user/login'  # 登录
     seller_login_data = {"loginValidateType": "CODE", "phone": seller_phone, "validateValue": "666666"}
     seller_login_res = HttpRequest().http_request(login_url, "post", json=seller_login_data)
     print("登录结果是：", seller_login_res.json())
@@ -46,7 +46,7 @@ def buy_coupon_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
     print("获取收货地址的结果是：", address_res.json())
 
     # 提交订单
-    SaveOrder_url = 'http://m.test.hobay.com.cn/ribbon-api/batchOrders/immediatelySaveOrder'
+    SaveOrder_url = f'http://m.{surroundings}.hobay.com.cn/ribbon-api/batchOrders/immediatelySaveOrder'
     SaveOrder_data = {"message": "", "couponUserId": "", "addressId": "",
                       "productStockIdAndNums": [{"num": 1, "productStockId": productStockId}], "type": 2}
     SaveOrder_headers = {"login": ""}
@@ -79,7 +79,7 @@ def buy_coupon_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
 
     # 获取买家订单序列号
     print(orderId)
-    OrderDetail_url = 'http://m.test.hobay.com.cn/ribbon-api/batchOrders/queryOrderDetail'
+    OrderDetail_url = f'http://m.{surroundings}.hobay.com.cn/ribbon-api/batchOrders/queryOrderDetail'
     OrderDetail_data = {"orderId": orderId, "buyOrSell": 1}
     OrderDetail_headers = {'login': ''}
     OrderDetail_res = HttpRequest().http_request(OrderDetail_url, 'post', data=OrderDetail_data,
@@ -90,7 +90,7 @@ def buy_coupon_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
     # print("买家订单序列号是：", qrCode)
 
     # 卖家确认序列号
-    consume_url = 'http://m.test.hobay.com.cn/ribbon-api/orders/consume'
+    consume_url = f'http://m.{surroundings}.hobay.com.cn/ribbon-api/orders/consume'
     buyerUserId = buyer_login_res.json()['userId']
     consume_data = {"orderId": orderId,
                     "payType": payType,
@@ -104,4 +104,5 @@ def buy_coupon_goods(buyer_phone, seller_phone, product_name, payType,payPasswor
     return orderNum
 
 if __name__ == '__main__':
-    buy_coupon_goods(17777777781, 17777777776, "普通焕商本地生活", 3)
+    # buy_coupon_goods("test", 13724765586,17777777781, "一天两件本地生活", 3,"gQyzNznHAvc=")
+    buy_coupon_goods("test", 13724765586,17777777781, "两天一件本地生活", 3,"gQyzNznHAvc=")
