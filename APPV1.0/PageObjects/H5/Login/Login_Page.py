@@ -9,7 +9,7 @@ from PageLocators.H5.Login.Login import local
 
 class LoginPage(BasePage):
 
-    def __init__(self, driver,model="小米8"):
+    def __init__(self, driver,model="MI 8"):
         self.driver = driver
         self.local=local[model]
 

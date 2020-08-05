@@ -11,8 +11,8 @@ import warnings
 from appium import webdriver
 from Common.find_element import FindElement
 from PageLocators.H5.Index import Index
-from PageLocators.H5.My_Index import My_Index
-from PageLocators.H5.My_Index import Setting
+from PageLocators.H5.MyIndex import MyIndex
+from PageLocators.H5.MyIndex import Setting
 from Business.H5.Login.Login_Business import LoginBusiness
 from Business.H5.Index.Index_Business import IndexBusiness
 from Business.H5.SearchGood.SearchGood_Business import SearchGoodBusiness
@@ -45,7 +45,7 @@ class BuyEntityGoods(unittest.TestCase):
         time.sleep(5)
         # 首页点击发布商品
         cls.fd.find_element(Index.publish_good).click()
-        cls.LG = LoginBusiness(cls.driver,model="小米8")
+        cls.LG = LoginBusiness(cls.driver,model="MI 8")
         cls.LG.login("17777777781")
         time.sleep(3)
 
@@ -112,7 +112,7 @@ class BuyEntityGoods(unittest.TestCase):
         time.sleep(1)
         cls.fd.find_element(Index.my_index).click()
         time.sleep(1)
-        cls.fd.find_element(My_Index.setting).click()
+        cls.fd.find_element(MyIndex.setting).click()
         time.sleep(1)
         cls.fd.find_element(Setting.exit).click()
 

@@ -42,8 +42,9 @@ class TestBuyGoods(unittest.TestCase):
         my_logger.info("----------开始执行用例{0}，环境是{1}----------".format(item['case_id'], item['surroundings']))
 
         ip = IP[item['surroundings']]
-        buyer_phone = eval(item['data'])['buyer_phone']
-        seller_phone = eval(item['data'])['seller_phone']
+        data = eval(item['data'])
+        buyer_phone = data['buyer_phone']
+        seller_phone = data['seller_phone']
 
         # 获取绑定关系
         superior = SuperiorTemplate().superior_template_main(ip, item['payment_method'], item['data'], buyer_phone)
@@ -65,7 +66,7 @@ class TestBuyGoods(unittest.TestCase):
                 # 充值
                 recharge(surroundings, buyer_phone,payPassword)
                 # 写回储备池和充值金额
-                user_id = eval(item['data'])["买家"]
+                user_id = data["买家"]
                 reserve_fund_data = SQL(ip).reserve_fund_data(user_id)
                 DoExcel.reserve_fund(test_case_path, item['sheet_name'], item['case_id'], str(reserve_fund_data))
 
@@ -90,7 +91,7 @@ class TestBuyGoods(unittest.TestCase):
             order = buy_server_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType,payPassword)
 
         # 写回订单号
-        buyerid = eval(item['data'])['买家']
+        buyerid = data['买家']
         DoExcel.get_order(test_case_path, item['sheet_name'], item['case_id'], order)
 
         # 获取绑定关系，写回Excel
@@ -107,13 +108,13 @@ class TestBuyGoods(unittest.TestCase):
                 if seller_identity == "个人焕商":
                     delete_partner(surroundings, seller_phone, buyerid)
                 elif seller_identity == "非焕商且已绑定个人焕商":
-                    bangding_phone = eval(item['data'])['bangding_phone']
+                    bangding_phone = data['bangding_phone']
                     delete_partner(surroundings, bangding_phone, buyerid)
 
         my_logger.info("----------前端操作执行完毕----------")
 
         ip = IP[item['surroundings']]
-        data = eval(item['data'])
+
 
         buyer_id = data['买家']
 
@@ -152,6 +153,7 @@ class TestBuyGoods(unittest.TestCase):
         ip = IP[item['surroundings']]
         buyer_identity = item['buyer_identity']
         seller_identity = item['seller_identity']
+        data=eval(item['data'])
         reserve_fund_data = eval(item['reserve_fund'])
         proportion = eval(item['proportion'])
         order = item['order']

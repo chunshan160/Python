@@ -23,7 +23,7 @@ class ConfirmOrderPage(BasePage):
 
 
     # 填写收货地址信息
-    def input_address(self, model="小米8", default=True):
+    def input_address(self, model="MI 8", default=True):
         tap = CO.address[model]
         # 点击输入收货人姓名
         self.touch(tap["输入收货人姓名"][0], tap["输入收货人姓名"][1])

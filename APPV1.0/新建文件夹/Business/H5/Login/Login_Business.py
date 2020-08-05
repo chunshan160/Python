@@ -11,7 +11,7 @@ from Handle.H5.Login.Login_Handle import LoginHandle
 
 class LoginBusiness:
 
-    def __init__(self, driver, model="小米8"):
+    def __init__(self, driver, model="MI 8"):
         self.driver = driver
         self.local = local[model]
         self.LH = LoginHandle(driver, self.local)

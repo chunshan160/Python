@@ -196,7 +196,7 @@ class BasePage:
     def save_screenshot(self, name):
         time = datetime.datetime.now()
         # 图片名称+模块名+页面名称+操作名称+时间.png
-        file_name = error_image + f"{name},{time}.png"
+        file_name = error_image + f"{name}+{time}.png"
         self.driver.save_screenshot(file_name)
         self.logger.info(f"截取网页成功，文件路径为为：{file_name}")
 

@@ -12,8 +12,8 @@ import HTMLTestReportCN
 from appium import webdriver
 from Common.BasePage import BasePage
 from PageLocators.H5.Index import Index
-from PageLocators.H5.My_Index import My_Index
-from PageLocators.H5.My_Index import Setting
+from PageLocators.H5.MyIndex import MyIndex
+from PageLocators.H5.MyIndex import Setting
 from PageObjects.H5.Index.Index import IndexPage
 from PageObjects.H5.SearchGood.SearchGood import SearchGoodPage
 from PageObjects.H5.GoodDetail.GoodDetail_Page import GoodDetailPage
@@ -44,7 +44,7 @@ class BuyEntityGoods(unittest.TestCase):
             time.sleep(5)
             # 首页点击发布商品
             BasePage(cls.driver).get_element(Index.publish_good, doc="").click()
-            cls.LG = LoginPage(cls.driver, model="小米8")
+            cls.LG = LoginPage(cls.driver, model="MI 8")
             cls.LG.login("17777777781")
             time.sleep(3)
             # 首页点击搜索

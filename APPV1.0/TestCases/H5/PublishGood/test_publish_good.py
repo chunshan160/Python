@@ -46,7 +46,7 @@ class PublishGood(unittest.TestCase):
         time.sleep(5)
         # 首页点击发布商品
         cls.fd.find_element(publish_good).click()
-        cls.LG = LoginBusiness(cls.driver, model="小米8")
+        cls.LG = LoginBusiness(cls.driver, model="MI 8")
         cls.LG.login("44444444444")
         time.sleep(3)
         # 首页点击发布商品

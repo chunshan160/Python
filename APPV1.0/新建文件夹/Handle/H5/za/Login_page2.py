@@ -9,11 +9,11 @@ import re
 import time
 from Common.TouchAction import Touch
 
-local= {"小米8":{"输入手机号":(440,775),"下一步":(540,1030),"输入密码":(500,860),"验证码登录":(190,1255),"登录":(540,1110)}}
+local= {"MI 8":{"输入手机号":(440,775),"下一步":(540,1030),"输入密码":(500,860),"验证码登录":(190,1255),"登录":(540,1110)}}
 
 class LoginPage:
 
-    def __init__(self, driver,model="小米8"):
+    def __init__(self, driver,model="MI 8"):
         self.driver = driver
         self.model=model
 

@@ -11,8 +11,6 @@ from Common.BasePage import BasePage
 
 class SearchGoodPage(BasePage):
 
-
-
     # 搜索框-输入
     def send_search(self, good_name):
         time.sleep(0.5)

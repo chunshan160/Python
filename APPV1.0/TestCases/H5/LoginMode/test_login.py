@@ -5,47 +5,17 @@
 # @File    : test_login.py
 # @Software: PyCharm
 
-import unittest
-from selenium import webdriver
-from Handle.H5.za.MyIndex import MyPage
-from TestData import Common_Data as CD
-from TestData.H5 import Login_Data as LD
-from Handle.H5 import SystemPoint
-from Handle.H5.za.Login_page2 import LoginPage
-import ddt
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from PageLocators.H5 import My
+import pytest
 
 
-@ddt.ddt
-class TestLogin(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        # 只打开浏览器一次
-        print("=======所有测试用例执行之前，setup整个测试类只执行一次==========")
-        mobile_emulation = {'deviceName': 'iPhone X'}
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
-        cls.driver = webdriver.Chrome(options=chrome_options)
-        cls.driver.get(CD.H5_Login_url)
-        cls.lg = LoginPage(cls.driver)
-        cls.sp = SystemPoint(cls.driver)
-        cls.mp = MyPage(cls.driver)
+class TestLogin:
 
-    @classmethod
-    def tearDownClass(cls):
-        print("=======所有测试用例执行之后，tearDown整个测试类只执行一次==========")
-        cls.driver.quit()
-
-    def tearDown(self):
-        # 后置
-        self.driver.refresh()
 
     #异常用例 -手机号格式不对
-    @ddt.data(*LD.PhoneError_data)
-    def test_1_Login_PhoneError(cls,data):
+    @pytest.mark.usefixtures("first_start_app")
+    @pytest.mark.parametrize("data", LD.phone_data)  # 替代ddt
+    def test_1_Login_PhoneError(cls,first_start_app,data):
         # 步骤 输入手机号码：XXX，点击下一步
         cls.lg.PhoneError(data["username"])
         # 断言 登录页面 提示：手机号格式不对

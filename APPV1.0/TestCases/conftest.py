@@ -4,43 +4,38 @@
 # @Author :春衫
 # @File :conftest.py
 
-import time
 import pytest
-import yaml
-from appium import webdriver
-from Common.project_path import caps_dir
+from Common.BaseDriver import BaseDriver
 from PageObjects.Comm_Bus import CommBus
+from PageObjects.H5.MyIndex.MyIndex import MyIndexPage
+from PageObjects.H5.MyIndex.Setting.Setting import SettingPage
 
+params=["MI 8"]
 
-# 登陆用例使用的前置后置
-@pytest.fixture
-def startApp():
-    # 准备服务器参数，与appium server进 行连接。noReset=True
-    driver = baseDriver()
+# 登陆，重启
+@pytest.fixture(params=params)
+def first_start_app(request):
+    # 准备服务器参数，与appium server进行连接。
+    driver = BaseDriver().base_driver(device=request.param,noReset=False)
     # 1、 要不要判断欢迎页面是否存在?
     CommBus(driver).do_welcome()
-    # 2、要不要判断当前用户是否已登陆?
-    # 3、如果已经登录，那么先退出登录--接口挤号
+    yield driver
+
 
 
 # 除登录以外，通用的前置条件
-@pytest.fixture
-def loginApp():
-    # 准备服务器参数，与appium server进行连接 。noReset = True
-    driver = baseDriver()
-    # 1、 要不要判断欢迎 页面是否存在?
+@pytest.fixture(params=params)
+def loginApp(request):
+    # 准备服务器参数，与appium server进行连接。
+    driver = BaseDriver().base_driver(device=request.param)
+    # 1、 要不要判断欢迎页面是否存在?
     CommBus(driver).do_welcome()
-    # 2、判断是否是已登陆状态,若没有登录，则登录
+    # 2、要不要判断当前用户是否已登陆?
+    login_status = CommBus(driver).get_loginStatus()
+    # 3、如果已经登录，那么先退出登录--接口挤号
+    if login_status == True:
+        MyIndexPage(driver).click_setting()
+        SettingPage(driver).exit()
+    yield driver
 
 
-def baseDriver(server_port=4723, noReset=None, automationName=None, **kwargs):
-    # 将默认的配置数据读取出来
-    fs = open(caps_dir + "/Caps.yaml")
-    desired_caps = yaml.load(fs, Loader=yaml.FullLoader)
-    # 调整参数
-    if noReset is not None:
-        desired_caps["noReset"] = noReset
-    if automationName is not None:
-        desired_caps["noReset"] = automationName
-    # 返回一个启动对象一driver
-    return webdriver.Remote(f"http://127.0.0.1:{server_port}/wd/hub", desired_caps)

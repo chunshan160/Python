@@ -1,25 +1,15 @@
 -
-  deviceDesc: Honor_5C
+  deviceDesc: MI 8
   server_url: 127.0.0.1
   server_port: 4723
   desired_caps:
     platformName: Android
-    platformVersion: 5.1.1
-    deviceName: JTG6T16307007427
-    udid: JTG6T16307007427
-    appPackage: com.xxzb.fenwoo
-    appActivity: .activity.addition.WelcomeActivity
+    platformVersion: "10"
+    deviceName: eba33135
+    appPackage: com.ecloud.hobay
+    appActivity: .function.splash.SplashActivity
     noReset: True
-
--
-  deviceDesc: YeShen
-  server_url: 127.0.0.1
-  server_port: 4726
-  desired_caps:
-    platformName: Android
-    platformVersion: 5.1.1
-    deviceName: 127.0.0.1:62025
-    udid: 127.0.0.1:62025
-    appPackage: com.xxzb.fenwoo
-    appActivity: .activity.addition.WelcomeActivity
-    noReset: True
+    autoAcceptalerts: true #默认选择接受弹窗的条款
+    unicodekeyboard: True  # 使用unicodeKeyboard的编码方式来发送字符串 将键盘给隐藏起来
+    resetkeyboard: True  # 重置输入法到原有状态
+    automationName: UiAutomator2

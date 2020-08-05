@@ -1,0 +1,5 @@
+2020-08-05 17:21:47,173 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 17:21:47,236 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 17:21:47,883 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image,2020-08-05 17:21:47.236984.png
+2020-08-05 17:24:07,333 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 17:24:13,708 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
