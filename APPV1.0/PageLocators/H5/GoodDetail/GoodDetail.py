@@ -4,27 +4,29 @@
 #@Author :春衫
 #@File :GoodDetail_Business.py
 
+from appium.webdriver.common.mobileby import MobileBy
+
 #顶部商品
-top_good=("android_uiautomator",'new UiSelector().text("商品")')
+top_good=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("商品")')
 #顶部详情
-top_detail=("android_uiautomator",'new UiSelector().text("详情")')
+top_detail=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("详情")')
 #顶部评价
-top_evaluation=("android_uiautomator",'new UiSelector().text("评价")')
+top_evaluation=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("评价")')
 #店铺
-shop=("id","com.ecloud.hobay:id/tv_shop")
+shop=(MobileBy.ID,"com.ecloud.hobay:id/tv_shop")
 #收藏
-collection=("id","com.ecloud.hobay:id/tv_collection")
+collection=(MobileBy.ID,"com.ecloud.hobay:id/tv_collection")
 #聊天
-chat=("id","com.ecloud.hobay:id/tv_chat")
+chat=(MobileBy.ID,"com.ecloud.hobay:id/tv_chat")
 #加入购物车
-add_car=("id","com.ecloud.hobay:id/tv_add")
+add_car=(MobileBy.ID,"com.ecloud.hobay:id/tv_add")
 #立即购买
-buy_now=("id","com.ecloud.hobay:id/tv_buy_now")
+buy_now=(MobileBy.ID,"com.ecloud.hobay:id/tv_buy_now")
 #-
-less=("android_uiautomator",'new UiSelector().text("—")')
+less=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("—")')
 #购买数量
-add_munber=("android_uiautomator",'new UiSelector().text("0")')
+add_munber=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("0")')
 #+
-add=("android_uiautomator",'new UiSelector().text("＋")')
+add=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("＋")')
 #确定
-confirm=("id","com.ecloud.hobay:id/btn_confirm")
+confirm=(MobileBy.ID,"com.ecloud.hobay:id/btn_confirm")

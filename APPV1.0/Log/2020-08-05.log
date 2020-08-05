@@ -3,3 +3,456 @@
 2020-08-05 17:21:47,883 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image,2020-08-05 17:21:47.236984.png
 2020-08-05 17:24:07,333 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
 2020-08-05 17:24:13,708 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:13:08,043 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:13:14,501 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:13:34,007 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:13:40,470 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:16:56,221 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:17:02,815 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:17:22,808 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:17:29,158 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:22:48,544 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:22:54,933 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:22:56,040 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 20:22:56,175 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 20:22:56,310 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 20:22:56,443 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 20:22:59,674 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 20:23:19,806 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:33:51,417 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:33:57,832 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:33:58,935 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:33:59,012 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 20:34:00,476 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 20:34:00,661 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 20:34:00,828 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 20:34:04,191 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 20:34:24,531 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:34:30,870 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:34:31,952 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:34:32,010 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 20:34:33,371 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 20:34:33,537 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 20:34:33,689 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 20:34:36,836 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 20:38:55,875 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:39:02,283 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:39:03,727 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:39:03,773 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:39:03,811 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:39:04,355 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image+2020-08-05 20:39:03.813090.png
+2020-08-05 20:39:24,128 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:39:30,583 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:39:31,680 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:39:31,734 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:39:31,774 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:39:32,355 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image+2020-08-05 20:39:31.774842.png
+2020-08-05 20:42:18,224 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:42:24,850 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:42:25,940 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:42:26,528 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:42:26,581 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:42:27,237 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image/+2020-08-05 20:42:26.582872.png
+2020-08-05 20:42:46,092 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:42:52,955 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:42:54,064 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:42:54,639 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:42:54,678 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:42:55,297 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image/+2020-08-05 20:42:54.678427.png
+2020-08-05 20:46:46,500 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:46:52,877 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:46:53,960 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:46:54,014 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:46:54,071 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:47:12,012 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:47:18,369 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:47:19,486 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:47:19,691 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:47:19,723 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:57:38,573 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:57:44,948 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:57:46,058 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:57:46,117 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:57:46,201 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:57:46,684 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05 20:57:46.204550.png
+2020-08-05 20:58:05,911 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:58:12,337 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 20:58:13,438 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 20:58:13,908 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 20:58:13,953 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:58:14,568 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05 20:58:13.953943.png
+2020-08-05 20:59:18,956 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 20:59:18,992 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 20:59:36,719 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:01:42,383 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:01:49,015 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:01:50,127 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:01:51,865 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:01:52,915 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:01:54,013 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:01:54,682 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:01:54,847 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:01:58,187 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:02:17,953 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:02:24,352 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:02:25,435 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:02:26,489 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:02:27,824 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:02:29,330 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:02:29,484 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:02:30,767 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:02:34,165 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:03:37,493 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:03:37,508 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 21:03:55,402 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:04:01,804 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:04:02,891 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:04:04,113 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:04:04,407 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:04:05,906 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:04:06,055 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:04:07,083 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:04:10,801 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:06:05,682 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:06:12,059 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:06:13,142 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:06:14,196 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:06:14,476 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:06:17,925 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:06:19,099 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:06:20,626 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:06:26,022 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:06:44,895 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:06:51,314 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:06:52,797 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:06:53,852 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:06:54,150 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:06:57,739 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:06:58,931 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:07:00,106 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:08:26,195 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:08:31,262 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：5
+2020-08-05 21:08:50,169 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:08:55,243 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：5
+2020-08-05 21:10:58,047 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:10:58,134 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:11:17,349 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:11:17,429 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:12:00,064 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')存在
+2020-08-05 21:12:00,074 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败
+2020-08-05 21:12:17,156 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')存在
+2020-08-05 21:12:17,256 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:15:28,067 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')存在
+2020-08-05 21:15:28,117 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:20:01,856 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可点击
+2020-08-05 21:20:01,986 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:20:19,822 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可点击
+2020-08-05 21:20:19,922 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:21:50,509 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:21:50,669 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:21:56,939 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:21:58,039 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:21:59,091 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:22:00,621 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-05 21:22:18,316 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:22:18,436 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:22:24,716 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:22:25,816 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:22:26,866 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:22:28,606 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-05 21:24:01,048 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:24:01,158 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:24:01,158 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:24:07,488 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:24:09,071 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:24:10,131 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:24:10,451 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:24:10,451 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:24:13,101 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:24:15,291 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:24:16,451 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:24:17,621 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:24:22,930 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:24:41,880 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:24:41,980 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:24:41,980 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:24:48,370 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:24:49,500 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:24:50,550 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:24:50,880 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:24:50,880 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:24:52,200 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:24:54,380 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:24:55,550 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:24:57,190 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:26:35,786 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:26:35,896 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:26:35,896 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:26:42,239 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:26:43,329 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:26:44,399 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:26:44,909 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:26:44,909 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:26:46,221 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:26:48,411 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:26:49,641 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:26:50,801 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:26:56,391 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:28:51,838 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:28:51,908 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:28:51,908 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:28:58,233 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:28:58,283 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 21:28:59,114 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05 21:28:58.283906.png
+2020-08-05 21:29:16,798 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:29:17,257 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:29:17,258 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:29:23,675 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:29:24,775 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:29:26,583 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:29:27,450 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:29:27,451 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:29:28,771 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:29:31,215 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:29:32,395 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:29:33,585 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:29:38,920 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:30:32,145 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:30:32,245 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:30:32,245 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:30:38,645 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:30:39,735 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:30:39,745 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 21:30:57,120 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:30:57,611 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:30:57,611 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:31:04,023 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:31:05,133 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:31:06,573 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:31:07,123 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:31:07,123 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:31:08,403 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:31:12,573 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:31:13,753 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:31:14,933 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:31:20,593 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:33:06,395 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:33:06,495 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:33:06,495 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:33:12,835 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:33:14,955 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:33:16,135 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:33:16,355 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:33:16,355 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:33:17,565 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:33:22,595 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:33:23,779 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(190, 1255)
+2020-08-05 21:33:24,959 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:33:30,369 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:35:28,854 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:35:28,937 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:35:28,937 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:35:35,292 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:35:37,409 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:35:38,539 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:35:39,287 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:35:39,287 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:35:57,631 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:35:57,704 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:35:57,704 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:36:04,076 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:36:06,197 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:36:07,612 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:36:07,818 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:36:07,819 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:39:45,543 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:39:45,626 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:39:45,627 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:39:51,978 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:39:54,086 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:39:55,188 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:39:56,553 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-05 21:39:56,553 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:40:14,883 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:40:14,968 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:40:14,968 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:40:21,290 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:40:23,391 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:40:24,776 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:40:25,021 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:40:25,023 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:43:04,992 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:43:05,066 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:43:05,067 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:43:11,439 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:43:13,547 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:43:14,685 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:43:15,485 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:43:15,485 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:43:16,734 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:43:26,787 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:43:27,979 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:43:33,896 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:44:13,077 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:44:13,157 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:44:13,157 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:44:19,504 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:44:21,618 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:44:22,720 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:44:25,424 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：2
+2020-08-05 21:44:25,424 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:44:26,766 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:44:37,331 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:44:37,341 - INFO - user_log.py - 春衫 - 日志信息:点击坐标失败
+2020-08-05 21:45:07,472 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:45:07,587 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:45:07,587 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:45:13,910 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:45:16,038 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:45:17,158 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:45:18,651 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-05 21:45:18,652 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:45:20,044 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:45:29,310 - INFO - user_log.py - 春衫 - 日志信息:输入数字是['1', '7', '7', '7', '7', '7', '7', '7', '7', '7', '6']
+2020-08-05 21:45:30,310 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:45:31,480 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:45:37,018 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:54:06,907 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:54:07,617 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:54:07,618 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:54:14,054 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:54:16,167 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:54:17,280 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:54:17,632 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:54:17,633 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:54:18,959 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:54:27,917 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 21:54:28,918 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:54:30,124 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:54:35,585 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 21:56:08,444 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:56:08,511 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:56:08,512 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:56:14,864 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:56:16,956 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:56:18,045 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:56:18,370 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:56:18,371 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:56:19,705 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:56:26,474 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 21:56:27,484 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 21:56:28,653 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 21:57:14,872 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 21:57:14,979 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 21:57:14,979 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 21:57:21,346 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 21:57:23,466 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 21:57:24,900 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 21:57:26,357 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-05 21:57:26,358 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 21:57:27,640 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 21:57:34,824 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 22:00:39,556 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:00:39,649 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:00:39,650 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:00:45,999 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:00:48,127 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 22:00:49,593 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 22:00:49,839 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:00:49,842 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:00:51,145 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 22:00:58,063 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 22:00:59,063 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 22:01:01,737 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 22:01:07,053 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 22:01:32,389 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:01:32,710 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:01:32,710 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:01:39,079 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:01:41,192 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 22:01:42,291 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 22:01:42,428 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:01:42,429 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:01:43,655 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 22:01:50,636 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 22:01:51,637 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 22:01:52,815 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 22:01:58,137 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 22:02:23,361 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:02:23,474 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:02:23,475 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:02:29,861 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:02:31,951 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 22:02:33,049 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 22:02:33,935 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:02:33,936 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:02:35,720 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 22:02:42,899 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 22:02:43,900 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 22:02:46,094 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 22:02:51,671 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 22:13:07,669 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:13:07,746 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:13:07,747 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:13:14,132 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:13:16,231 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 22:13:17,344 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 22:13:18,101 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:13:18,101 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:14:07,656 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:14:07,812 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:14:07,812 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:15:12,030 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:15:12,050 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败
+2020-08-05 22:15:44,834 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:15:44,924 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:15:44,924 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:15:51,276 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:15:53,371 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 22:15:54,446 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 22:15:54,546 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:15:54,546 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:16:56,570 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:16:56,586 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败
+2020-08-05 22:18:17,531 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:18:17,532 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败
+2020-08-05 22:18:18,159 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05 22:18:17.532514.png
+2020-08-05 22:21:39,995 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:21:39,996 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败
+2020-08-05 22:21:40,592 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05 22:21:39.png
+2020-08-05 22:22:50,647 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:22:50,648 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败
+2020-08-05 22:22:51,217 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05-22-22-50.png
+2020-08-05 22:24:13,350 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:24:13,435 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:24:13,435 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:24:19,881 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:24:22,001 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.lbe.security.miui:id/permission_allow_always_button
+2020-08-05 22:24:23,313 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-05 22:24:23,641 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:24:23,641 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:24:24,939 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-05 22:24:31,878 - INFO - user_log.py - 春衫 - 日志信息:输入数字是17777777776
+2020-08-05 22:24:32,880 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1030)
+2020-08-05 22:24:34,094 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(500, 860)
+2020-08-05 22:24:39,483 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(540, 1110)
+2020-08-05 22:24:44,661 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-05 22:24:45,546 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_setting
+2020-08-05 22:27:56,313 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:27:56,389 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:27:56,390 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:28:02,746 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:28:03,216 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 22:28:03,989 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05\2020-08-05-22-28-03.png
+2020-08-05 22:35:26,989 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:35:27,069 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:35:27,069 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:35:33,479 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:35:33,529 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 22:35:34,273 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05\2020-08-05-22-35-33.png
+2020-08-05 22:36:09,059 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-05 22:36:09,442 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-05 22:36:09,442 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-05 22:36:15,809 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-05 22:36:15,869 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-05 22:36:16,649 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-05\2020-08-05-22-36-15.png

@@ -8,4 +8,4 @@
 
 class SystemPoint:
     #系统提示-支付成功
-    pay_success=("id",'//p[text()="支付成功"]')
+    pay_success=(MobileBy.ID,'//p[text()="支付成功"]')

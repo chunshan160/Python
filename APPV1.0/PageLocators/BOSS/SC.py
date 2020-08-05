@@ -10,27 +10,27 @@
 # 商超列表
 class SC:
     #退出账号
-    logout = ("id",'//div[@class="Logout"]')
+    logout = (MobileBy.ID,'//div[@class="Logout"]')
     #确定
-    queding = ("id",'//button[@class="el-button el-button--default el-button--small el-button--primary "]')
+    queding = (MobileBy.ID,'//button[@class="el-button el-button--default el-button--small el-button--primary "]')
     # 商超tap
-    sc = ("id", '//li[text()="商超"]')
+    sc = (MobileBy.ID, '//li[text()="商超"]')
     # 商品入仓审核
-    sc_review = ("id", '//span[text()="商品入仓审核"]')
+    sc_review = (MobileBy.ID, '//span[text()="商品入仓审核"]')
     # 勾选商品
-    goods_cwj = ("id",
+    goods_cwj = (MobileBy.ID,
                          '//div[contains(text(),"仓库中：未审核，复审拒绝")]/parent::td/parent::tr//td//div//label/span')
-    goods_ctt = ("id",
+    goods_ctt = (MobileBy.ID,
                          '//div[contains(text(),"仓库中：审核通过，复审通过")]/parent::td/parent::tr//td//div//label/span')
-    goods_ctd = ("id",
+    goods_ctd = (MobileBy.ID,
                          '//div[contains(text(),"仓库中：审核通过，待复审")]/parent::td/parent::tr//td//div//label/span')
-    goods_djj = ("id",
+    goods_djj = (MobileBy.ID,
                          '//div[contains(text(),"待审核:审核拒绝，复审拒绝")]/parent::td/parent::tr//td//div//label/span')
-    goods_chutt = ("id",
+    goods_chutt = (MobileBy.ID,
                          '//div[contains(text(),"出售中:审核通过，复审通过")]/parent::td/parent::tr//td//div//label/span')
-    goods_chusd = ("id",
+    goods_chusd = (MobileBy.ID,
                          '//div[contains(text(),"出售中:审核通过，待复审")]/parent::td/parent::tr//td//div//label/span')
     #点通过
-    passed = ("id",'//span[text()="通过"]//parent::button')
+    passed = (MobileBy.ID,'//span[text()="通过"]//parent::button')
     #点确认
-    determine = ("id",'//span[contains(text(),"确定")]//parent::button')
+    determine = (MobileBy.ID,'//span[contains(text(),"确定")]//parent::button')

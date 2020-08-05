@@ -19,6 +19,8 @@ def first_start_app(request):
     driver = BaseDriver().base_driver(device=request.param,noReset=False)
     # 1、 要不要判断欢迎页面是否存在?
     CommBus(driver).do_welcome()
+    #2、登录
+    CommBus(driver).click_myindex()
     yield driver
 
 

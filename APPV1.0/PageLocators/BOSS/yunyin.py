@@ -7,9 +7,9 @@
 
 
 class YunYin:
-    yunyin = ("id", '//li[text()="运营"]')
-    fencheng=("id",'//span[text()="分成设置"]//parent::li')
-    yewuhaunshang=("id",'//label[text()="业务焕商分成比例"]//following-sibling::div//div//input')
-    xiaoshou=("id",'//label[text()="销售分成比例"]//following-sibling::div//div//input')
-    tco = ("id", '//label[text()="TCO分成比例"]//following-sibling::div//div//input')
-    save=("id",'//button[@class="el-button btn el-button--primary"]')
+    yunyin = (MobileBy.ID, '//li[text()="运营"]')
+    fencheng=(MobileBy.ID,'//span[text()="分成设置"]//parent::li')
+    yewuhaunshang=(MobileBy.ID,'//label[text()="业务焕商分成比例"]//following-sibling::div//div//input')
+    xiaoshou=(MobileBy.ID,'//label[text()="销售分成比例"]//following-sibling::div//div//input')
+    tco = (MobileBy.ID, '//label[text()="TCO分成比例"]//following-sibling::div//div//input')
+    save=(MobileBy.ID,'//button[@class="el-button btn el-button--primary"]')

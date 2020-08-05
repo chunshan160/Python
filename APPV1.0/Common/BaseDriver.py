@@ -14,6 +14,7 @@ class BaseDriver:
     def base_driver(self, device, automationName="appium", noReset=True,unicodekeyboard=True,resetkeyboard=True):
         fs = open(caps_dir, encoding="utf-8")
         datas = yaml.load(fs,Loader=yaml.FullLoader)
+        print(len(datas))
         for i in datas:
             if device == i["deviceDesc"]:
                 if automationName != "appium":

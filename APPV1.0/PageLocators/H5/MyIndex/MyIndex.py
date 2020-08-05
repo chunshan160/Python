@@ -4,5 +4,7 @@
 #@Author :春衫
 #@File :MyIndex.py
 
+from appium.webdriver.common.mobileby import MobileBy
+
 #设置
-setting=("id","com.ecloud.hobay:id/tv_setting")
+setting=(MobileBy.ID,"com.ecloud.hobay:id/tv_setting")

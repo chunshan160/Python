@@ -4,25 +4,27 @@
 #@Author :春衫
 #@File :SearchGood_Business.py
 
+from appium.webdriver.common.mobileby import MobileBy
+
 #搜索框-输入
-send_search=("id","com.ecloud.hobay:id/et_search")
+send_search=(MobileBy.ID,"com.ecloud.hobay:id/et_search")
 #商品tap
-good_tap=("accessibility_id","商品")
+good_tap=(MobileBy.ACCESSIBILITY_ID,"商品")
 #店铺tap
-shop_tap=("accessibility_id","商品")
+shop_tap=(MobileBy.ACCESSIBILITY_ID,"商品")
 #综合
-Comprehensive=("id","com.ecloud.hobay:id/tv_sort_complex")
+Comprehensive=(MobileBy.ID,"com.ecloud.hobay:id/tv_sort_complex")
 #全新
-new=("id","com.ecloud.hobay:id/tv_sort_new")
+new=(MobileBy.ID,"com.ecloud.hobay:id/tv_sort_new")
 #人气
-hot=("id","com.ecloud.hobay:id/tv_sort_hot")
+hot=(MobileBy.ID,"com.ecloud.hobay:id/tv_sort_hot")
 #价格
-price=("id","com.ecloud.hobay:id/tv_sort_price")
+price=(MobileBy.ID,"com.ecloud.hobay:id/tv_sort_price")
 #筛选
-filter=("id","com.ecloud.hobay:id/fl_sort_filter")
+filter=(MobileBy.ID,"com.ecloud.hobay:id/fl_sort_filter")
 #商品
-good=("id","com.ecloud.hobay:id/fl_root")
+good=(MobileBy.ID,"com.ecloud.hobay:id/fl_root")
 #进店
-go_shop=("id","com.ecloud.hobay:id/tv_go1")
+go_shop=(MobileBy.ID,"com.ecloud.hobay:id/tv_go1")
 #搜索-店铺-商品
-shop_good=("id","com.ecloud.hobay:id/iv_p1")
+shop_good=(MobileBy.ID,"com.ecloud.hobay:id/iv_p1")

@@ -14,7 +14,7 @@ class SearchGoodPage(BasePage):
     # 搜索框-输入
     def send_search(self, good_name):
         time.sleep(0.5)
-        self.logger.info("搜索框-输入文字是:" + good_name)
+        UserLog().info("搜索框-输入文字是:" + good_name)
         self.get_element(SearchGood.send_search).send_keys(good_name)
         self.driver.keyevent(66)
         self.choose_first_good()

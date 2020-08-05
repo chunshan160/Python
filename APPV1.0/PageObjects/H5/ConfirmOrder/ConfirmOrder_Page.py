@@ -11,19 +11,24 @@ from Common.BasePage import BasePage
 
 class ConfirmOrderPage(BasePage):
 
-
-
     # 选择收货地址
     def select_address(self):
-        self.get_element(CO.select_address).click()
+        doc="选择收货地址-按钮"
+        self.get_element(CO.select_address,doc =doc).click()
+
+    # 管理地址
+    def manage_address(self):
+        doc = "收货地址-底部-管理地址-按钮"
+        self.get_element(CO.manage_address, doc=doc).click()
 
     # 新建地址
     def new_address(self):
-        self.get_element(CO.new_address).click()
-
+        doc = "收货地址-底部-新建地址-按钮"
+        self.get_element(CO.new_address,doc =doc).click()
 
     # 填写收货地址信息
     def input_address(self, model="MI 8", default=True):
+        doc = "新建地址-流程"
         tap = CO.address[model]
         # 点击输入收货人姓名
         self.touch(tap["输入收货人姓名"][0], tap["输入收货人姓名"][1])
@@ -32,7 +37,7 @@ class ConfirmOrderPage(BasePage):
         # 点击输入手机号
         self.touch(tap["输入收货人手机号码"][0], tap["输入收货人手机号码"][1])
         # 输入手机号
-        self.send_phone_number(11111111111)
+        self.send_phone_number(11111111111,doc =doc)
         # 点击所在地区
         self.touch(tap["选择所在地区"][0], tap["选择所在地区"][1])
         time.sleep(0.5)
@@ -51,39 +56,43 @@ class ConfirmOrderPage(BasePage):
             # 设为默认地址
             self.touch(tap["设为默认地址"][0], tap["设为默认地址"][1])
         # 点击保存
-        self.get_element(CO.save)
+        self.get_element(CO.save,doc =doc)
         time.sleep(0.5)
 
     # 选择收货地址
     def choose_address(self):
-        self.get_element(CO.choose_first_address).click()
+        doc = "选择第一个为收货地址-动作"
+        self.get_element(CO.choose_first_address,doc =doc).click()
 
-    # 管理地址
-    def manage_address(self):
-        self.get_element(CO.manage_address).click()
+
 
     # 默认地址
     def default_address(self):
+        doc = "是否存在默认地址-检查"
         try:
-            return self.get_element(CO.default_address).text
+            return self.get_element(CO.default_address,doc =doc).text
         except:
             return None
 
     # 优惠券
     def coupon(self):
-        self.get_element(CO.coupon).click()
+        doc = "优惠券-选项"
+        self.get_element(CO.coupon,doc =doc).click()
 
     # 买家留言
     def buyer_message(self):
-        self.get_element(CO.buyer_message).click()
+        doc = "买家留言-选项"
+        self.get_element(CO.buyer_message,doc =doc).click()
 
     # 提交订单
     def submit_order(self):
-        self.get_element(CO.submit_order).click()
+        doc = "确认订单-底部-提交订单-按钮"
+        self.get_element(CO.submit_order,doc =doc).click()
 
     # 提交订单
     def submit_order_now(self):
-        text = self.get_element(CO.select_address).text
+        doc = "收货地址-选项"
+        text = self.get_element(CO.select_address,doc =doc).text
         if text == "请选择收货地址":
             self.select_address()
             if self.default_address()==None:

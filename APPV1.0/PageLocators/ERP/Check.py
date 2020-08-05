@@ -9,30 +9,30 @@
 
 class Check:
     # 商品中心
-    goods_center = ("id", '//span[text()="商品中心"]')
+    goods_center = (MobileBy.ID, '//span[text()="商品中心"]')
     # 商品审核
-    good_check = ("id", '//li[contains(text(),"商品审核")]')
+    good_check = (MobileBy.ID, '//li[contains(text(),"商品审核")]')
     # 搜索框卖家手机
-    search_phone = ("id", '//*[contains(text(),"卖家手机")]//following-sibling::div//div//input')
+    search_phone = (MobileBy.ID, '//*[contains(text(),"卖家手机")]//following-sibling::div//div//input')
     # 点击查询
-    search = ("id", '//span[contains(text(),"查询")]')
+    search = (MobileBy.ID, '//span[contains(text(),"查询")]')
     # 审核指定商品
-    check_chutd = ("id",
+    check_chutd = (MobileBy.ID,
                    '//div[@class="el-table__fixed-right"]//div[contains(text(),"出售中:审核通过，待复审")]//..//..//span[contains(text(),"审核")]')
-    check_chutt = ("id",
+    check_chutt = (MobileBy.ID,
                    '//div[@class="el-table__fixed-right"]//div[contains(text(),"出售中:审核通过，复审通过")]//..//..//span[contains(text(),"审核")]')
-    check_djj = ("id",
+    check_djj = (MobileBy.ID,
                  '//div[@class="el-table__fixed-right"]//div[contains(text(),"待审核:审核拒绝，复审拒绝")]//..//..//span[contains(text(),"审核")]')
-    check_ctd = ("id",
+    check_ctd = (MobileBy.ID,
                  '//div[@class="el-table__fixed-right"]//div[contains(text(),"仓库中：审核通过，待复审")]//..//..//span[contains(text(),"审核")]')
-    check_ctt = ("id",
+    check_ctt = (MobileBy.ID,
                  '//div[@class="el-table__fixed-right"]//div[contains(text(),"仓库中：审核通过，复审通过")]//..//..//span[contains(text(),"审核")]')
-    check_cwj = ("id",
+    check_cwj = (MobileBy.ID,
                  '//div[@class="el-table__fixed-right"]//div[contains(text(),"仓库中：未审核，复审拒绝")]//..//..//span[contains(text(),"审核")]')
     # 审核通过
-    check_pass = ("id", '//button[@class="el-button el-button--primary"]')
-    determine_1 = ("id", '//span[contains(text(),"确定")]//parent::button')
+    check_pass = (MobileBy.ID, '//button[@class="el-button el-button--primary"]')
+    determine_1 = (MobileBy.ID, '//span[contains(text(),"确定")]//parent::button')
     # 审核拒绝
-    check_refuse = ("id", '//button[@class="el-button el-button--danger"]')
-    refuse_reason = ("id", '//textarea')
-    determine_2 = ("id", '//button[@class="el-button btn el-button--primary"]')
+    check_refuse = (MobileBy.ID, '//button[@class="el-button el-button--danger"]')
+    refuse_reason = (MobileBy.ID, '//textarea')
+    determine_2 = (MobileBy.ID, '//button[@class="el-button btn el-button--primary"]')

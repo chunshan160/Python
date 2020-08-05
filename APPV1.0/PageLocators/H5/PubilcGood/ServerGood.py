@@ -4,33 +4,34 @@
 # @Author :春衫
 # @File :ServerGood_Page.py
 
+from appium.webdriver.common.mobileby import MobileBy
 
 """
 发布商品-商企服务
 """
 
 # 商品主图
-product_image = ("id", "com.ecloud.hobay:id/iv_add_pic")
+product_image = (MobileBy.ID, "com.ecloud.hobay:id/iv_add_pic")
 # 选择图片
-check_image = ("id", "com.ecloud.hobay:id/cb_check")
+check_image = (MobileBy.ID, "com.ecloud.hobay:id/cb_check")
 # 点击确定
-btn_ok = ("id", "com.ecloud.hobay:id/btn_ok")
+btn_ok = (MobileBy.ID, "com.ecloud.hobay:id/btn_ok")
 # 商品标题
-product_title = ("id", "com.ecloud.hobay:id/et_product_title")
+product_title = (MobileBy.ID, "com.ecloud.hobay:id/et_product_title")
 # 商品详情
-product_description = ("id", "com.ecloud.hobay:id/et_product_desc")
+product_description = (MobileBy.ID, "com.ecloud.hobay:id/et_product_desc")
 # 分类
-category = ("id", "com.ecloud.hobay:id/tv_select_type")
+category = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_type")
 # 二级分类
-second_categpry = ("id", "com.ecloud.hobay:id/tv_list_name")
+second_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_list_name")
 # 三级分类
-third_categpry = ("id", "com.ecloud.hobay:id/tv_show_name")
+third_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_show_name")
 # 总价
-total_price = ("id", "com.ecloud.hobay:id/et_product_all_price")
+total_price = (MobileBy.ID, "com.ecloud.hobay:id/et_product_all_price")
 # 预付款
-subsist = ("id", "com.ecloud.hobay:id/et_product_price")
+subsist = (MobileBy.ID, "com.ecloud.hobay:id/et_product_price")
 # 库存
-stock = ("id", "com.ecloud.hobay:id/et_product_number")
+stock = (MobileBy.ID, "com.ecloud.hobay:id/et_product_number")
 # 限购数量
-limit_quantity = ("id", "com.ecloud.hobay:id/et_buy_num")
+limit_quantity = (MobileBy.ID, "com.ecloud.hobay:id/et_buy_num")
 

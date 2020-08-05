@@ -5,16 +5,16 @@
 # @File :GoodDetail_Page.py
 
 import time
+from Common.user_log import UserLog
 from PageLocators.H5.GoodDetail import GoodDetail as GD
 from Common.BasePage import BasePage
 
 
 class GoodDetailPage(BasePage):
 
-
-
     # 顶部商品
     def top_good(self):
+        doc = "选择收货地址-按钮"
         self.get_element(GD.top_good).click()
 
     # 顶部详情
@@ -52,7 +52,7 @@ class GoodDetailPage(BasePage):
     # 购买数量
     def add_munber(self, munber):
         time.sleep(0.5)
-        self.logger.info("输入的商品数量是:" + munber)
+        UserLog().info("输入的商品数量是:" + munber)
         self.get_element(GD.add_munber).send_keys(munber)
 
     # +

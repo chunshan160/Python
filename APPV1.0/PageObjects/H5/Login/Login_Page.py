@@ -3,6 +3,7 @@
 # @Time :2020/7/20 13:59
 # @Author :春衫
 # @File :Login_Business.py
+import time
 
 from Common.BasePage import BasePage
 from PageLocators.H5.Login.Login import local
@@ -40,24 +41,33 @@ class LoginPage(BasePage):
     #登录
     def login(self, phone,pwd=None, code="666666"):
         # 点击输入框
+        time.sleep(1)
         self.click_phone_box()
         # 输入手机号
+        time.sleep(1)
         self.send_phone_number(phone)
         # 点击下一步
+        time.sleep(1)
         self.click_next()
         # 不输入密码，就用通用验证码登录
         if pwd == None:
             # 切换验证码登录
+            time.sleep(1)
             self.switch_code()
             # 点击输入框
+            time.sleep(1)
             self.click_code_box()
             # 默认666666  传值的话会变
+            time.sleep(1)
             self.send_phone_number(code)
         # 用密码登录
         else:
             # 点击输入框
+            time.sleep(1)
             self.click_pwd_box()
             # 输入密码 默认qaz123
+            time.sleep(1)
             self.send_pwd()
         # 点击登录
+        time.sleep(1)
         self.click_login()

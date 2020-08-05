@@ -32,7 +32,7 @@ class EntityGoodPage(BasePage):
     # 输入商品标题
     def product_title(self, product_title):
         time.sleep(0.5)
-        self.logger.info("输入的商品标题是:" + product_title)
+        UserLog().info("输入的商品标题是:" + product_title)
         self.get_element(EG.product_title).send_keys(product_title)
 
     # 点击商品描述
@@ -43,7 +43,7 @@ class EntityGoodPage(BasePage):
     # 输入商品详情
     def product_description(self, product_description):
         time.sleep(0.5)
-        self.logger.info("输入商品详情:" + product_description)
+        UserLog().info("输入商品详情:" + product_description)
         self.get_element(EG.product_description).send_keys(product_description)
 
     # 商品详情页-上传商品图片
@@ -99,12 +99,12 @@ class EntityGoodPage(BasePage):
     # 进入商品规格页面，输入属性
     def property_1(self, property_1):
         time.sleep(0.5)
-        self.logger.info("输入的商品规格是:" + property_1)
+        UserLog().info("输入的商品规格是:" + property_1)
         self.get_element(EG.property_1).send_keys(property_1)
 
     def property_2(self, property_2):
         time.sleep(0.5)
-        self.logger.info("输入的商品属性是:" + property_2)
+        UserLog().info("输入的商品属性是:" + property_2)
         self.get_element(EG.property_2).send_keys(property_2)
 
     # 上传规格图片
@@ -125,19 +125,19 @@ class EntityGoodPage(BasePage):
     # 进货价
     def purchase_price(self, purchase_price):
         time.sleep(0.5)
-        self.logger.info("输入的商品进货价是:" + purchase_price)
+        UserLog().info("输入的商品进货价是:" + purchase_price)
         self.get_element(EG.purchase_price).send_keys(purchase_price)
 
     # 出售价
     def sell_price(self, sell_price):
         time.sleep(0.5)
-        self.logger.info("输入的商品出售价是:" + sell_price)
+        UserLog().info("输入的商品出售价是:" + sell_price)
         self.get_element(EG.sell_price).send_keys(sell_price)
 
     # 库存
     def stock(self, stock):
         time.sleep(0.5)
-        self.logger.info("输入的商品库存是:" + stock)
+        UserLog().info("输入的商品库存是:" + stock)
         self.get_element(EG.stock).send_keys(stock)
 
     # 确定
@@ -158,13 +158,13 @@ class EntityGoodPage(BasePage):
     # 限购数量
     def limit_quantity(self, limit_quantity):
         time.sleep(0.5)
-        self.logger.info("输入的商品限购数量是:" + limit_quantity)
+        UserLog().info("输入的商品限购数量是:" + limit_quantity)
         self.get_element(EG.limit_quantity).send_keys(limit_quantity)
 
     # 品牌
     def brand(self, brand):
         time.sleep(0.5)
-        self.logger.info("输入的商品品牌是:" + brand)
+        UserLog().info("输入的商品品牌是:" + brand)
         self.get_element(EG.brand).send_keys(brand)
 
     # 生产日期

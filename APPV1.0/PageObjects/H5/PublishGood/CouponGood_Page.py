@@ -30,13 +30,13 @@ class CouponGoodPage(BasePage):
     # 输入商品标题
     def product_title(self, product_title):
         time.sleep(0.5)
-        self.logger.info("输入的商品标题是:" + product_title)
+        UserLog().info("输入的商品标题是:" + product_title)
         self.get_element(CG.product_title).send_keys(product_title)
 
     # 输入商品详情
     def product_description(self, product_description):
         time.sleep(0.5)
-        self.logger.info("输入商品详情:" + product_description)
+        UserLog().info("输入商品详情:" + product_description)
         self.get_element(CG.product_description).send_keys(product_description)
 
     # 选择分类
@@ -67,19 +67,19 @@ class CouponGoodPage(BasePage):
     # 商品总价
     def total_price(self, total_price):
         time.sleep(0.5)
-        self.logger.info("输入的商品总价是:" + total_price)
+        UserLog().info("输入的商品总价是:" + total_price)
         self.get_element(CG.total_price).send_keys(total_price)
 
     # 商品库存
     def stock(self, stock):
         time.sleep(0.5)
-        self.logger.info("输入的商品库存是:" + stock)
+        UserLog().info("输入的商品库存是:" + stock)
         self.get_element(CG.stock).send_keys(stock)
 
     # 限购数量
     def limit_quantity(self, limit_quantity):
         time.sleep(0.5)
-        self.logger.info("输入的商品限购数量是:" + limit_quantity)
+        UserLog().info("输入的商品限购数量是:" + limit_quantity)
         self.get_element(CG.limit_quantity).send_keys(limit_quantity)
 
     #发布本地生活
