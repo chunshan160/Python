@@ -29,49 +29,49 @@ class GoodDetailPage(BasePage):
 
     # 店铺
     def shop(self, text=""):
-        doc = text + "点击【店铺】按钮"
+        doc = text + "点击【店铺】按钮-"
         self.click_element(GD.shop, doc=doc)
 
     # 收藏
     def collection(self, text=""):
-        doc = text + "点击【收藏】按钮"
+        doc = text + "点击【收藏】按钮-"
         self.click_element(GD.collection, doc=doc)
 
     # 聊天
     def chat(self, text=""):
-        doc = text + "点击【聊天】按钮"
+        doc = text + "点击【聊天】按钮-"
         self.click_element(GD.chat, doc=doc)
 
     # 加入购物车
     def add_car(self, text=""):
-        doc = text + "点击【加入购物车】按钮"
+        doc = text + "点击【加入购物车】按钮-"
         self.click_element(GD.add_car, doc=doc)
 
     # 立即购买
     def buy_now(self, text=""):
-        doc = text + "点击【立即购卖】按钮"
+        doc = text + "点击【立即购卖】按钮-"
         self.click_element(GD.buy_now, doc=doc)
 
     # -
     def less(self, text=""):
-        doc = text + "点击数量【-】按钮"
+        doc = text + "点击数量【-】按钮-"
         self.click_element(GD.less, doc=doc)
 
     # 购买数量
     def add_munber(self, munber, text=""):
-        doc = text + "点击【购买数量】输入框"
+        doc = text + "点击【购买数量】输入框-"
         time.sleep(0.5)
         UserLog().info("输入的商品数量是:" + munber)
         self.input_text(GD.add_munber, munber, doc=doc)
 
     # +
     def add(self, text=""):
-        doc = text + "点击数量【+】按钮"
+        doc = text + "点击数量【+】按钮-"
         self.click_element(GD.add, doc=doc)
 
     # 确定
     def confirm(self, text=""):
-        doc = text + "点击【确定】按钮"
+        doc = text + "点击【确定】按钮-"
         self.click_element(GD.confirm, doc=doc)
 
     # 购买商品

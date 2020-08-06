@@ -11,20 +11,23 @@ from Common.BasePage import BasePage
 class IndexPage(BasePage):
 
     # 首页定位
-    def location(self,doc=""):
+    def location(self,text=""):
+        doc=text+"点击【定位】按钮-"
         self.click_element(Index.location, doc=doc)
 
     # 搜索框
-    def search(self,doc=""):
-        doc = "首页-搜索框"
+    def search(self,text=""):
+        doc = text+"点击【搜索栏】-"
         self.click_element(Index.search, doc=doc)
 
     # 易购车
-    def shopping_car(self,doc=""):
+    def shopping_car(self,text=""):
+        doc = text+"点击【易购车】按钮-"
         self.click_element(Index.shopping_car, doc=doc)
 
     # 扫一扫
-    def scan_code(self,doc=""):
+    def scan_code(self,text=""):
+        doc = text + "点击【扫一扫】按钮-"
         self.click_element(Index.scan_code, doc=doc)
 
     # 首页询问城市定位

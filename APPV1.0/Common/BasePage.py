@@ -19,6 +19,7 @@ from appium.webdriver.common.touch_action import TouchAction
 from Common.project_path import error_image
 from Common.user_log import UserLog
 
+
 class BasePage:
 
     def __init__(self, driver):
@@ -88,7 +89,7 @@ class BasePage:
             self.save_screenshot(doc)
             raise
 
-    #等待元素可点击
+    # 等待元素可点击
     def wait_eleclickable(self, locator, times=30, poll_frequency=0.5, doc=""):
         try:
             UserLog().info(f"等待元素{locator}可点击")
@@ -164,7 +165,7 @@ class BasePage:
             start_y = size["height"] * 0.9
             end_x = size["width"] * 0.5
             end_y = size["height"] * 0.1
-            UserLog().info(f"上滑：从({start_x,start_y})--->({end_x,end_y})")
+            UserLog().info(f"上滑：从({start_x, start_y})--->({end_x, end_y})")
             # 向上滑动:X轴不变，Y轴从大到小。
             self.driver.swipe(start_x, start_y, end_x, end_y, 200)
         except:
@@ -220,9 +221,9 @@ class BasePage:
             raise
 
     # 获取整个屏幕大小
-    def get_size(self,doc=""):
+    def get_size(self, doc=""):
         try:
-            size=self.driver.get_window_size()
+            size = self.driver.get_window_size()
             UserLog().info(f"当前手机屏幕尺寸是：{size}")
             return size
         except:
@@ -232,7 +233,7 @@ class BasePage:
             raise
 
     # toast获取
-    def get_toastMsg(self, text,doc=""):
+    def get_toastMsg(self, text, doc=""):
         # 1、xpath表达式 文本匹配
         locator = '//*[contains(@text,"{}")]'.format(text)
         # 等待的时候，要用元素存在的条件。不能用元素可见的条件
@@ -253,7 +254,7 @@ class BasePage:
         file_Path = error_image + f"\\{time1}"
         if not os.path.exists(file_Path):
             os.makedirs(file_Path)
-        file_name =file_Path+f"\\{name+time2}.png"
+        file_name = file_Path + f"\\{name + time2}.png"
         self.driver.save_screenshot(file_name)
         UserLog().info(f"截取网页成功，文件路径为为：{file_name}")
 
@@ -286,7 +287,8 @@ class BasePage:
             raise
 
     # 输入手机号
-    def send_phone_number(self, number, doc=""):
+    def send_phone_number(self, number, text=""):
+        doc = text + "输入手机号-"
         try:
             list = []
             for i in number:
@@ -311,7 +313,7 @@ class BasePage:
                 elif i == "0":
                     self.driver.keyevent(7)
                 list.append(str(i))
-            num="".join(list)
+            num = "".join(list)
             UserLog().info(f"输入数字是{num}")
         except:
             UserLog().info("输入数字失败")
@@ -319,9 +321,9 @@ class BasePage:
             self.save_screenshot(doc)
             raise
 
-
     # 输入密码
-    def send_pwd(self, doc=""):
+    def send_pwd(self, text=""):
+        doc = text + "输入密码-"
         try:
             # 输入密码 默认qaz123
             self.driver.keyevent(45)
@@ -335,6 +337,23 @@ class BasePage:
             # 截图
             self.save_screenshot(doc)
             raise
+
+    # 输入支付密码
+    def pay_password(self, text=""):
+        doc=text+"输入支付密码-"
+        try:
+            self.driver.keyevent(8)
+            self.driver.keyevent(9)
+            self.driver.keyevent(10)
+            self.driver.keyevent(11)
+            self.driver.keyevent(12)
+            self.driver.keyevent(13)
+        except:
+            UserLog().info("输入支付密码失败")
+            # 截图
+            self.save_screenshot(doc)
+            raise
+
 
 if __name__ == '__main__':
     pass

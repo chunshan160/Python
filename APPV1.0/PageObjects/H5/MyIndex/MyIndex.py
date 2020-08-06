@@ -11,5 +11,5 @@ from Common.BasePage import BasePage
 class MyIndexPage(BasePage):
 
     def click_setting(self,text):
-        doc=text+"设置-按钮-"
+        doc=text+"点击【设置】按钮-"
         self.click_element(MyIndex.setting,doc=doc)
