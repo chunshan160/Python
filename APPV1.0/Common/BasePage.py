@@ -109,12 +109,12 @@ class BasePage:
 
     # 点击操作
     def click_element(self, locator, doc=""):
-        # 找元素
-        ele = self.get_element(locator, doc)
-        UserLog().info(f"{doc}点击元素{locator}")
-        # 元素操作
         try:
-            ele.ckick()
+            # 找元素
+            ele = self.get_element(locator, doc)
+            UserLog().info(f"{doc}点击元素{locator}")
+            # 元素操作
+            ele.click()
         except:
             UserLog().info("元素点击操作失败")
             # 截图
@@ -123,10 +123,10 @@ class BasePage:
 
     # 输入操作
     def input_text(self, locator, text, doc=""):
-        ele = self.get_element(locator, doc)
-        # 输入操作
         try:
-            ele.send_locators(text)
+            ele = self.get_element(locator, doc)
+            # 输入操作
+            ele.send_keys(text)
         except:
             UserLog().info("元素输入操作失败")
             # 截图
@@ -220,10 +220,16 @@ class BasePage:
             raise
 
     # 获取整个屏幕大小
-    def get_size(self):
-        size=self.driver.get_window_size()
-        UserLog().info(f"当前手机屏幕尺寸是：{size}")
-        return size
+    def get_size(self,doc=""):
+        try:
+            size=self.driver.get_window_size()
+            UserLog().info(f"当前手机屏幕尺寸是：{size}")
+            return size
+        except:
+            UserLog().info("获取屏幕大小失败")
+            # 截图
+            self.save_screenshot(doc)
+            raise
 
     # toast获取
     def get_toastMsg(self, text,doc=""):
@@ -315,14 +321,20 @@ class BasePage:
 
 
     # 输入密码
-    def send_pwd(self):
-        # 输入密码 默认qaz123
-        self.driver.keyevent(45)
-        self.driver.keyevent(29)
-        self.driver.keyevent(54)
-        self.driver.keyevent(8)
-        self.driver.keyevent(9)
-        self.driver.keyevent(10)
+    def send_pwd(self, doc=""):
+        try:
+            # 输入密码 默认qaz123
+            self.driver.keyevent(45)
+            self.driver.keyevent(29)
+            self.driver.keyevent(54)
+            self.driver.keyevent(8)
+            self.driver.keyevent(9)
+            self.driver.keyevent(10)
+        except:
+            UserLog().info("输入密码失败")
+            # 截图
+            self.save_screenshot(doc)
+            raise
 
 if __name__ == '__main__':
     pass

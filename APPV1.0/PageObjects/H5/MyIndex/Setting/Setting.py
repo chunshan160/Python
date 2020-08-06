@@ -11,6 +11,7 @@ from Common.BasePage import BasePage
 
 class SettingPage(BasePage):
 
-    def exit(self):
+    def exit(self,text):
+        doc=text+"退出-按钮"
         time.sleep(0.5)
-        self.get_element(Setting.exit).click()
+        self.click_element(Setting.exit,doc=doc)

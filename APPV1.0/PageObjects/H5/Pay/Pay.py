@@ -12,39 +12,48 @@ class PayPage(BasePage):
 
     # 更换支付方式
     def replace_pay(self):
-        self.get_element(Pay.replace_pay).click()
+        doc = "更换支付方式-按钮"
+        self.click_element(Pay.replace_pay,doc=doc)
 
     # 易贝
     def cbp_pay(self):
-        self.get_element(Pay.cbp_pay).click()
+        doc = "易贝-选项"
+        self.click_element(Pay.cbp_pay,doc=doc)
 
     # 易贝券
     def voucher_pay(self):
-        self.get_element(Pay.voucher_pay).click()
+        doc = "易贝券-选项"
+        self.click_element(Pay.voucher_pay,doc=doc)
 
     # 抵工资
     def wages_pay(self):
-        self.get_element(Pay.wages_pay).click()
+        doc = "抵工资-选项"
+        self.click_element(Pay.wages_pay,doc=doc)
 
     #家人购
     def family_pay(self):
-        self.get_element(Pay.family_pay).click()
+        doc = "家人购-选项"
+        self.click_element(Pay.family_pay,doc=doc)
 
     # 现金
     def cash_pay(self):
-        self.get_element(Pay.cash_pay).click()
+        doc = "现金-选项"
+        self.click_element(Pay.cash_pay,doc=doc)
 
     # 微信
     def wechat_pay(self):
-        self.get_element(Pay.wechat_pay).click()
+        doc = "微信-选项"
+        self.click_element(Pay.wechat_pay,doc=doc)
 
     # 支付宝
     def alibaba_pay(self):
-        self.get_element(Pay.alibaba_pay).click()
+        doc = "支付宝-选项"
+        self.click_element(Pay.alibaba_pay,doc=doc)
 
     # 确认支付
     def confirm_pay(self):
-        self.get_element(Pay.confirm_pay).click()
+        doc = "确认支付-按钮"
+        self.click_element(Pay.confirm_pay,doc=doc)
 
     # 易贝-支付
     def click_cbp_pay(self):

@@ -19,32 +19,32 @@ class PaySuccessPage(BasePage):
 
     # 加入焕商
     def join(self):
-        self.get_element(join).click()
+        self.click_element(join)
 
     # 关闭弹窗
     def close_windows(self):
-        self.get_element(close_pop_ups).click()
+        self.click_element(close_pop_ups)
 
     # 支付成功
     def title_text(self):
-        return self.get_element(title).text
+        return self.get_text(title)
 
     # 支付方式
     def pay_method_text(self):
-        return self.get_element(pay_method).text
+        return self.get_text(pay_method)
 
     # 支付金额
     def pay_money_text(self):
-        return self.get_element(pay_money).text
+        return self.get_text(pay_money)
 
     # 支付服务费
     def pay_service_text(self):
-        return self.get_element(pay_service).text
+        return self.get_text(pay_service)
 
     # 查看订单
     def look_order(self):
-        self.get_element(look_order).click()
+        self.click_element(look_order)
 
     # 返回首页
     def return_home(self):
-        self.get_element(return_home).click()
+        self.click_element(return_home)

@@ -13,9 +13,9 @@ class PublishGoodCommon(BasePage):
     # 立即上架
     def submit(self):
         time.sleep(0.5)
-        self.get_element(Common.submit).click()
+        self.click_element(Common.submit)
 
     # 放入仓库
     def storage(self):
         time.sleep(0.5)
-        self.get_element(Common.storage).click()
+        self.click_element(Common.storage)

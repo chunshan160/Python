@@ -10,5 +10,6 @@ from Common.BasePage import BasePage
 
 class MyIndexPage(BasePage):
 
-    def click_setting(self):
-        self.get_element(MyIndex.setting).click()
+    def click_setting(self,text):
+        doc=text+"设置-按钮-"
+        self.click_element(MyIndex.setting,doc=doc)

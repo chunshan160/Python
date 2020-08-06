@@ -6,7 +6,6 @@
 # @Software: PyCharm
 
 import pytest
-
 from PageObjects.Comm_Bus import CommBus
 from TestData.H5.Login_Data import Success_data
 from PageObjects.H5.Login.Login_Page import LoginPage as LP
@@ -18,10 +17,11 @@ class TestLogin:
     @pytest.mark.parametrize("data", Success_data)  # 替代ddt
     # 正常用例 -登录成功
     def test_1_Login_success(self,first_start_app,data):
+        doc="正常用例-登录成功-"
         # 步骤 输入手机号码：XXX，点击下一步
-        LP(first_start_app).login(data["phone"],data["password"])
+        LP(first_start_app).login(data["phone"],data["password"],doc=doc)
         # 断言
-        login_status = CommBus(first_start_app).get_loginStatus()
+        login_status = CommBus(first_start_app).get_loginStatus(doc)
         assert login_status==True
 
 
