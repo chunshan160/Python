@@ -10,12 +10,7 @@ from appium.webdriver.common.mobileby import MobileBy
 发布商品-实物商品
 '''
 
-# 商品主图
-product_image = (MobileBy.ID, "com.ecloud.hobay:id/iv_add_pic")
-# 选择图片
-check_image = (MobileBy.ID, "com.ecloud.hobay:id/cb_check")
-# 点击确定
-btn_ok = (MobileBy.ID, "com.ecloud.hobay:id/btn_ok")
+
 # 商品标题
 product_title = (MobileBy.ID, "com.ecloud.hobay:id/et_product_title")
 # 商品描述

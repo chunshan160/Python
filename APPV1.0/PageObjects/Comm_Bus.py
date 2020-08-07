@@ -20,7 +20,7 @@ class CommBus(BasePage):
         time.sleep(7)
         # 如果没有找到首页的元素/或者不包含MainActivity,那么就是在欢迎页面
         curAct = self.driver.current_activity
-        if curAct.find("MainActivity") == -1:
+        if curAct.find("HomeActivity") == -1:
             # 点击同意
             self.wait_eleVisible(welcome.yes, doc=doc)
             self.click_element(welcome.yes, doc=doc)
@@ -49,7 +49,7 @@ class CommBus(BasePage):
         except:
             return False
 
-    # 导航栏
+    # 我的
     def click_myindex(self,text=""):
         doc = text+"点击底部导航栏-我的-"
         time.sleep(1)

@@ -65,7 +65,7 @@ class BasePage:
                     datetime.datetime.fromtimestamp(end_time) - datetime.datetime.fromtimestamp(start_time)).seconds
             UserLog().info(f"等待时长为：{time_interval}")
         except:
-            UserLog().info("等待元素可见失败")
+            UserLog().info("等待元素可见失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -84,7 +84,7 @@ class BasePage:
                     datetime.datetime.fromtimestamp(end_time) - datetime.datetime.fromtimestamp(start_time)).seconds
             UserLog().info(f"等待时长为：{time_interval}")
         except:
-            UserLog().info("等待元素存在失败")
+            UserLog().info("等待元素存在失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -103,7 +103,7 @@ class BasePage:
                     datetime.datetime.fromtimestamp(end_time) - datetime.datetime.fromtimestamp(start_time)).seconds
             UserLog().info(f"等待时长为：{time_interval}")
         except:
-            UserLog().info("等待元素可点击失败")
+            UserLog().info("等待元素可点击失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -117,7 +117,7 @@ class BasePage:
             # 元素操作
             ele.click()
         except:
-            UserLog().info("元素点击操作失败")
+            UserLog().info("元素点击操作失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -129,7 +129,7 @@ class BasePage:
             # 输入操作
             ele.send_keys(text)
         except:
-            UserLog().info("元素输入操作失败")
+            UserLog().info("元素输入操作失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -141,7 +141,7 @@ class BasePage:
         try:
             return ele.text
         except:
-            UserLog().info("获取元素文本内容失败")
+            UserLog().info("获取元素文本内容失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -153,7 +153,7 @@ class BasePage:
         try:
             return ele.get_attribute(attr)
         except:
-            UserLog().info("获取元素的属性失败")
+            UserLog().info("获取元素的属性失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -169,7 +169,7 @@ class BasePage:
             # 向上滑动:X轴不变，Y轴从大到小。
             self.driver.swipe(start_x, start_y, end_x, end_y, 200)
         except:
-            UserLog().info("上滑失败")
+            UserLog().info("上滑失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -185,7 +185,7 @@ class BasePage:
             # 向下滑动:X轴不变，Y轴从小到大。
             self.driver.swipe(start_x, start_y, end_x, end_y, 200)
         except:
-            UserLog().info("下滑失败")
+            UserLog().info("下滑失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -200,7 +200,7 @@ class BasePage:
             # 左滑:Y轴不变，X轴从大到小。
             self.driver.swipe(start_x, start_y, end_x, end_y, 200)
         except:
-            UserLog().info("左滑失败")
+            UserLog().info("左滑失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -215,7 +215,7 @@ class BasePage:
             # 右滑:Y轴不变，X轴从小到大。
             self.driver.swipe(end_x, end_y, start_x, start_y, 200)
         except:
-            UserLog().info("右滑失败")
+            UserLog().info("右滑失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -227,7 +227,7 @@ class BasePage:
             UserLog().info(f"当前手机屏幕尺寸是：{size}")
             return size
         except:
-            UserLog().info("获取屏幕大小失败")
+            UserLog().info("获取屏幕大小失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -258,8 +258,8 @@ class BasePage:
         self.driver.save_screenshot(file_name)
         UserLog().info(f"截取网页成功，文件路径为为：{file_name}")
 
-    # 上传图片
-    def upload_file(self, filepath):
+    # web上传图片
+    def web_upload_image(self, filepath):
         # 一级窗口
         dialog = win32gui.FindWindow("#32770", "打开")
         # 二级窗口
@@ -275,13 +275,31 @@ class BasePage:
         # 点击打开按钮 上传文件
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
 
+    #app上传图片
+    def app_upload_image(self,upload_locator,choose_locator,ok_locator,doc=""):
+        try:
+            # 点击上传主图
+            time.sleep(0.5)
+            self.click_element(upload_locator)
+            # 选择图片
+            time.sleep(0.5)
+            self.click_element(choose_locator)
+            # 点击确定
+            time.sleep(0.5)
+            self.click_element(ok_locator)
+        except:
+            UserLog().info("上传图片失败!")
+            # 截图
+            self.save_screenshot(doc)
+            raise
+
     # 点击坐标
     def touch(self, x, y, doc=""):
         try:
             UserLog().info(f"点击坐标{(x, y)}")
             TouchAction(self.driver).tap(x=x, y=y).perform()
         except:
-            UserLog().info("点击坐标失败")
+            UserLog().info("点击坐标失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -316,7 +334,7 @@ class BasePage:
             num = "".join(list)
             UserLog().info(f"输入数字是{num}")
         except:
-            UserLog().info("输入数字失败")
+            UserLog().info("输入数字失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -333,7 +351,7 @@ class BasePage:
             self.driver.keyevent(9)
             self.driver.keyevent(10)
         except:
-            UserLog().info("输入密码失败")
+            UserLog().info("输入密码失败!")
             # 截图
             self.save_screenshot(doc)
             raise
@@ -349,7 +367,7 @@ class BasePage:
             self.driver.keyevent(12)
             self.driver.keyevent(13)
         except:
-            UserLog().info("输入支付密码失败")
+            UserLog().info("输入支付密码失败!")
             # 截图
             self.save_screenshot(doc)
             raise

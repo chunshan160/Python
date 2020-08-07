@@ -4,7 +4,5 @@
 # @Author :春衫
 # @File :ceshi1.py
 
-a=[1,2,3,4,5,6]
-b=[str(i) for i in a]
-c="".join(b)
-print(c)
+lalla=".function.main.HomeActivity"
+print(lalla.find("MainActivity"))

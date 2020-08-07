@@ -19,7 +19,7 @@ class TestLogin:
     def test_1_Login_success(self,first_start_app,data):
         doc="正常用例-登录成功-"
         # 步骤 输入手机号码：XXX，点击下一步
-        LP(first_start_app).login(data["phone"],data["password"],doc=doc)
+        LP(first_start_app).login(data["phone"],data["password"],text=doc)
         # 断言
         login_status = CommBus(first_start_app).get_loginStatus(doc)
         assert login_status==True
@@ -61,4 +61,4 @@ class TestLogin:
     #     cls.assertTrue(cls.sp.RetrievePassword_msg(), data["check"])
 
 if __name__ == '__main__':  # 如果其他的类调用的这个类的时候他就会自动忽略掉这个函数，他是为了测试自身的类用的
-        pytest.main(["-s","test_login.py"])
+    pytest.main(["-s","test_login.py"])

@@ -1,0 +1,20 @@
+2020-08-07 14:02:51,172 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-07 14:03:21,997 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败!
+2020-08-07 14:03:23,373 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-07\通用前置-处理欢迎页面-2020-08-07-14-03-21.png
+2020-08-07 14:04:52,955 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-07 14:05:23,283 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败!
+2020-08-07 14:05:24,426 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-07\通用前置-处理欢迎页面-2020-08-07-14-05-23.png
+2020-08-07 14:18:47,232 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-07 14:18:48,130 - INFO - user_log.py - 春衫 - 日志信息:通用前置-获取当前app的登陆状态-点击元素('id', 'com.ecloud.hobay:id/rb_me')
+2020-08-07 14:18:48,708 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_setting
+2020-08-07 14:18:49,611 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_setting
+2020-08-07 14:18:50,110 - INFO - user_log.py - 春衫 - 日志信息:通用前置-点击【设置】按钮-点击元素('id', 'com.ecloud.hobay:id/tv_setting')
+2020-08-07 14:18:50,689 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_exit
+2020-08-07 14:18:51,310 - INFO - user_log.py - 春衫 - 日志信息:通用前置-点击【退出】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_exit')
+2020-08-07 14:20:52,853 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-07 14:20:53,010 - INFO - user_log.py - 春衫 - 日志信息:通用前置-获取当前app的登陆状态-点击元素('id', 'com.ecloud.hobay:id/rb_me')
+2020-08-07 14:20:53,580 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_setting
+2020-08-07 14:20:54,209 - INFO - user_log.py - 春衫 - 日志信息:没有找到这个元素
+2020-08-07 14:20:54,790 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-07\通用前置-获取当前app的登陆状态-2020-08-07-14-20-54.png
+2020-08-07 14:20:55,791 - INFO - user_log.py - 春衫 - 日志信息:点击坐标(440, 775)
+2020-08-07 14:20:55,792 - INFO - user_log.py - 春衫 - 日志信息:点击坐标失败!

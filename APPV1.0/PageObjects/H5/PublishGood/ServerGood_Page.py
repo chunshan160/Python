@@ -14,19 +14,6 @@ from Common.BasePage import BasePage
 # 发布商企服务
 class ServicesGoodPage(BasePage):
 
-
-    # 上传图片
-    def upload_image(self):
-        self.click_element(SG.product_image).click()
-
-    # 选择图片
-    def check_image(self):
-        self.click_element(SG.check_image).click()
-
-    # 点击确定
-    def btn_ok(self):
-        self.click_element(SG.btn_ok).click()
-
     # 输入商品标题
     def product_title(self, product_title):
         time.sleep(0.5)
@@ -76,7 +63,7 @@ class ServicesGoodPage(BasePage):
         self.input_text(SG.limit_quantity,limit_quantity)
 
     # 发布商企服务商品
-    def publish_services_good(self, product_title, product_description, total_price, subsist, stock, limit_quantity):
+    def services_good_information(self, product_title, product_description, total_price, subsist, stock, limit_quantity):
         # 上传主图
         self.upload_image()
         # 选择图片
