@@ -6,11 +6,12 @@
 
 import pytest
 from Common.BaseDriver import BaseDriver
+from Common.BasePage import BasePage
 from PageObjects.Comm_Bus import CommBus
 from PageObjects.H5.MyIndex.MyIndex import MyIndexPage
 from PageObjects.H5.MyIndex.Setting.Setting import SettingPage
-from PageObjects.H5.Login.Login_Page import LoginPage as LP
-from TestData.H5.Login_Data import Success_data
+from PageLocators.H5.SystemPoint import PublishGoodOK as PGOK
+
 
 params=["MI 8"]
 
@@ -32,7 +33,6 @@ def first_start_app(request):
 @pytest.fixture(params=params)
 def open_app(request,data):
     doc = "通用前置-"
-    # data=Success_data[0]
     # 准备服务器参数，与appium server进行连接。
     driver = BaseDriver().base_driver(device=request.param)
     # 1、 要不要判断欢迎页面是否存在?
@@ -43,8 +43,11 @@ def open_app(request,data):
     if login_status == True:
         MyIndexPage(driver).click_setting(text=doc)
         SettingPage(driver).exit(text=doc)
-    LP(first_start_app).login(data["phone"], data["password"], text=doc)
     yield driver
+    # BasePage(driver).get_element(PGOK.good_audit_btn).click()
+    # CommBus(driver).click_myindex(text=doc)
+    # MyIndexPage(driver).click_setting(text=doc)
+    # SettingPage(driver).exit(text=doc)
 
 
 

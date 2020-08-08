@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/8/3 13:39
 # @Author :春衫
-# @File :Common.py
+# @File :PubilcGoodCommon.py
 
 from appium.webdriver.common.mobileby import MobileBy
 

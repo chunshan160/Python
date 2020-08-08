@@ -2,7 +2,7 @@
 # @Time    : 2019/12/22 14:54
 # @Author  : 春衫
 # @Email   : 1605936478@qq.com
-# @File    : test_login.py
+# @File    : pytest.ini
 # @Software: PyCharm
 
 import pytest
@@ -61,4 +61,4 @@ class TestLogin:
     #     cls.assertTrue(cls.sp.RetrievePassword_msg(), data["check"])
 
 if __name__ == '__main__':  # 如果其他的类调用的这个类的时候他就会自动忽略掉这个函数，他是为了测试自身的类用的
-    pytest.main(["-s","test_login.py"])
+    pytest.main(["-s","pytest.ini"])

@@ -4,5 +4,6 @@
 # @Author :春衫
 # @File :ceshi1.py
 
-lalla=".function.main.HomeActivity"
-print(lalla.find("MainActivity"))
+a=True
+if a:
+    print("lalala")

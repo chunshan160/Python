@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "发布商品功能",
+    "children" : [ {
+      "name" : "发布实物商品",
+      "children" : [ {
+        "name" : "test_1_publish_entity_good[MI 8-data0]",
+        "uid" : "547717f126b455c7",
+        "parentUid" : "9dc0689282ba64585356fc6a2a4290a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1596883445394,
+          "stop" : 1596883461569,
+          "duration" : 16175
+        },
+        "flaky" : false,
+        "parameters" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+      } ],
+      "uid" : "9dc0689282ba64585356fc6a2a4290a5"
+    } ],
+    "uid" : "697b1706f27a66e86cac369d547fceb8"
+  } ]
+}

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "547717f126b455c7",
+  "name" : "test_1_publish_entity_good[MI 8-data0]",
+  "time" : {
+    "start" : 1596883445394,
+    "stop" : 1596883461569,
+    "duration" : 16175
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

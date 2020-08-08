@@ -4,7 +4,7 @@
 #@Author :春衫
 #@File :SubmitReviewOK_Page.py
 
-from PageLocators.H5.SystemPoint.SubmitReviewOK import *
+from PageLocators.H5.SystemPoint.PublishGoodOK import *
 from Common.BasePage import BasePage
 
 

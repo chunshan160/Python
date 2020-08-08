@@ -18,6 +18,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.touch_action import TouchAction
 from Common.project_path import error_image
 from Common.user_log import UserLog
+from PageLocators.H5 import Common
 
 
 class BasePage:
@@ -113,6 +114,20 @@ class BasePage:
         try:
             # 找元素
             ele = self.get_element(locator, doc)
+            UserLog().info(f"{doc}点击元素{locator}")
+            # 元素操作
+            ele.click()
+        except:
+            UserLog().info("元素点击操作失败!")
+            # 截图
+            self.save_screenshot(doc)
+            raise
+
+    # 点击操作
+    def click_elements(self, locator, index, doc=""):
+        try:
+            # 找元素
+            ele = self.get_elements(locator, doc)[index]
             UserLog().info(f"{doc}点击元素{locator}")
             # 元素操作
             ele.click()
@@ -254,7 +269,7 @@ class BasePage:
         file_Path = error_image + f"\\{time1}"
         if not os.path.exists(file_Path):
             os.makedirs(file_Path)
-        file_name = file_Path + f"\\{name + time2}.png"
+        file_name = file_Path + f"\\{time2}-{name}.png"
         self.driver.save_screenshot(file_name)
         UserLog().info(f"截取网页成功，文件路径为为：{file_name}")
 
@@ -275,12 +290,15 @@ class BasePage:
         # 点击打开按钮 上传文件
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
 
-    #app上传图片
-    def app_upload_image(self,upload_locator,choose_locator,ok_locator,doc=""):
+    # app上传图片
+    def app_upload_image(self, upload_locator, choose_locator, ok_locator, doc=""):
         try:
             # 点击上传主图
             time.sleep(0.5)
             self.click_element(upload_locator)
+            # 权限-始终允许
+            if self.ele_if_exist(Common.always_allowed):
+                self.click_element(Common.always_allowed, doc=doc)
             # 选择图片
             time.sleep(0.5)
             self.click_element(choose_locator)
@@ -358,7 +376,7 @@ class BasePage:
 
     # 输入支付密码
     def pay_password(self, text=""):
-        doc=text+"输入支付密码-"
+        doc = text + "输入支付密码-"
         try:
             self.driver.keyevent(8)
             self.driver.keyevent(9)
@@ -371,6 +389,27 @@ class BasePage:
             # 截图
             self.save_screenshot(doc)
             raise
+
+    # # 处理弹窗授权-始终允许
+    # def always_allowed(self, locator, text=""):
+    #     doc = text + "处理弹窗授权-始终允许-"
+    #     try:
+    #         self.click_element(locator, doc=doc)
+    #     except:
+    #         UserLog().info("处理弹窗授权失败!")
+    #         # 截图
+    #         self.save_screenshot(doc)
+    #         raise
+
+    # 判断元素是否存在
+    def ele_if_exist(self, locator):
+        try:
+            self.driver.find_element(*locator)
+            UserLog().info(f"元素{locator}存在")
+            return True
+        except:
+            UserLog().info(f"元素{locator}不存在")
+            return False
 
 
 if __name__ == '__main__':

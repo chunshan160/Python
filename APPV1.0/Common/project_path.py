@@ -30,3 +30,8 @@ error_image=os.path.join(project_path,"Outputs", "Error_Image")
 
 #appium配置
 caps_dir=os.path.join(project_path,"Desired_Caps","Caps.yaml")
+
+allure_report=os.path.join(project_path,"Outputs","report","allure")
+
+# a=f'allure generate {allure_report} -o {allure_report}/html -clean'
+# print(a)

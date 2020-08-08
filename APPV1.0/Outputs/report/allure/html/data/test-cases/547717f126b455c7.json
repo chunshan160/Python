@@ -1,0 +1,134 @@
+{
+  "uid" : "547717f126b455c7",
+  "name" : "test_1_publish_entity_good[MI 8-data0]",
+  "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_1_publish_entity_good",
+  "historyId" : "ad70515ca4665da5915b1049b216c859",
+  "time" : {
+    "start" : 1596883445394,
+    "stop" : 1596883461569,
+    "duration" : 16175
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "open_app",
+    "time" : {
+      "start" : 1596883416416,
+      "stop" : 1596883445393,
+      "duration" : 28977
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登录APP",
+      "time" : {
+        "start" : 1596883445395,
+        "stop" : 1596883461569,
+        "duration" : 16174
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ae876f52e32bedab",
+      "name" : "log",
+      "source" : "ae876f52e32bedab.txt",
+      "type" : "text/plain",
+      "size" : 1084
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "open_app::0",
+    "time" : {
+      "start" : 1596883461569,
+      "stop" : 1596883461569,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "发布商品功能"
+  }, {
+    "name" : "story",
+    "value" : "发布实物商品"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('open_app')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "H5.PublishGood"
+  }, {
+    "name" : "suite",
+    "value" : "test_publish_good"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublishGood"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "7016-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "H5.PublishGood.test_publish_good"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'limit_quantity': ''}"
+  }, {
+    "name" : "open_app",
+    "value" : "'MI 8'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
+  },
+  "source" : "547717f126b455c7.json",
+  "parameterValues" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+}

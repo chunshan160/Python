@@ -17,8 +17,8 @@ product_title = (MobileBy.ID, "com.ecloud.hobay:id/et_product_title")
 product_detail = (MobileBy.ID, "com.ecloud.hobay:id/tv_product_detail")
 # 商品详情内容
 product_description = (MobileBy.CLASS_NAME, "android.widget.EditText")
-# 商品详情图片
-description_image = (MobileBy.ID, "com.ecloud.hobay:id/btn_add_pic")
+# 上传商品详情图片按钮
+description_btn = (MobileBy.ID, "com.ecloud.hobay:id/btn_add_pic")
 # 完成按钮
 finish = (MobileBy.ID, "com.ecloud.hobay:id/btn_complete")
 # 品相

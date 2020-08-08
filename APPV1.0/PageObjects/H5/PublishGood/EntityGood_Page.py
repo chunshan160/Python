@@ -6,7 +6,9 @@
 
 import time
 from Common.user_log import UserLog
-from PageLocators.H5.PubilcGood import EntityGood as EG, Common
+from PageLocators.H5 import Common
+from PageLocators.H5.PubilcGood import EntityGood as EG
+from PageLocators.H5.PubilcGood import PubilcGoodCommon as PGCommon
 from Common.BasePage import BasePage
 
 
@@ -30,14 +32,14 @@ class EntityGoodPage(BasePage):
     def product_description(self, product_description, text=""):
         doc = text + "输入商品详情-"
         time.sleep(0.5)
-        UserLog().info("输入商品详情:" + product_description)
         self.input_text(EG.product_description, product_description, doc=doc)
+        UserLog().info("输入商品详情:" + product_description)
 
     # 商品详情页-上传商品图片
     def description_image(self, text=""):
         doc = text + "商品详情页-点击【上传商品图片】按钮-"
         time.sleep(0.5)
-        self.click_element(EG.description_image, doc=doc)
+        self.click_element(EG.description_btn, doc=doc)
 
     # 点击完成，回到商品详情页
     def finish(self, text=""):
@@ -66,14 +68,14 @@ class EntityGoodPage(BasePage):
     # 选择二级分类
     def second_categpry(self, text=""):
         doc = text + "点击【二级分类】选项-"
-        time.sleep(0.5)
-        self.click_element(EG.second_categpry, doc=doc)
+        time.sleep(1)
+        self.click_elements(EG.second_categpry,0, doc=doc)
 
     # 选择三级分类
     def third_categpry(self, text=""):
         doc = text + "选择【三级分类】选项-"
         time.sleep(0.5)
-        self.click_element(EG.third_categpry, doc=doc)
+        self.click_elements(EG.third_categpry,0, doc=doc)
 
     # 点击商品类型
     def product_type(self, text=""):
@@ -85,7 +87,7 @@ class EntityGoodPage(BasePage):
     def product_type_select(self, text=""):
         doc = text + "选择【商品类型】选项-"
         time.sleep(0.5)
-        self.click_element(EG.product_type_select, doc=doc)
+        self.click_elements(EG.product_type_select,0, doc=doc)
 
     # 点击规格
     def specification(self, text=""):
@@ -162,7 +164,7 @@ class EntityGoodPage(BasePage):
     def fare_manner(self, text=""):
         doc = text + "选择【包邮】选项-"
         time.sleep(0.5)
-        self.click_element(EG.fare_manner, doc=doc)
+        self.click_elements(EG.fare_manner,0, doc=doc)
 
     # 限购数量
     def limit_quantity(self, limit_quantity, text=""):
@@ -220,17 +222,17 @@ class EntityGoodPage(BasePage):
 
     # 发布实物商品
     def entity_good_information(self, product_title, product_description, property_1, property_2, purchase_price,
-                            sell_price, stock, limit_quantity, text=""):
+                                sell_price, stock, limit_quantity, text=""):
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(Common.product_image, Common.check_image, Common.btn_ok, doc=text)
+        self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok, doc=text)
         # 输入商品标题
         self.product_title(product_title, text)
         # # 点击商品描述
-        # self.product_detail()
+        self.product_detail()
         # 输入商品详情
         self.product_description(product_description, text="")
         # 商品详情页上传商品
-        self.app_upload_image(EG.description_image, Common.check_image, Common.btn_ok, doc=text)
+        self.app_upload_image(EG.description_btn, PGCommon.check_image, PGCommon.btn_ok, doc=text)
         # 点击完成，回到商品详情页
         self.finish(text)
         # 点击品相
@@ -270,5 +272,3 @@ class EntityGoodPage(BasePage):
         self.fare(text)
         # 运费类型
         self.fare_manner(text)
-        # 限购数量
-        self.limit_quantity(limit_quantity, text)

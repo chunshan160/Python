@@ -7,7 +7,7 @@
 import time
 from Common.user_log import UserLog
 from PageLocators.H5.PubilcGood import CouponGood as CG
-from PageLocators.H5.PubilcGood import Common
+from PageLocators.H5.PubilcGood import PubilcGoodCommon
 from Common.BasePage import BasePage
 
 
@@ -82,7 +82,7 @@ class CouponGoodPage(BasePage):
     # 发布本地生活
     def coupon_good_information(self, product_title, product_description, total_price, stock, limit_quantity, text=""):
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(Common.product_image,Common.check_image,Common.btn_ok,doc=text)
+        self.app_upload_image(PubilcGoodCommon.product_image, PubilcGoodCommon.check_image, PubilcGoodCommon.btn_ok, doc=text)
         # 输入商品标题
         self.product_title(product_title, text)
         # 输入商品详情
