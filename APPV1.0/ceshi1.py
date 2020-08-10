@@ -4,6 +4,14 @@
 # @Author :春衫
 # @File :ceshi1.py
 
-a=True
-if a:
-    print("lalala")
+
+from appium.webdriver.common.mobileby import MobileBy
+
+a=(MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
+# 匹配文本来处理表达式
+def match_text(locator,text):
+    new_locator=(locator[0],locator[1].format(text))
+    return new_locator
+
+b=match_text(a,"lala")
+print(b)

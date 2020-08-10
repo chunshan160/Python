@@ -32,6 +32,16 @@ check_image = (MobileBy.ID, "com.ecloud.hobay:id/cb_check")
 btn_ok = (MobileBy.ID, "com.ecloud.hobay:id/btn_ok")
 # 立即上架
 submit = (MobileBy.ID, "com.ecloud.hobay:id/btn_immediately_publish")
+
+
+# 分类
+category = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_type")
+# 二级分类
+second_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_list_name")
+# 三级分类
+third_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_show_name")
+
+
 # 放入仓库
 storage = (MobileBy.ID, "com.ecloud.hobay:id/btn_into_warehouse")
 # 错误提示

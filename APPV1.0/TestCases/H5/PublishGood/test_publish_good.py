@@ -11,12 +11,12 @@ from PageObjects.Comm_Bus import CommBus
 from TestData.H5.Publish_Data import *
 from PageObjects.H5.PublishGood.Common import PublishGoodCommon
 from PageObjects.H5.PublishGood.EntityGood_Page import EntityGoodPage
+from PageObjects.H5.PublishGood.CouponGood_Page import CouponGoodPage
+from PageObjects.H5.PublishGood.ServerGood_Page import ServicesGoodPage
 from PageObjects.H5.Login.Login_Page import LoginPage
 from Common.BasePage import BasePage
 from PageLocators.H5.SystemPoint import PublishGoodOK as PGOK
 from Common.project_path import *
-
-
 
 
 @allure.feature('发布商品功能')
@@ -30,58 +30,78 @@ class TestPublishGood:
         doc = "测试发布实物商品-"
         with allure.step("登录APP"):
             LoginPage(open_app).login("13724765586", "qaz123", text=doc)
-        # with allure.step("首页点击发布商品"):
-        #     CommBus(open_app).click_publish_good()
-        #     time.sleep(1)
-        # with allure.step("选择发布实物商品"):
-        #     PublishGoodCommon(open_app).publish_entity_good()
-        #     time.sleep(1)
-        # with allure.step("发布实物商品"):
-        #     EntityGoodPage(open_app).entity_good_information(data["product_title"], data["product_description"],
-        #                                                      data["property_1"],
-        #                                                      data["property_2"], data["purchase_price"],
-        #                                                      data["sell_price"], data["stock"],
-        #                                                      data["limit_quantity"])
-        # with allure.step("立即上架"):
-        #     PublishGoodCommon(open_app).submit()
-        # with allure.step("断言：立即上架后系统提示商品审核中"):
-        #     text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
-        #     assert text=="商品审核中"
+        with allure.step("首页点击发布商品"):
+            CommBus(open_app).click_publish_good()
+            time.sleep(1)
+        with allure.step("选择发布实物商品"):
+            PublishGoodCommon(open_app).publish_entity_good()
+            time.sleep(1)
+        with allure.step("发布实物商品"):
+            EntityGoodPage(open_app).entity_good_information(data["product_title"], data["product_description"],
+                                                             data["property_1"],
+                                                             data["property_2"], data["purchase_price"],
+                                                             data["sell_price"], data["stock"],
+                                                             data["limit_quantity"])
+        with allure.step("立即上架"):
+            PublishGoodCommon(open_app).submit()
+        with allure.step("断言：立即上架后系统提示商品审核中"):
+            time.sleep(1)
+            text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
+            assert text == "商品审核中"
 
-    # @ddt.data(*CouponGood_data)
-    # def test_2_publish_coupon_good(self, data):
-    #     time.sleep(1)
-    #     # 选择发布本地生活商品
-    #     self.fd.find_element(coupon_good).click()
-    #     time.sleep(1)
-    #     CouponGoodBusiness(self.driver).publish_coupon_good(data["product_title"], data["product_description"],
-    #                                                         data["total_price"], data["stock"],
-    #                                                         data["limit_quantity"])
-    #     CouponGoodBusiness(self.driver).submit()
-    #     # 断言
-    #     text = SubmitReviewOKBusiness(self.driver).get_text()
-    #     self.assertTrue(text)
-    #     self.fd.find_element(good_audit_btn).click()
-    #
-    # @ddt.data(*ServerGood_data)
-    # def test_3_publish_server_good(self, data):
-    #     time.sleep(1)
-    #     # 选择发布商企服务商品
-    #     self.fd.find_element(services_good).click()
-    #     time.sleep(1)
-    #     ServicesGoodBusiness(self.driver).publish_services_good(data["product_title"], data["product_description"],
-    #                                                             data["total_price"], data["subsist"], data["stock"],
-    #                                                             data["limit_quantity"])
-    #     ServicesGoodBusiness(self.driver).submit()
-    #     # 断言
-    #     text = SubmitReviewOKBusiness(self.driver).get_text()
-    #     self.assertTrue(text)
-    #     self.fd.find_element(good_audit_btn).click()
-    #
-    # def tearDown(cls):
-    #     pass
+    @allure.story("发布本地生活商品")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("open_app")
+    @pytest.mark.parametrize("data", CouponGood_data)  # 替代ddt
+    def test_2_publish_coupon_good(self, open_app, data):
+        doc = "测试发布本地生活商品-"
+        with allure.step("登录APP"):
+            LoginPage(open_app).login("13724765586", "qaz123", text=doc)
+        with allure.step("首页点击发布商品"):
+            CommBus(open_app).click_publish_good()
+            time.sleep(1)
+        with allure.step("选择发布本地生活商品"):
+            PublishGoodCommon(open_app).publish_coupon_good()
+            time.sleep(1)
+        with allure.step("发布本地生活商品"):
+            CouponGoodPage(open_app).coupon_good_information(data["product_title"], data["product_description"],
+                                                             data["total_price"],data["stock"],
+                                                             data["limit_quantity"],text=doc)
+        with allure.step("立即上架"):
+            PublishGoodCommon(open_app).submit()
+        with allure.step("断言：立即上架后系统提示商品审核中"):
+            time.sleep(1)
+            text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
+            assert text == "商品审核中"
+
+
+    @allure.story("发布商企服务商品")
+    @pytest.mark.smoke
+    @pytest.mark.usefixtures("open_app")
+    @pytest.mark.parametrize("data", ServerGood_data)  # 替代ddt
+    def test_3_publish_services_good(self, open_app, data):
+        doc = "测试发布商企服务商品-"
+        with allure.step("登录APP"):
+            LoginPage(open_app).login("13724765586", "qaz123", text=doc)
+        with allure.step("首页点击发布商品"):
+            CommBus(open_app).click_publish_good()
+            time.sleep(1)
+        with allure.step("选择发布商企服务商品"):
+            PublishGoodCommon(open_app).publish_services_good()
+            time.sleep(1)
+        with allure.step("发布商企服务商品"):
+            ServicesGoodPage(open_app).services_good_information(data["product_title"], data["product_description"],
+                                                                data["total_price"], data["subsist"], data["stock"],
+                                                                data["limit_quantity"],text=doc)
+
+        with allure.step("立即上架"):
+            PublishGoodCommon(open_app).submit()
+        with allure.step("断言：立即上架后系统提示商品审核中"):
+            time.sleep(1)
+            text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
+            assert text == "商品审核中"
 
 
 if __name__ == '__main__':
-    pytest.main(["-s", "test_publish_good.py", "--alluredir", allure_report])
-    os.system(f'allure generate {allure_report} -o {allure_report}/html -clean')
+    pytest.main(["-s", "test_publish_good.py", "--alluredir", allure_report + "/result"])
+    os.system(f'allure generate {allure_report}/result -o {allure_report}/html --clean')

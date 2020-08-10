@@ -38,13 +38,13 @@ class CouponGoodPage(BasePage):
     def second_categpry(self, text=""):
         doc = text + "点击【二级分类】选项-"
         time.sleep(0.5)
-        self.click_element(CG.second_categpry,doc=doc)
+        self.click_elements(CG.second_categpry,0,doc=doc)
 
     # 选择三级分类
     def third_categpry(self, text=""):
         doc = text + "选择第一个【三级分类】选项-"
         time.sleep(0.5)
-        self.click_element(CG.third_categpry,doc=doc)
+        self.click_elements(CG.third_categpry,0,doc=doc)
 
     # 点击券类
     def coupon(self, text=""):
@@ -56,7 +56,7 @@ class CouponGoodPage(BasePage):
     def coupon_categpry(self, text=""):
         doc = text + "点击【券类】按钮-"
         time.sleep(0.5)
-        self.click_element(CG.coupon_categpry,doc=doc)
+        self.click_elements(CG.coupon_categpry,0,doc=doc)
 
     # 商品总价
     def total_price(self, total_price, text=""):

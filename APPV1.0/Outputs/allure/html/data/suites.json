@@ -1,0 +1,53 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "H5.PublishGood",
+    "children" : [ {
+      "name" : "test_publish_good",
+      "children" : [ {
+        "name" : "TestPublishGood",
+        "children" : [ {
+          "name" : "test_1_publish_entity_good[MI 8-data0]",
+          "uid" : "fd9ff2d88f24b4ea",
+          "parentUid" : "21db2c4c18b7f8d21bde2cd150aa458f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1597057877508,
+            "stop" : 1597057918190,
+            "duration" : 40682
+          },
+          "flaky" : true,
+          "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'total_price': '100', 'subsist': '10', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+        }, {
+          "name" : "test_2_publish_entity_good[MI 8-data0]",
+          "uid" : "44a743e98cec2f70",
+          "parentUid" : "21db2c4c18b7f8d21bde2cd150aa458f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1597058495906,
+            "stop" : 1597058538428,
+            "duration" : 42522
+          },
+          "flaky" : false,
+          "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'total_price': '100', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+        }, {
+          "name" : "test_3_publish_entity_good[MI 8-data0]",
+          "uid" : "97c34e8361f6c986",
+          "parentUid" : "21db2c4c18b7f8d21bde2cd150aa458f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1597059141674,
+            "stop" : 1597059181040,
+            "duration" : 39366
+          },
+          "flaky" : true,
+          "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'total_price': '100', 'subsist': '10', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+        } ],
+        "uid" : "21db2c4c18b7f8d21bde2cd150aa458f"
+      } ],
+      "uid" : "63b4a55d9389893e6998979efbe1c694"
+    } ],
+    "uid" : "e3494ec28d1f1130aa82b4aa1ffec21c"
+  } ]
+}

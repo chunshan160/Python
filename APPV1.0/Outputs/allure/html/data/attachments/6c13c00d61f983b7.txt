@@ -1,0 +1,85 @@
+INFO     春衫:user_log.py:46 元素('xpath', "//*[@text='始终允许']")不存在
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+INFO     春衫:user_log.py:46 发布商品-通用条件-获取当前app的登陆状态-点击元素('id', 'com.ecloud.hobay:id/rb_me')
+INFO     春衫:user_log.py:46 元素('id', 'com.ecloud.hobay:id/tv_setting')存在
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_setting
+INFO     春衫:user_log.py:46 发布商品-通用条件-点击【设置】按钮-点击元素('id', 'com.ecloud.hobay:id/tv_setting')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_exit
+INFO     春衫:user_log.py:46 发布商品-通用条件-点击【退出】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_exit')
+INFO     春衫:user_log.py:46 点击坐标(440, 775)
+INFO     春衫:user_log.py:46 输入数字是13724765586
+INFO     春衫:user_log.py:46 点击坐标(540, 1030)
+INFO     春衫:user_log.py:46 点击坐标(500, 860)
+INFO     春衫:user_log.py:46 点击坐标(540, 1110)
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/rb_helpping_me')可见
+INFO     春衫:user_log.py:46 等待时长为：0
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_helpping_me
+INFO     春衫:user_log.py:46 点击底部导航栏-发布商品-点击元素('id', 'com.ecloud.hobay:id/rb_helpping_me')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/iv_publish_product
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/iv_publish_product')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/iv_add_pic
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/iv_add_pic')
+INFO     春衫:user_log.py:46 元素('xpath', "//*[@text='始终允许']")不存在
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/cb_check
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/cb_check')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_ok
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/btn_ok')
+INFO     春衫:user_log.py:46 输入的商品标题是:APP实物商品
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/et_product_title
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_product_detail
+INFO     春衫:user_log.py:46 点击【商品描述】选项-点击元素('id', 'com.ecloud.hobay:id/tv_product_detail')
+INFO     春衫:user_log.py:46 定位方式:by.class name--->定位值:android.widget.EditText
+INFO     春衫:user_log.py:46 输入商品详情:发布实物商品搞定啦，继续优化
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_add_pic
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/btn_add_pic')
+INFO     春衫:user_log.py:46 元素('xpath', "//*[@text='始终允许']")不存在
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/cb_check
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/cb_check')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_ok
+INFO     春衫:user_log.py:46 点击元素('id', 'com.ecloud.hobay:id/btn_ok')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_complete
+INFO     春衫:user_log.py:46 点击【完成】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_complete')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_product_phase
+INFO     春衫:user_log.py:46 点击【品相】选项-点击元素('id', 'com.ecloud.hobay:id/tv_product_phase')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_dialog_item
+INFO     春衫:user_log.py:46 点击【全新】选项-点击元素('id', 'com.ecloud.hobay:id/tv_dialog_item')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_select_type
+INFO     春衫:user_log.py:46 点击【分类】选项-点击元素('id', 'com.ecloud.hobay:id/tv_select_type')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_list_name
+INFO     春衫:user_log.py:46 点击【二级分类】选项-点击元素('id', 'com.ecloud.hobay:id/tv_list_name')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_show_name
+INFO     春衫:user_log.py:46 选择【三级分类】选项-点击元素('id', 'com.ecloud.hobay:id/tv_show_name')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_product_type
+INFO     春衫:user_log.py:46 点击【商品类型】选项-点击元素('id', 'com.ecloud.hobay:id/tv_product_type')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_dialog_item
+INFO     春衫:user_log.py:46 选择【商品类型】选项-点击元素('id', 'com.ecloud.hobay:id/tv_dialog_item')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_specification
+INFO     春衫:user_log.py:46 点击【规格】选项-点击元素('id', 'com.ecloud.hobay:id/tv_specification')
+INFO     春衫:user_log.py:46 输入的商品规格是:外套
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/et_first_attributes
+INFO     春衫:user_log.py:46 输入的商品属性是:红色
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/et_name
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_add_pic
+INFO     春衫:user_log.py:46 点击上传规格图片-点击元素('id', 'com.ecloud.hobay:id/tv_add_pic')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/iv_thumb
+INFO     春衫:user_log.py:46 选择规格图片-点击元素('id', 'com.ecloud.hobay:id/iv_thumb')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_next
+INFO     春衫:user_log.py:46 点击【下一步】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_next')
+INFO     春衫:user_log.py:46 输入的商品进货价是:100
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/et_purchase_price
+INFO     春衫:user_log.py:46 输入的商品出售价是:100
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/et_price
+INFO     春衫:user_log.py:46 输入的商品库存是:10000
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/et_number
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_confirm
+INFO     春衫:user_log.py:46 点击【确定】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_confirm')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_freight
+INFO     春衫:user_log.py:46 点击【运费】选项-点击元素('id', 'com.ecloud.hobay:id/tv_freight')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_dialog_item
+INFO     春衫:user_log.py:46 选择【包邮】选项-点击元素('id', 'com.ecloud.hobay:id/tv_dialog_item')
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_immediately_publish
+INFO     春衫:user_log.py:46 点击【立即上架】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_immediately_publish')
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/tv_tips')可见
+INFO     春衫:user_log.py:46 等待时长为：0
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_tips
+INFO     春衫:user_log.py:46 获取到的文本内容是：商品审核中

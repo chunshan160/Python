@@ -151,9 +151,11 @@ class BasePage:
 
     # 获取元素的文本内容
     def get_text(self, locator, doc=""):
+        self.wait_eleVisible(locator, doc=doc)
         ele = self.get_element(locator, doc)
         # 输入操作
         try:
+            UserLog().info(f"获取到的文本内容是：{ele.text}")
             return ele.text
         except:
             UserLog().info("获取元素文本内容失败!")
@@ -390,17 +392,6 @@ class BasePage:
             self.save_screenshot(doc)
             raise
 
-    # # 处理弹窗授权-始终允许
-    # def always_allowed(self, locator, text=""):
-    #     doc = text + "处理弹窗授权-始终允许-"
-    #     try:
-    #         self.click_element(locator, doc=doc)
-    #     except:
-    #         UserLog().info("处理弹窗授权失败!")
-    #         # 截图
-    #         self.save_screenshot(doc)
-    #         raise
-
     # 判断元素是否存在
     def ele_if_exist(self, locator):
         try:
@@ -410,6 +401,12 @@ class BasePage:
         except:
             UserLog().info(f"元素{locator}不存在")
             return False
+
+    # 匹配文本来处理表达式
+    def match_text(self,locator,text):
+        new_locator=(locator[0],locator[1].format(text))
+        return new_locator
+
 
 
 if __name__ == '__main__':

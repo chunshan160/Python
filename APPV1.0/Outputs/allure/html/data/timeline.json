@@ -1,0 +1,57 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-4EMDDAT",
+    "children" : [ {
+      "name" : "13552-MainThread",
+      "children" : [ {
+        "name" : "test_1_publish_entity_good[MI 8-data0]",
+        "uid" : "fd9ff2d88f24b4ea",
+        "parentUid" : "83fd0a0531c23ca1e695780a0e0b0e18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597057877508,
+          "stop" : 1597057918190,
+          "duration" : 40682
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'total_price': '100', 'subsist': '10', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+      } ],
+      "uid" : "83fd0a0531c23ca1e695780a0e0b0e18"
+    }, {
+      "name" : "9680-MainThread",
+      "children" : [ {
+        "name" : "test_2_publish_entity_good[MI 8-data0]",
+        "uid" : "44a743e98cec2f70",
+        "parentUid" : "ec81d0a7e16b9112ddaf45fa341c7dcf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597058495906,
+          "stop" : 1597058538428,
+          "duration" : 42522
+        },
+        "flaky" : false,
+        "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'total_price': '100', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+      } ],
+      "uid" : "ec81d0a7e16b9112ddaf45fa341c7dcf"
+    }, {
+      "name" : "13264-MainThread",
+      "children" : [ {
+        "name" : "test_3_publish_entity_good[MI 8-data0]",
+        "uid" : "97c34e8361f6c986",
+        "parentUid" : "2631c408d6d646fd9392eb756f1d65ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597059141674,
+          "stop" : 1597059181040,
+          "duration" : 39366
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'total_price': '100', 'subsist': '10', 'stock': '10000', 'limit_quantity': ''}", "'MI 8'" ]
+      } ],
+      "uid" : "2631c408d6d646fd9392eb756f1d65ae"
+    } ],
+    "uid" : "f66abf70e354ddd25d173dafd54c840d"
+  } ]
+}

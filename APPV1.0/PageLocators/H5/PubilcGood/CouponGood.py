@@ -14,12 +14,7 @@ from appium.webdriver.common.mobileby import MobileBy
 product_title = (MobileBy.ID, "com.ecloud.hobay:id/et_product_title")
 # 商品详情
 product_description = (MobileBy.ID, "com.ecloud.hobay:id/et_product_desc")
-# 分类
-category = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_type")
-# 二级分类
-second_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_list_name")
-# 三级分类
-third_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_show_name")
+
 # 点击券类
 coupon = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_volume")
 # 卡券类型

@@ -24,13 +24,8 @@ finish = (MobileBy.ID, "com.ecloud.hobay:id/btn_complete")
 # 品相
 quality = (MobileBy.ID, "com.ecloud.hobay:id/tv_product_phase")
 # 品相-全新
-quality_new = (MobileBy.ID, "com.ecloud.hobay:id/tv_dialog_item")
-# 分类
-category = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_type")
-# 二级分类
-second_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_list_name")
-# 三级分类
-third_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_show_name")
+quality_new = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
+
 # 商品类型
 product_type = (MobileBy.ID, "com.ecloud.hobay:id/tv_product_type")
 # 商品类型-易贝商品

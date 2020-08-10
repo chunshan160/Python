@@ -29,10 +29,10 @@ def first_start_app(request):
 
 
 
-# 除登录以外，通用的前置条件
+# 发布商品-通用条件
 @pytest.fixture(params=params)
 def open_app(request,data):
-    doc = "通用前置-"
+    doc = "发布商品-通用条件-"
     # 准备服务器参数，与appium server进行连接。
     driver = BaseDriver().base_driver(device=request.param)
     # 1、 要不要判断欢迎页面是否存在?
@@ -44,10 +44,7 @@ def open_app(request,data):
         MyIndexPage(driver).click_setting(text=doc)
         SettingPage(driver).exit(text=doc)
     yield driver
-    # BasePage(driver).get_element(PGOK.good_audit_btn).click()
-    # CommBus(driver).click_myindex(text=doc)
-    # MyIndexPage(driver).click_setting(text=doc)
-    # SettingPage(driver).exit(text=doc)
+    driver.close_app()
 
 
 

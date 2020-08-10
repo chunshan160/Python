@@ -22,6 +22,7 @@ class CommBus(BasePage):
         curAct = self.driver.current_activity
 
         # 权限-始终允许
+        print(Common.always_allowed)
         ele = self.ele_if_exist(Common.always_allowed)
         if ele:
             self.click_element(Common.always_allowed)

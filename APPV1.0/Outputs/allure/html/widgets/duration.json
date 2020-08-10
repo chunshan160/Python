@@ -1,0 +1,31 @@
+[ {
+  "uid" : "fd9ff2d88f24b4ea",
+  "name" : "test_1_publish_entity_good[MI 8-data0]",
+  "time" : {
+    "start" : 1597057877508,
+    "stop" : 1597057918190,
+    "duration" : 40682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44a743e98cec2f70",
+  "name" : "test_2_publish_entity_good[MI 8-data0]",
+  "time" : {
+    "start" : 1597058495906,
+    "stop" : 1597058538428,
+    "duration" : 42522
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97c34e8361f6c986",
+  "name" : "test_3_publish_entity_good[MI 8-data0]",
+  "time" : {
+    "start" : 1597059141674,
+    "stop" : 1597059181040,
+    "duration" : 39366
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
