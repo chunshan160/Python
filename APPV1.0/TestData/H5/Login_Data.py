@@ -6,7 +6,7 @@
 # @Software: PyCharm
 
 # 正常用例 -手机格式正确
-Success_data = [{"phone": "17777777776", "password": "qaz123"}]
+Success_data = {"phone": "17777777776", "password": "qaz123"}
 
 # 异常用例 -手机号格式不对
 PhoneError_data = [

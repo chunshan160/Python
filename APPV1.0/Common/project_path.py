@@ -35,3 +35,4 @@ allure_report=os.path.join(project_path,"Outputs","Allure")
 
 # a=f'allure generate {allure_report}/result -o {allure_report}/html --clean'
 # print(a)
+# print("-s", "test_publish_good.py", "--alluredir", allure_report + "/result")

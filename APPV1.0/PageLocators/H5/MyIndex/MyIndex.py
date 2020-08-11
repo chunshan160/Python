@@ -8,3 +8,6 @@ from appium.webdriver.common.mobileby import MobileBy
 
 #设置
 setting=(MobileBy.ID,"com.ecloud.hobay:id/tv_setting")
+
+#手机号
+phone=(MobileBy.ID,"com.ecloud.hobay:id/tv_phone")
