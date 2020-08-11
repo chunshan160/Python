@@ -90,6 +90,6 @@ def getbook(url, file_path, mode=True):
 
 
 if __name__ == '__main__':
-    url = 'http://www.biquw.com/book/80206/'
+    url = 'http://www.biquw.com/book/5336/'
     file_path = 'E:\\新建文件夹\\凡人修仙传仙界篇\\'
-    getbook(url, file_path, mode=False)
+    getbook(url, file_path, mode=True)
