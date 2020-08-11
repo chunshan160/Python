@@ -6,10 +6,10 @@
 
 import time
 from Common.user_log import UserLog
-from PageLocators.H5 import Common
 from PageLocators.H5.PubilcGood import EntityGood as EG
 from PageLocators.H5.PubilcGood import PubilcGoodCommon as PGCommon
 from Common.BasePage import BasePage
+from PageObjects.H5.PublishGood.PublishGoodCommon import PublishGoodCommon
 
 
 # 发布实物商品
@@ -54,45 +54,29 @@ class EntityGoodPage(BasePage):
         self.click_element(EG.quality, doc=doc)
 
     # 选择全新
-    def quality_new(self, text=""):
-        doc = text + "点击【全新】选项-"
-        time.sleep(0.5)
-        self.click_element(EG.quality_new, doc=doc)
-
-    # 选择分类
-    def category(self, text=""):
-        doc = text + "点击【分类】选项-"
-        time.sleep(0.5)
-        self.click_element(EG.category, doc=doc)
-
-    # 选择二级分类
-    def second_categpry(self, text=""):
-        doc = text + "点击【二级分类】选项-"
+    def select_quality(self, quality_name, text=""):
+        doc = text + f"点击【{quality_name}】选项-"
         time.sleep(1)
-        self.click_elements(EG.second_categpry,0, doc=doc)
-
-    # 选择三级分类
-    def third_categpry(self, text=""):
-        doc = text + "选择【三级分类】选项-"
-        time.sleep(0.5)
-        self.click_elements(EG.third_categpry,0, doc=doc)
+        new_locator = self.locator_by_text(EG.quality_new, quality_name, text=doc)
+        self.click_element(new_locator, doc=doc)
 
     # 点击商品类型
     def product_type(self, text=""):
         doc = text + "点击【商品类型】选项-"
-        time.sleep(0.5)
+        time.sleep(1)
         self.click_element(EG.product_type, doc=doc)
 
     # 选择商品类型
-    def product_type_select(self, text=""):
-        doc = text + "选择【商品类型】选项-"
-        time.sleep(0.5)
-        self.click_elements(EG.product_type_select,0, doc=doc)
+    def select_product_type(self, product_type, text=""):
+        doc = text + f"选择【商品类型】-【{product_type}】选项-"
+        time.sleep(1)
+        new_locator = self.locator_by_text(EG.product_type_select, product_type, text=doc)
+        self.click_element(new_locator, doc=doc)
 
     # 点击规格
     def specification(self, text=""):
         doc = text + "点击【规格】选项-"
-        time.sleep(0.5)
+        time.sleep(1)
         self.click_element(EG.specification, doc=doc)
 
     # 输入商品规格
@@ -161,10 +145,11 @@ class EntityGoodPage(BasePage):
         self.click_element(EG.fare, doc=doc)
 
     # 运费类型-包邮
-    def fare_manner(self, text=""):
-        doc = text + "选择【包邮】选项-"
+    def fare_type(self, fare, text=""):
+        doc = text + f"【运费】类型-选择【{fare}】选项-"
         time.sleep(0.5)
-        self.click_elements(EG.fare_manner,0, doc=doc)
+        new_locator = self.locator_by_text(EG.fare_manner, fare, text=doc)
+        self.click_element(new_locator, doc=doc)
 
     # 限购数量
     def limit_quantity(self, limit_quantity, text=""):
@@ -221,54 +206,56 @@ class EntityGoodPage(BasePage):
         self.input_text(EG.production_number, production_number, doc=doc)
 
     # 发布实物商品
-    def entity_good_information(self, product_title, product_description, property_1, property_2, purchase_price,
-                                sell_price, stock, limit_quantity, text=""):
+    def entity_good_information(self, product_title, product_description, quality_name, product_type,
+                                second_category_name, third_category_name,
+                                property_1, property_2, purchase_price,
+                                sell_price, stock, fare, text=""):
         # 上传主图-选择图片-点击确定
         self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok, doc=text)
         # 输入商品标题
-        self.product_title(product_title, text)
+        self.product_title(product_title, text=text)
         # # 点击商品描述
         self.product_detail()
         # 输入商品详情
-        self.product_description(product_description, text="")
+        self.product_description(product_description, text=text)
         # 商品详情页上传商品
         self.app_upload_image(EG.description_btn, PGCommon.check_image, PGCommon.btn_ok, doc=text)
         # 点击完成，回到商品详情页
-        self.finish(text)
+        self.finish(text=text)
         # 点击品相
-        self.quality(text)
+        self.quality(text=text)
         # 选择全新
-        self.quality_new(text)
+        self.select_quality(quality_name, text=text)
         # 选择分类
-        self.category(text)
+        PublishGoodCommon(self.driver).category(text=text)
         # 选择二级分类
-        self.second_categpry(text)
+        PublishGoodCommon(self.driver).second_category(second_category_name, text=text)
         # 选择三级分类
-        self.third_categpry(text)
+        PublishGoodCommon(self.driver).third_category(third_category_name, text=text)
         # 点击商品类型
-        self.product_type(text)
+        self.product_type(text=text)
         # 选择商品类型
-        self.product_type_select(text)
+        self.select_product_type(product_type, text=text)
         # 点击规格
-        self.specification(text)
+        self.specification(text=text)
         # 进入商品规格页面，输入属性
-        self.property_1(property_1, text)
-        self.property_2(property_2, text)
+        self.property_1(property_1, text=text)
+        self.property_2(property_2, text=text)
         # 上传规格图片
-        self.upload_specification_image(text)
+        self.upload_specification_image(text=text)
         # 选择规格图片
-        self.check_specification_image(text)
+        self.check_specification_image(text=text)
         # 下一步
-        self.next(text)
+        self.next(text=text)
         # 进货价
-        self.purchase_price(purchase_price, text)
+        self.purchase_price(purchase_price, text=text)
         # 出售价
-        self.sell_price(sell_price, text)
+        self.sell_price(sell_price, text=text)
         # 库存
-        self.stock(stock, text)
+        self.stock(stock, text=text)
         # 确定
-        self.determine(text)
+        self.determine(text=text)
         # 运费
-        self.fare(text)
+        self.fare(text=text)
         # 运费类型
-        self.fare_manner(text)
+        self.fare_type(fare, text=text)

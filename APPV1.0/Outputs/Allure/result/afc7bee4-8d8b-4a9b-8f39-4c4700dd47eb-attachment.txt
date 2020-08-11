@@ -1,0 +1,6 @@
+INFO     春衫:user_log.py:46 元素('xpath', "//*[@text='始终允许']")不存在
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+INFO     春衫:user_log.py:46 没有找到这个元素
+INFO     春衫:user_log.py:46 截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-11\2020-08-11-13-42-49-发布商品-通用条件-获取当前app的登陆状态-.png
+INFO     春衫:user_log.py:46 元素点击操作失败!
+INFO     春衫:user_log.py:46 截取网页成功，文件路径为为：D:\Pycharm_workspace\APPV1.0\Outputs\Error_Image\2020-08-11\2020-08-11-13-42-50-发布商品-通用条件-获取当前app的登陆状态-.png

@@ -25,7 +25,6 @@ finish = (MobileBy.ID, "com.ecloud.hobay:id/btn_complete")
 quality = (MobileBy.ID, "com.ecloud.hobay:id/tv_product_phase")
 # 品相-全新
 quality_new = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
-
 # 商品类型
 product_type = (MobileBy.ID, "com.ecloud.hobay:id/tv_product_type")
 # 商品类型-易贝商品
@@ -52,7 +51,7 @@ determine = (MobileBy.ID, "com.ecloud.hobay:id/btn_confirm")
 # 运费
 fare = (MobileBy.ID, "com.ecloud.hobay:id/tv_freight")
 # 运费-包邮
-fare_manner = (MobileBy.ID, "com.ecloud.hobay:id/tv_dialog_item")
+fare_manner = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
 # 限购数量
 limit_quantity = (MobileBy.ID, "com.ecloud.hobay:id/et_buy_num")
 # 品牌

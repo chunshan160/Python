@@ -37,9 +37,9 @@ submit = (MobileBy.ID, "com.ecloud.hobay:id/btn_immediately_publish")
 # 分类
 category = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_type")
 # 二级分类
-second_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_list_name")
+second_category = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
 # 三级分类
-third_categpry = (MobileBy.ID, "com.ecloud.hobay:id/tv_show_name")
+third_category = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
 
 
 # 放入仓库

@@ -5,9 +5,11 @@
 #@File :发布拍品-审核-开拍-出价.py
 
 import time
-from tools.http_request import HttpRequest
 
-def auction(buyer_phone, seller_phone,payPassword,goods_name="发布拍品用"):
+from get_time import getTime
+from http_request import HttpRequest
+
+def auction(buyer_phone, seller_phone,start_time,end_time,payPassword,goods_name="发布拍品用"):
     # 卖家登录
     login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
     login_data = {"loginValidateType": "CODE", "phone": seller_phone, "validateValue": "666666"}
@@ -34,10 +36,8 @@ def auction(buyer_phone, seller_phone,payPassword,goods_name="发布拍品用"):
 
     # 审核拍品
     data_id = SaveOrder_res.json()['data']
-    t = time.time()  # 原始时间数据
-    data_time = int(round(t * 1000))  # 毫秒级时间戳
-    preBeginTime = data_time
-    preEndTime = data_time + 4000000
+    preBeginTime = getTime(start_time)
+    preEndTime = getTime(end_time)
     url = 'http://operate.test.hobay.com.cn/auctionolproduct/passCheckNew'  # 登录
     data = {"id": data_id, "applyNum": "0", "preBeginTime": preBeginTime, "preEndTime": preEndTime,
             "browserBaseNum": "0", "categoryName": "电视", "description": "111", "name": goods_name, "normalPrice": "0.00",
@@ -49,10 +49,7 @@ def auction(buyer_phone, seller_phone,payPassword,goods_name="发布拍品用"):
 
     # 卖家设置开拍时间
     signed_url = "http://m.test.hobay.com.cn/ribbon-api/auctionOlBid/starAuction"
-    preBeginTime = preBeginTime
-    preEndTime = preEndTime - 10000
-    print(preBeginTime, preEndTime)
-    data = {"starTime": preBeginTime, "endTime": preEndTime, "auctionProductId": data_id}
+    data = {"starTime": preBeginTime+10000, "endTime": preEndTime-60000, "auctionProductId": data_id}
     headers = {"login": ""}
     signed_res = HttpRequest().http_request(signed_url, "post", data=data, cookies=login_res.cookies,
                                             headers=headers)
@@ -104,5 +101,5 @@ def auction(buyer_phone, seller_phone,payPassword,goods_name="发布拍品用"):
 
 if __name__ == '__main__':
     # auction(17777777781, 13724765586,goods_name="37发布拍品测绑定用")
-    auction(13724765586, 17777777776,"qNlHQue5Y/U=", goods_name="76发布拍品测绑定用")
+    auction(13724765586, 17777777776,'2020-08-10 17:56:00','2020-08-11 17:20:00',"qNlHQue5Y/U=", goods_name="76发布拍品测绑定用")
     # auction(17777777781, 17777777781, goods_name="81发布拍品测绑定用")

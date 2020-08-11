@@ -7,11 +7,14 @@
 import time
 from Common.user_log import UserLog
 from PageLocators.H5.PubilcGood import ServerGood as SG
-from PageLocators.H5.PubilcGood import PubilcGoodCommon
+from PageLocators.H5.PubilcGood import PubilcGoodCommon as PGCommon
+from PageObjects.H5.PublishGood.PublishGoodCommon import PublishGoodCommon
 from Common.BasePage import BasePage
 
 
 # 发布商企服务
+
+
 class ServicesGoodPage(BasePage):
 
     # 输入商品标题
@@ -30,18 +33,23 @@ class ServicesGoodPage(BasePage):
 
     # 选择分类
     def category(self, text=""):
-        doc = text + "选择分类-"
-        self.click_element(SG.category, doc=doc)
+        doc = text + "点击【分类】选项-"
+        time.sleep(0.5)
+        self.click_element(PGCommon.category, doc=doc)
 
     # 选择二级分类
-    def second_categpry(self, text=""):
-        doc = text + "选择二级分类-"
-        self.click_elements(SG.second_categpry,0, doc=doc)
+    def second_category(self, name, text=""):
+        doc = text + "点击【二级分类】选项-"
+        time.sleep(1)
+        new_locator = self.locator_by_text(PGCommon.second_category, name, text=doc)
+        self.click_element(new_locator, doc=doc)
 
     # 选择三级分类
-    def third_categpry(self, text=""):
-        doc = text + "选择三级分类-"
-        self.click_elements(SG.third_categpry,0, doc=doc)
+    def third_category(self, name, text=""):
+        doc = text + "选择【三级分类】选项-"
+        time.sleep(0.5)
+        new_locator = self.locator_by_text(PGCommon.third_category, name, text=doc)
+        self.click_element(new_locator, doc=doc)
 
     # 商品总价
     def total_price(self, total_price, text=""):
@@ -72,27 +80,25 @@ class ServicesGoodPage(BasePage):
         self.input_text(SG.limit_quantity, limit_quantity, doc=doc)
 
     # 发布商企服务商品
-    def services_good_information(self, product_title, product_description, total_price, subsist, stock, limit_quantity,
-                                  text=""):
+    def services_good_information(self, product_title, product_description, second_category_name, third_category_name,
+                                  total_price, subsist, stock, text=""):
         doc = text + "发布商企服务商品-"
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(PubilcGoodCommon.product_image, PubilcGoodCommon.check_image, PubilcGoodCommon.btn_ok,
+        self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok,
                               doc=doc)
         # 输入商品标题
         self.product_title(product_title, text=doc)
         # 输入商品详情
         self.product_description(product_description, text=doc)
         # 选择分类
-        self.category(text=doc)
+        PublishGoodCommon(self.driver).category(text=text)
         # 选择二级分类
-        self.second_categpry(text=doc)
+        PublishGoodCommon(self.driver).second_category(second_category_name, text=text)
         # 选择三级分类
-        self.third_categpry(text=doc)
+        PublishGoodCommon(self.driver).third_category(third_category_name, text=text)
         # 商品总价
         self.total_price(total_price, text=doc)
         # 预付款
         self.subsist(subsist, text=doc)
         # 商品库存
         self.stock(stock, text=doc)
-        # 限购数量
-        self.limit_quantity(limit_quantity, text=doc)

@@ -403,8 +403,8 @@ class BasePage:
             return False
 
     # 匹配文本来处理表达式
-    def match_text(self,locator,text):
-        new_locator=(locator[0],locator[1].format(text))
+    def locator_by_text(self,locator,name,text=""):
+        new_locator=(locator[0],locator[1].format(name))
         return new_locator
 
 

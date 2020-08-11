@@ -1,0 +1,37 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up",
+      "children" : [ {
+        "name" : "test_2_publish_coupon_good[MI 8-data0]",
+        "uid" : "ad7d5ca3d4d8c6e2",
+        "parentUid" : "f270714d10efa8983f2f84f790c3b92f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597124883627,
+          "stop" : 1597124914630,
+          "duration" : 31003
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
+      }, {
+        "name" : "test_3_publish_services_good[MI 8-data0]",
+        "uid" : "4d68608eb4ad9916",
+        "parentUid" : "f270714d10efa8983f2f84f790c3b92f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597124942543,
+          "stop" : 1597124976203,
+          "duration" : 33660
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
+      } ],
+      "uid" : "f270714d10efa8983f2f84f790c3b92f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

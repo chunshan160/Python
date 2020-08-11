@@ -14,11 +14,10 @@ from appium.webdriver.common.mobileby import MobileBy
 product_title = (MobileBy.ID, "com.ecloud.hobay:id/et_product_title")
 # 商品详情
 product_description = (MobileBy.ID, "com.ecloud.hobay:id/et_product_desc")
-
 # 点击券类
 coupon = (MobileBy.ID, "com.ecloud.hobay:id/tv_select_volume")
 # 卡券类型
-coupon_categpry = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("代金券")')
+coupon_category = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
 # 价格
 total_price = (MobileBy.ID, "com.ecloud.hobay:id/et_product_price")
 # 库存

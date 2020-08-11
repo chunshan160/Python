@@ -1,0 +1,45 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "H5.PublishGood.test_publish_good",
+    "children" : [ {
+      "name" : "test_1_publish_entity_good[MI 8-data0]",
+      "uid" : "a0437e76a62554bf",
+      "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
+      "status" : "passed",
+      "time" : {
+        "start" : 1597124785501,
+        "stop" : 1597124853996,
+        "duration" : 68495
+      },
+      "flaky" : true,
+      "parameters" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "'MI 8'" ]
+    }, {
+      "name" : "test_2_publish_coupon_good[MI 8-data0]",
+      "uid" : "ad7d5ca3d4d8c6e2",
+      "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
+      "status" : "broken",
+      "time" : {
+        "start" : 1597124883627,
+        "stop" : 1597124914630,
+        "duration" : 31003
+      },
+      "flaky" : true,
+      "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
+    }, {
+      "name" : "test_3_publish_services_good[MI 8-data0]",
+      "uid" : "4d68608eb4ad9916",
+      "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
+      "status" : "broken",
+      "time" : {
+        "start" : 1597124942543,
+        "stop" : 1597124976203,
+        "duration" : 33660
+      },
+      "flaky" : true,
+      "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
+    } ],
+    "uid" : "H5.PublishGood.test_publish_good"
+  } ]
+}

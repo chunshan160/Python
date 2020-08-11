@@ -14,9 +14,9 @@ class Pubilc:
     # # 第一分类
     # first_category = (MobileBy.ID, '//li[contains(text(),"实物商品")]')
     # # 第二分类
-    # second_categpry = (MobileBy.ID, '//li[text()="大家电2"]')
+    # second_category = (MobileBy.ID, '//li[text()="大家电2"]')
     # # 第三分类
-    # third_categpry = (MobileBy.ID, '//li[text()="电视"]')
+    # third_category = (MobileBy.ID, '//li[text()="电视"]')
     # 下一步
     next = (MobileBy.ID, '//span[text()="下一步，填写商品信息"]//parent::button')
 
@@ -33,9 +33,9 @@ class EntityGood:
     # 第一分类
     first_category = (MobileBy.ID, '//li[contains(text(),"实物商品")]')
     # 第二分类
-    second_categpry = (MobileBy.ID, '//li[text()="大家电2"]')
+    second_category = (MobileBy.ID, '//li[text()="大家电2"]')
     # 第三分类
-    third_categpry = (MobileBy.ID, '//li[text()="电视"]')
+    third_category = (MobileBy.ID, '//li[text()="电视"]')
     # 商品名称
     product_title = (MobileBy.ID, '//*[contains(text(),"商品名称")]//following-sibling::div//div//input')
     # 品相
@@ -83,15 +83,15 @@ class Local_Life:
     # 第一分类
     first_category = (MobileBy.ID, '//li[contains(text(),"本地生活")]')
     # 第二分类
-    second_categpry = (MobileBy.ID, '//li[text()="酒水"]')
+    second_category = (MobileBy.ID, '//li[text()="酒水"]')
     # 第三分类
-    third_categpry = (MobileBy.ID, '//li[text()="红酒"]')
+    third_category = (MobileBy.ID, '//li[text()="红酒"]')
     # 商品名称
     product_title = (MobileBy.ID, '//*[contains(text(),"商品名称")]//following-sibling::div//div//input')
     # 点击卡券种类
     coupon = (MobileBy.ID, '//input[@placeholder="请选择"]')
     # 卡券类型-代金券
-    coupon_categpry = (MobileBy.ID, '//span[contains(text(),"代金券")]//parent::li')
+    coupon_category = (MobileBy.ID, '//span[contains(text(),"代金券")]//parent::li')
     # 价格
     total_price = (MobileBy.ID, '//label[contains(text(),"价格")]/following-sibling::div/div/input')
     # 库存
@@ -112,9 +112,9 @@ class Business_Services:
     # 第一分类
     first_category = (MobileBy.ID, '//li[contains(text(),"商企服务")]')
     # 第二分类
-    second_categpry = (MobileBy.ID, '//li[text()="设计"]')
+    second_category = (MobileBy.ID, '//li[text()="设计"]')
     # 第三分类
-    third_categpry = (MobileBy.ID, '//li[text()="广告设计"]')
+    third_category = (MobileBy.ID, '//li[text()="广告设计"]')
     # 商品名称
     product_title = (MobileBy.ID, '//*[contains(text(),"商品名称")]//following-sibling::div//div//input')
     # 总价

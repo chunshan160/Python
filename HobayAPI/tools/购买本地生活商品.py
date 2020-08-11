@@ -3,9 +3,8 @@
 # @Time :2020/7/28 11:48
 # @Author :春衫
 # @File :购买实物商品.py
-import time
 
-from tools.http_request import HttpRequest
+from http_request import HttpRequest
 
 
 def bug_goods(buyer_phone, seller_phone, product_name, payType):

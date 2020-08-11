@@ -4,7 +4,5 @@
 #@Author :春衫
 #@File :录入客户.py
 
-from tools.http_request import HttpRequest
-
 def a():
     pass

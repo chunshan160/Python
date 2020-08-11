@@ -51,9 +51,9 @@ class PubilcGood:
         # 分类
         category = (MobileBy.ID, '//label[text()="分类"]//parent::div')
         # 二级分类
-        second_categpry = (MobileBy.ID, '//div[text()="大家电2"]')
+        second_category = (MobileBy.ID, '//div[text()="大家电2"]')
         # 三级分类
-        third_categpry = (MobileBy.ID, '//li[text()="电视"]')
+        third_category = (MobileBy.ID, '//li[text()="电视"]')
         # 商品类型
         product_type = (MobileBy.ID, '//label[text()="商品类型"]//parent::div')
         # 商品类型-易贝商品
@@ -97,15 +97,15 @@ class PubilcGood:
         # 商品详情
         product_description = (MobileBy.ID, '//textarea[@placeholder="商品描述，请详细介绍您所出的服务内容"]')
         # 分类
-        categpry = (MobileBy.ID, '//label[text()="分类"]//parent::div')
+        category = (MobileBy.ID, '//label[text()="分类"]//parent::div')
         # 二级分类
-        second_categpry = (MobileBy.ID, '//div[text()="酒水"]')
+        second_category = (MobileBy.ID, '//div[text()="酒水"]')
         # 三级分类
-        third_categpry = (MobileBy.ID, '//li[text()="红酒"]')
+        third_category = (MobileBy.ID, '//li[text()="红酒"]')
         # 点击券类
         coupon = (MobileBy.ID, '//label[text()="券类"]//parent::div')
         # 卡券类型
-        coupon_categpry = (MobileBy.ID, '//li[text()="代金券"]')
+        coupon_category = (MobileBy.ID, '//li[text()="代金券"]')
         # 确认按钮
         determine = (MobileBy.ID, '//div[contains(text(),"确认")]')
         # 总价
@@ -130,11 +130,11 @@ class PubilcGood:
         # 商品详情
         product_description = (MobileBy.ID, '//textarea[@placeholder="商品描述，请详细介绍您所出的服务内容"]')
         # 分类
-        categpry = (MobileBy.ID, '//label[text()="分类"]//parent::div')
+        category = (MobileBy.ID, '//label[text()="分类"]//parent::div')
         # 二级分类
-        second_categpry = (MobileBy.ID, '//div[text()="设计"]')
+        second_category = (MobileBy.ID, '//div[text()="设计"]')
         # 三级分类
-        third_categpry = (MobileBy.ID, '//li[text()="广告设计"]')
+        third_category = (MobileBy.ID, '//li[text()="广告设计"]')
         # 总价
         total_price = (MobileBy.ID, '//input[@placeholder="商品总价"]')
         # 预付款

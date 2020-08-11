@@ -1,0 +1,57 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "发布商品功能",
+    "children" : [ {
+      "name" : "发布实物商品",
+      "children" : [ {
+        "name" : "test_1_publish_entity_good[MI 8-data0]",
+        "uid" : "a0437e76a62554bf",
+        "parentUid" : "9dc0689282ba64585356fc6a2a4290a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597124785501,
+          "stop" : 1597124853996,
+          "duration" : 68495
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "'MI 8'" ]
+      } ],
+      "uid" : "9dc0689282ba64585356fc6a2a4290a5"
+    }, {
+      "name" : "发布本地生活商品",
+      "children" : [ {
+        "name" : "test_2_publish_coupon_good[MI 8-data0]",
+        "uid" : "ad7d5ca3d4d8c6e2",
+        "parentUid" : "b0fd1497051d2c5ac0c1dbe9bd73fc40",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597124883627,
+          "stop" : 1597124914630,
+          "duration" : 31003
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
+      } ],
+      "uid" : "b0fd1497051d2c5ac0c1dbe9bd73fc40"
+    }, {
+      "name" : "发布商企服务商品",
+      "children" : [ {
+        "name" : "test_3_publish_services_good[MI 8-data0]",
+        "uid" : "4d68608eb4ad9916",
+        "parentUid" : "9d0da9178667d591cb578fb7611b0156",
+        "status" : "broken",
+        "time" : {
+          "start" : 1597124942543,
+          "stop" : 1597124976203,
+          "duration" : 33660
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
+      } ],
+      "uid" : "9d0da9178667d591cb578fb7611b0156"
+    } ],
+    "uid" : "697b1706f27a66e86cac369d547fceb8"
+  } ]
+}

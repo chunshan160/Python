@@ -32,9 +32,9 @@ class PublishGood:
         # 点击实物商品
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.first_category))).click()
         # 点击实物商品-大家电2
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.second_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.second_category))).click()
         # 点击实物商品-大家电2-电视
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.third_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.third_category))).click()
         # 点击下一步
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((Pubilc.next))).click()
         # 输入商品名称
@@ -90,9 +90,9 @@ class PublishGood:
         # 点击实物商品
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.first_category))).click()
         # 点击实物商品-大家电2
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.second_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.second_category))).click()
         # 点击实物商品-大家电2-电视
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.third_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((RG.third_category))).click()
         # 点击下一步
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((Pubilc.next))).click()
         # 输入商品名称
@@ -155,9 +155,9 @@ class PublishGood:
         # 点击本地生活
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.first_category))).click()
         # 点击本地生活-酒水
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.second_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.second_category))).click()
         # 点击本地生活-酒水-红酒
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.third_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.third_category))).click()
         # 点击下一步
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((Pubilc.next))).click()
         # 输入商品名称
@@ -166,7 +166,7 @@ class PublishGood:
         # 点击卡券种类
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.coupon))).click()
         # 选择代金券
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.coupon_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.coupon_category))).click()
         # 输入价格
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((LL.total_price))).send_keys(
             total_price)
@@ -193,9 +193,9 @@ class PublishGood:
         # 点击商企服务
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BS.first_category))).click()
         # 点击商企服务-设计
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BS.second_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BS.second_category))).click()
         # 点击商企服务-设计-广告设计
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BS.third_categpry))).click()
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BS.third_category))).click()
         # 点击下一步
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((Pubilc.next))).click()
         # 输入商品名称
