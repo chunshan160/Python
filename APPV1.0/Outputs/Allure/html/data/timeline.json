@@ -1,0 +1,49 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-4EMDDAT",
+    "children" : [ {
+      "name" : "12636-MainThread",
+      "children" : [ {
+        "name" : "test_1_publish_entity_good[MI 8-data0]",
+        "uid" : "89236591919d78e9",
+        "parentUid" : "bcd526c08d4e9e5028cbc98188e5cbc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597227722490,
+          "stop" : 1597227763343,
+          "duration" : 40853
+        },
+        "flaky" : true,
+        "parameters" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "'MI 8'" ]
+      }, {
+        "name" : "test_2_publish_coupon_good[MI 8-data0]",
+        "uid" : "7cc5c4804ad23bc5",
+        "parentUid" : "bcd526c08d4e9e5028cbc98188e5cbc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597227783234,
+          "stop" : 1597227802004,
+          "duration" : 18770
+        },
+        "flaky" : false,
+        "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
+      }, {
+        "name" : "test_3_publish_services_good[MI 8-data0]",
+        "uid" : "e46bfcd178da4c1",
+        "parentUid" : "bcd526c08d4e9e5028cbc98188e5cbc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597227822301,
+          "stop" : 1597227839544,
+          "duration" : 17243
+        },
+        "flaky" : false,
+        "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
+      } ],
+      "uid" : "bcd526c08d4e9e5028cbc98188e5cbc2"
+    } ],
+    "uid" : "f66abf70e354ddd25d173dafd54c840d"
+  } ]
+}

@@ -56,6 +56,7 @@ class LoginPage(BasePage):
         # 点击下一步
         time.sleep(1)
         self.click_next(text=text)
+        time.sleep(1)
         # 不输入密码，就用通用验证码登录
         if pwd == None:
             # 切换验证码登录

@@ -1,0 +1,202 @@
+{
+  "uid" : "7cc5c4804ad23bc5",
+  "name" : "test_2_publish_coupon_good[MI 8-data0]",
+  "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_2_publish_coupon_good",
+  "historyId" : "4cf864ce9f8013507e9b3f3c0783290c",
+  "time" : {
+    "start" : 1597227783234,
+    "stop" : 1597227802004,
+    "duration" : 18770
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "open_app",
+    "time" : {
+      "start" : 1597227764452,
+      "stop" : 1597227783233,
+      "duration" : 18781
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "首页点击发布商品",
+      "time" : {
+        "start" : 1597227783234,
+        "stop" : 1597227784513,
+        "duration" : 1279
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "选择发布本地生活商品",
+      "time" : {
+        "start" : 1597227784514,
+        "stop" : 1597227786051,
+        "duration" : 1537
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "发布本地生活商品",
+      "time" : {
+        "start" : 1597227786051,
+        "stop" : 1597227800495,
+        "duration" : 14444
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "立即上架",
+      "time" : {
+        "start" : 1597227800495,
+        "stop" : 1597227801143,
+        "duration" : 648
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "断言：立即上架后系统提示商品审核中",
+      "time" : {
+        "start" : 1597227801143,
+        "stop" : 1597227802004,
+        "duration" : 861
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ebd2542a4023c12e",
+      "name" : "log",
+      "source" : "ebd2542a4023c12e.txt",
+      "type" : "text/plain",
+      "size" : 6647
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "open_app::0",
+    "time" : {
+      "start" : 1597227802006,
+      "stop" : 1597227802981,
+      "duration" : 975
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "发布本地生活商品"
+  }, {
+    "name" : "feature",
+    "value" : "发布商品功能"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('open_app')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "H5.PublishGood"
+  }, {
+    "name" : "suite",
+    "value" : "test_publish_good"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublishGood"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "H5.PublishGood.test_publish_good"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}"
+  }, {
+    "name" : "open_app",
+    "value" : "'MI 8'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6ce8914632bdd957",
+      "status" : "passed",
+      "time" : {
+        "start" : 1597227521175,
+        "stop" : 1597227543272,
+        "duration" : 22097
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
+  },
+  "source" : "7cc5c4804ad23bc5.json",
+  "parameterValues" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
+}

@@ -1,0 +1,202 @@
+{
+  "uid" : "e46bfcd178da4c1",
+  "name" : "test_3_publish_services_good[MI 8-data0]",
+  "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_3_publish_services_good",
+  "historyId" : "c8f4d16d4b9b5c6bf55de8ef5f5fa68a",
+  "time" : {
+    "start" : 1597227822301,
+    "stop" : 1597227839544,
+    "duration" : 17243
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "open_app",
+    "time" : {
+      "start" : 1597227802988,
+      "stop" : 1597227822300,
+      "duration" : 19312
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "首页点击发布商品",
+      "time" : {
+        "start" : 1597227822301,
+        "stop" : 1597227823630,
+        "duration" : 1329
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "选择发布商企服务商品",
+      "time" : {
+        "start" : 1597227823630,
+        "stop" : 1597227823874,
+        "duration" : 244
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "发布商企服务商品",
+      "time" : {
+        "start" : 1597227823874,
+        "stop" : 1597227838006,
+        "duration" : 14132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "立即上架",
+      "time" : {
+        "start" : 1597227838006,
+        "stop" : 1597227838634,
+        "duration" : 628
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "断言：立即上架后系统提示商品审核中",
+      "time" : {
+        "start" : 1597227838634,
+        "stop" : 1597227839544,
+        "duration" : 910
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ca420773a862756d",
+      "name" : "log",
+      "source" : "ca420773a862756d.txt",
+      "type" : "text/plain",
+      "size" : 6154
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "open_app::0",
+    "time" : {
+      "start" : 1597227839546,
+      "stop" : 1597227840485,
+      "duration" : 939
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "发布商企服务商品"
+  }, {
+    "name" : "feature",
+    "value" : "发布商品功能"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('open_app')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "H5.PublishGood"
+  }, {
+    "name" : "suite",
+    "value" : "test_publish_good"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublishGood"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "H5.PublishGood.test_publish_good"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}"
+  }, {
+    "name" : "open_app",
+    "value" : "'MI 8'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "99c91e9a9606de8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1597227562166,
+        "stop" : 1597227581271,
+        "duration" : 19105
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
+  },
+  "source" : "e46bfcd178da4c1.json",
+  "parameterValues" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
+}

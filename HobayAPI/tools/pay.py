@@ -36,7 +36,7 @@ def buy(buyer_phone,seller_phone):
     # print("订单详情",order_res.json())
 
     #得拍者支付订单
-    zhifu_url='http://m.test.hobay.com.cn/ribbon-api/batchOrders/payAllCBP'
+    zhifu_url="http://m.test.hobay.com.cn/ribbon-api/batchOrders/payAllCBP"
     zhifu_headers={'login': '','payPassword': 'OH8lKuLTcZc='}
     b=paipin_res.json()['data']['tradeNum']
     print(b)
