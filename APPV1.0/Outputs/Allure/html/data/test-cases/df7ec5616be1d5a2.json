@@ -1,5 +1,5 @@
 {
-  "uid" : "99c91e9a9606de8f",
+  "uid" : "df7ec5616be1d5a2",
   "name" : "test_3_publish_services_good[MI 8-data0]",
   "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_3_publish_services_good",
   "historyId" : "c8f4d16d4b9b5c6bf55de8ef5f5fa68a",
@@ -23,8 +23,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
@@ -41,8 +41,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "选择发布商企服务商品",
       "time" : {
@@ -56,8 +56,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "发布商企服务商品",
       "time" : {
@@ -71,8 +71,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "立即上架",
       "time" : {
@@ -86,8 +86,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "断言：立即上架后系统提示商品审核中",
       "time" : {
@@ -101,21 +101,21 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "621d1902fe665b42",
+      "uid" : "61bc0d17deb30fce",
       "name" : "log",
-      "source" : "621d1902fe665b42.txt",
+      "source" : "61bc0d17deb30fce.txt",
       "type" : "text/plain",
       "size" : 6154
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 5
+    "stepsCount" : 5,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "open_app::0",
@@ -130,8 +130,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "feature",
@@ -187,6 +187,6 @@
     "categories" : [ ],
     "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
   },
-  "source" : "99c91e9a9606de8f.json",
+  "source" : "df7ec5616be1d5a2.json",
   "parameterValues" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
 }

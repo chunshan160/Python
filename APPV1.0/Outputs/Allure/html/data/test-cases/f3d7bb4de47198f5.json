@@ -1,0 +1,70 @@
+{
+  "uid" : "f3d7bb4de47198f5",
+  "name" : "test_2_publish_coupon_good[data0-open_app0]",
+  "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_2_publish_coupon_good",
+  "historyId" : "ba9db86e3803bde97a4011baa4e3cd2c",
+  "time" : {
+    "start" : 1597313799865,
+    "stop" : 1597313799865,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "_pytest.fixtures.FixtureLookupError: ('open_app', <FixtureRequest for <Function test_2_publish_coupon_good[data0-open_app0]>>)",
+  "statusTrace" : "file D:\\Pycharm_workspace\\APPV1.0\\TestCases\\H5\\PublishGood\\test_publish_good.py, line 47\n      @allure.story(\"发布本地生活商品\")\n      @pytest.mark.smoke\n      @pytest.mark.parametrize(\"open_app\", Success_data, indirect=True)\n      @pytest.mark.parametrize(\"data\", CouponGood_data)  # 替代ddt\n      def test_2_publish_coupon_good(self, open_app, data):\nE       fixture 'open_app' not found\n>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, extra, first_start_app, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nD:\\Pycharm_workspace\\APPV1.0\\TestCases\\H5\\PublishGood\\test_publish_good.py:47",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "发布商品功能"
+  }, {
+    "name" : "story",
+    "value" : "发布本地生活商品"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "H5.PublishGood"
+  }, {
+    "name" : "suite",
+    "value" : "test_publish_good"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublishGood"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "940-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "H5.PublishGood.test_publish_good"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}"
+  }, {
+    "name" : "open_app",
+    "value" : "{'phone': '17777777776', 'password': 'qaz123'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "smoke" ]
+  },
+  "source" : "f3d7bb4de47198f5.json",
+  "parameterValues" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "{'phone': '17777777776', 'password': 'qaz123'}" ]
+}

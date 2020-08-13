@@ -5,7 +5,7 @@
     "name" : "H5.PublishGood.test_publish_good",
     "children" : [ {
       "name" : "test_1_publish_entity_good[MI 8-data0]",
-      "uid" : "89236591919d78e9",
+      "uid" : "9f4724b4211a7fc9",
       "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
       "status" : "passed",
       "time" : {
@@ -17,7 +17,7 @@
       "parameters" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "'MI 8'" ]
     }, {
       "name" : "test_2_publish_coupon_good[MI 8-data0]",
-      "uid" : "7cc5c4804ad23bc5",
+      "uid" : "b6a775104510909c",
       "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
       "status" : "passed",
       "time" : {
@@ -29,7 +29,7 @@
       "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
     }, {
       "name" : "test_3_publish_services_good[MI 8-data0]",
-      "uid" : "e46bfcd178da4c1",
+      "uid" : "a133a88a25c0f3d5",
       "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
       "status" : "passed",
       "time" : {
@@ -39,6 +39,42 @@
       },
       "flaky" : false,
       "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
+    }, {
+      "name" : "test_1_publish_entity_good[data0-open_app0]",
+      "uid" : "6bea5cca0c19d161",
+      "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
+      "status" : "broken",
+      "time" : {
+        "start" : 1597313796850,
+        "stop" : 1597313796850,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "{'phone': '17777777776', 'password': 'qaz123'}" ]
+    }, {
+      "name" : "test_2_publish_coupon_good[data0-open_app0]",
+      "uid" : "a3fc6fb27db1cfd2",
+      "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
+      "status" : "broken",
+      "time" : {
+        "start" : 1597313805880,
+        "stop" : 1597313805880,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "{'phone': '17777777776', 'password': 'qaz123'}" ]
+    }, {
+      "name" : "test_3_publish_services_good[data0-open_app0]",
+      "uid" : "7fd85a9617665aa8",
+      "parentUid" : "d330fb2fee04e0a024c99e1d19196214",
+      "status" : "broken",
+      "time" : {
+        "start" : 1597313805886,
+        "stop" : 1597313805886,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "{'phone': '17777777776', 'password': 'qaz123'}" ]
     } ],
     "uid" : "H5.PublishGood.test_publish_good"
   } ]

@@ -1,21 +1,21 @@
 {
-  "uid" : "89236591919d78e9",
-  "name" : "test_1_publish_entity_good[MI 8-data0]",
-  "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_1_publish_entity_good",
-  "historyId" : "ad70515ca4665da5915b1049b216c859",
+  "uid" : "a133a88a25c0f3d5",
+  "name" : "test_3_publish_services_good[MI 8-data0]",
+  "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_3_publish_services_good",
+  "historyId" : "c8f4d16d4b9b5c6bf55de8ef5f5fa68a",
   "time" : {
-    "start" : 1597227722490,
-    "stop" : 1597227763343,
-    "duration" : 40853
+    "start" : 1597227822301,
+    "stop" : 1597227839544,
+    "duration" : 17243
   },
   "status" : "passed",
-  "flaky" : true,
+  "flaky" : false,
   "beforeStages" : [ {
     "name" : "open_app",
     "time" : {
-      "start" : 1597227704461,
-      "stop" : 1597227722489,
-      "duration" : 18028
+      "start" : 1597227802988,
+      "stop" : 1597227822300,
+      "duration" : 19312
     },
     "status" : "passed",
     "steps" : [ ],
@@ -23,17 +23,17 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "首页点击发布商品",
       "time" : {
-        "start" : 1597227722490,
-        "stop" : 1597227723371,
-        "duration" : 881
+        "start" : 1597227822301,
+        "stop" : 1597227823630,
+        "duration" : 1329
       },
       "status" : "passed",
       "steps" : [ ],
@@ -41,14 +41,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
-      "name" : "选择发布实物商品",
+      "name" : "选择发布商企服务商品",
       "time" : {
-        "start" : 1597227723371,
-        "stop" : 1597227724338,
-        "duration" : 967
+        "start" : 1597227823630,
+        "stop" : 1597227823874,
+        "duration" : 244
       },
       "status" : "passed",
       "steps" : [ ],
@@ -56,14 +56,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
-      "name" : "发布实物商品",
+      "name" : "发布商企服务商品",
       "time" : {
-        "start" : 1597227724338,
-        "stop" : 1597227760832,
-        "duration" : 36494
+        "start" : 1597227823874,
+        "stop" : 1597227838006,
+        "duration" : 14132
       },
       "status" : "passed",
       "steps" : [ ],
@@ -71,14 +71,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "立即上架",
       "time" : {
-        "start" : 1597227760832,
-        "stop" : 1597227761962,
-        "duration" : 1130
+        "start" : 1597227838006,
+        "stop" : 1597227838634,
+        "duration" : 628
       },
       "status" : "passed",
       "steps" : [ ],
@@ -86,14 +86,14 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "断言：立即上架后系统提示商品审核中",
       "time" : {
-        "start" : 1597227761962,
-        "stop" : 1597227763343,
-        "duration" : 1381
+        "start" : 1597227838634,
+        "stop" : 1597227839544,
+        "duration" : 910
       },
       "status" : "passed",
       "steps" : [ ],
@@ -101,28 +101,28 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "3f41cb88fcaf77cb",
+      "uid" : "e974c008e2d56069",
       "name" : "log",
-      "source" : "3f41cb88fcaf77cb.txt",
+      "source" : "e974c008e2d56069.txt",
       "type" : "text/plain",
-      "size" : 12362
+      "size" : 6154
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 5
+    "stepsCount" : 5,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "open_app::0",
     "time" : {
-      "start" : 1597227763346,
-      "stop" : 1597227764444,
-      "duration" : 1098
+      "start" : 1597227839546,
+      "stop" : 1597227840485,
+      "duration" : 939
     },
     "status" : "passed",
     "steps" : [ ],
@@ -130,15 +130,15 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
+    "name" : "story",
+    "value" : "发布商企服务商品"
+  }, {
     "name" : "feature",
     "value" : "发布商品功能"
-  }, {
-    "name" : "story",
-    "value" : "发布实物商品"
   }, {
     "name" : "tag",
     "value" : "smoke"
@@ -175,7 +175,7 @@
   } ],
   "parameters" : [ {
     "name" : "data",
-    "value" : "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}"
+    "value" : "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}"
   }, {
     "name" : "open_app",
     "value" : "'MI 8'"
@@ -186,18 +186,17 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "2991c073a786325b",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "uid" : "df7ec5616be1d5a2",
+      "status" : "passed",
       "time" : {
-        "start" : 1597227454461,
-        "stop" : 1597227485751,
-        "duration" : 31290
+        "start" : 1597227562166,
+        "stop" : 1597227581271,
+        "duration" : 19105
       }
     } ],
     "categories" : [ ],
     "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
   },
-  "source" : "89236591919d78e9.json",
-  "parameterValues" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "'MI 8'" ]
+  "source" : "a133a88a25c0f3d5.json",
+  "parameterValues" : [ "{'product_title': 'APP商企服务', 'product_description': '发布商企服务搞定啦，继续优化', 'second_category_name': '设计', 'third_category_name': '广告设计', 'total_price': '100', 'subsist': '10', 'stock': '10000'}", "'MI 8'" ]
 }

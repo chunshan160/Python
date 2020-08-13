@@ -1,5 +1,5 @@
 {
-  "uid" : "2991c073a786325b",
+  "uid" : "7f7fc4d8af5f6fc7",
   "name" : "test_1_publish_entity_good[MI 8-data0]",
   "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_1_publish_entity_good",
   "historyId" : "ad70515ca4665da5915b1049b216c859",
@@ -25,8 +25,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "broken",
@@ -47,21 +47,21 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : true,
-      "hasContent" : true,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "9efc31e362d0024a",
+      "uid" : "c09d5ef710ae5c67",
       "name" : "log",
-      "source" : "9efc31e362d0024a.txt",
+      "source" : "c09d5ef710ae5c67.txt",
       "type" : "text/plain",
       "size" : 1152
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : true,
-    "hasContent" : true,
-    "stepsCount" : 1
+    "stepsCount" : 1,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "open_app::0",
@@ -76,8 +76,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "story",
@@ -133,6 +133,6 @@
     "categories" : [ ],
     "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
   },
-  "source" : "2991c073a786325b.json",
+  "source" : "7f7fc4d8af5f6fc7.json",
   "parameterValues" : [ "{'product_title': 'APP实物商品', 'product_description': '发布实物商品搞定啦，继续优化', 'quality_name': '全新', 'product_type': '易贝商品', 'second_category_name': '服装', 'third_category_name': '裤子', 'property_1': '外套', 'property_2': '红色', 'purchase_price': '100', 'sell_price': '100', 'stock': '10000', 'fare': '包邮'}", "'MI 8'" ]
 }

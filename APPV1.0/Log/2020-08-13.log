@@ -1,0 +1,15 @@
+2020-08-13 13:37:27,254 - INFO - user_log.py - 春衫 - 日志信息:元素('xpath', "//*[@text='始终允许']")不存在
+2020-08-13 13:37:27,256 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-13 13:37:27,303 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-13 13:37:27,303 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_yes')可见
+2020-08-13 13:37:27,338 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-13 13:37:27,339 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_yes
+2020-08-13 13:37:27,380 - INFO - user_log.py - 春衫 - 日志信息:发布商品-通用条件-处理欢迎页面-点击元素('id', 'com.ecloud.hobay:id/tv_yes')
+2020-08-13 13:37:27,458 - INFO - user_log.py - 春衫 - 日志信息:当前手机屏幕尺寸是：{'width': 1080, 'height': 2029}
+2020-08-13 13:37:33,679 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_experience_now')可见
+2020-08-13 13:37:33,921 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-13 13:37:33,922 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_experience_now')可见
+2020-08-13 13:37:33,974 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-13 13:37:33,976 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_experience_now
+2020-08-13 13:37:34,006 - INFO - user_log.py - 春衫 - 日志信息:发布商品-通用条件-处理欢迎页面-点击元素('id', 'com.ecloud.hobay:id/btn_experience_now')
+2020-08-13 13:37:34,057 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', "//*[@text='始终允许']")可见

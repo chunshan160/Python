@@ -1,5 +1,5 @@
 {
-  "uid" : "6ce8914632bdd957",
+  "uid" : "783845b09754ac05",
   "name" : "test_2_publish_coupon_good[MI 8-data0]",
   "fullName" : "H5.PublishGood.test_publish_good.TestPublishGood#test_2_publish_coupon_good",
   "historyId" : "4cf864ce9f8013507e9b3f3c0783290c",
@@ -23,8 +23,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
@@ -41,8 +41,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "选择发布本地生活商品",
       "time" : {
@@ -56,8 +56,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "发布本地生活商品",
       "time" : {
@@ -71,8 +71,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "立即上架",
       "time" : {
@@ -86,8 +86,8 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "断言：立即上架后系统提示商品审核中",
       "time" : {
@@ -101,21 +101,21 @@
       "parameters" : [ ],
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : false,
-      "stepsCount" : 0
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "207cefafdbea43c7",
+      "uid" : "278c8aa983cb8ef1",
       "name" : "log",
-      "source" : "207cefafdbea43c7.txt",
+      "source" : "278c8aa983cb8ef1.txt",
       "type" : "text/plain",
       "size" : 6622
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 5
+    "stepsCount" : 5,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "open_app::0",
@@ -130,8 +130,8 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "feature",
@@ -187,6 +187,6 @@
     "categories" : [ ],
     "tags" : [ "smoke", "@pytest.mark.usefixtures('open_app')" ]
   },
-  "source" : "6ce8914632bdd957.json",
+  "source" : "783845b09754ac05.json",
   "parameterValues" : [ "{'product_title': 'APP本地生活', 'product_description': '发布本地生活搞定啦，继续优化', 'second_category_name': '酒水', 'third_category_name': '红酒', 'category_type': '代金券', 'total_price': '100', 'stock': '10000'}", "'MI 8'" ]
 }

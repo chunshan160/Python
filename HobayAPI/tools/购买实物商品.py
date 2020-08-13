@@ -7,8 +7,7 @@
 from http_request import HttpRequest
 
 
-def bug_goods(buyer_phone, seller_phone, product_name, payType):
-
+def bug_goods(buyer_phone, seller_phone, product_name, payPassword, payType):
     # 卖家登录
     login_url = 'http://m.test.hobay.com.cn/api/app/user/login'  # 登录
     seller_login_data = {"loginValidateType": "CODE", "phone": seller_phone, "validateValue": "666666"}
@@ -24,13 +23,13 @@ def bug_goods(buyer_phone, seller_phone, product_name, payType):
     # print("商品管理出售中的商品是：", product_res.json())
 
     # 获取商品规格id
-    product_data=product_res.json()['data']['result']
-    for i in range(0,len(product_data)):
-        if product_data[i]['title']==product_name:
-            productStockId=product_data[i]['productStockWithStockImages'][0]['id']
-            print("商品规格id是：",productStockId)
+    product_data = product_res.json()['data']['result']
+    for i in range(0, len(product_data)):
+        if product_data[i]['title'] == product_name:
+            productStockId = product_data[i]['productStockWithStockImages'][0]['id']
+            print("商品规格id是：", productStockId)
 
-    #买家登录
+    # 买家登录
     buyer_login_data = {"loginValidateType": "CODE", "phone": buyer_phone, "validateValue": "666666"}
     buyer_login_res = HttpRequest().http_request(login_url, "post", json=buyer_login_data)
     print("登录结果是：", buyer_login_res.json())
@@ -44,7 +43,6 @@ def bug_goods(buyer_phone, seller_phone, product_name, payType):
                                              cookies=buyer_login_res.cookies,
                                              headers=address_headers)
     print("获取收货地址的结果是：", address_res.json())
-
 
     # 提交订单
     addressId = address_res.json()['currentUser_receiveAddress_recordList'][0]['id']
@@ -61,11 +59,10 @@ def bug_goods(buyer_phone, seller_phone, product_name, payType):
     orderNum = SaveOrder_res.json()['data']['orderNum']
     pay_url = "http://m.test.hobay.com.cn/ribbon-api/batchOrders/payAllCBP"
     pay_data = {"tradeNUm": orderNum, "payType": payType, "shareWalletUserId": "", "shareWalletId": ""}
-    pay_headers = {"login": "", "payPassword": "OH8lKuLTcZc="}
+    pay_headers = {"login": "", "payPassword": payPassword}
     pay_res = HttpRequest().http_request(pay_url, "post", json=pay_data, cookies=buyer_login_res.cookies,
                                          headers=pay_headers)
     print("支付订单的结果是：", pay_res.json())
-
 
     # 确认订单
     orderId = SaveOrder_res.json()['data']['orderId']
@@ -94,11 +91,11 @@ def bug_goods(buyer_phone, seller_phone, product_name, payType):
     suer_url = 'http://m.test.hobay.com.cn/ribbon-api/orders/recieve'
     sellerUserId = seller_login_res.json()['userId']
     suer_data = {'orderId': orderId, 'payType': payType, 'sellerUserId': sellerUserId}
-    suer_headers = {'login': '', 'payPassword': 'OH8lKuLTcZc='}
+    suer_headers = {'login': '', 'payPassword': payPassword}
     suer_res = HttpRequest().http_request(suer_url, 'post', data=suer_data, headers=suer_headers,
                                           cookies=buyer_login_res.cookies)
     print('确认收货的结果是：', suer_res.json())
 
 
 if __name__ == '__main__':
-    bug_goods(13724765586, 17777777776, "普通焕商实物商品", 3)
+    bug_goods(17777777994, 17777777776, "普通焕商实物商品", "qNlHQue5Y/U=", 3)

@@ -51,12 +51,13 @@ def input_user(login_phone, input_phone):
     # 判断绑定的我的客户是否激活
     MyCustome_data = MyCustomer_res.json()["data"]['result']
     for i in range(len(MyCustome_data)):
-        if MyCustome_data[i]["phone"] == input_phone:
+        if MyCustome_data[i]["phone"] == str(input_phone):
             partnerStatus = MyCustome_data[i]["partnerStatus"]
             if partnerStatus == 1:
                 print(f"{input_phone}激活成功")
             else:
                 print(f"{input_phone}激活失败，partnerStatus={partnerStatus}")
+            break
 
     return register_id
 
@@ -95,7 +96,7 @@ def parner(login_phone, input_phone,input_user_id):
     # 查得出来就是绑定了，查不出来可能是待转正伙伴，也可能是没绑
     if len(parner_data) == 1:
         print("搜索查询到了一条数据")
-        if parner_data[0]["id"] == input_user_id:
+        if parner_data[0]["id"] == str(input_user_id):
             if login_type == "正式个人焕商" or login_type == "区域焕商":
                 print(parner_data[0]["validDay"])
                 if parner_data[0]["validDay"] == None:
@@ -120,7 +121,7 @@ def parner(login_phone, input_phone,input_user_id):
             print("我的伙伴-待转正伙伴-搜索伙伴的结果是：", search_parner2_res.json())
             parner2_data = search_parner2_res.json()["recordList"]
             if len(parner2_data) == 1:
-                if parner2_data[0]["id"] == input_user_id:
+                if parner2_data[0]["id"] == int(input_user_id):
                     if parner2_data[0]["validDay"] != None:
                         print(f"{input_phone}是{login_phone}的待转正伙伴")
                     else:
@@ -134,8 +135,8 @@ def parner(login_phone, input_phone,input_user_id):
 
 
 if __name__ == '__main__':
-    login_phone=17777777775
-    input_phone=17777777972
-    # input_user_id=input_user(login_phone, input_phone)
-    input_user_id =1001363
+    login_phone=17777777952
+    input_phone=17777778000
+    # input_user_id =1001363
+    input_user_id=input_user(login_phone, input_phone)
     parner(login_phone, input_phone,input_user_id)

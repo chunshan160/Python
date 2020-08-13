@@ -111,10 +111,11 @@ class BasePage:
 
     # 点击操作
     def click_element(self, locator, doc=""):
+        self.wait_eleVisible(locator, doc=doc)
+        # 找元素
+        ele = self.get_element(locator, doc)
+        UserLog().info(f"{doc}点击元素{locator}")
         try:
-            # 找元素
-            ele = self.get_element(locator, doc)
-            UserLog().info(f"{doc}点击元素{locator}")
             # 元素操作
             ele.click()
         except:
@@ -125,10 +126,11 @@ class BasePage:
 
     # 点击操作
     def click_elements(self, locator, index, doc=""):
+        self.wait_eleVisible(locator, doc=doc)
+        # 找元素
+        ele = self.get_elements(locator, doc)[index]
+        UserLog().info(f"{doc}点击元素{locator}")
         try:
-            # 找元素
-            ele = self.get_elements(locator, doc)[index]
-            UserLog().info(f"{doc}点击元素{locator}")
             # 元素操作
             ele.click()
         except:
@@ -139,8 +141,9 @@ class BasePage:
 
     # 输入操作
     def input_text(self, locator, text, doc=""):
+        self.wait_eleVisible(locator, doc=doc)
+        ele = self.get_element(locator, doc)
         try:
-            ele = self.get_element(locator, doc)
             # 输入操作
             ele.send_keys(text)
         except:
@@ -153,9 +156,9 @@ class BasePage:
     def get_text(self, locator, doc=""):
         self.wait_eleVisible(locator, doc=doc)
         ele = self.get_element(locator, doc)
+        UserLog().info(f"获取到的文本内容是：{ele.text}")
         # 输入操作
         try:
-            UserLog().info(f"获取到的文本内容是：{ele.text}")
             return ele.text
         except:
             UserLog().info("获取元素文本内容失败!")
@@ -404,7 +407,7 @@ class BasePage:
             return False
 
     # 匹配文本来处理表达式
-    def locator_by_text(self,locator,name,text=""):
+    def locator_by_text(self,locator,name):
         new_locator=(locator[0],locator[1].format(name))
         return new_locator
 
