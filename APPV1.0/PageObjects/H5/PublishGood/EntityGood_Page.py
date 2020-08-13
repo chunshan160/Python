@@ -56,7 +56,7 @@ class EntityGoodPage(BasePage):
     # 选择全新
     def select_quality(self, quality_name, text=""):
         doc = text + f"点击【{quality_name}】选项-"
-        new_locator = self.locator_by_text(EG.quality_new, quality_name, text=doc)
+        new_locator = self.locator_by_text(EG.quality_new, quality_name)
         self.wait_eleVisible(new_locator, doc=doc)
         self.click_element(new_locator, doc=doc)
 
@@ -69,7 +69,7 @@ class EntityGoodPage(BasePage):
     # 选择商品类型
     def select_product_type(self, product_type, text=""):
         doc = text + f"选择【商品类型】-【{product_type}】选项-"
-        new_locator = self.locator_by_text(EG.product_type_select, product_type, text=doc)
+        new_locator = self.locator_by_text(EG.product_type_select, product_type)
         self.wait_eleVisible(new_locator, doc=doc)
         self.click_element(new_locator, doc=doc)
 
@@ -147,7 +147,7 @@ class EntityGoodPage(BasePage):
     # 运费类型-包邮
     def fare_type(self, fare, text=""):
         doc = text + f"【运费】类型-选择【{fare}】选项-"
-        new_locator = self.locator_by_text(EG.fare_manner, fare, text=doc)
+        new_locator = self.locator_by_text(EG.fare_manner, fare)
         self.wait_eleVisible(new_locator, doc=doc)
         self.click_element(new_locator, doc=doc)
 

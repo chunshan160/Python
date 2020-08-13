@@ -1,7 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"passed","H5.PublishGood.test_publish_good.TestPublishGood#test_1_publish_entity_good","40853",""
-"passed","H5.PublishGood.test_publish_good.TestPublishGood#test_3_publish_services_good","17243",""
-"broken","H5.PublishGood.test_publish_good.TestPublishGood#test_2_publish_coupon_good","0",""
-"broken","H5.PublishGood.test_publish_good.TestPublishGood#test_1_publish_entity_good","0",""
-"broken","H5.PublishGood.test_publish_good.TestPublishGood#test_3_publish_services_good","0",""
-"passed","H5.PublishGood.test_publish_good.TestPublishGood#test_2_publish_coupon_good","18770",""

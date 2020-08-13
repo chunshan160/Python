@@ -4,6 +4,9 @@
 # @Author :春衫
 # @File :piblish_datas.py
 
+
+Login_data={"phone": "17777777776", "password": "qaz123"}
+
 # 实物商品
 EntityGood_data = [
     {"product_title": "APP实物商品", "product_description": "发布实物商品搞定啦，继续优化", "quality_name": "全新", "product_type": "易贝商品",

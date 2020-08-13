@@ -21,48 +21,41 @@ class CouponGoodPage(BasePage):
     # 输入商品标题
     def product_title(self, product_title, text=""):
         doc = text + "输入商品标题-"
-        self.wait_eleVisible(CG.product_title, doc=doc)
         UserLog().info("输入的商品标题是:" + product_title)
         self.input_text(CG.product_title, product_title, doc=doc)
 
     # 输入商品详情
     def product_description(self, product_description, text=""):
         doc = text + "输入商品详情-"
-        self.wait_eleVisible(CG.product_description, doc=doc)
         UserLog().info("输入商品详情:" + product_description)
         self.input_text(CG.product_description, product_description, doc=doc)
 
     # 点击券类
     def coupon(self, text=""):
         doc = text + "点击【券类】按钮-"
-        self.wait_eleVisible(CG.coupon, doc=doc)
         self.click_element(CG.coupon, doc=doc)
 
     # 选择券类
     def coupon_category(self, category_type, text=""):
         doc = text + f"选择【{category_type}】-"
-        new_locator = self.locator_by_text(CG.coupon_category, category_type, text=doc)
-        self.wait_eleVisible(new_locator, doc=doc)
+        new_locator = self.locator_by_text(CG.coupon_category, category_type)
         self.click_element(new_locator, doc=doc)
 
     # 商品总价
     def total_price(self, total_price, text=""):
         doc = text + "输入商品总价-"
-        self.wait_eleVisible(CG.total_price, doc=doc)
         UserLog().info("输入的商品总价是:" + total_price)
         self.input_text(CG.total_price, total_price, doc=doc)
 
     # 商品库存
     def stock(self, stock, text=""):
         doc = text + "输入商品库存-"
-        self.wait_eleVisible(CG.stock, doc=doc)
         UserLog().info("输入的商品库存是:" + stock)
         self.input_text(CG.stock, stock, doc=doc)
 
     # 限购数量
     def limit_quantity(self, limit_quantity, text=""):
         doc = text + "输入限购数量-"
-        self.wait_eleVisible(CG.limit_quantity, doc=doc)
         UserLog().info("输入的商品限购数量是:" + limit_quantity)
         self.input_text(CG.limit_quantity, limit_quantity, doc=doc)
 

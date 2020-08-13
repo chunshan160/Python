@@ -299,17 +299,14 @@ class BasePage:
     def app_upload_image(self, upload_locator, choose_locator, ok_locator, doc=""):
         try:
             # 点击上传主图
-            self.wait_eleVisible(upload_locator,doc=doc)
             self.click_element(upload_locator)
             # 权限-始终允许
             time.sleep(1)
             if self.ele_if_exist(Common.always_allowed):
                 self.click_element(Common.always_allowed, doc=doc)
             # 选择图片
-            self.wait_eleVisible(choose_locator,doc=doc)
             self.click_element(choose_locator)
             # 点击确定
-            self.wait_eleVisible(ok_locator,doc=doc)
             self.click_element(ok_locator)
         except:
             UserLog().info("上传图片失败!")
