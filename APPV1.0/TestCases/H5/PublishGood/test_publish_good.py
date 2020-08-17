@@ -39,7 +39,7 @@ class TestPublishGood:
     #                                                          data["stock"], data["fare"],text=doc)
     #     with allure.step("立即上架"):
     #         PublishGoodCommon(open_app).submit(text=doc)
-    #     with allure.step("断言：立即上架后系统提示商品审核中"):
+    #     with allure.step("断言：立即上架后系统提示：商品审核中"):
     #         text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
     #         assert text == "商品审核中"
     #
@@ -60,20 +60,21 @@ class TestPublishGood:
     #                                                          data["total_price"], data["stock"], text=doc)
     #     with allure.step("立即上架"):
     #         PublishGoodCommon(open_app).submit()
-    #     with allure.step("断言：立即上架后系统提示商品审核中"):
+    #     with allure.step("断言：立即上架后系统提示：商品审核中"):
     #         text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
     #         assert text == "商品审核中"
 
     @allure.story("发布商企服务商品")
     @pytest.mark.smoke
+    # @pytest.mark.flaky(reruns=5, reruns_delay=2)
     @pytest.mark.usefixtures("open_app")
     @pytest.mark.parametrize("data", ServerGood_data)  # 替代ddt
     def test_3_publish_services_good(self, open_app, data):
         doc = "测试发布商企服务商品-"
         with allure.step("首页点击发布商品"):
-            CommBus(open_app).click_publish_good()
+            CommBus(open_app).click_publish_good(text=doc)
         with allure.step("选择发布商企服务商品"):
-            PublishGoodCommon(open_app).publish_services_good()
+            PublishGoodCommon(open_app).publish_services_good(text=doc)
         with allure.step("发布商企服务商品"):
             ServicesGoodPage(open_app).services_good_information(data["product_title"], data["product_description"],
                                                                  data["second_category_name"],
@@ -82,14 +83,13 @@ class TestPublishGood:
                                                                  data["stock"], text=doc)
 
         with allure.step("立即上架"):
-            PublishGoodCommon(open_app).submit()
-        with allure.step("断言：立即上架后系统提示商品审核中"):
+            PublishGoodCommon(open_app).submit(text=doc)
+        with allure.step("断言：立即上架后系统提示：商品审核中"):
             text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
             assert text == "商品审核中"
 
 
 if __name__ == '__main__':
     pytest.main(
-        ["-s", "test_publish_good.py", "--alluredir", allure_report + "/result", "--reruns", "3", "--reruns-delay",
-         '3'])
+        ["-v", "--reruns" ,"5" ,"--reruns-delay" ,"1", "test_publish_good.py", "--alluredir", allure_report + "/result"])
     os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

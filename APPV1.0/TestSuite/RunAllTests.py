@@ -2,7 +2,6 @@
 
 """"" 运行 “.” (当前)目录下的所有测试用例，并生成HTML测试报告 """""
 
-from TestCases.test_buygoods4 import TestBuyGoods
 import unittest
 import HTMLTestReportCN
 

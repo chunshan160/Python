@@ -1,0 +1,11 @@
+[ {
+  "uid" : "c1a7e63c18dcb6c0",
+  "name" : "test_1_buy_entity_goods[MI 8-data0]",
+  "time" : {
+    "start" : 1597554557497,
+    "stop" : 1597554578574,
+    "duration" : 21077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

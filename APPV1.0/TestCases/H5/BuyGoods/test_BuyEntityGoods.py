@@ -8,12 +8,9 @@ import time
 import ddt
 import unittest
 import warnings
-import HTMLTestReportCN
 from appium import webdriver
 from Common.BasePage import BasePage
 from PageLocators.H5.Index import Index
-from PageLocators.H5.MyIndex import MyIndex
-from PageLocators.H5.MyIndex import Setting
 from PageObjects.H5.Index.Index import IndexPage
 from PageObjects.H5.SearchGood.SearchGood import SearchGoodPage
 from PageObjects.H5.GoodDetail.GoodDetail_Page import GoodDetailPage

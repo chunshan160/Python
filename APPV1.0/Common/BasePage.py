@@ -396,7 +396,7 @@ class BasePage:
     # 判断元素是否存在
     def ele_if_exist(self, locator):
         try:
-            self.driver.find_element(*locator)
+            self.get_element(locator)
             UserLog().info(f"元素{locator}存在")
             return True
         except:

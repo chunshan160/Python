@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "购买商品功能",
+    "children" : [ {
+      "name" : "购买实物商品",
+      "children" : [ {
+        "name" : "test_1_buy_entity_goods[MI 8-data0]",
+        "uid" : "c1a7e63c18dcb6c0",
+        "parentUid" : "263cecbe10f221aa224d722378fac657",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597554557497,
+          "stop" : 1597554578574,
+          "duration" : 21077
+        },
+        "flaky" : false,
+        "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '易贝券'}" ]
+      } ],
+      "uid" : "263cecbe10f221aa224d722378fac657"
+    } ],
+    "uid" : "263c8a45de9fd5b7c16c9d2bc2379b19"
+  } ]
+}

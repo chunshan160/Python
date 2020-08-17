@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "H5.BuyGoods.test_BuyGoods",
+    "children" : [ {
+      "name" : "test_1_buy_entity_goods[MI 8-data0]",
+      "uid" : "c1a7e63c18dcb6c0",
+      "parentUid" : "33aa23b3c0f3b7fd8543d27b4a98ca94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1597554557497,
+        "stop" : 1597554578574,
+        "duration" : 21077
+      },
+      "flaky" : false,
+      "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '易贝券'}" ]
+    } ],
+    "uid" : "H5.BuyGoods.test_BuyGoods"
+  } ]
+}

@@ -17,7 +17,7 @@ test_case_path = os.path.join(project_path, "TestData", "fenyong_data.xlsx")
 test_report_path = os.path.join(project_path, "Report")
 
 # 配置文件的路径
-case_config_path = os.path.join(project_path, "Source", "case.config")
+case_config_path = os.path.join(project_path, "Conf", "case.config")
 
 # 日志输出文件的路径
 log_path = os.path.join(project_path, "Log")
@@ -33,6 +33,5 @@ caps_dir=os.path.join(project_path,"Desired_Caps","Caps.yaml")
 
 allure_report=os.path.join(project_path,"Outputs","Allure")
 
-# a=f'allure generate {allure_report}/result -o {allure_report}/html --clean'
-# print(a)
-# print("-s", "test_publish_good.py", "--alluredir", allure_report + "/result")
+a=f'allure generate {allure_report}/result -o {allure_report}/html --clean'
+print(a)

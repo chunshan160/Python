@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-TQCH86L",
+    "children" : [ {
+      "name" : "9996-MainThread",
+      "children" : [ {
+        "name" : "test_1_buy_entity_goods[MI 8-data0]",
+        "uid" : "c1a7e63c18dcb6c0",
+        "parentUid" : "576eacc19765a341bdaf63f3bba03be2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1597554557497,
+          "stop" : 1597554578574,
+          "duration" : 21077
+        },
+        "flaky" : false,
+        "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '易贝券'}" ]
+      } ],
+      "uid" : "576eacc19765a341bdaf63f3bba03be2"
+    } ],
+    "uid" : "10c80158b2c9660c8ca5ab0e85246425"
+  } ]
+}

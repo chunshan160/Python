@@ -24,8 +24,7 @@ class CommBus(BasePage):
         # 如果没有找到首页的元素/或者不包含MainActivity,那么就是在欢迎页面
         curAct = self.driver.current_activity
         # 权限-始终允许
-        ele = self.ele_if_exist(Common.always_allowed)
-        if ele:
+        if self.ele_if_exist(Common.always_allowed):
             self.click_element(Common.always_allowed)
 
         if curAct.find("HomeActivity") == -1:
@@ -39,7 +38,9 @@ class CommBus(BasePage):
             # 点击立即体验
             self.click_element(welcome.experience_now, doc=doc)
             # 权限-始终允许
-            self.click_element(Common.always_allowed, doc=doc)
+            time.sleep(2)
+            if self.ele_if_exist(Common.always_allowed):
+                self.click_element(Common.always_allowed, doc=doc)
 
     # 获取当前app的登陆状态
     def get_loginStatus(self, text=""):
@@ -51,10 +52,10 @@ class CommBus(BasePage):
         ele = self.ele_if_exist(MyIndex.setting)
         return ele
 
-    # 我的
-    def click_myindex(self, text=""):
-        doc = text + "点击底部导航栏-我的-"
-        self.click_element(Common.my_index, doc=doc)
+    # 首页
+    def click_index(self, text=""):
+        doc = text + "点击底部导航栏-首页-"
+        self.click_element(Common.index, doc=doc)
 
     # 易货信用
     def click_credit_good(self, text=""):
@@ -70,6 +71,11 @@ class CommBus(BasePage):
     def click_publish_good(self, text=""):
         doc = text + "点击底部导航栏-发布商品-"
         self.click_element(Common.publish_good, doc=doc)
+
+    # 我的
+    def click_myindex(self, text=""):
+        doc = text + "点击底部导航栏-我的-"
+        self.click_element(Common.my_index, doc=doc)
 
     # 处理登陆账号
     def login(self, phone, password, text=""):

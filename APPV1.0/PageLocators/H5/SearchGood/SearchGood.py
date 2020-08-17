@@ -11,7 +11,7 @@ send_search=(MobileBy.ID,"com.ecloud.hobay:id/et_search")
 #商品tap
 good_tap=(MobileBy.ACCESSIBILITY_ID,"商品")
 #店铺tap
-shop_tap=(MobileBy.ACCESSIBILITY_ID,"商品")
+shop_tap=(MobileBy.ACCESSIBILITY_ID,"店铺")
 #综合
 Comprehensive=(MobileBy.ID,"com.ecloud.hobay:id/tv_sort_complex")
 #全新

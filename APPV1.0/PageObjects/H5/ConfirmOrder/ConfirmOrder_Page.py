@@ -37,7 +37,7 @@ class ConfirmOrderPage(BasePage):
         # 点击输入手机号
         self.touch(tap["输入收货人手机号码"][0], tap["输入收货人手机号码"][1],doc=doc+"点击【输入手机号】栏-")
         # 输入手机号
-        self.send_phone_number(11111111111,doc=doc+"输入手机号-")
+        self.send_phone_number(11111111111,text=doc+"输入手机号-")
         # 点击所在地区
         self.touch(tap["选择所在地区"][0], tap["选择所在地区"][1],doc=doc+"点击【所在地区】栏-")
         time.sleep(0.5)
