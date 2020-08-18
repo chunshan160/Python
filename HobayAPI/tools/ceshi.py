@@ -28,8 +28,8 @@ def input_user(login_phone, input_phone):
 #正式个人焕商
 #代理商小号
 #非正式焕商
-input_phone=17777777998
+input_phone=17777777716
 #区域焕商
 # input_user_id =1001363
-for login_phone in [17777777952,17777777953,22222222222,17777777950,17777777772]:
+for login_phone in [17777777952,88888888888,17777777950,17777777772]:
     input_user(login_phone, input_phone)
