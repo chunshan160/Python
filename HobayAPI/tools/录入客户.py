@@ -135,8 +135,8 @@ def parner(login_phone, input_phone,input_user_id):
 
 
 if __name__ == '__main__':
-    login_phone=17777777952
-    input_phone=17777778000
+    login_phone=88888888888
+    input_phone=17777777718
     # input_user_id =1001363
     input_user_id=input_user(login_phone, input_phone)
     parner(login_phone, input_phone,input_user_id)

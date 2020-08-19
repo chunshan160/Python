@@ -3,6 +3,8 @@
 # @Time :2020/8/13 10:51
 # @Author :春衫
 # @File :ceshi.py
+import time
+
 from http_request import HttpRequest
 
 
@@ -28,8 +30,10 @@ def input_user(login_phone, input_phone):
 #正式个人焕商
 #代理商小号
 #非正式焕商
-input_phone=17777777716
+input_phone=17777777733
 #区域焕商
 # input_user_id =1001363
-for login_phone in [17777777952,88888888888,17777777950,17777777772]:
+
+for login_phone in [17777777952,22222222222,17777777950,17777777772]:
     input_user(login_phone, input_phone)
+    time.sleep(1)
