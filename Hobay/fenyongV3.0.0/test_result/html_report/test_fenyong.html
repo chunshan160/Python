@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>自动化测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">自动化测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 春衫</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-07-08 11:51:46</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:03:30.556004</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 1，通过 1，通过率= 100.00%</p>
+
+<p class='description'>V2.5.10焕商分佣2.0</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 1 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestCases.test_buygoods4.TestBuyGoods</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_1_buy_goods_1</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: 2020-07-08 11:51:52,080 - INFO - my_log.py - 春衫 - 日志信息:----------开始执行用例2，环境是test----------
+----------开始BOSS后台设置运营分佣比例操作----------
+----------BOSS后台运营分佣比例设置完毕----------
+2020-07-08 11:55:03,894 - INFO - my_log.py - 春衫 - 日志信息:----------前端操作执行完毕----------
+2020-07-08 11:55:06,996 - INFO - my_log.py - 春衫 - 日志信息:----------开始进行对比----------
+---------------------分割线-------------------------
+选择的会员等级是：钻石会员
+选择的支付方式是：易贝券
+买家不需要支付易贝服务费
+买家不需要支付现金服务费
+----------------计算支付服务费分佣----------------
+----------------计算现金服务费（储备池）分佣----------------
+储备池金额是：60.00
+----------开始计算储备池分佣----------
+买家上级省代理商分佣比例是：0.80，买家上级市代理商分佣比例是：0.70，买家上级区代理商分佣比例是：None，买家绑定的个人焕商分佣比例是：0.15
+个人焕商获得得的现金交易分佣是：100 * 0.15 = 15.00
+该买家没有上级区代理商，不会获得分佣。
+市代理商获得的现金交易分佣是：0.70 * 45.00 = 31.50
+省代理商获得的现金交易分佣是：0.10 * 45.00 = 4.50
+平台获得的现金交易分佣是：60.00 - 15.00 - 0 - 31.50 - 4.50 = 9.00
+----------开始判断这笔交易储备金是否需要走二级分佣----------
+买家是由销售/业务焕商/TCO邀请进来的，并且设置了二级分佣比例，需要走二级分佣
+----------这笔交易储备金分佣需要走二级分佣流程----------
+----------开始计算储备金二级分佣----------
+买家由业务焕商邀请进来，该业务焕商的id是：1000750，买家上级TCOid是：1000794，买家上级的上级id是：None，买家上级的上级身份是：None
+这笔订单储备金二级分佣使用是省代理商1000646的分佣比例，省代理商销售分佣比例是：0.30，省代理商TCO分佣比例是：0.30，省代理商业务焕商分佣比例是：0.00
+需要进行储备金二级分佣的省代理商是：1000646，该省代理商一级分佣应得金额是：4.50
+储备池买家绑定的上级TCOid是：1000794，该TCO获得的二级分佣是：1.35
+储备池买家绑定的上级业务焕商id是：1000750，该业务焕商获得的二级分佣是：0.00
+储备池买家绑定的上级业务焕商获得分佣等于0.00，舍去流水明细
+储备池买家没有绑定上级销售/业务焕商，不会获得分佣
+二级分佣是拿省代理商的钱来分，该省代理商最终实际获得的分佣金额是：4.50 - 1.35 - 0.00 - 0.00 = 3.15
+----------开始判断这笔交易服务费是否需要走二级分佣----------
+----------使用易贝券支付不需要支付服务费，不会走二级分佣流程----------
+2020-07-08 11:55:08,292 - INFO - my_log.py - 春衫 - 日志信息:用例2正确！目的：
+买家为（公海用户）且绑定省代，市代，区代
+卖家为（个人焕商）且绑定个人焕商，省代，市代，区代
+
+使用（易贝券）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣
+2020-07-08 11:55:08,724 - INFO - my_log.py - 春衫 - 日志信息:----------对比结束----------
+2020-07-08 11:55:08,725 - INFO - my_log.py - 春衫 - 日志信息:----------用例2执行完毕----------
+2020-07-08 11:55:16,760 - INFO - my_log.py - 春衫 - 日志信息:----------结束----------
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
