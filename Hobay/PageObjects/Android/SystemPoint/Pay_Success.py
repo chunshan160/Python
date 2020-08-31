@@ -25,7 +25,7 @@ class PaySuccessPage(BasePage):
     def close_windows(self,text=""):
         doc=text+"关闭弹窗-"
         time.sleep(2)
-        if self.get_element(close_pop_ups, doc=doc):
+        if self.ele_if_exist(close_pop_ups):
             self.click_element(close_pop_ups,doc=doc)
 
     # 支付成功

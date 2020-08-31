@@ -101,6 +101,6 @@ class TestBuyGoods:
 
 if __name__ == '__main__':
     pytest.main(
-        ["-v", "-s", "--reruns", "3", "--reruns-delay", "1", "test_BuyGoods.py", "--alluredir",
+        ["-v","-s", "--reruns", "1", "--reruns-delay", "1", "test_BuyGoods.py", "--alluredir",
          allure_report + "/result"])
     os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

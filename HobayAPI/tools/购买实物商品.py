@@ -98,4 +98,4 @@ def bug_goods(buyer_phone, seller_phone, product_name, payPassword, payType):
 
 
 if __name__ == '__main__':
-    bug_goods(17777777994, 17777777776, "普通焕商实物商品", "qNlHQue5Y/U=", 3)
+    bug_goods(17777777994, 17777777776, "普通焕商实物商品", "123456", 3)

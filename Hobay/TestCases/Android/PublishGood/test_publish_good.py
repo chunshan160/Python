@@ -43,7 +43,7 @@ class TestPublishGood:
             text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
             assert text == "商品审核中"
         with allure.step("截图保存到项目中"):
-            open_app.save_screenshot(f"{allure_report}/screenshot/发布实物商品-发布实物商品.png")
+            open_app.save_screenshot(f"{allure_report}/screenshot/发布商品功能-发布实物商品.png")
             allure.attach.file(f"{allure_report}/screenshot/发布商品功能-发布实物商品.png", "附件截图",
                                attachment_type=allure.attachment_type.PNG)
 
@@ -101,5 +101,5 @@ class TestPublishGood:
 
 if __name__ == '__main__':
     pytest.main(
-        ["-v", "--reruns" ,"5" ,"--reruns-delay" ,"1", "test_publish_good.py", "--alluredir", allure_report + "/result"])
+        ["-v", "--reruns" ,"1" ,"--reruns-delay" ,"1", "test_publish_good.py", "--alluredir", allure_report + "/result"])
     os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

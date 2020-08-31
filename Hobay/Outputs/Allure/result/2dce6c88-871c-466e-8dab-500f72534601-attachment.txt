@@ -1,0 +1,185 @@
+2020-08-31 16:54:39,989 - INFO - user_log.py - 春衫 - 日志信息:元素('xpath', "//*[@text='始终允许']")不存在
+2020-08-31 16:54:42,577 - INFO - user_log.py - 春衫 - 日志信息:元素('id', 'com.ecloud.hobay:id/tv_title')不存在
+2020-08-31 16:54:42,579 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+2020-08-31 16:54:43,020 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:43,021 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+2020-08-31 16:54:43,260 - INFO - user_log.py - 春衫 - 日志信息:发布商品-通用条件-处理登陆账号-获取当前app的登陆状态-点击元素('id', 'com.ecloud.hobay:id/rb_me')
+2020-08-31 16:54:44,194 - INFO - user_log.py - 春衫 - 日志信息:元素('id', 'com.ecloud.hobay:id/tv_setting')存在
+2020-08-31 16:54:44,196 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_phone')可见
+2020-08-31 16:54:44,330 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:44,331 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_phone
+2020-08-31 16:54:44,474 - INFO - user_log.py - 春衫 - 日志信息:获取到的文本内容是：17777777776
+2020-08-31 16:54:44,526 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/rb_helpping_me')可见
+2020-08-31 16:54:45,199 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:45,200 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_helpping_me
+2020-08-31 16:54:45,563 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击底部导航栏-发布商品-点击元素('id', 'com.ecloud.hobay:id/rb_helpping_me')
+2020-08-31 16:54:45,702 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/iv_publish_product')可见
+2020-08-31 16:54:46,954 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:54:46,955 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/iv_publish_product
+2020-08-31 16:54:47,060 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击发布实物商品-点击元素('id', 'com.ecloud.hobay:id/iv_publish_product')
+2020-08-31 16:54:47,167 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/iv_add_pic')可见
+2020-08-31 16:54:47,843 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:47,844 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/iv_add_pic
+2020-08-31 16:54:47,912 - INFO - user_log.py - 春衫 - 日志信息:点击元素('id', 'com.ecloud.hobay:id/iv_add_pic')
+2020-08-31 16:54:49,477 - INFO - user_log.py - 春衫 - 日志信息:元素('xpath', "//*[@text='始终允许']")不存在
+2020-08-31 16:54:49,478 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/cb_check')可见
+2020-08-31 16:54:49,584 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:49,585 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/cb_check
+2020-08-31 16:54:49,633 - INFO - user_log.py - 春衫 - 日志信息:点击元素('id', 'com.ecloud.hobay:id/cb_check')
+2020-08-31 16:54:49,703 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_ok')可见
+2020-08-31 16:54:50,630 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:50,632 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_ok
+2020-08-31 16:54:50,745 - INFO - user_log.py - 春衫 - 日志信息:点击元素('id', 'com.ecloud.hobay:id/btn_ok')
+2020-08-31 16:54:50,824 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_product_title')可见
+2020-08-31 16:54:52,034 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:54:52,035 - INFO - user_log.py - 春衫 - 日志信息:输入的商品标题是:APP实物商品
+2020-08-31 16:54:52,036 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_product_title')可见
+2020-08-31 16:54:52,130 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:52,131 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/et_product_title
+2020-08-31 16:54:52,290 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_product_detail')可见
+2020-08-31 16:54:53,229 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:53,230 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_product_detail')可见
+2020-08-31 16:54:53,320 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:53,321 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_product_detail
+2020-08-31 16:54:53,386 - INFO - user_log.py - 春衫 - 日志信息:点击【商品描述】选项-点击元素('id', 'com.ecloud.hobay:id/tv_product_detail')
+2020-08-31 16:54:53,458 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'android.widget.EditText')可见
+2020-08-31 16:54:54,166 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:54,167 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'android.widget.EditText')可见
+2020-08-31 16:54:54,229 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:54,230 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:android.widget.EditText
+2020-08-31 16:54:54,332 - INFO - user_log.py - 春衫 - 日志信息:输入商品详情:发布实物商品搞定啦，继续优化
+2020-08-31 16:54:54,334 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_add_pic')可见
+2020-08-31 16:54:55,045 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:55,046 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_add_pic
+2020-08-31 16:54:55,087 - INFO - user_log.py - 春衫 - 日志信息:点击元素('id', 'com.ecloud.hobay:id/btn_add_pic')
+2020-08-31 16:54:56,375 - INFO - user_log.py - 春衫 - 日志信息:元素('xpath', "//*[@text='始终允许']")不存在
+2020-08-31 16:54:56,376 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/cb_check')可见
+2020-08-31 16:54:56,461 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:56,462 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/cb_check
+2020-08-31 16:54:56,518 - INFO - user_log.py - 春衫 - 日志信息:点击元素('id', 'com.ecloud.hobay:id/cb_check')
+2020-08-31 16:54:56,604 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_ok')可见
+2020-08-31 16:54:57,524 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:57,525 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_ok
+2020-08-31 16:54:57,579 - INFO - user_log.py - 春衫 - 日志信息:点击元素('id', 'com.ecloud.hobay:id/btn_ok')
+2020-08-31 16:54:57,642 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_complete')可见
+2020-08-31 16:54:58,853 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:54:58,854 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_complete')可见
+2020-08-31 16:54:58,907 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:54:58,908 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_complete
+2020-08-31 16:54:58,956 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【完成】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_complete')
+2020-08-31 16:54:59,022 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_product_phase')可见
+2020-08-31 16:55:00,177 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:55:00,178 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_product_phase')可见
+2020-08-31 16:55:00,267 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:00,268 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_product_phase
+2020-08-31 16:55:00,334 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【品相】选项-点击元素('id', 'com.ecloud.hobay:id/tv_product_phase')
+2020-08-31 16:55:00,428 - INFO - user_log.py - 春衫 - 日志信息:等待元素('-android uiautomator', 'new UiSelector().text("全新")')可见
+2020-08-31 16:55:01,295 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:01,296 - INFO - user_log.py - 春衫 - 日志信息:等待元素('-android uiautomator', 'new UiSelector().text("全新")')可见
+2020-08-31 16:55:01,375 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:01,376 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.-android uiautomator--->定位值:new UiSelector().text("全新")
+2020-08-31 16:55:01,414 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【全新】选项-点击元素('-android uiautomator', 'new UiSelector().text("全新")')
+2020-08-31 16:55:02,141 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_select_type')可见
+2020-08-31 16:55:02,708 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:02,709 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_select_type
+2020-08-31 16:55:02,758 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【分类】选项-点击元素('id', 'com.ecloud.hobay:id/tv_select_type')
+2020-08-31 16:55:02,848 - INFO - user_log.py - 春衫 - 日志信息:等待元素('-android uiautomator', 'new UiSelector().text("房产")')可见
+2020-08-31 16:55:05,968 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：3
+2020-08-31 16:55:05,969 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.-android uiautomator--->定位值:new UiSelector().text("房产")
+2020-08-31 16:55:06,023 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【二级分类】-【房产】选项-点击元素('-android uiautomator', 'new UiSelector().text("房产")')
+2020-08-31 16:55:06,815 - INFO - user_log.py - 春衫 - 日志信息:等待元素('-android uiautomator', 'new UiSelector().text("住宅")')可见
+2020-08-31 16:55:06,913 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:06,914 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.-android uiautomator--->定位值:new UiSelector().text("住宅")
+2020-08-31 16:55:06,953 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-选择【三级分类】-【住宅】选项-点击元素('-android uiautomator', 'new UiSelector().text("住宅")')
+2020-08-31 16:55:08,189 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_product_type')可见
+2020-08-31 16:55:08,261 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:08,262 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_product_type')可见
+2020-08-31 16:55:08,335 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:08,336 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_product_type
+2020-08-31 16:55:08,388 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【商品类型】选项-点击元素('id', 'com.ecloud.hobay:id/tv_product_type')
+2020-08-31 16:55:08,446 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_dialog_item')可见
+2020-08-31 16:55:09,274 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:09,276 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_dialog_item')可见
+2020-08-31 16:55:09,337 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:09,338 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_dialog_item
+2020-08-31 16:55:09,377 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-选择【商品类型】-【易贝商品】选项-点击元素('id', 'com.ecloud.hobay:id/tv_dialog_item')
+2020-08-31 16:55:09,453 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_specification')可见
+2020-08-31 16:55:10,546 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:55:10,547 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_specification')可见
+2020-08-31 16:55:10,624 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:10,625 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_specification
+2020-08-31 16:55:10,672 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【规格】选项-点击元素('id', 'com.ecloud.hobay:id/tv_specification')
+2020-08-31 16:55:10,739 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_first_attributes')可见
+2020-08-31 16:55:11,450 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:11,451 - INFO - user_log.py - 春衫 - 日志信息:输入的商品规格是:外套
+2020-08-31 16:55:11,452 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_first_attributes')可见
+2020-08-31 16:55:11,514 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:11,516 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/et_first_attributes
+2020-08-31 16:55:11,605 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_name')可见
+2020-08-31 16:55:12,155 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:12,156 - INFO - user_log.py - 春衫 - 日志信息:输入的商品属性是:红色
+2020-08-31 16:55:12,157 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_name')可见
+2020-08-31 16:55:12,229 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:12,230 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/et_name
+2020-08-31 16:55:13,258 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_add_pic')可见
+2020-08-31 16:55:13,803 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:13,804 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_add_pic')可见
+2020-08-31 16:55:13,866 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:13,867 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_add_pic
+2020-08-31 16:55:13,904 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击上传规格图片-点击元素('id', 'com.ecloud.hobay:id/tv_add_pic')
+2020-08-31 16:55:13,960 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/iv_thumb')可见
+2020-08-31 16:55:14,813 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:14,814 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/iv_thumb')可见
+2020-08-31 16:55:14,870 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:14,871 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/iv_thumb
+2020-08-31 16:55:14,907 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-选择规格图片-点击元素('id', 'com.ecloud.hobay:id/iv_thumb')
+2020-08-31 16:55:14,964 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_next')可见
+2020-08-31 16:55:16,178 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:55:16,179 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_next')可见
+2020-08-31 16:55:16,236 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:16,237 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_next
+2020-08-31 16:55:16,274 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【下一步】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_next')
+2020-08-31 16:55:16,359 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_purchase_price')可见
+2020-08-31 16:55:17,299 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:17,300 - INFO - user_log.py - 春衫 - 日志信息:输入的商品进货价是:100
+2020-08-31 16:55:17,301 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_purchase_price')可见
+2020-08-31 16:55:17,370 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:17,370 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/et_purchase_price
+2020-08-31 16:55:17,465 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_price')可见
+2020-08-31 16:55:18,027 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:18,028 - INFO - user_log.py - 春衫 - 日志信息:输入的商品出售价是:100
+2020-08-31 16:55:18,029 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_price')可见
+2020-08-31 16:55:18,119 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:18,120 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/et_price
+2020-08-31 16:55:18,715 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_number')可见
+2020-08-31 16:55:19,262 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:19,263 - INFO - user_log.py - 春衫 - 日志信息:输入的商品库存是:10000
+2020-08-31 16:55:19,264 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/et_number')可见
+2020-08-31 16:55:19,329 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:19,330 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/et_number
+2020-08-31 16:55:19,921 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_confirm')可见
+2020-08-31 16:55:20,472 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:20,473 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_confirm')可见
+2020-08-31 16:55:20,535 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:20,535 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_confirm
+2020-08-31 16:55:20,574 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【确定】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_confirm')
+2020-08-31 16:55:20,628 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_freight')可见
+2020-08-31 16:55:21,771 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-08-31 16:55:21,772 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_freight')可见
+2020-08-31 16:55:22,335 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:22,336 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_freight
+2020-08-31 16:55:22,395 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【运费】选项-点击元素('id', 'com.ecloud.hobay:id/tv_freight')
+2020-08-31 16:55:22,454 - INFO - user_log.py - 春衫 - 日志信息:等待元素('-android uiautomator', 'new UiSelector().text("包邮")')可见
+2020-08-31 16:55:23,170 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:23,171 - INFO - user_log.py - 春衫 - 日志信息:等待元素('-android uiautomator', 'new UiSelector().text("包邮")')可见
+2020-08-31 16:55:23,235 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:23,237 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.-android uiautomator--->定位值:new UiSelector().text("包邮")
+2020-08-31 16:55:23,271 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-【运费】类型-选择【包邮】选项-点击元素('-android uiautomator', 'new UiSelector().text("包邮")')
+2020-08-31 16:55:24,025 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/btn_immediately_publish')可见
+2020-08-31 16:55:24,594 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-08-31 16:55:24,595 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/btn_immediately_publish
+2020-08-31 16:55:24,659 - INFO - user_log.py - 春衫 - 日志信息:测试发布实物商品-点击【立即上架】按钮-点击元素('id', 'com.ecloud.hobay:id/btn_immediately_publish')
+2020-08-31 16:55:24,718 - INFO - user_log.py - 春衫 - 日志信息:等待元素('id', 'com.ecloud.hobay:id/tv_tips')可见
+2020-08-31 16:55:26,926 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：2
+2020-08-31 16:55:26,927 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_tips
+2020-08-31 16:55:26,989 - INFO - user_log.py - 春衫 - 日志信息:获取到的文本内容是：商品审核中
