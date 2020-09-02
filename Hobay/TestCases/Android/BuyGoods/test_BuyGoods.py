@@ -29,12 +29,12 @@ class TestBuyGoods:
         doc = "测试购买实物商品-"
         with allure.step("首页点击搜索"):
             IndexPage(buy_goods).search(text=doc)
-        with allure.step("输入商品名-点击第一个商品-"):
+        with allure.step("输入商品名-点击第一个商品"):
             SearchGoodPage(buy_goods).send_search(data['goods_name'], text=doc)
-        with allure.step("商品详情-下单-"):
+        with allure.step("商品详情-下单"):
             GoodDetailPage(buy_goods).buy_good(text=doc)
         with allure.step("确认订单"):
-            ConfirmOrderPage(buy_goods).submit_order_now(text=doc)
+            ConfirmOrderPage(buy_goods).entity_goods_submit_order(text=doc)
             PayPage(buy_goods).payment_method(data['payment_method'], text=doc)
         with allure.step("关闭可能出现的 加入焕商 弹窗"):
             PaySuccessPage(buy_goods).close_windows(text=doc)
@@ -54,12 +54,12 @@ class TestBuyGoods:
         doc = "测试购买本地生活商品-"
         with allure.step("首页点击搜索"):
             IndexPage(buy_goods).search(text=doc)
-        with allure.step("输入商品名-点击第一个商品-"):
+        with allure.step("输入商品名-点击第一个商品"):
             SearchGoodPage(buy_goods).send_search(data['goods_name'], text=doc)
-        with allure.step("商品详情-下单-"):
+        with allure.step("商品详情-下单"):
             GoodDetailPage(buy_goods).buy_good(text=doc)
         with allure.step("确认订单"):
-            ConfirmOrderPage(buy_goods).submit_order_now(text=doc)
+            ConfirmOrderPage(buy_goods).coupon_goods_submit_order(text=doc)
             PayPage(buy_goods).payment_method(data['payment_method'], text=doc)
         with allure.step("关闭可能出现的 加入焕商 弹窗"):
             PaySuccessPage(buy_goods).close_windows(text=doc)
@@ -80,12 +80,12 @@ class TestBuyGoods:
         doc = "测试购买商企服务商品-"
         with allure.step("首页点击搜索"):
             IndexPage(buy_goods).search(text=doc)
-        with allure.step("输入商品名-点击第一个商品-"):
+        with allure.step("输入商品名-点击第一个商品"):
             SearchGoodPage(buy_goods).send_search(data['goods_name'], text=doc)
-        with allure.step("商品详情-下单-"):
+        with allure.step("商品详情-下单"):
             GoodDetailPage(buy_goods).buy_good(text=doc)
         with allure.step("确认订单"):
-            ConfirmOrderPage(buy_goods).submit_order_now(text=doc)
+            ConfirmOrderPage(buy_goods).server_goods_submit_order(text=doc)
         with allure.step(f"{data['payment_method']}支付"):
             PayPage(buy_goods).payment_method(data['payment_method'], text=doc)
         with allure.step("关闭可能出现的 加入焕商 弹窗"):
@@ -101,6 +101,6 @@ class TestBuyGoods:
 
 if __name__ == '__main__':
     pytest.main(
-        ["-v","-s", "--reruns", "1", "--reruns-delay", "1", "test_BuyGoods.py", "--alluredir",
+        ["-v","-s", "--reruns", "3", "--reruns-delay", "1", "test_BuyGoods.py", "--alluredir",
          allure_report + "/result"])
     os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

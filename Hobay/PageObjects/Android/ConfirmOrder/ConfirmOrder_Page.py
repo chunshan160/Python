@@ -83,12 +83,12 @@ class ConfirmOrderPage(BasePage):
         self.click_element(CO.buyer_message,doc =doc)
 
     # 提交订单
-    def submit_order(self,text=""):
+    def submit_order_button(self,text=""):
         doc = text + "点击【提交订单】按钮-"
         self.click_element(CO.submit_order,doc =doc)
 
-    # 提交订单
-    def submit_order_now(self,text=""):
+    # 提交订单 实物商品
+    def entity_goods_submit_order(self,text=""):
         doc = text + "点击【提交订单】按钮-"
         text = self.get_text(CO.select_address,doc =doc)
         if text == "请选择收货地址":
@@ -97,4 +97,14 @@ class ConfirmOrderPage(BasePage):
                 self.new_address()
                 self.input_address()
             self.choose_address()
-        self.submit_order()
+        self.submit_order_button(text=doc)
+
+    #提交订单 本地生活
+    def coupon_goods_submit_order(self,text=""):
+        doc = text + "点击【提交订单】按钮-"
+        self.submit_order_button(text=doc)
+
+    # 提交订单 商企服务
+    def server_goods_submit_order(self, text=""):
+        doc = text + "点击【提交订单】按钮-"
+        self.submit_order_button(text=doc)

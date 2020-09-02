@@ -1,0 +1,151 @@
+[ {
+  "uid" : "6c7f396a7d78eff1",
+  "name" : "test_2_buy_coupon_goods[MI 8-data4]",
+  "time" : {
+    "start" : 1599050564304,
+    "stop" : 1599050583894,
+    "duration" : 19590
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e894c9f4d441b47",
+  "name" : "test_2_buy_coupon_goods[MI 8-data2]",
+  "time" : {
+    "start" : 1599050409634,
+    "stop" : 1599050428658,
+    "duration" : 19024
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84dfc32726f336fb",
+  "name" : "test_2_buy_coupon_goods[MI 8-data0]",
+  "time" : {
+    "start" : 1599050317321,
+    "stop" : 1599050335081,
+    "duration" : 17760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3f3db734c144270",
+  "name" : "test_3_buy_server_goods[MI 8-data2]",
+  "time" : {
+    "start" : 1599050701132,
+    "stop" : 1599050720431,
+    "duration" : 19299
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "620ae048497f352f",
+  "name" : "test_1_buy_entity_goods[MI 8-data2]",
+  "time" : {
+    "start" : 1599050163879,
+    "stop" : 1599050186604,
+    "duration" : 22725
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7b112fa9f0c55e0",
+  "name" : "test_3_buy_server_goods[MI 8-data1]",
+  "time" : {
+    "start" : 1599050655743,
+    "stop" : 1599050675834,
+    "duration" : 20091
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2e2ddcc76548308",
+  "name" : "test_1_buy_entity_goods[MI 8-data1]",
+  "time" : {
+    "start" : 1599050114380,
+    "stop" : 1599050135418,
+    "duration" : 21038
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "780836a9af4ead0e",
+  "name" : "test_3_buy_server_goods[MI 8-data3]",
+  "time" : {
+    "start" : 1599050745398,
+    "stop" : 1599050764465,
+    "duration" : 19067
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b25148d36d0123a6",
+  "name" : "test_2_buy_coupon_goods[MI 8-data1]",
+  "time" : {
+    "start" : 1599050362348,
+    "stop" : 1599050382016,
+    "duration" : 19668
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc9126163a2a6a5b",
+  "name" : "test_3_buy_server_goods[MI 8-data0]",
+  "time" : {
+    "start" : 1599050610440,
+    "stop" : 1599050629176,
+    "duration" : 18736
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7b6aee4f62bf0e7",
+  "name" : "test_1_buy_entity_goods[MI 8-data4]",
+  "time" : {
+    "start" : 1599050267649,
+    "stop" : 1599050288174,
+    "duration" : 20525
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8bf56ab7f9fd764a",
+  "name" : "test_1_buy_entity_goods[MI 8-data0]",
+  "time" : {
+    "start" : 1599050068495,
+    "stop" : 1599050087165,
+    "duration" : 18670
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fd2bed6f05b355e",
+  "name" : "test_3_buy_server_goods[MI 8-data4]",
+  "time" : {
+    "start" : 1599050791131,
+    "stop" : 1599050810784,
+    "duration" : 19653
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7542aaae7bd830a",
+  "name" : "test_1_buy_entity_goods[MI 8-data3]",
+  "time" : {
+    "start" : 1599050215465,
+    "stop" : 1599050238472,
+    "duration" : 23007
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7d6992eb0d087be",
+  "name" : "test_2_buy_coupon_goods[MI 8-data3]",
+  "time" : {
+    "start" : 1599050517966,
+    "stop" : 1599050537989,
+    "duration" : 20023
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

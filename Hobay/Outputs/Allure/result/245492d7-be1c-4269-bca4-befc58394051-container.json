@@ -1,0 +1,1 @@
+{"uuid": "ccd3047b-766e-4407-bfd6-92ea4cb799b9", "children": ["fb658c1e-5bc4-4a80-8a04-6b23210e6fea"], "befores": [{"name": "buy_goods", "status": "passed", "start": 1599050188822, "stop": 1599050215464}], "afters": [{"name": "buy_goods::0", "status": "passed", "start": 1599050238474, "stop": 1599050240416}], "start": 1599050188822, "stop": 1599050240417}

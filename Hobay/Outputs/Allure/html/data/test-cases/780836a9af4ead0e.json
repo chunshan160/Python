@@ -1,0 +1,242 @@
+{
+  "uid" : "780836a9af4ead0e",
+  "name" : "test_3_buy_server_goods[MI 8-data3]",
+  "fullName" : "Android.BuyGoods.test_BuyGoods.TestBuyGoods#test_3_buy_server_goods[MI 8-data3]",
+  "historyId" : "c904c360ed95e6a964fa0c8e80041357",
+  "time" : {
+    "start" : 1599050745398,
+    "stop" : 1599050764465,
+    "duration" : 19067
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "buy_goods",
+    "time" : {
+      "start" : 1599050721562,
+      "stop" : 1599050745397,
+      "duration" : 23835
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "首页点击搜索",
+      "time" : {
+        "start" : 1599050745398,
+        "stop" : 1599050747247,
+        "duration" : 1849
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "输入商品名-点击第一个商品-",
+      "time" : {
+        "start" : 1599050747247,
+        "stop" : 1599050749443,
+        "duration" : 2196
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "商品详情-下单-",
+      "time" : {
+        "start" : 1599050749443,
+        "stop" : 1599050752814,
+        "duration" : 3371
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "确认订单",
+      "time" : {
+        "start" : 1599050752814,
+        "stop" : 1599050755216,
+        "duration" : 2402
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "家人购支付",
+      "time" : {
+        "start" : 1599050755216,
+        "stop" : 1599050761035,
+        "duration" : 5819
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "关闭可能出现的 加入焕商 弹窗",
+      "time" : {
+        "start" : 1599050761035,
+        "stop" : 1599050763249,
+        "duration" : 2214
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "断言：支付成功后系统提示:支付成功",
+      "time" : {
+        "start" : 1599050763249,
+        "stop" : 1599050763873,
+        "duration" : 624
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "截图保存到项目中",
+      "time" : {
+        "start" : 1599050763873,
+        "stop" : 1599050764465,
+        "duration" : 592
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "11bc53ebd128b7b3",
+        "name" : "附件截图",
+        "source" : "11bc53ebd128b7b3.png",
+        "type" : "image/png",
+        "size" : 77714
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "6eb47296991266a",
+      "name" : "log",
+      "source" : "6eb47296991266a.txt",
+      "type" : "text/plain",
+      "size" : 6621
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "buy_goods::0",
+    "time" : {
+      "start" : 1599050764465,
+      "stop" : 1599050765790,
+      "duration" : 1325
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "购买商企服务商品"
+  }, {
+    "name" : "feature",
+    "value" : "购买商品功能"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Android.BuyGoods"
+  }, {
+    "name" : "suite",
+    "value" : "test_BuyGoods"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBuyGoods"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "4852-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Android.BuyGoods.test_BuyGoods"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "buy_goods",
+    "value" : "'MI 8'"
+  }, {
+    "name" : "data",
+    "value" : "{'goods_name': 'APP商企服务', 'payment_method': '家人购'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "smoke" ]
+  },
+  "source" : "780836a9af4ead0e.json",
+  "parameterValues" : [ "'MI 8'", "{'goods_name': 'APP商企服务', 'payment_method': '家人购'}" ]
+}

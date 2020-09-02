@@ -27,17 +27,17 @@ finish = (By.CLASS_NAME, 'fin-btn')
 # 品相
 quality = (By.XPATH, '//label[text()="品相"]//parent::div')
 # 品相-全新
-quality_new = (By.XPATH, '//*[contains(text(),"全新")]//span')
+quality_new = (By.XPATH, '//*[contains(text(),"{}")]//span')
 # 分类
 category = (By.XPATH, '//label[text()="分类"]//parent::div')
 # 二级分类
-second_categpry = (By.XPATH, '//div[text()="大家电2"]')
+second_categpry = (By.XPATH, '//div[text()="{}"]')
 # 三级分类
-third_categpry = (By.XPATH, '//li[text()="电视"]')
+third_categpry = (By.XPATH, '//li[text()="{}"]')
 # 商品类型
 product_type = (By.XPATH, '//label[text()="商品类型"]//parent::div')
 # 商品类型-易贝商品
-product_type_select = (By.XPATH, '//*[contains(text(),"易贝商品")]//span')
+product_type_select = (By.XPATH, '//*[contains(text(),"{}")]//span')
 # 规格
 specification = (By.XPATH, '//*[contains(text(),"规格")]//parent::div')
 # 规格_1_2
@@ -58,9 +58,11 @@ determine = (By.XPATH, '//div[@class="fin-btn"]//div[contains(text(),"确定")]'
 # 运费
 fare = (By.XPATH, '//label[text()="运费"]//parent::div')
 # 运费-包邮
-fare_manner = (By.XPATH, '//*[contains(text(),"包邮")]//span')
+fare_manner = (By.XPATH, '//*[contains(text(),"{}")]//span')
 # 限购数量
 limit_quantity = (By.XPATH, '//input[@placeholder="默认不限"]')
+#品牌
+brand=(By.XPATH,'//label[text()="品牌"]//following-sibling::div/input')
 # 立即上架
 submit = (By.XPATH, '//div[@class="submit-sell"]')
 # 放入仓库

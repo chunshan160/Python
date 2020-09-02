@@ -1,0 +1,197 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Android.BuyGoods",
+    "children" : [ {
+      "name" : "test_BuyGoods",
+      "children" : [ {
+        "name" : "TestBuyGoods",
+        "children" : [ {
+          "name" : "test_1_buy_entity_goods[MI 8-data0]",
+          "uid" : "8bf56ab7f9fd764a",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050068495,
+            "stop" : 1599050087165,
+            "duration" : 18670
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '易贝'}" ]
+        }, {
+          "name" : "test_1_buy_entity_goods[MI 8-data1]",
+          "uid" : "e2e2ddcc76548308",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050114380,
+            "stop" : 1599050135418,
+            "duration" : 21038
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '易贝券'}" ]
+        }, {
+          "name" : "test_1_buy_entity_goods[MI 8-data2]",
+          "uid" : "620ae048497f352f",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050163879,
+            "stop" : 1599050186604,
+            "duration" : 22725
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '抵工资'}" ]
+        }, {
+          "name" : "test_1_buy_entity_goods[MI 8-data3]",
+          "uid" : "e7542aaae7bd830a",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050215465,
+            "stop" : 1599050238472,
+            "duration" : 23007
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '家人购'}" ]
+        }, {
+          "name" : "test_1_buy_entity_goods[MI 8-data4]",
+          "uid" : "e7b6aee4f62bf0e7",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050267649,
+            "stop" : 1599050288174,
+            "duration" : 20525
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP实物商品', 'payment_method': '现金'}" ]
+        }, {
+          "name" : "test_2_buy_coupon_goods[MI 8-data0]",
+          "uid" : "84dfc32726f336fb",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050317321,
+            "stop" : 1599050335081,
+            "duration" : 17760
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP本地生活', 'payment_method': '易贝'}" ]
+        }, {
+          "name" : "test_2_buy_coupon_goods[MI 8-data1]",
+          "uid" : "b25148d36d0123a6",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050362348,
+            "stop" : 1599050382016,
+            "duration" : 19668
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP本地生活', 'payment_method': '易贝券'}" ]
+        }, {
+          "name" : "test_2_buy_coupon_goods[MI 8-data2]",
+          "uid" : "e894c9f4d441b47",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050409634,
+            "stop" : 1599050428658,
+            "duration" : 19024
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP本地生活', 'payment_method': '抵工资'}" ]
+        }, {
+          "name" : "test_2_buy_coupon_goods[MI 8-data3]",
+          "uid" : "e7d6992eb0d087be",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050517966,
+            "stop" : 1599050537989,
+            "duration" : 20023
+          },
+          "flaky" : true,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP本地生活', 'payment_method': '家人购'}" ]
+        }, {
+          "name" : "test_2_buy_coupon_goods[MI 8-data4]",
+          "uid" : "6c7f396a7d78eff1",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050564304,
+            "stop" : 1599050583894,
+            "duration" : 19590
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP本地生活', 'payment_method': '现金'}" ]
+        }, {
+          "name" : "test_3_buy_server_goods[MI 8-data0]",
+          "uid" : "cc9126163a2a6a5b",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050610440,
+            "stop" : 1599050629176,
+            "duration" : 18736
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP商企服务', 'payment_method': '易贝'}" ]
+        }, {
+          "name" : "test_3_buy_server_goods[MI 8-data1]",
+          "uid" : "f7b112fa9f0c55e0",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050655743,
+            "stop" : 1599050675834,
+            "duration" : 20091
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP商企服务', 'payment_method': '易贝券'}" ]
+        }, {
+          "name" : "test_3_buy_server_goods[MI 8-data2]",
+          "uid" : "a3f3db734c144270",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050701132,
+            "stop" : 1599050720431,
+            "duration" : 19299
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP商企服务', 'payment_method': '抵工资'}" ]
+        }, {
+          "name" : "test_3_buy_server_goods[MI 8-data3]",
+          "uid" : "780836a9af4ead0e",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050745398,
+            "stop" : 1599050764465,
+            "duration" : 19067
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP商企服务', 'payment_method': '家人购'}" ]
+        }, {
+          "name" : "test_3_buy_server_goods[MI 8-data4]",
+          "uid" : "6fd2bed6f05b355e",
+          "parentUid" : "6b7e11b9d65133c73baef0110b8c1e28",
+          "status" : "passed",
+          "time" : {
+            "start" : 1599050791131,
+            "stop" : 1599050810784,
+            "duration" : 19653
+          },
+          "flaky" : false,
+          "parameters" : [ "'MI 8'", "{'goods_name': 'APP商企服务', 'payment_method': '现金'}" ]
+        } ],
+        "uid" : "6b7e11b9d65133c73baef0110b8c1e28"
+      } ],
+      "uid" : "816ba93c05f8fb83a91d364a79cb4bd6"
+    } ],
+    "uid" : "a86a5f1936c1ff6bafb4c29273a6c33e"
+  } ]
+}

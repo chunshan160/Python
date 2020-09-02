@@ -6,10 +6,10 @@
 
 import time
 from Common.user_log import UserLog
-from PageLocators.Android.PubilcGood import EntityGood as EG
-from PageLocators.Android.PubilcGood import PubilcGoodCommon as PGCommon
+from PageLocators.Web.PubilcGood import EntityGood as EG
+from PageLocators.Web.PubilcGood import PubilcGoodCommon as PGCommon
 from Common.BasePage import BasePage
-from PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoodCommon
+from PageObjects.Web.PublishGood.PublishGoodCommon import PublishGoodCommon
 
 
 # 发布实物商品
@@ -36,10 +36,11 @@ class EntityGoodPage(BasePage):
         UserLog().info("输入商品详情:" + product_description)
 
     # 商品详情页-上传商品图片
-    def description_image(self, text=""):
+    def description_image(self,filepath, text=""):
         doc = text + "商品详情页-点击【上传商品图片】按钮-"
-        self.wait_eleVisible(EG.description_btn, doc=doc)
-        self.click_element(EG.description_btn, doc=doc)
+        self.wait_eleVisible(EG.product_description_image, doc=doc)
+        self.click_element(EG.product_description_image, doc=doc)
+        self.web_upload_image(filepath, doc=doc)
 
     # 点击完成，回到商品详情页
     def finish(self, text=""):
@@ -94,16 +95,11 @@ class EntityGoodPage(BasePage):
         self.input_text(EG.property_2, property_2, doc=doc)
 
     # 上传规格图片
-    def upload_specification_image(self, text=""):
+    def upload_specification_image(self,filepath, text=""):
         doc = text + "点击上传规格图片-"
-        self.wait_eleVisible(EG.upload_specification_image, doc=doc)
-        self.click_element(EG.upload_specification_image, doc=doc)
-
-    # 选择规格图片
-    def check_specification_image(self, text=""):
-        doc = text + "选择规格图片-"
-        self.wait_eleVisible(EG.check_specification_image, doc=doc)
-        self.click_element(EG.check_specification_image, doc=doc)
+        self.wait_eleVisible(EG.specification_image, doc=doc)
+        self.click_element(EG.specification_image, doc=doc)
+        self.web_upload_image(filepath, doc=doc)
 
     # 下一步
     def next(self, text=""):

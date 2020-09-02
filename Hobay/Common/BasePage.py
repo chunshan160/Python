@@ -279,21 +279,27 @@ class BasePage:
         UserLog().info(f"截取网页成功，文件路径为为：{file_name}")
 
     # web上传图片
-    def web_upload_image(self, filepath):
-        # 一级窗口
-        dialog = win32gui.FindWindow("#32770", "打开")
-        # 二级窗口
-        comboxex32 = win32gui.FindWindowEx(dialog, 0, "ComboBoxEx32", None)
-        # 三级窗口
-        combox = win32gui.FindWindowEx(comboxex32, 0, "ComboBox", None)
-        # 四级窗口 文本输入框
-        edit = win32gui.FindWindowEx(combox, 0, "Edit", None)
-        # 打开按钮 二级窗口
-        button = win32gui.FindWindowEx(dialog, 0, "Button", "打开")
-        # 输入文件路径
-        win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, filepath)
-        # 点击打开按钮 上传文件
-        win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
+    def web_upload_image(self, filepath, doc=""):
+        try:
+            # 一级窗口
+            dialog = win32gui.FindWindow("#32770", "打开")
+            # 二级窗口
+            comboxex32 = win32gui.FindWindowEx(dialog, 0, "ComboBoxEx32", None)
+            # 三级窗口
+            combox = win32gui.FindWindowEx(comboxex32, 0, "ComboBox", None)
+            # 四级窗口 文本输入框
+            edit = win32gui.FindWindowEx(combox, 0, "Edit", None)
+            # 打开按钮 二级窗口
+            button = win32gui.FindWindowEx(dialog, 0, "Button", "打开")
+            # 输入文件路径
+            win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, filepath)
+            # 点击打开按钮 上传文件
+            win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)
+        except:
+            UserLog().info("Web上传图片失败!")
+            # 截图
+            self.save_screenshot(doc)
+            raise
 
     # app上传图片
     def app_upload_image(self, upload_locator, choose_locator, ok_locator, doc=""):
@@ -404,10 +410,9 @@ class BasePage:
             return False
 
     # 匹配文本来处理表达式
-    def locator_by_text(self,locator,name):
-        new_locator=(locator[0],locator[1].format(name))
+    def locator_by_text(self, locator, name):
+        new_locator = (locator[0], locator[1].format(name))
         return new_locator
-
 
 
 if __name__ == '__main__':

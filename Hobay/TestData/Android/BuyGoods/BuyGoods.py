@@ -5,7 +5,7 @@
 # @File :BuyGoods.py
 
 
-Login = {"phone": "17777777786", "password": "qaz123"}
+Login = {"phone": "17777777781", "password": "qaz123"}
 
 buy_entity_goods = [
                     {"goods_name": "APP实物商品", "payment_method": "易贝"},

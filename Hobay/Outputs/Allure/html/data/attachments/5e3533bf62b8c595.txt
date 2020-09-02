@@ -1,0 +1,31 @@
+INFO     春衫:user_log.py:46 元素('xpath', "//*[@text='始终允许']")不存在
+INFO     春衫:user_log.py:46 元素('id', 'com.ecloud.hobay:id/tv_title')不存在
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/rb_me')可见
+INFO     春衫:user_log.py:46 等待时长为：1
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_me
+INFO     春衫:user_log.py:46 购买商品-通用条件-处理登陆账号-获取当前app的登陆状态-点击元素('id', 'com.ecloud.hobay:id/rb_me')
+INFO     春衫:user_log.py:46 元素('id', 'com.ecloud.hobay:id/tv_setting')存在
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/tv_phone')可见
+INFO     春衫:user_log.py:46 等待时长为：0
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_phone
+INFO     春衫:user_log.py:46 获取到的文本内容是：17777777781
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/rb_home')可见
+INFO     春衫:user_log.py:46 等待时长为：0
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/rb_home
+INFO     春衫:user_log.py:46 购买商品-通用条件-点击底部导航栏-首页-点击元素('id', 'com.ecloud.hobay:id/rb_home')
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/tv_city')可见
+INFO     春衫:user_log.py:46 等待时长为：0
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_city
+INFO     春衫:user_log.py:46 点击【定位】按钮-点击元素('id', 'com.ecloud.hobay:id/tv_city')
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/tv_national')可见
+INFO     春衫:user_log.py:46 等待时长为：0
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_national
+INFO     春衫:user_log.py:46 购买商品-通用条件-点击定位-全国-点击元素('id', 'com.ecloud.hobay:id/tv_national')
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/tv_search')可见
+INFO     春衫:user_log.py:46 等待时长为：1
+INFO     春衫:user_log.py:46 定位方式:by.id--->定位值:com.ecloud.hobay:id/tv_search
+INFO     春衫:user_log.py:46 测试购买本地生活商品-点击【搜索栏】-点击元素('id', 'com.ecloud.hobay:id/tv_search')
+INFO     春衫:user_log.py:46 搜索框-输入文字是:APP本地生活
+INFO     春衫:user_log.py:46 等待元素('id', 'com.ecloud.hobay:id/et_search')可见
+INFO     春衫:user_log.py:46 等待元素可见失败!
+INFO     春衫:user_log.py:46 截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-02\2020-09-02-20-41-31-测试购买本地生活商品-搜索框-输入-.png

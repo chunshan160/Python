@@ -69,4 +69,4 @@ def buy_goods(request):
     IndexPage(driver).all_city(text=doc)
     yield driver
     driver.close_app()
-    # driver.quit()
+    driver.quit()
