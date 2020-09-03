@@ -5,6 +5,8 @@
 # @File :PubilcGoodCommon.py
 
 import time
+
+from Common.user_log import UserLog
 from PageLocators.Android.PubilcGood import PubilcGoodCommon as PGCommon
 from Common.BasePage import BasePage
 
@@ -33,6 +35,9 @@ class PublishGoodCommon(BasePage):
     发布商品页面-公共部分
     '''
 
+    '''
+    分类
+    '''
     # 选择分类
     def category(self, text=""):
         doc = text + "点击【分类】选项-"
@@ -50,6 +55,46 @@ class PublishGoodCommon(BasePage):
         new_locator = self.locator_by_text(PGCommon.third_category, third_category_name)
         self.click_element(new_locator, doc=doc)
 
+    '''
+    限购
+    '''
+    # 限购
+    def Purchase_limit(self, text=""):
+        doc = text + "点击【限购】选项-"
+        self.click_element(PGCommon.Purchase_limit, doc=doc)
+
+    # 限购按钮控件
+    def Purchase_limit_button(self, button, text=""):
+        if button == "不限购":
+            number = 1
+        elif button == "设置限购":
+            number = 2
+        elif button == "无限期":
+            number = 3
+        else:
+            number = 4
+        doc = text + f"点击【{button}】选项-"
+        UserLog().info(f"点击【{button}】选项")
+        new_locator = self.locator_by_text(PGCommon.Purchase_limit_button, number)
+        self.click_element(new_locator, doc=doc)
+
+    # 限购数量
+    def limit_quantity(self, limit_quantity, text=""):
+        doc = text + f"输入限购数量-"
+        self.wait_eleVisible(PGCommon.limit_quantity, doc=doc)
+        UserLog().info("输入的限购数量是:" + limit_quantity)
+        self.input_text(PGCommon.limit_quantity, limit_quantity, doc=doc)
+
+    # 限购周期
+    def limit_time(self, limit_time, text=""):
+        doc = text + f"输入限购周期【{limit_time}】-"
+        self.wait_eleVisible(PGCommon.limit_time, doc=doc)
+        UserLog().info("输入的限购周期是:" + limit_time)
+        self.input_text(PGCommon.limit_time, limit_time, doc=doc)
+
+    '''
+    立即上架、放入仓库
+    '''
     # 立即上架
     def submit(self, text=""):
         doc = text + "点击【立即上架】按钮-"

@@ -35,9 +35,18 @@ submit = (By.ID, "com.ecloud.hobay:id/btn_immediately_publish")
 # 分类
 category = (By.ID, "com.ecloud.hobay:id/tv_select_type")
 # 二级分类
-second_category = (By.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
+second_category = (By.XPATH, '//div[text()="{}"]')
 # 三级分类
-third_category = (By.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
+third_category = (By.XPATH, '//li[text()="{}"]')
+
+#限购选项
+Purchase_limit=(By.XPATH,'//div[text()="默认不限购"]')
+#控制按钮
+Purchase_limit_button=(By.XPATH,'(//div[@class="van-radio"])[{}]')
+#限购件数
+limit_quantity = (By.XPATH, '//input[@placeholder="请输入限购数量"]')
+#限购周期
+limit_time = (By.XPATH, '//input[@placeholder="限购天数"]')
 
 
 # 放入仓库

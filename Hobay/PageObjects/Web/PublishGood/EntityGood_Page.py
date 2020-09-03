@@ -147,13 +147,6 @@ class EntityGoodPage(BasePage):
         self.wait_eleVisible(new_locator, doc=doc)
         self.click_element(new_locator, doc=doc)
 
-    # 限购数量
-    def limit_quantity(self, limit_quantity, text=""):
-        doc = text + "输入限购数量-"
-        time.sleep(0.5)
-        UserLog().info("输入的商品限购数量是:" + limit_quantity)
-        self.input_text(EG.limit_quantity, limit_quantity, doc=doc)
-
     # 品牌
     def brand(self, brand, text=""):
         doc = text + "输入商品品牌-"

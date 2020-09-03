@@ -42,6 +42,11 @@ second_category = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
 third_category = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
 
 
+#限购件数
+
+#限购周期
+
+
 # 放入仓库
 storage = (MobileBy.ID, "com.ecloud.hobay:id/btn_into_warehouse")
 # 错误提示

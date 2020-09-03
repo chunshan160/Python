@@ -52,8 +52,6 @@ determine = (MobileBy.ID, "com.ecloud.hobay:id/btn_confirm")
 fare = (MobileBy.ID, "com.ecloud.hobay:id/tv_freight")
 # 运费-包邮
 fare_manner = (MobileBy.ANDROID_UIAUTOMATOR, 'new UiSelector().text("{}")')
-# 限购数量
-limit_quantity = (MobileBy.ID, "com.ecloud.hobay:id/et_buy_num")
 # 品牌
 brand = (MobileBy.ID, "com.ecloud.hobay:id/et_brand")
 # 生产日期
