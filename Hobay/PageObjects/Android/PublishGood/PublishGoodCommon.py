@@ -38,6 +38,7 @@ class PublishGoodCommon(BasePage):
     '''
     分类
     '''
+
     # 选择分类
     def category(self, text=""):
         doc = text + "点击【分类】选项-"
@@ -58,6 +59,7 @@ class PublishGoodCommon(BasePage):
     '''
     限购
     '''
+
     # 限购
     def Purchase_limit(self, text=""):
         doc = text + "点击【限购】选项-"
@@ -65,18 +67,16 @@ class PublishGoodCommon(BasePage):
 
     # 限购按钮控件
     def Purchase_limit_button(self, button, text=""):
-        if button == "不限购":
-            number = 1
-        elif button == "设置限购":
-            number = 2
-        elif button == "无限期":
-            number = 3
-        else:
-            number = 4
         doc = text + f"点击【{button}】选项-"
         UserLog().info(f"点击【{button}】选项")
-        new_locator = self.locator_by_text(PGCommon.Purchase_limit_button, number)
-        self.click_element(new_locator, doc=doc)
+        if button == "不限购":
+            self.click_element(PGCommon.Purchase_limit_no, doc=doc)
+        elif button == "设置限购":
+            self.click_element(PGCommon.Purchase_limit_yes, doc=doc)
+        elif button == "无限期":
+            self.click_element(PGCommon.Purchase_limit_no_day, doc=doc)
+        else:
+            self.click_element(PGCommon.Purchase_limit_yes_day, doc=doc)
 
     # 限购数量
     def limit_quantity(self, limit_quantity, text=""):
@@ -95,6 +95,7 @@ class PublishGoodCommon(BasePage):
     '''
     立即上架、放入仓库
     '''
+
     # 立即上架
     def submit(self, text=""):
         doc = text + "点击【立即上架】按钮-"
