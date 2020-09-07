@@ -55,7 +55,7 @@ def save_item(index_list, tittle_list, BarrageNum_list, upname_list, score_list)
 
 
 if __name__ == '__main__':
-    f = open('../bilibili.txt', 'w', encoding='utf-8')
+    f = open('../za/bilibili.txt', 'w', encoding='utf-8')
     url = 'https://www.bilibili.com/ranking'
     s = get_response(url)
     print(s)

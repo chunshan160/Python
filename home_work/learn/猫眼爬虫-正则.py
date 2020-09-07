@@ -55,7 +55,7 @@ def save_item(index_list, tittle_list, actor_list, time_list, score_list):
 
 
 if __name__ == '__main__':
-    f = open('../maoyan.txt', 'w', encoding='utf-8')
+    f = open('../za/maoyan.txt', 'w', encoding='utf-8')
     url = 'https://maoyan.com/board/4?offset={}'
     for offset in range(0, 100, 10):
         s = get_response(url.format(offset))

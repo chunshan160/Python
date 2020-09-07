@@ -7,7 +7,7 @@
 import requests
 
 
-def test(phone,password,openId):
+def mogu(phone,password,openId):
     '''
 
     :param phone: 手机号
@@ -23,6 +23,7 @@ def test(phone,password,openId):
     login_data = {"phone": phone, "password": password, "bindType": 10, "timestamp": "29724917"}
     login_res = requests.post(login_url, json=login_data)
     print("登录结果是：", login_res.json())
+    print(login_res.cookies)
 
     # 核保接口
     # salary 好像是个人年收入  写大点可以提高上限  有两个地方
@@ -66,6 +67,7 @@ def test(phone,password,openId):
 
     res = requests.post(url, json=data, cookies=login_res.cookies)
     print("核保结果是：", res.json())
+    print(res.request.headers)
 
     #支付订单
     #openId：加密后的支付密码（感觉）     orderNo：订单ID
@@ -82,7 +84,7 @@ def test(phone,password,openId):
     print("承保结果是：", res4.json())
 
 if __name__ == '__main__':
-    phone = 13120529922
+    phone = "13120529922"
     password = "tEk2d+LCpoE="
     openId = "oSrBLwSpNTxlLK3cPQnVaYgou5HE"
-    test(phone,password,openId)
+    mogu(phone,password,openId)

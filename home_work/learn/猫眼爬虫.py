@@ -94,7 +94,7 @@ def getInfo(html):
 # 写入文件
 def writeData(file):
     # 文件处理
-    with open('../maoyan.txt', 'a', encoding='utf-8') as f:
+    with open('../za/maoyan.txt', 'a', encoding='utf-8') as f:
         # 在python中一个对象无法写入文件中 所以我们要把字典对象转成json数据
         # Ascii码
         f.write(json.dumps(file, ensure_ascii=False) + '\n')

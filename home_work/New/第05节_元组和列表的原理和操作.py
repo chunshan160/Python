@@ -84,9 +84,9 @@ se.copy()  # 复制
 # 二、字典和集合的原理和应用
 # dict与set实现原理是一样的， 都是将实际的值放到list中,唯一不同的在 于hash函数操作的对象，对于dict, hash
 # 函数操作的是其key,而对于set是直接操作的它的元素，假设操作内容为x，其作为因变量,放入hash函数,通过
-# 运算后取list的余数, I转化为-个list的下标, 此下标位置对于set而言用来放其本身，而对于dict则是创建了两个
+# 运算后取list的余数, 转化为一个list的下标, 此下标位置对于set而言用来放其本身，而对于dict则是创建了两个
 # list,一个list该 下表放此key,另-个list中该下标方对应的value。其中,我们把实现set的方式叫做HashSet,实
-# 现dict的方式叫做Hash Map/Table(注: map指的就是通过key来寻找value的过程
+# 现dict的方式叫做Hash Map/Table(注: map指的就是通过key来寻找value的过程)
 
 # 2、字典查找值的过程
 
