@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/8/29 22:29
 # @Author :春衫
-# @File :推导式.py
+# @File :第08节_推导式、迭代器和生成器.py
 
 
 # urls=[]
@@ -72,9 +72,16 @@ def gen():
         print('se的值：',se)
 
 g=gen()#生成器
-print(next(g))#1
+# print(next(g))#1
 # print(g.send(100))#1 100 2
-print(next(g))#1 100 2 None 3
+# print(next(g))#1 100 2 None 3
 
 #第一次next运行 只运行到yield（停止/暂停） 所以打印出来的是  --1-- 和1
 #第二次next运行 继续运行 所以会打印出 se的值： None  然后从头开始 打印出--1-- 和2 停止/暂停
+
+#close:关闭生成器
+# g.close()
+# print(next(g))
+
+#throw:在生成器内部主动引发一个异常 参数：异常类型 异常信息
+g.throw(ValueError,'hello python')

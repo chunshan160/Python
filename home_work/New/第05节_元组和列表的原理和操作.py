@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/8/26 12:32
 # @Author :春衫
-# @File :01、元祖列表字典集合.py
+# @File :第05节_元组和列表的原理和操作.py
 
 import timeit
 from collections import namedtuple
