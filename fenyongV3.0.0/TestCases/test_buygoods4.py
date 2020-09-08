@@ -26,6 +26,7 @@ from tools.bing_relationship_data import BingRelationshipData
 from tools.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
 from tools.delete_partner import delete_partner
 from tools.Recharge_requests import recharge
+from tools.get_js import get_js
 
 my_logger = MyLog()
 test_data = DoExcel().get_data(test_case_path)
@@ -60,7 +61,7 @@ class TestBuyGoods(unittest.TestCase):
 
         buyer_identity = item['buyer_identity']
         seller_identity = item['seller_identity']
-        payPassword=item['payPassword']
+        payPassword=get_js('runs', item['payPassword'])
         if buyer_identity == "公海用户":
             if seller_identity == "个人焕商" or seller_identity == "非焕商且已绑定个人焕商":
                 # 充值
