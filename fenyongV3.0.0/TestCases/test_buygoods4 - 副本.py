@@ -17,7 +17,7 @@ from tools.URL import url
 import unittest
 from ddt import ddt, data
 from DoExcel.do_excel import DoExcel
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from muban.title import Title
 from tools.Calculation_Data import CalculationData
 from test_data.test_data import IP

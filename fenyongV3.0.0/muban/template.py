@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :expected_changes.py
 
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from decimal import *
 from Calculation.calculation import Calculation
 from DoExcel.do_excel import DoExcel

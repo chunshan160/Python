@@ -3,8 +3,8 @@
 # @Time :2020/6/14 17:18
 # @Author :春衫
 # @File :bind_user_relationship.py
-
-from Do_mysql.sql import SQL
+from DoMysql.bind_user_relationship2 import bind_user_relationship2
+from DoMysql.sql import SQL
 
 
 def bind_user_relationship_id(ip, data):
@@ -34,10 +34,10 @@ def bind_user_relationship_id(ip, data):
 
     
     if "业务焕商" in b.keys():
-        Q = SQL(ip).bind_user_relationship2(b["业务焕商"])
+        Q = bind_user_relationship2(ip,b["业务焕商"])
 
     elif "销售" in b.keys():
-        Q = SQL(ip).bind_user_relationship2(b["销售"])
+        Q = bind_user_relationship2(ip,b["销售"])
 
     
 

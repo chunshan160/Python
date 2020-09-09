@@ -6,8 +6,9 @@
 
 from decimal import *
 from DoExcel.do_excel import DoExcel
+from DoMysql.wallet_detail import wallet_detail
 from tools.project_path import *
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from new_muban.qushe import qushe
 from new_muban.chuli import chulidata
 from new_muban.calculate_commission import calculate_commission
@@ -58,7 +59,7 @@ class MoBan:
         seller_id = data['卖家']
         platform_id = data['平台']
 
-        order_detail = SQL(ip).wallet_detail(self.order)  # 支付数据
+        order_detail = wallet_detail(ip,self.order)  # 支付数据
 
         goods_price = (order_detail[0])[3]  # 读取的商品价格
 

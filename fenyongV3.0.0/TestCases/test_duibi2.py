@@ -9,7 +9,7 @@ import unittest
 import pytest
 from ddt import ddt, data
 from DoExcel.do_excel import DoExcel
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from muban.template import GeShiHua
 from muban.title import Title
 from tools.Calculation_Data import CalculationData

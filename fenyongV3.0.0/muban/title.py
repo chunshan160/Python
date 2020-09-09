@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :title.py
 
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from tools.cishu import CiShu
 
 

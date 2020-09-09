@@ -34,7 +34,7 @@ def boss_setting_requests(surroundings, phone, operational_setting):
     login_url = f'http://boss.{surroundings}.hobay.com.cn/bosszuul/boss/user/login'  # 登录
     login_data = {"phone": phone, "password": "qaz123"}
     login_res = HttpRequest().http_request(login_url, "post", data=login_data)
-    print("登录结果是：", login_res.json())
+    # print("登录结果是：", login_res.json())
 
     # 设置运营比例
     agentId = login_res.json()['id']
@@ -45,7 +45,7 @@ def boss_setting_requests(surroundings, phone, operational_setting):
                                 "tcoRatio": tcoRatio}
     secondPayagentRatio_res = HttpRequest().http_request(secondPayagentRatio_url, "post", data=secondPayagentRatio_data,
                                                          cookies=login_res.cookies)
-    print("设置运营比例的结果是：", secondPayagentRatio_res.json())
+    # print("设置运营比例的结果是：", secondPayagentRatio_res.json())
 
 
 if __name__ == '__main__':

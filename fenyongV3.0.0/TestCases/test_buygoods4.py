@@ -7,25 +7,25 @@
 
 import unittest
 import warnings
-from decimal import *
 from ddt import ddt, data
 from DoExcel.do_excel import DoExcel
-from Do_mysql.sql import SQL
+from DoMysql.reserve_fund_sql import reserve_fund_sql
+from DoMysql.wallet_detail import wallet_detail
 from new_muban.moban2 import MoBan
-from new_muban.Fan_Hui import FanHui
+from new_muban.Fan_Hui import fan_hui
 from shangji.Superior_template import SuperiorTemplate
 from tools.Calculation_Data import CalculationData
 from test_data.test_data import IP
 from tools.project_path import *
 from tools.my_log import MyLog
-from tools.BuyEntityGoods import bug_entity_goods
-from tools.BuyCouponGoods import buy_coupon_goods
-from tools.BuyServerGoods import buy_server_goods
+from tools.API.BuyEntityGoods import bug_entity_goods
+from tools.API.BuyCouponGoods import buy_coupon_goods
+from tools.API.BuyServerGoods import buy_server_goods
 from tools.boss_setting import BossSetting
 from tools.bing_relationship_data import BingRelationshipData
 from tools.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
-from tools.delete_partner import delete_partner
-from tools.Recharge_requests import recharge
+from tools.API.delete_partner import delete_partner
+from tools.API.Recharge_requests import recharge
 from tools.get_js import get_js
 
 my_logger = MyLog()
@@ -35,11 +35,13 @@ test_data = DoExcel().get_data(test_case_path)
 @ddt
 class TestBuyGoods(unittest.TestCase):
 
+    def setUp(cls):
+        warnings.simplefilter('ignore', ResourceWarning)
+
     @data(*test_data)
-    @classmethod
-    def setUp(cls, item):
-        # 用setUpClass就能只打开浏览器一次，setUp则是每条用例都执行一次
-        warnings.simplefilter("ignore", ResourceWarning)
+    # 购买实物商品
+    def test_1_buy_goods(self, item):
+
         my_logger.info("----------开始执行用例{0}，环境是{1}----------".format(item['case_id'], item['surroundings']))
 
         ip = IP[item['surroundings']]
@@ -61,15 +63,17 @@ class TestBuyGoods(unittest.TestCase):
 
         buyer_identity = item['buyer_identity']
         seller_identity = item['seller_identity']
-        payPassword=get_js('runs', item['payPassword'])
+        # 支付密码
+        payPassword = get_js('runs', item['payPassword'])
         if buyer_identity == "公海用户":
             if seller_identity == "个人焕商" or seller_identity == "非焕商且已绑定个人焕商":
                 # 充值
-                recharge(surroundings, buyer_phone,payPassword)
+                recharge(surroundings, buyer_phone, payPassword)
                 # 写回储备池和充值金额
                 user_id = data["买家"]
-                reserve_fund_data = SQL(ip).reserve_fund_data(user_id)
-                DoExcel.reserve_fund(test_case_path, item['sheet_name'], item['case_id'], str(reserve_fund_data))
+                reserve_fund_data = reserve_fund_sql(ip, user_id)
+                DoExcel.write_back_reserve_fund(test_case_path, item['sheet_name'], item['case_id'],
+                                                str(reserve_fund_data))
 
         if item['payment_method'] == "易贝":
             payType = 3
@@ -79,17 +83,19 @@ class TestBuyGoods(unittest.TestCase):
             payType = 5
         elif item['payment_method'] == "抵工资":
             payType = 6
+        elif item['payment_method'] == "现金":
+            payType = 7
         # 暂不兼容现金支付，不兼容接口传参
 
         # 根据商品名判断流程
         if "实物商品" in item['goodsname']:
-            order = bug_entity_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType,payPassword)
+            order = bug_entity_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType, payPassword)
 
-        elif "本地服务" in item['goodsname']:
-            order = buy_coupon_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType,payPassword)
+        elif "本地生活" in item['goodsname']:
+            order = buy_coupon_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType, payPassword)
 
         elif "商企服务" in item['goodsname']:
-            order = buy_server_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType,payPassword)
+            order = buy_server_goods(surroundings, buyer_phone, seller_phone, item['goodsname'], payType, payPassword)
 
         # 写回订单号
         buyerid = data['买家']
@@ -115,7 +121,6 @@ class TestBuyGoods(unittest.TestCase):
         my_logger.info("----------前端操作执行完毕----------")
 
         ip = IP[item['surroundings']]
-
 
         buyer_id = data['买家']
 
@@ -147,21 +152,18 @@ class TestBuyGoods(unittest.TestCase):
         DoExcel().second_payagent_ratio(test_case_path, item['sheet_name'], item['case_id'],
                                         str(transaction_second_payagent_ratio))
 
-    @data(*test_data)
-    # 购买实物商品
-    def test_1_buy_goods(self, item):
         my_logger.info("----------开始进行对比----------")
         ip = IP[item['surroundings']]
         buyer_identity = item['buyer_identity']
         seller_identity = item['seller_identity']
-        data=eval(item['data'])
-        reserve_fund_data = eval(item['reserve_fund'])
-        proportion = eval(item['proportion'])
-        order = item['order']
-        superior = eval(item['superior'])
+        data = eval(item['data'])
+        # reserve_fund_data = eval(item['reserve_fund'])
+        # proportion = eval(item['proportion'])
+        # order = item['order']
+        # superior = eval(item['superior'])
         # 这笔订单应该【使用】的二级分佣比例
-        transaction_second_payagent_ratio = eval(item['second_payagent_ratio'])
-        bind_relationship_data = eval(item['bind_relationship_data'])
+        # transaction_second_payagent_ratio = eval(item['second_payagent_ratio'])
+        # bind_relationship_data = eval(item['bind_relationship_data'])
 
         try:
             if buyer_identity == "公海用户":
@@ -180,24 +182,24 @@ class TestBuyGoods(unittest.TestCase):
                                                                   charge_amount, reserve_fund, order)
 
             if item['payment_method'] in ["易贝", "易贝券"]:
-                bind_buyer_relationship_data = bind_relationship_data
+                bind_buyer_relationship_data = bind_buyer_relationship_data
                 expected_moban = MoBan(buyer_identity, seller_identity, item['member_level'], item['payment_method'],
                                        order).expected_moban(ip, data, superior, reserve_fund, calculation_data,
                                                              transaction_second_payagent_ratio,
                                                              bind_buyer_relationship_data)
 
             elif item['payment_method'] in ["抵工资", "家人购", "现金"]:
-                bind_buyer_relationship_data = bind_relationship_data['储备金二级分佣对象']
-                bind_payer_relationship_data = bind_relationship_data['支付服务费二级分佣对象']
+                bind_buyer_relationship_data = bind_buyer_relationship_id['储备金二级分佣对象']
+                bind_payer_relationship_data = bind_buyer_relationship_id['支付服务费二级分佣对象']
                 expected_moban = MoBan(buyer_identity, seller_identity, item['member_level'], item['payment_method'],
                                        order).expected_moban(ip, data, superior, reserve_fund, calculation_data,
                                                              transaction_second_payagent_ratio,
                                                              bind_buyer_relationship_data, bind_payer_relationship_data)
 
             # 写回Excel用
-            fanhui = FanHui().fan_hui(ip, order, expected_moban)
+            fanhui = fan_hui(ip, order, expected_moban)
 
-            sql_data = SQL(ip).wallet_detail(order)
+            sql_data = wallet_detail(ip, order)
 
             for i in range(0, len(expected_moban)):
                 self.assertEqual(expected_moban[i], sql_data[i])

@@ -5,7 +5,9 @@
 # @File :chuli.py
 
 from decimal import *
-from Do_mysql.sql import SQL
+
+from DoMysql.current import current
+from DoMysql.sql import SQL
 
 
 def chulidata(data, ip, order):
@@ -22,7 +24,7 @@ def chulidata(data, ip, order):
 
     '''
 
-    b = SQL(ip).current(order)
+    b = current(ip,order)
 
     b = list(b)
 

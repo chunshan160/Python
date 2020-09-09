@@ -6,8 +6,9 @@
 
 from Calculation.recharge_service_fee import Dividend
 from Calculation.payment_method import PaymentMethod
+from DoMysql.wallet_detail import wallet_detail
 from test_data.test_data import yibei as yb
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from DoExcel.do_excel import DoExcel
 from tools.project_path import *
 from decimal import *
@@ -72,7 +73,7 @@ class Calculation:
         print("---------------------分割线-------------------------")
 
         # 根据订单号查流水
-        sql_data = SQL(ip).wallet_detail(order)
+        sql_data = wallet_detail(ip,order)
 
         # 商品价格
         price = ((sql_data[0])[3]) * -1

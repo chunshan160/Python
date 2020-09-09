@@ -7,7 +7,7 @@ import time
 from buy_goods.PageObjects.BOSS.Boss_Login_page import Boss_LoginPage
 from buy_goods.PageLocators.BOSS.yunyin import YunYin
 from selenium import webdriver
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from buy_goods.PageLocators.BOSS.SC import SC as sc

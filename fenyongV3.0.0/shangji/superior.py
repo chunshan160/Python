@@ -4,7 +4,9 @@
 # @Author :春衫
 # @File :Superior.py
 
-from Do_mysql.sql import SQL
+from DoMysql.personal import personal
+from DoMysql.chengshihuanshang import chengshihuanshang
+from DoMysql.ratio import ratio
 
 
 class Superior:
@@ -16,8 +18,7 @@ class Superior:
         :return:上级代理商/城市焕商模板
         '''
 
-        # t=[{'signed_user_id': 15239, 'area_name': ''}]
-        a = SQL(ip).personal(phone)
+        a = personal(ip, phone)
         c = [a]
 
         b = {}
@@ -56,12 +57,11 @@ class Superior:
 
     def fenyong(self, ip, province_id, city_id, area_id, personal_id):
 
-        data = SQL(ip).ratio(province_id, city_id, area_id, personal_id)
+        data = ratio(ip, province_id, city_id, area_id, personal_id)
 
         fenyong = {}
 
-        if data!=None:
-            # print(data)
+        if data != None:
             for i in data:
 
                 if data[0]['type'] != 5:
@@ -88,7 +88,7 @@ class Superior:
                             fenyong["区分佣比例"] = u2[0]
                     else:
                         u3 = data[0]['ratio']
-                        sss = SQL(ip).chengshihuanshang(data[0]['user_id'])
+                        sss = chengshihuanshang(ip, data[0]['user_id'])
                         fenyong[sss] = u3
 
         if province_id == None:
@@ -107,13 +107,10 @@ class Superior:
 
 if __name__ == '__main__':
     from decimal import *
-
+    pass
     # b=[{'type': 1, 'id': 13691}, {'type': 2, 'id': 13947}, {'type': 3, 'id': 14453}]
     # a=Superior().superior("192.168.0.107",b,17777777786)
     # print(a)
     # c = [{'type': 1, 'id': 1000646}]
     # d = Superior().superior("192.168.0.101", c, 17777777781)
     # print(d)
-
-    qq = Superior().fenyong("192.168.0.102",None,15239, None, None)
-    print(qq)

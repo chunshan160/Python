@@ -3,8 +3,8 @@
 # @Time :2020/6/14 18:24
 # @Author :春衫
 # @File :second_payagent_ratio_data.py
-
-from Do_mysql.sql import SQL
+from DoMysql.platform_second_payagent_ratio import platform_second_payagent_ratio
+from DoMysql.second_payagent_ratio import second_payagent_ratio
 from decimal import *
 
 
@@ -27,14 +27,12 @@ def second_payagent_ratio_data(ip, province_id, city_id, area_id, platform_id):
     # 买家注册地没有代理商
     if province_id == None and city_id == None and area_id == None:
         # 用平台比例
-        second_payagent_ratio = SQL(ip).platform_second_payagent_ratio(platform_id)
+        second_payagent_ratio_data = platform_second_payagent_ratio(ip, platform_id)
     # 买家注册地有代理商
     else:
-        second_payagent_ratio = SQL(ip).second_payagent_ratio(province_id, city_id, area_id)
+        second_payagent_ratio_data = second_payagent_ratio(ip, province_id, city_id, area_id)
 
-    return second_payagent_ratio
-
-
+    return second_payagent_ratio_data
 
 
 if __name__ == '__main__':
@@ -45,5 +43,5 @@ if __name__ == '__main__':
     area_id = None
     platform_id = 8
 
-    aaa=second_payagent_ratio_data(ip, province_id, city_id, area_id, platform_id)
+    aaa = second_payagent_ratio_data(ip, province_id, city_id, area_id, platform_id)
     print(aaa)

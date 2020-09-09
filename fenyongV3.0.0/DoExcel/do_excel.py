@@ -7,7 +7,7 @@
 from tools.project_path import *
 from openpyxl import load_workbook
 from tools.read_config import ReadConfig
-from Do_mysql.sql import SQL
+from DoMysql.sql import SQL
 
 
 class DoExcel:
@@ -144,7 +144,7 @@ class DoExcel:
         wb.save(file_name)
 
     @classmethod
-    def reserve_fund(cls, file_name, sheet_name, case_id, reserve_fund):
+    def write_back_reserve_fund(cls, file_name, sheet_name, case_id, reserve_fund):
         '''
 
         :param file_name: 文件名

@@ -5,7 +5,7 @@
 # @File:test_superior.py
 
 
-from Do_mysql.sql import SQL
+from DoMysql.regional_agent import regional_agent
 from DoExcel.do_excel import DoExcel
 from tools.project_path import *
 from shangji.superior import Superior
@@ -28,7 +28,7 @@ class SuperiorTemplate:
 
         if payment_method in ["易贝", "易贝券"]:
             buyer_phone = eval(data)['buyer_phone']
-            buyer_regional_agent = SQL(ip).regional_agent(buyer_phone)  # 查询买家上级
+            buyer_regional_agent = regional_agent(ip, buyer_phone)  # 查询买家上级
             buyer_superior = Superior().superior(ip, buyer_regional_agent, phone_1)
             b = buyer_superior
 
@@ -36,8 +36,8 @@ class SuperiorTemplate:
         elif payment_method in ["抵工资", "家人购"]:
             buyer_phone = eval(data)['buyer_phone']
             disanfang_phone = eval(data)['disanfang_phone']
-            buyer_regional_agent = SQL(ip).regional_agent(buyer_phone)  # 查询买家上级
-            disanfang_regional_agent = SQL(ip).regional_agent(disanfang_phone)  # 查询企业/家人上级
+            buyer_regional_agent = regional_agent(ip, buyer_phone)  # 查询买家上级
+            disanfang_regional_agent = regional_agent(ip, disanfang_phone)  # 查询企业/家人上级
             buyer_superior = Superior().superior(ip, buyer_regional_agent, phone_1)
             disanfang_superior = Superior().superior(ip, disanfang_regional_agent, phone_2)
             b = {"储备池分佣": buyer_superior, "支付服务费分佣": disanfang_superior}
@@ -46,8 +46,8 @@ class SuperiorTemplate:
         else:  # 现金
             buyer_phone = eval(data)['buyer_phone']
             seller_phone = eval(data)['seller_phone']
-            buyer_regional_agent = SQL(ip).regional_agent(buyer_phone)  # 查询买家上级
-            seller_regional_agent = SQL(ip).regional_agent(seller_phone)  # 查询卖家上级
+            buyer_regional_agent = regional_agent(ip, buyer_phone)  # 查询买家上级
+            seller_regional_agent = regional_agent(ip, seller_phone)  # 查询卖家上级
             buyer_superior = Superior().superior(ip, buyer_regional_agent, phone_1)
             seller_superior = Superior().superior(ip, seller_regional_agent, phone_2)
             b = {"储备池分佣": buyer_superior, "支付服务费分佣": seller_superior}
