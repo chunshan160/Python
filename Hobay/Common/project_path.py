@@ -11,7 +11,7 @@ import os
 project_path = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
 
 # 测试用例的路径
-test_case_path = os.path.join(project_path, "TestData", "fenyong_data.xlsx")
+test_data_path = os.path.join(project_path, "TestData", "fenyong_data.xlsx")
 
 # 测试报告的路径
 test_report_path = os.path.join(project_path, "Report")
@@ -33,5 +33,8 @@ caps_dir=os.path.join(project_path,"Desired_Caps","Caps.yaml")
 
 allure_report=os.path.join(project_path,"Outputs","Allure")
 
-a=f'allure generate {allure_report}/result -o {allure_report}/html --clean'
-print(a)
+js=os.path.join(project_path,"Source","des2.js")
+
+yamlPath=os.path.join(project_path,"Conf","Configuration.yaml")
+
+TestCases=os.path.join(project_path,"TestCases")

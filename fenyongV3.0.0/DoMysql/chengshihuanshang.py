@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :chengshihuanshang.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 
 
 def chengshihuanshang(ip, user_id):

@@ -22,19 +22,21 @@ def buy_coupon_goods(surroundings, buyer_phone, seller_phone, product_name, payT
     # print("登录结果是：", seller_login_res.json())
 
     # 获取商品productStockId
-    productStockId = get_productStockId(surroundings, product_name, cookies=seller_login_res.cookies)
+    product_data = get_productStockId(surroundings, product_name, cookies=seller_login_res.cookies)
+    productId = product_data[0]
+    productStockId = product_data[1]
 
     # 买家登录
     buyer_login_res = login(surroundings, buyer_phone)
     # print("登录结果是：", buyer_login_res.json())
 
     # 获取收货地址
-    address_res = get_address_id(surroundings, cookies=buyer_login_res.cookies)
+    # address_res = get_address_id(surroundings, cookies=buyer_login_res.cookies)
     # print("获取收货地址的结果是：", address_res.json())
 
     # 提交订单
-    addressId = address_res.json()['currentUser_receiveAddress_recordList'][0]['id']
-    SaveOrder_res = SaveOrder(surroundings, addressId, productStockId, cookies=buyer_login_res.cookies)
+    # addressId = address_res.json()['currentUser_receiveAddress_recordList'][0]['id']
+    SaveOrder_res = SaveOrder(surroundings,productId, productStockId, cookies=buyer_login_res.cookies)
     # print("提交订单结果是：", SaveOrder_res.json())
 
     # 支付订单
@@ -55,7 +57,7 @@ def buy_coupon_goods(surroundings, buyer_phone, seller_phone, product_name, payT
     buyerUserId = buyer_login_res.json()['userId']
     consume_res = consume(surroundings, orderId, payType, buyerUserId, qrCode, payPassword,
                           cookies=seller_login_res.cookies)
-    # print('确认收货的结果是：', consume_res.json())
+    # print('卖家确认序列号的结果是：', consume_res.json())
 
     return orderNum
 

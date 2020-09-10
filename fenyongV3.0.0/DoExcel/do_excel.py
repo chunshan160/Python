@@ -7,7 +7,6 @@
 from tools.project_path import *
 from openpyxl import load_workbook
 from tools.read_config import ReadConfig
-from DoMysql.sql import SQL
 
 
 class DoExcel:

@@ -21,42 +21,45 @@ def bug_entity_goods(surroundings, buyer_phone, seller_phone, product_name, payT
     # print("登录结果是：", seller_login_res.json())
 
     # 获取商品productStockId
-    productStockId = get_productStockId(surroundings, product_name, cookies=seller_login_res.cookies)
+    product_data = get_productStockId(surroundings, product_name, cookies=seller_login_res.cookies)
+    productId = product_data[0]
+    productStockId = product_data[1]
 
     # 买家登录
     buyer_login_res = login(surroundings, buyer_phone)
     # print("登录结果是：", buyer_login_res.json())
 
     # 获取收货地址
-    address_res = get_address_id(surroundings, cookies=buyer_login_res.cookies)
-    # print("获取收货地址的结果是：", address_res.json())
+    buyer_address_res = get_address_id(surroundings, cookies=buyer_login_res.cookies)
+    # print("获取收货地址的结果是：", buyer_address_res.json())
 
     # 提交订单
-    addressId = address_res.json()['currentUser_receiveAddress_recordList'][0]['id']
-    SaveOrder_res = SaveOrder(surroundings, addressId, productStockId, buyer_login_res.cookies)
+    buyer_addressId = buyer_address_res.json()['currentUser_receiveAddress_recordList'][0]['id']
+    buyer_SaveOrder_res = SaveOrder(surroundings, productId, productStockId, buyer_login_res.cookies, buyer_addressId)
     # print("提交订单结果是：", SaveOrder_res.json())
 
     # 支付订单
-    orderNum = SaveOrder_res.json()['data']['orderNum']
-    pay_res = Pay(surroundings, orderNum, payPassword, payType, cookies=buyer_login_res.cookies)
+    buyer_orderNum = buyer_SaveOrder_res.json()['data']['orderNum']
+    buyer_pay_res = Pay(surroundings, buyer_orderNum, payPassword, payType, cookies=buyer_login_res.cookies)
     # print("支付订单的结果是：", pay_res.json())
 
-    # 确认订单
-    orderId = SaveOrder_res.json()['data']['orderId']
-    AcceptOrder_res = AcceptOrder(surroundings, orderId, cookies=seller_login_res.cookies)
-    # print("确认订单的结果是：", AcceptOrder_res.json())
+    # 卖家确认订单
+    buyer_orderId = buyer_SaveOrder_res.json()['data']['orderId']
+    seller_AcceptOrder_res = AcceptOrder(surroundings, buyer_orderId, cookies=seller_login_res.cookies)
+    # print("确认订单的结果是：", seller_AcceptOrder_res.json())
 
     # 发货
     buyer_userId = seller_login_res.json()['userId']
-    ship_res = ship(surroundings, orderId, payType, buyer_userId, cookies=seller_login_res.cookies)
-    # print('卖家发货的结果是：', ship_res.json())
+    seller_ship_res = ship(surroundings, buyer_orderId, payType, buyer_userId, cookies=seller_login_res.cookies)
+    # print('卖家发货的结果是：', seller_ship_res.json())
 
     # 确认收货
     sellerUserId = seller_login_res.json()['userId']
-    suer_res = suer(surroundings, orderId, payType, sellerUserId, payPassword,cookies=buyer_login_res.cookies)
-    # print('确认收货的结果是：', suer_res.json())
+    buyer_suer_res = suer(surroundings, buyer_orderId, payType, sellerUserId, payPassword,
+                          cookies=buyer_login_res.cookies)
+    # print('确认收货的结果是：', buyer_suer_res.json())
 
-    return orderNum
+    return buyer_orderNum
 
 
 if __name__ == '__main__':

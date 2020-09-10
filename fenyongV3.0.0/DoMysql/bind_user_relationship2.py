@@ -5,7 +5,7 @@
 # @File :bind_user_relationship2.py
 
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 
 
 def bind_user_relationship2(ip, user_id):

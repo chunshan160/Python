@@ -8,6 +8,7 @@ from tools.http_request import HttpRequest
 
 
 def Pay(surroundings, orderNum, payPassword, payType, cookies):
+
     # 查询买家各种钱包明细
     myPayWay_url = f"http://m.{surroundings}.hobay.com.cn/ribbon-api/userWallet/myPayWay"
     myPayWay_headers = {"login": ""}
@@ -38,5 +39,4 @@ def Pay(surroundings, orderNum, payPassword, payType, cookies):
         pay_data = {"tradeNum": orderNum}
         pay_res = HttpRequest().http_request(pay_url, "post", data=pay_data, cookies=cookies,
                                          headers=pay_headers)
-    print(pay_res.json())
     return pay_res

@@ -4,7 +4,6 @@
 # @Author :春衫
 # @File :bing_relationship_data.py
 from DoMysql.bind_user_relationship import bind_user_relationship
-from DoMysql.sql import SQL
 from new_muban.bind_user_relationship import bind_user_relationship_id
 
 
@@ -17,10 +16,7 @@ class BingRelationshipData:
             bind_buyer_relationship = bind_user_relationship(ip, buyer_id)
             if bind_buyer_relationship != None:
                 bind_buyer_relationship_data = bind_user_relationship_id(ip, bind_buyer_relationship)
-            else:
-                bind_buyer_relationship_data = None
-
-            return bind_buyer_relationship_data
+                return bind_buyer_relationship_data
 
         elif payment_method in ["抵工资", "家人购", "现金"]:
             if payment_method == "现金":

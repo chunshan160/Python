@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :bind_user_relationship.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 
 
 def bind_user_relationship(ip, user_id):

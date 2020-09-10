@@ -12,27 +12,27 @@ import time
 from selenium.webdriver.common.action_chains import ActionChains
 # from Handle.Android.za.BuyGood_page import BuyGoods
 # from Handle.za.Untie_Partner import UntiePartner
-from Common.WalletDetail.Superior.Superior_template import SuperiorTemplate
+from Common.fengyong.Superior.Superior_template import SuperiorTemplate
 from Common.URL import url
 import unittest
 from ddt import ddt, data
-from Common.DoExcel.do_excel import DoExcel
-from Common.DoMysql.sql import SQL
-from Common.WalletDetail.Calculation_Data import CalculationData
+from Common.DoExcel import DoExcel
+from Common.DoMySQL import SQL
+from Common.fengyong.Calculation_Data import CalculationData
 from TestData.test_data import IP
 from Common.project_path import *
 from Common.user_log import UserLog
 import warnings
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Common.WalletDetail.new_muban.moban2 import MoBan
-from Common.WalletDetail.boss_setting import BossSetting
+from Common.fengyong.new_muban.moban2 import MoBan
+from Common.fengyong.boss_setting import BossSetting
 # from PageObjects import Recharge
 # from Handle.za.Seach_Goods import Seach_Goods
 # from Handle.za.Receipt_Delivery import ReceiptDelivery
-from Common.WalletDetail.bing_relationship_data import BingRelationshipData
-from Common.WalletDetail.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
-from Common.WalletDetail.new_muban.Fan_Hui import FanHui
+from Common.fengyong.bing_relationship_data import BingRelationshipData
+from Common.fengyong.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
+from Common.fengyong.new_muban.Fan_Hui import FanHui
 import HTMLTestReportCN
 
 my_logger = UserLog()

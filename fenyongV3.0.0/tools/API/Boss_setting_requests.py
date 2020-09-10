@@ -34,7 +34,7 @@ def boss_setting_requests(surroundings, phone, operational_setting):
     login_url = f'http://boss.{surroundings}.hobay.com.cn/bosszuul/boss/user/login'  # 登录
     login_data = {"phone": phone, "password": "qaz123"}
     login_res = HttpRequest().http_request(login_url, "post", data=login_data)
-    # print("登录结果是：", login_res.json())
+    # print("BOSS登录结果是：", login_res.json())
 
     # 设置运营比例
     agentId = login_res.json()['id']

@@ -25,7 +25,7 @@ from tools.boss_setting import BossSetting
 from tools.bing_relationship_data import BingRelationshipData
 from tools.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
 from tools.API.delete_partner import delete_partner
-from tools.API.Recharge_requests import recharge
+from tools.API.Recharge_behavior import recharge_behavior
 from tools.get_js import get_js
 
 my_logger = MyLog()
@@ -68,7 +68,7 @@ class TestBuyGoods(unittest.TestCase):
         if buyer_identity == "公海用户":
             if seller_identity == "个人焕商" or seller_identity == "非焕商且已绑定个人焕商":
                 # 充值
-                recharge(surroundings, buyer_phone, payPassword)
+                recharge_behavior(surroundings, buyer_phone, payPassword)
                 # 写回储备池和充值金额
                 user_id = data["买家"]
                 reserve_fund_data = reserve_fund_sql(ip, user_id)

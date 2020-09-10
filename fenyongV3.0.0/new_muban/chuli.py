@@ -7,7 +7,6 @@
 from decimal import *
 
 from DoMysql.current import current
-from DoMysql.sql import SQL
 
 
 def chulidata(data, ip, order):

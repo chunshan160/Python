@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :second_payagent_ratio.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 from new_muban.XunZhao import xunzhao
 from tools.quchong import quchong
 

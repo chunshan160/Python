@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :personal.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 
 
 def personal(ip, phone):

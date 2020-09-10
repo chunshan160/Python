@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :wallet_detail.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 
 
 def wallet_detail(ip, order):

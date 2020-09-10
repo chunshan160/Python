@@ -6,16 +6,16 @@
 
 import unittest
 from ddt import ddt, data
-from Common.DoExcel.do_excel import DoExcel
-from Common.DoMysql.sql import SQL
-from Common.WalletDetail.Calculation_Data import CalculationData
+from Common.DoExcel import DoExcel
+from Common.DoMySQL import SQL
+from Common.fengyong.Calculation_Data import CalculationData
 from TestData.test_data import IP
 # 别删这个decimal 也别注释掉
 from Common.project_path import *
 from Common.user_log import UserLog
 import warnings
-from Common.WalletDetail.new_muban.moban2 import MoBan
-from Common.WalletDetail.new_muban.Fan_Hui import FanHui
+from Common.fengyong.new_muban.moban2 import MoBan
+from Common.fengyong.new_muban.Fan_Hui import FanHui
 
 test_data = DoExcel().get_data(test_case_path)
 my_logger = UserLog()

@@ -8,7 +8,6 @@ from decimal import *
 from DoExcel.do_excel import DoExcel
 from DoMysql.wallet_detail import wallet_detail
 from tools.project_path import *
-from DoMysql.sql import SQL
 from new_muban.qushe import qushe
 from new_muban.chuli import chulidata
 from new_muban.calculate_commission import calculate_commission

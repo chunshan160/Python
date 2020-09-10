@@ -1,0 +1,16 @@
+test:
+  IP: "192.168.0.101"
+  surroundings: "test"
+  logger_collect_level: DEBUG
+  logger_print_level: INFO
+  logger_output_level: INFO
+  sheet_name: "焕商分佣_test"
+  TestCase: all
+  payPassword: "123456"
+
+#mtest:
+#  IP: "192.168.0.101"
+#  Web: "http://m.test.hobay.com.cn"
+#  sheet_name : "焕商分佣_test"
+#  TestCase : [2]
+#  paypassword : 123456

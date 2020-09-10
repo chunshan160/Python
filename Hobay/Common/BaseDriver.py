@@ -14,7 +14,6 @@ class BaseDriver:
     def base_driver(self, device, automationName="appium", noReset=True,unicodekeyboard=True,resetkeyboard=True):
         fs = open(caps_dir, encoding="utf-8")
         datas = yaml.load(fs,Loader=yaml.FullLoader)
-        print(len(datas))
         for i in datas:
             if device == i["deviceDesc"]:
                 if automationName != "appium":
@@ -31,5 +30,4 @@ class BaseDriver:
                 return driver
 
 if __name__ == '__main__':
-    BaseDriver().base_driver("MI 8")
-    # print(a)
+    pass

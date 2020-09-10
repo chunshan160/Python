@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from PageLocators.H5.za.MyIndex import MyIndex
 from Handle.za.H5_Login_page2 import H5_LoginPage
 from Handle.H5.za.BuyGood_page import BuyGoods
-from Common.WalletDetail.ReturnTxt import ReturnTxt
+from Common.fengyong.ReturnTxt import ReturnTxt
 from PageLocators.H5.za.BuyGoods import BuyGoods as BG
 
 

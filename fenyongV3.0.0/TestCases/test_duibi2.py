@@ -4,24 +4,18 @@
 # @Author :春衫
 # @File :test_duibi.py
 
-from tools.project_path import *
 import unittest
 import pytest
 from ddt import ddt, data
 from DoExcel.do_excel import DoExcel
-from DoMysql.sql import SQL
-from muban.template import GeShiHua
-from muban.title import Title
+from tools.sql import SQL
 from tools.Calculation_Data import CalculationData
 from test_data.test_data import IP
 # 别删这个decimal 也别注释掉
-from decimal import *
 from tools.project_path import *
 from tools.my_log import MyLog
 import warnings
 from new_muban.moban2 import MoBan
-from new_muban.bind_user_relationship import bind_user_relationship_id
-from new_muban.second_payagent_ratio_data import second_payagent_ratio_data
 from new_muban.Fan_Hui import FanHui
 
 test_data = DoExcel().get_data(test_case_path)

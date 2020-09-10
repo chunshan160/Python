@@ -16,4 +16,4 @@ def consume(surroundings,orderId,payType,buyerUserId,qrCode,payPassword,cookies)
     consume_headers = {'login': '', 'payPassword': payPassword}
     consume_res = HttpRequest().http_request(consume_url, 'post', data=consume_data, headers=consume_headers,
                                              cookies=cookies)
-    return consume_res.json()
+    return consume_res

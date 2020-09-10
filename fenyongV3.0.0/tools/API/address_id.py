@@ -8,6 +8,7 @@ from tools.http_request import HttpRequest
 
 
 def get_address_id(surroundings, cookies):
+
     address_url = f'http://m.{surroundings}.hobay.com.cn/api/user/graphql/flat'
     address_data = {
         "query": "query currentUser{\n        currentUser{\n          receiveAddress(page:1,pageSize:100){\n            numPerPage\n            pageNum\n            totalCount\n            totalPage\n            recordList{\n              id\n              name\n              provinceName\n              cityName\n              areaName\n              detailAddress\n              phone\n              default\n            }\n          }\n        }\n      }"}

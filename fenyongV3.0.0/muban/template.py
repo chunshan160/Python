@@ -4,9 +4,7 @@
 # @Author :春衫
 # @File :expected_changes.py
 
-from DoMysql.sql import SQL
-from decimal import *
-from Calculation.calculation import Calculation
+from tools.sql import SQL
 from DoExcel.do_excel import DoExcel
 from tools.project_path import *
 from muban.title import Title

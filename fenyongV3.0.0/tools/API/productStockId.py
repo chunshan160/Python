@@ -20,5 +20,6 @@ def get_productStockId(surroundings, product_name, cookies):
     product_data = product_res.json()['data']['result']
     for i in range(0, len(product_data)):
         if product_data[i]['title'] == product_name:
+            productId=product_data[i]['id']
             productStockId = product_data[i]['productStockWithStockImages'][0]['id']
-            return productStockId
+            return productId,productStockId

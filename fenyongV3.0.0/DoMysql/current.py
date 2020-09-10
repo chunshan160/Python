@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :current.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 
 
 def current(ip, order):

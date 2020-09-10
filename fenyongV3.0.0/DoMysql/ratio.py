@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :ratio.py
 
-from DoMysql.sql import SQL
+from tools.sql import SQL
 from tools.quchong import quchong
 
 # 查上级分佣比例
