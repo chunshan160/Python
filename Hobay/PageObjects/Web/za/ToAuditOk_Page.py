@@ -5,7 +5,7 @@
 #@File :ToAuditOk_Page.py
 
 
-from PageLocators.Web import toAuditOk
+from PageLocators.Web.za import toAuditOk
 from Common.BasePage import BasePage
 
 

@@ -18,4 +18,4 @@ pytest.main(
 #      allure_report + "/result", "--clean-alluredir"])
 
 #生成测试报告
-os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")
+# os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

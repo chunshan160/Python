@@ -10,24 +10,35 @@ from selenium.webdriver.common.by import By
 '''
 
 # 选择收货地址
-select_address = (By.ID, "com.ecloud.hobay:id/tv_select_address")
+select_address = (By.CLASS_NAME, "address")
 # 新建地址
-new_address = (By.ID, "com.ecloud.hobay:id/tv_new_address")
-#填写信息
-address = {"MI 8": {"输入收货人姓名": (868, 261), "输入收货人手机号码": (837, 402), "选择所在地区": (887, 527),
-                   "省": (106, 909), "市": (110, 1163), "区": (110, 1269), "输入地址": (675, 640), "设为默认地址": (76, 769), }}
+new_address = (By.XPATH, '//div[contains(text(),"新建地址")]')
+#名字
+name = (By.XPATH,'//input[@placeholder="请输入姓名"]')
+#手机号
+phone=(By.XPATH,'//input[@placeholder="请输入手机号码"]')
+#地址
+address=(By.XPATH,'//input[@placeholder="请选择地址"]')
+#省
+province=(By.XPATH,'//div[contains(text(),"山西省")]')
+#市
+city=(By.XPATH,'//div[contains(text(),"太原市")]')
+#区
+area=(By.XPATH,'//div[contains(text(),"小店区")]')
+#详细地址
+detailed_address=(By.XPATH,'//input[@placeholder="请输入详细地址，如街道、门牌号等"]')
 # 保存
-save = (By.ID, "android:id/content")
+save = (By.CLASS_NAME, "save-btn")
 #选择第一个地址
-choose_first_address=(By.CLASS_NAME,"android.widget.RelativeLayout")
+choose_first_address=(By.CLASS_NAME,"address-item")
 
 # 管理地址
-manage_address = (By.ID, "com.ecloud.hobay:id/tv_manage_address")
+manage_address = (By.XPATH, '//div[contains(text(),"管理地址")]')
 # 默认地址
-default_address = (By.ID, "com.ecloud.hobay:id/tv_default")
+default_address = (By.CLASS_NAME, "van-checkbox")
 # 优惠券
-coupon = (By.ID, "com.ecloud.hobay:id/tv_coupon_number")
+coupon = (By.XPATH, '//div[contains(text(),"优惠券")]/following-sibling::div')
 # 买家留言
-buyer_message = (By.ID, "com.ecloud.hobay:id/et_message")
+buyer_message = (By.XPATH,'//input[@placeholder="选填，输入想对卖家说的话"]')
 # 提交订单
-submit_order = (By.ANDROID_UIAUTOMATOR, 'new UiSelector().text("提交订单")')
+submit_order = (By.XPATH,'//button[contains(text(),"提交订单")]')

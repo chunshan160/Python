@@ -28,8 +28,7 @@ product_image = (By.ID, "com.ecloud.hobay:id/iv_add_pic")
 check_image = (By.ID, "com.ecloud.hobay:id/cb_check")
 # 点击确定
 btn_ok = (By.ID, "com.ecloud.hobay:id/btn_ok")
-# 立即上架
-submit = (By.ID, "com.ecloud.hobay:id/btn_immediately_publish")
+
 
 
 # 分类
@@ -48,8 +47,9 @@ limit_quantity = (By.XPATH, '//input[@placeholder="请输入限购数量"]')
 #限购周期
 limit_time = (By.XPATH, '//input[@placeholder="限购天数"]')
 
-
+# 立即上架
+submit = (By.CLASS_NAME, "submit-sell")
 # 放入仓库
-storage = (By.ID, "com.ecloud.hobay:id/btn_into_warehouse")
+storage = (By.CLASS_NAME, "submit-storage")
 # 错误提示
 error_toast = (By.XPATH, '//*[contains(text(),"请输入商品标题")]')

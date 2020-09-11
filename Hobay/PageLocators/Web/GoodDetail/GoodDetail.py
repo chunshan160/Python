@@ -7,26 +7,26 @@
 from selenium.webdriver.common.by import By
 
 #顶部商品
-top_good=(By.ANDROID_UIAUTOMATOR,'new UiSelector().text("商品")')
+top_good=(By.XPATH,'//span[text()="商品"]')
 #顶部详情
-top_detail=(By.ANDROID_UIAUTOMATOR,'new UiSelector().text("详情")')
+top_detail=(By.XPATH,'//span[text()="详情"]')
 #顶部评价
-top_evaluation=(By.ANDROID_UIAUTOMATOR,'new UiSelector().text("评价")')
+top_evaluation=(By.XPATH,'//span[text()="评价"]')
 #店铺
-shop=(By.ID,"com.ecloud.hobay:id/tv_shop")
+shop=(By.XPATH,'//span[text()="店铺"]/..')
 #收藏
-collection=(By.ID,"com.ecloud.hobay:id/tv_collection")
-#聊天
-chat=(By.ID,"com.ecloud.hobay:id/tv_chat")
+collection=(By.XPATH,'//span[text()="收藏"]/..')
+#咨询
+chat=(By.XPATH,'//span[text()="咨询"]/..')
 #加入购物车
-add_car=(By.ID,"com.ecloud.hobay:id/tv_add")
+add_car=(By.CLASS_NAME,"btn join")
 #立即购买
-buy_now=(By.ID,"com.ecloud.hobay:id/tv_buy_now")
+buy_now=(By.CLASS_NAME,"r-server")
 #-
-less=(By.ANDROID_UIAUTOMATOR,'new UiSelector().text("—")')
+less=(By.XPATH,'//span[contains(text(),"-")]')
 #购买数量
-add_munber=(By.ANDROID_UIAUTOMATOR,'new UiSelector().text("0")')
+add_munber=(By.XPATH,'//input[@type="number"]')
 #+
-add=(By.ANDROID_UIAUTOMATOR,'new UiSelector().text("＋")')
+add=(By.XPATH,'//span[contains(text(),"+")]')
 #确定
-confirm=(By.ID,"com.ecloud.hobay:id/btn_confirm")
+confirm=(By.CLASS_NAME, "btn buy")

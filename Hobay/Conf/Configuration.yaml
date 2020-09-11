@@ -5,7 +5,7 @@ test:
   logger_print_level: INFO
   logger_output_level: INFO
   sheet_name: "焕商分佣_test"
-  TestCase: all
+  TestCase: [22]
   payPassword: "123456"
 
 #mtest:

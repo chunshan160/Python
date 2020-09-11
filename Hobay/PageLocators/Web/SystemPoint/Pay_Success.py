@@ -15,7 +15,7 @@ join = (By.ID, "com.ecloud.hobay:id/tv_join")
 # 关闭弹窗
 close_pop_ups = (By.ID, "com.ecloud.hobay:id/iv_delete")
 # 支付成功
-title = (By.ID, "com.ecloud.hobay:id/title")
+title = (By.XPATH,'//p[text()="支付成功"]')
 # 支付方式
 pay_method = (By.ID, "com.ecloud.hobay:id/tv_pay_method")
 # 支付金额

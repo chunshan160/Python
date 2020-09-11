@@ -72,13 +72,13 @@ class DoExcel:
         return test_data
 
     @staticmethod
-    def write_back(file_name, sheet_name, i, actual_userid, actual_changes,
+    def write_back(file_name, sheet_name, case_id, actual_userid, actual_changes,
                    expected_result, actual_result, TestResult, Error):  # 专门写回数据  i行号  TestResult结果
         '''
 
         :param file_name: 文件名
         :param sheet_name: 表单名
-        :param i: 用例id
+        :param case_id: 用例id
         :param actual_userid: 实际用户id
         :param actual_changes: 实际变化金额
         :param expected_result: 预期结果
@@ -89,12 +89,12 @@ class DoExcel:
         '''
         wb = load_workbook(file_name)
         sheet = wb[sheet_name]  # 选择表单
-        sheet.cell(i, 16).value = actual_userid  # 实际
-        sheet.cell(i, 17).value = actual_changes  # 实际
-        sheet.cell(i, 18).value = expected_result  # 预期结果
-        sheet.cell(i, 19).value = actual_result  # 实际结果
-        sheet.cell(i, 20).value = TestResult  # 测试结果
-        sheet.cell(i, 21).value = Error  # 报错内容
+        sheet.cell(case_id, 16).value = actual_userid  # 实际
+        sheet.cell(case_id, 17).value = actual_changes  # 实际
+        sheet.cell(case_id, 18).value = expected_result  # 预期结果
+        sheet.cell(case_id, 19).value = actual_result  # 实际结果
+        sheet.cell(case_id, 20).value = TestResult  # 测试结果
+        sheet.cell(case_id, 21).value = Error  # 报错内容
         wb.save(file_name)  # 保存结果
 
     @classmethod

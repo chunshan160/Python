@@ -4,273 +4,273 @@
   "children" : [ {
     "name" : "DESKTOP-4EMDDAT",
     "children" : [ {
-      "name" : "10180-MainThread",
+      "name" : "2320-MainThread",
       "children" : [ {
-        "name" : "test_commission[item20]",
-        "uid" : "db8cbcf64c48da50",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "name" : "test_commission[item16]",
+        "uid" : "c3c9ac9e0051ed79",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731340621,
-          "stop" : 1599731352811,
-          "duration" : 12190
+          "start" : 1599804453577,
+          "stop" : 1599804461934,
+          "duration" : 8357
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 21, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017284400003957', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 17, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝券支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '易贝券', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"bangding_phone\":17777777778,\"买家\":1000656,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}\", 'superior': \"[{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017482400004009', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
-        "name" : "test_commission[item11]",
-        "uid" : "ddb306ad40c2044e",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "name" : "test_commission[item2]",
+        "uid" : "caba90a79b1c93e5",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731263027,
-          "stop" : 1599731269646,
-          "duration" : 6619
+          "start" : 1599804344681,
+          "stop" : 1599804353649,
+          "duration" : 8968
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 12, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝券支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '易贝券', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777783,\"买家\":1000656,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017272100003923', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 3, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（抵工资）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '抵工资', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777776,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091114022400004137', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
-        "name" : "test_commission[item0]",
-        "uid" : "bfa16c1458383264",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "name" : "test_commission[item9]",
+        "uid" : "48f54da6115bca0d",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731175747,
-          "stop" : 1599731184307,
-          "duration" : 8560
+          "start" : 1599804400978,
+          "stop" : 1599804408553,
+          "duration" : 7575
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 1, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017434800003961', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item12]",
-        "uid" : "c07f577668d7fa37",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731269654,
-          "stop" : 1599731277067,
-          "duration" : 7413
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 13, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用抵工资支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '抵工资', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777783,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017272800003925', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 10, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用现金支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '普通会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '现金', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777774,\"买家\":1000656,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017472900003991', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, 'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item5]",
-        "uid" : "99d2f6fd6fe29414",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "d94b0e7fa742c572",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731221544,
-          "stop" : 1599731227872,
-          "duration" : 6328
+          "start" : 1599804372568,
+          "stop" : 1599804379965,
+          "duration" : 7397
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 6, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用易贝支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '易贝', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777774,\"买家\":1000656,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017263900003911', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item17]",
-        "uid" : "46db2d1494960037",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731311345,
-          "stop" : 1599731321048,
-          "duration" : 9703
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 18, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用抵工资支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '抵工资', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"disanfang_phone\":13724765586,\"bangding_phone\":17777777778,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017280800003941', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 6, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用易贝支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '易贝', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777774,\"买家\":1000656,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017470100003983', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item13]",
-        "uid" : "cf556cb07b65272a",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "8ff6473fce95d7ef",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731277075,
-          "stop" : 1599731284539,
-          "duration" : 7464
+          "start" : 1599804429943,
+          "stop" : 1599804437202,
+          "duration" : 7259
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 14, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用家人购支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '家人购', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777783,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017273500003927', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 14, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用家人购支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '家人购', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777783,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017475700003999', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
-        "name" : "test_commission[item1]",
-        "uid" : "b3c5cfe6848116cd",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "name" : "test_commission[item8]",
+        "uid" : "aa3ac584fed71e4e",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731184315,
-          "stop" : 1599731192367,
-          "duration" : 8052
+          "start" : 1599804393692,
+          "stop" : 1599804400968,
+          "duration" : 7276
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 2, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（易贝券）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝券', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017260400003897', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 9, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用家人购支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '家人购', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777774,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017472200003989', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
-        "name" : "test_commission[item15]",
-        "uid" : "20ba8c7c3ce0ea8d",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "name" : "test_commission[item17]",
+        "uid" : "e1352188a4ccecfc",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731293593,
-          "stop" : 1599731302584,
-          "duration" : 8991
+          "start" : 1599804461944,
+          "stop" : 1599804471237,
+          "duration" : 9293
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 16, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '易贝', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"bangding_phone\":17777777778,\"买家\":1000656,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}\", 'superior': \"[{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017275100003933', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item19]",
-        "uid" : "69ed886ff7a7cf33",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731330936,
-          "stop" : 1599731340613,
-          "duration" : 9677
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 20, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用现金支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '普通会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '现金', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"bangding_phone\":17777777778,\"买家\":1000656,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}, '支付服务费分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017282700003949', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item14]",
-        "uid" : "59579dec16695589",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731284548,
-          "stop" : 1599731293581,
-          "duration" : 9033
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 15, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用现金支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '普通会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '现金', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777783,\"买家\":1000656,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017274200003929', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, 'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 18, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用抵工资支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '抵工资', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"disanfang_phone\":13724765586,\"bangding_phone\":17777777778,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017483300004013', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item18]",
-        "uid" : "2d07cce58f390578",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "749dde6d750828ce",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731321057,
-          "stop" : 1599731330927,
-          "duration" : 9870
+          "start" : 1599804471247,
+          "stop" : 1599804480650,
+          "duration" : 9403
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 19, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用家人购支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '家人购', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"disanfang_phone\":13724765586,\"bangding_phone\":17777777778,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017281800003945', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 19, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用家人购支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '家人购', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"disanfang_phone\":13724765586,\"bangding_phone\":17777777778,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017484300004017', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item15]",
+        "uid" : "a63800abe26dd416",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804444952,
+          "stop" : 1599804453567,
+          "duration" : 8615
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 16, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '易贝', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"bangding_phone\":17777777778,\"买家\":1000656,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}\", 'superior': \"[{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017481500004005', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item3]",
-        "uid" : "89fdd6e9241f1e46",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "788103f78d48b090",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731201763,
-          "stop" : 1599731212149,
-          "duration" : 10386
+          "start" : 1599804353657,
+          "stop" : 1599804362756,
+          "duration" : 9099
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 4, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（家人购）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '家人购', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777776,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017262200003905', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 4, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（家人购）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '家人购', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777776,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091114023300004141', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item0]",
+        "uid" : "23478ef17fbd94cf",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804324038,
+          "stop" : 1599804336080,
+          "duration" : 12042
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091114020700004129', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item7]",
+        "uid" : "a7d6b6ad799358e0",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804386500,
+          "stop" : 1599804393685,
+          "duration" : 7185
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 8, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用抵工资支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '抵工资', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777774,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017471500003987', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item1]",
+        "uid" : "7ab57925a74d70d9",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804336090,
+          "stop" : 1599804344674,
+          "duration" : 8584
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 2, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（易贝券）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝券', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091114021600004133', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item14]",
+        "uid" : "c3edf668f526e4f9",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804437210,
+          "stop" : 1599804444942,
+          "duration" : 7732
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 15, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用现金支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '普通会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '现金', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777783,\"买家\":1000656,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017480500004001', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, 'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item11]",
+        "uid" : "6dfea2ccb0fb0b30",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804415169,
+          "stop" : 1599804422495,
+          "duration" : 7326
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 12, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝券支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '易贝券', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777783,\"买家\":1000656,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017474300003995', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item19]",
+        "uid" : "3e937d4b68ece7c3",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804480657,
+          "stop" : 1599804490611,
+          "duration" : 9954
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 20, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用现金支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '普通会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '现金', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"bangding_phone\":17777777778,\"买家\":1000656,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}, '支付服务费分佣': {'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017485300004021', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item6]",
+        "uid" : "cd775db82ccbfb29",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804379975,
+          "stop" : 1599804386490,
+          "duration" : 6515
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 7, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用易贝券支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '易贝券', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777774,\"买家\":1000656,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017470800003985', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item10]",
-        "uid" : "4e66e51eb489f8fa",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "8953f5e26e41555c",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731256643,
-          "stop" : 1599731263020,
-          "duration" : 6377
+          "start" : 1599804408563,
+          "stop" : 1599804415159,
+          "duration" : 6596
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 11, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '易贝', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777783,\"买家\":1000656,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017271400003921', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 11, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '易贝', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777783,\"买家\":1000656,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017473600003993', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item12]",
+        "uid" : "25cb4f4ed87738b5",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804422505,
+          "stop" : 1599804429936,
+          "duration" : 7431
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 13, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且未绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用抵工资支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且未绑定个人焕商', 'payment_method': '抵工资', 'goodsname': '非焕商且未绑定个人焕商实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777783,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000664,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017475000003997', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+      }, {
+        "name" : "test_commission[item20]",
+        "uid" : "826281d564c2a507",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1599804490620,
+          "stop" : 1599804499880,
+          "duration" : 9260
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 21, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017491400004029', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item4]",
-        "uid" : "2fe4988cd591e200",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "ff01195621188ccb",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731212157,
-          "stop" : 1599731221535,
-          "duration" : 9378
+          "start" : 1599804362763,
+          "stop" : 1599804372558,
+          "duration" : 9795
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 5, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（现金账户）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '现金', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001259}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017263100003909', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, 'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 5, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（现金账户）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '现金', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001259}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091114024200004145', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, 'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       }, {
         "name" : "test_commission[item21]",
-        "uid" : "c64efd0ebb6da4bc",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
+        "uid" : "5c3cdca5863e0005",
+        "parentUid" : "742fd7b88d5fb28d28bfc3583d71048d",
         "status" : "passed",
         "time" : {
-          "start" : 1599731352820,
-          "stop" : 1599731361383,
-          "duration" : 8563
+          "start" : 1599804499890,
+          "stop" : 1599804508593,
+          "duration" : 8703
         },
         "flaky" : false,
         "parameters" : [ "{'case_id': 21, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': None, 'superior': None, 'order': None, 'reserve_fund': None, 'bind_relationship_data': None, 'second_payagent_ratio': None, 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item9]",
-        "uid" : "4b640c7179558042",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731249038,
-          "stop" : 1599731256635,
-          "duration" : 7597
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 10, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用现金支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '普通会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '现金', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777774,\"买家\":1000656,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020091017270700003919', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'业务焕商': 1000750, 'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item7]",
-        "uid" : "73ab19d36286d7f6",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731234237,
-          "stop" : 1599731241588,
-          "duration" : 7351
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 8, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用抵工资支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '抵工资', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777774,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017265300003915', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item8]",
-        "uid" : "2686ebf64e8a13e3",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731241596,
-          "stop" : 1599731249031,
-          "duration" : 7435
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 9, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用家人购支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '家人购', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777774,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017270000003917', 'reserve_fund': None, 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item16]",
-        "uid" : "aa56da82bb1b2a70",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731302592,
-          "stop" : 1599731311336,
-          "duration" : 8744
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 17, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：非焕商身份（绑定了省、市、区代）且已绑定个人焕商\\n\\n购买实物/本地生活/商企服务/拍品商品，使用易贝券支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '非焕商且已绑定个人焕商', 'payment_method': '易贝券', 'goodsname': '非焕商且已绑定个人焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777771,\"bangding_phone\":17777777778,\"买家\":1000656,\"卖家\":1000644,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'个人分佣比例': Decimal('0.30'), '市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60')}\", 'superior': \"[{'个人焕商': 1000651}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017275900003937', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item6]",
-        "uid" : "22ca1988a78f0827",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731227879,
-          "stop" : 1599731234229,
-          "duration" : 6350
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 7, 'title': '目的：\\n买家是：公海用户且绑定了省、市、区代\\n卖家是：（省代/市代/区代）区域焕商且绑定了省代、市代、区代\\n购买实物/本地生活/商企服务/拍品商品，使用易贝券支付，交易完成后，买家和卖家不绑定伙伴关系。', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '区域焕商', 'payment_method': '易贝券', 'goodsname': '区代实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777774,\"买家\":1000656,\"卖家\":1000648,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': None}\", 'superior': \"[{'个人焕商': None}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020091017264600003913', 'reserve_fund': None, 'bind_relationship_data': \"{'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': None}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
-      }, {
-        "name" : "test_commission[item2]",
-        "uid" : "42e7563347e38a32",
-        "parentUid" : "1c0dda953787f5d0dd80ab4b118c1655",
-        "status" : "passed",
-        "time" : {
-          "start" : 1599731192375,
-          "stop" : 1599731201754,
-          "duration" : 9379
-        },
-        "flaky" : false,
-        "parameters" : [ "{'case_id': 3, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（抵工资）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '抵工资', 'goodsname': '普通焕商本地生活', 'data': '{\"buyer_phone\":\"17777777781\",\"seller_phone\":17777777776,\"disanfang_phone\":13724765586,\"买家\":1000656,\"出钱方\":1000166,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001308}, {'市代理商': 103554, '省代理商': 1000246, '区代理商': None}]}\", 'order': 'EC-2020091017261300003901', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '业务焕商': 1000750, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000246, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       } ],
-      "uid" : "1c0dda953787f5d0dd80ab4b118c1655"
+      "uid" : "742fd7b88d5fb28d28bfc3583d71048d"
     } ],
     "uid" : "f66abf70e354ddd25d173dafd54c840d"
   } ]
