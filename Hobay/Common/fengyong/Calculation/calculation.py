@@ -7,7 +7,7 @@
 from Common.fengyong.Calculation.recharge_service_fee import Dividend
 from Common.fengyong.Calculation.payment_method import PaymentMethod
 from Common.fengyong.sql.wallet_detail import wallet_detail
-from TestData.test_data import yibei as yb
+from TestData.test_data import cbp as yb
 from Common.DoExcel import DoExcel
 from Common.project_path import test_data_path
 from Common.user_log import UserLog

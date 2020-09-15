@@ -70,7 +70,7 @@ class MoBan:
                 seller_income_amount = goods_price * -1 - pay_cash_service_fee  # 卖家实际应收到的金额
 
             elif self.payment_method in ["易贝", "抵工资", "家人购"]:
-                pay_yibei_service_fee = (calculation[0])[1]  # 买家应出易贝服务费
+                pay_cbp_service_fee = (calculation[0])[1]  # 买家应出易贝服务费
                 pay_cash_service_fee = (calculation[0])[2]  # 买家应出现金服务费
 
         if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (
@@ -128,13 +128,13 @@ class MoBan:
 
                 start_template = [
                     (buyer_id, 2, 3, goods_price, None, None, '{0}购买商品：扣除买家订单易贝金额'.format(payment_method_data), 1),
-                    (buyer_id, 2, 1, pay_yibei_service_fee * -1, None, None,
+                    (buyer_id, 2, 1, pay_cbp_service_fee * -1, None, None,
                      '{0}购买商品：扣除买家易贝服务费'.format(payment_method_data), 1),
                     (buyer_id, 2, 1, pay_cash_service_fee * -1, None, None,
                      '{0}购买商品：扣除买家现金服务费'.format(payment_method_data), 3),
                     (platform_id, 2, 3, goods_price * -1, None, None,
                      '{0}购买商品：扣除买家订单易贝金额转入平台'.format(payment_method_data), 1),
-                    (platform_id, 2, 1, pay_yibei_service_fee, None, None,
+                    (platform_id, 2, 1, pay_cbp_service_fee, None, None,
                      '{0}购买商品：扣除买家易贝服务费转入平台'.format(payment_method_data), 1),
                     (platform_id, 2, 1, pay_cash_service_fee, None, None,
                      '{0}购买商品：扣除买家现金服务费转入平台'.format(payment_method_data), 3),
@@ -166,7 +166,7 @@ class MoBan:
                                               2)]
 
                 service_fee_template = [
-                    (platform_id, 2, 1, pay_yibei_service_fee * -1, None, None,
+                    (platform_id, 2, 1, pay_cbp_service_fee * -1, None, None,
                      '{0}购买商品：扣除买家易贝服务费分润(服务费)总金额支出'.format(payment_method_data),
                      1),
                     (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,
@@ -195,13 +195,13 @@ class MoBan:
 
                 start_template = [
                     (payer_id, 2, 3, goods_price, None, None, '{0}购买商品：扣除买家订单易贝金额'.format(payment_method_data), 1),
-                    (payer_id, 2, 1, pay_yibei_service_fee * -1, None, None,
+                    (payer_id, 2, 1, pay_cbp_service_fee * -1, None, None,
                      '{0}购买商品：扣除买家易贝服务费'.format(payment_method_data), 1),
                     (payer_id, 2, 1, pay_cash_service_fee * -1, None, None,
                      '{0}购买商品：扣除买家现金服务费'.format(payment_method_data), 3),
                     (platform_id, 2, 3, goods_price * -1, None, None,
                      '{0}购买商品：扣除买家订单易贝金额转入平台'.format(payment_method_data), 1),
-                    (platform_id, 2, 1, pay_yibei_service_fee, None, None,
+                    (platform_id, 2, 1, pay_cbp_service_fee, None, None,
                      '{0}购买商品：扣除买家易贝服务费转入平台'.format(payment_method_data), 1),
                     (platform_id, 2, 1, pay_cash_service_fee, None, None,
                      '{0}购买商品：扣除买家现金服务费转入平台'.format(payment_method_data), 3),
@@ -230,7 +230,7 @@ class MoBan:
 
                 if self.payment_method == "抵工资":
                     service_fee_template = [
-                        (platform_id, 2, 1, pay_yibei_service_fee * -1, None, None,
+                        (platform_id, 2, 1, pay_cbp_service_fee * -1, None, None,
                          '{0}购买商品：扣除买家易贝服务费分润(服务费)总金额支出'.format(payment_method_data), 1),
                         (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,
                          '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
@@ -245,7 +245,7 @@ class MoBan:
                 # 家人购
                 else:
                     service_fee_template = [
-                        (platform_id, 2, 1, pay_yibei_service_fee * -1, None, None,
+                        (platform_id, 2, 1, pay_cbp_service_fee * -1, None, None,
                          '{0}购买商品：扣除买家易贝服务费进行分润(服务费)总金额支出'.format(payment_method_data),
                          1),
                         (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,

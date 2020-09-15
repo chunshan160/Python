@@ -82,24 +82,25 @@ class Dividend:
 
         my_logger.info("服务费比例是：{0}".format(service_fee_ratio))
         my_logger.info("买家是：{0}，卖家是：{1}".format(self.buyer_identity, self.seller_identity))
-        if payment_method in ["现金", "微信", "支付宝"]:
-            shenfen = "卖家"
-        elif payment_method == "抵工资":
-            shenfen = "企业"
-        elif payment_method == "家人购":
-            shenfen = "家人"
-        else:
-            shenfen = "买家"
 
-        my_logger.info("交易时{0}需要支付服务费是：{1}".format(shenfen, service_fee))
+        if payment_method in ["现金", "微信", "支付宝"]:
+            Identity = "卖家"
+        elif payment_method == "抵工资":
+            Identity = "企业"
+        elif payment_method == "家人购":
+            Identity = "家人"
+        else:
+            Identity = "买家"
+
+        my_logger.info("交易时{0}需要支付服务费是：{1}".format(Identity, service_fee))
         my_logger.info(
-            f"{shenfen}上级省代理商分佣比例是：{self.buyer_province_proportion}，{shenfen}上级市代理商分佣比例是：{self.buyer_city_proportion}，"
-            f"{shenfen}上级区代理商分佣比例是：{self.buyer_area_proportion}，{shenfen}绑定的个人焕商分佣比例是：{self.buyer_personal_proportion}")
+            f"{Identity}上级省代理商分佣比例是：{self.buyer_province_proportion}，{Identity}上级市代理商分佣比例是：{self.buyer_city_proportion}，"
+            f"{Identity}上级区代理商分佣比例是：{self.buyer_area_proportion}，{Identity}绑定的个人焕商分佣比例是：{self.buyer_personal_proportion}")
 
         # 处理M1
         if self.buyer_personal_proportion == None:
             M1 = 0  # 个人所得分佣
-            my_logger.info("{0}没有绑定个人焕商，交易时个人焕商不会获得交易服务费分佣".format(shenfen))
+            my_logger.info("{0}没有绑定个人焕商，交易时个人焕商不会获得交易服务费分佣".format(Identity))
         else:
             M1 = service_fee * self.buyer_personal_proportion  # 个人所得分佣
             M1 = new_round(float(M1), 2)
@@ -108,11 +109,11 @@ class Dividend:
 
         if self.buyer_province_proportion == None and self.buyer_city_proportion == None and self.buyer_area_proportion == None:
             M2 = 0
-            my_logger.info("该{0}没有上级区代理商，不会获得分佣。".format(shenfen))
+            my_logger.info("该{0}没有上级区代理商，不会获得分佣。".format(Identity))
             M3 = 0
-            my_logger.info("该{0}没有上级市代理商，不会获得分佣。".format(shenfen))
+            my_logger.info("该{0}没有上级市代理商，不会获得分佣。".format(Identity))
             M4 = 0
-            my_logger.info("该{0}没有上级省代理商，不会获得分佣。".format(shenfen))
+            my_logger.info("该{0}没有上级省代理商，不会获得分佣。".format(Identity))
 
         else:
             # 买家上级个人焕商分佣比例不为None 并且 个人焕商分佣 比例 大于 最小省/市/区分佣比例
@@ -123,7 +124,7 @@ class Dividend:
 
                 if self.buyer_area_proportion == None:
                     M2 = 0
-                    my_logger.info("该{0}没有上级区代理商，不会获得分佣。".format(shenfen))
+                    my_logger.info("该{0}没有上级区代理商，不会获得分佣。".format(Identity))
                 else:
                     M2 = self.buyer_area_proportion * (service_fee - M1)  # 区代理商所得分佣
                     M2 = new_round(float(M2), 2)
@@ -132,7 +133,7 @@ class Dividend:
 
                 if self.buyer_city_proportion == None:
                     M3 = 0
-                    my_logger.info("该{0}没有上级市代理商，不会获得分佣。".format(shenfen))
+                    my_logger.info("该{0}没有上级市代理商，不会获得分佣。".format(Identity))
                 else:
                     if self.buyer_area_proportion == None:
                         self.buyer_area_proportion = 0
@@ -150,7 +151,7 @@ class Dividend:
 
                 if self.buyer_province_proportion == None:
                     M4 = 0
-                    my_logger.info("该{0}没有上级省代理商，不会获得分佣。".format(shenfen))
+                    my_logger.info("该{0}没有上级省代理商，不会获得分佣。".format(Identity))
                 else:
                     if self.buyer_city_proportion == None:
                         self.buyer_city_proportion = 0
@@ -171,7 +172,7 @@ class Dividend:
 
                 if self.buyer_area_proportion == None:
                     M2 = 0
-                    my_logger.info("该{0}没有上级区代理商，不会获得分佣。".format(shenfen))
+                    my_logger.info("该{0}没有上级区代理商，不会获得分佣。".format(Identity))
                 else:
                     if self.buyer_personal_proportion == None:
                         a = self.buyer_area_proportion
@@ -185,7 +186,7 @@ class Dividend:
 
                 if self.buyer_city_proportion == None:
                     M3 = 0
-                    my_logger.info("该{0}没有上级市代理商，不会获得分佣。".format(shenfen))
+                    my_logger.info("该{0}没有上级市代理商，不会获得分佣。".format(Identity))
                 else:
                     if self.buyer_area_proportion == None:
                         self.buyer_area_proportion = 0
@@ -203,7 +204,7 @@ class Dividend:
 
                 if self.buyer_province_proportion == None:
                     M4 = 0
-                    my_logger.info("该{0}没有上级省代理商，不会获得分佣。".format(shenfen))
+                    my_logger.info("该{0}没有上级省代理商，不会获得分佣。".format(Identity))
                 else:
                     if self.buyer_city_proportion == None:
                         self.buyer_city_proportion = 0

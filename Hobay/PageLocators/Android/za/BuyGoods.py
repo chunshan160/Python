@@ -22,7 +22,7 @@ class BuyGoods:
     #更换支付方式
     payment_method = (MobileBy.ID,'//span[contains(text(),"更换支付方式")]')
     #选择易贝券
-    yibeiquan = (MobileBy.ID,'//div[contains(text(),"易贝券")]//..//parent::div[@class="detaisl"]//parent::li')
+    cbp_coupon = (MobileBy.ID,'//div[contains(text(),"易贝券")]//..//parent::div[@class="detaisl"]//parent::li')
     #选择抵工资
     digongzi = (MobileBy.ID,'//div[contains(text(),"抵工资")]//..//parent::div[@class="detaisl"]//parent::li')
     #选择家人购

@@ -37,7 +37,7 @@ class BuyGoods:
 
             if payment_method =="易贝券":
                 # 选择支付方式
-                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.yibeiquan))).click()
+                WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((BG.cbp_coupon))).click()
 
 
             elif payment_method =="抵工资":
