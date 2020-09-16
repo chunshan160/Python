@@ -6,7 +6,7 @@
 # @Software: PyCharm
 
 import pytest
-from PageObjects.Comm_Bus import CommBus
+from PageObjects.Android.Comm_Bus import CommBus
 from TestData.Android.Login_Data import Success_data
 from PageObjects.Android.Login.Login_Page import LoginPage as LP
 

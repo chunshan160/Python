@@ -11,20 +11,27 @@ from selenium.webdriver.common.by import By
 '''
 
 # 更换支付方式
-replace_pay = (By.ID, "com.ecloud.hobay:id/tv_replace_pay")
+replace_pay = (By.XPATH,'//span[contains(text(),"更换支付方式")]')
 # 易贝
-cbp_pay = (By.ID, "com.ecloud.hobay:id/view_cbp")
+cbp_pay = (By.XPATH,'(//div[@class="pay-bg"]//ul//li)[1]')
 # 易贝券
-voucher_pay = (By.ID, "com.ecloud.hobay:id/view_voucher")
+voucher_pay = (By.XPATH,'(//div[@class="pay-bg"]//ul//li)[2]')
 # 抵工资
-wages_pay = (By.ID, "com.ecloud.hobay:id/view_wages")
+wages_pay = (By.XPATH,'(//div[@class="pay-bg"]//ul//li)[3]')
 #家人购
-family_pay=(By.CLASS_NAME,"android.view.ViewGroup")
+family_pay=(By.XPATH,'(//div[@class="pay-bg"]//ul//li)[4]')
 # 现金
-cash_pay = (By.ID, "com.ecloud.hobay:id/tv_cash")
+cash_pay =  (By.XPATH,'(//div[@class="pay-bg"]//ul//li)[5]')
 # 微信
-wechat_pay = (By.ID, "com.ecloud.hobay:id/tv_wechat")
-# 支付宝
-alibaba_pay = (By.ID, "com.ecloud.hobay:id/tv_alibaba")
+wechat_pay = (By.XPATH,'(//div[@class="pay-bg"]//ul//li)[6]')
 # 确认支付
-confirm_pay = (By.ID, "com.ecloud.hobay:id/btn_pay")
+confirm_pay = (By.XPATH,'//a[contains(text(),"确认支付")]')
+
+#支付密码
+pay_1 = (By.XPATH,'//i[contains(text(),"1")]')
+pay_2 = (By.XPATH, '//i[contains(text(),"2")]')
+pay_3 = (By.XPATH, '//i[contains(text(),"3")]')
+pay_4 = (By.XPATH, '//i[contains(text(),"4")]')
+pay_5 = (By.XPATH, '//i[contains(text(),"5")]')
+pay_6 = (By.XPATH, '//i[contains(text(),"6")]')
+

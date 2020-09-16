@@ -11,11 +11,11 @@ from Common.BasePage import BasePage
 # 提交审核成功
 class SubmitReviewOKPage(BasePage):
 
-    def good_audit_text(self):
-        return self.get_text(good_audit_text)
+    def title(self):
+        return self.get_text(title)
 
-    def good_audit_tip(self):
-        return self.get_text(good_audit_tip)
+    def prompt(self):
+        return self.get_text(prompt)
 
-    def good_audit_btn(self):
-        self.click_element(good_audit_btn)
+    def consummation(self):
+        self.click_element(consummation)

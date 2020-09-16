@@ -4,12 +4,10 @@
 # @Author :春衫
 # @File :CouponGood_Page.py
 
-import time
-from Common.user_log import UserLog
-from PageLocators.Android.PubilcGood import CouponGood as CG
-from PageLocators.Android.PubilcGood import PubilcGoodCommon as PGCommon
-from PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoodCommon
 
+from Common.user_log import UserLog
+from PageLocators.Web.PubilcGood import CouponGood as CG
+from PageObjects.Web.PublishGood.PublishGoodCommon import PublishGoodCommon
 from Common.BasePage import BasePage
 
 
@@ -62,23 +60,24 @@ class CouponGoodPage(BasePage):
     # 发布本地生活
     def coupon_good_information(self, product_title, product_description, second_category_name, third_category_name,
                                 category_type, total_price, stock, text=""):
+        doc = text + "发布本地生活商品-"
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok, doc=text)
+        PublishGoodCommon(self.driver).upload_product_image(text=doc)
         # 输入商品标题
-        self.product_title(product_title, text=text)
+        self.product_title(product_title, text=doc)
         # 输入商品详情
-        self.product_description(product_description, text=text)
+        self.product_description(product_description, text=doc)
         # 选择分类
-        PublishGoodCommon(self.driver).category(text=text)
+        PublishGoodCommon(self.driver).category(text=doc)
         # 选择二级分类
-        PublishGoodCommon(self.driver).second_category(second_category_name, text=text)
+        PublishGoodCommon(self.driver).second_category(second_category_name, text=doc)
         # 选择三级分类
-        PublishGoodCommon(self.driver).third_category(third_category_name, text=text)
+        PublishGoodCommon(self.driver).third_category(third_category_name, text=doc)
         # 点击券类
-        self.coupon(text=text)
+        self.coupon(text=doc)
         # 选择券类
-        self.coupon_category(category_type, text=text)
+        self.coupon_category(category_type, text=doc)
         # 商品总价
-        self.total_price(total_price, text=text)
+        self.total_price(total_price, text=doc)
         # 商品库存
-        self.stock(stock, text=text)
+        self.stock(stock, text=doc)

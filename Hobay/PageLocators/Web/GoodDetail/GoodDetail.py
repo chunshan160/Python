@@ -25,7 +25,7 @@ buy_now=(By.CLASS_NAME,"r-server")
 #-
 less=(By.XPATH,'//span[contains(text(),"-")]')
 #购买数量
-add_munber=(By.XPATH,'//input[@type="number"]')
+add_amount=(By.XPATH,'//input[@type="number"]')
 #+
 add=(By.XPATH,'//span[contains(text(),"+")]')
 #确定

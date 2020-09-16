@@ -55,22 +55,17 @@ class ConfirmOrderPage(BasePage):
         if default is True:
             # 设为默认地址
             self.touch(tap["设为默认地址"][0], tap["设为默认地址"][1],doc=doc+"点击【设为默认地址】按钮-")
-        # 点击保存
-        self.click_element(CO.save,doc =doc+"点击【保存】按钮-")
+
+    # 点击保存
+    def save(self, text=""):
+        doc = text + "点击保存"
+        self.click_element(CO.save, doc=doc)
         time.sleep(0.5)
 
     # 选择收货地址
     def choose_address(self,text=""):
         doc=text+"选择第一个收货地址-"
         self.click_element(CO.choose_first_address,doc =doc)
-
-    # 默认地址
-    def default_address(self,text=""):
-        doc=text+"检查是否有默认地址-"
-        try:
-            return self.get_text(CO.default_address,doc =doc)
-        except:
-            return None
 
     # 优惠券
     def coupon(self,text=""):
@@ -87,15 +82,23 @@ class ConfirmOrderPage(BasePage):
         doc = text + "点击【提交订单】按钮-"
         self.click_element(CO.submit_order,doc =doc)
 
+    '''
+    具体业务流程
+    '''
     # 提交订单 实物商品
     def entity_goods_submit_order(self,text=""):
         doc = text + "点击【提交订单】按钮-"
         text = self.get_text(CO.select_address,doc =doc)
         if text == "请选择收货地址":
             self.select_address()
-            if self.default_address()==None:
+            # 如果找不到默认地址
+            if self.ele_if_exist(CO.default_address) == False:
+                # 新建地址
                 self.new_address()
+                # 输入地址信息
                 self.input_address()
+                self.save()
+            # 选择第一个地址
             self.choose_address()
         self.submit_order_button(text=doc)
 

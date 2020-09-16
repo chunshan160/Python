@@ -7,7 +7,7 @@
 from Common.fengyong.Calculation.recharge_service_fee import Dividend
 from Common.fengyong.Calculation.payment_method import PaymentMethod
 from Common.fengyong.sql.wallet_detail import wallet_detail
-from TestData.test_data import cbp as yb
+from TestData.test_data import cbp
 from Common.DoExcel import DoExcel
 from Common.project_path import test_data_path
 from Common.user_log import UserLog
@@ -68,7 +68,7 @@ class Calculation:
                 my_logger.debug("结束了！")
                 break
 
-    def transaction(self, ip, member_level, payment_method, order, charge_amount, reserve_fund):
+    def transaction(self, ip, member_level, payment_method, order, charge_amount, reserve_fund,user_id):
         global service_fee_data, pay_commission
         my_logger.debug("---------------------分割线-------------------------")
 
@@ -82,8 +82,7 @@ class Calculation:
         my_logger.debug(f"选择的支付方式是：{payment_method}")
 
         # 通过调用方法返回的需要支付的易贝/现金服务费
-        service_fee_data = PaymentMethod().payment_method(member_level, payment_method,
-                                                          price)
+        service_fee_data = PaymentMethod().payment_method(ip, user_id, payment_method, price)
 
         my_logger.debug("----------------计算支付服务费分佣----------------")
 
@@ -94,7 +93,7 @@ class Calculation:
                                       self.buyer_city_proportion, self.buyer_area_proportion,
                                       self.buyer_personal_proportion).pay_service_fee(payment_method,
                                                                                       service_fee_data[1],
-                                                                                      yb[member_level])
+                                                                                      cbp[member_level])
         # 这些支付方式需要考虑 买家上级 和 企业/家人/卖家上级
         elif payment_method in ["抵工资", "家人购", "现金", "微信", "支付宝"]:
             pay_commission = Dividend(self.buyer_identity, self.seller_identity,
@@ -104,7 +103,7 @@ class Calculation:
                                           self.disanfang_city_proportion, self.disanfang_area_proportion,
                                           self.disanfang_personal_proportion).pay_service_fee(payment_method,
                                                                                               service_fee_data[1],
-                                                                                              yb[member_level])
+                                                                                              cbp[member_level])
 
         # 公海用户购买个人焕商商品 需要考虑储备池分佣
         if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (

@@ -56,6 +56,7 @@ class MoBan:
         -------
 
         '''
+        global payment_method_data, pay_cbp_service_fee, pay_cash_service_fee, reserve_fund_personal_commission, reserve_fund_area_commission, reserve_fund_city_commission, reserve_fund_province_commission, reserve_fund_platform_commission, service_fee_personal_commission, service_fee_area_commission, service_fee_city_commission, service_fee_province_commission, service_fee_platform_commission, reserve_fund_bing_sales, Identity, reserve_fund_agent, first_region_commission, reserve_fund_template, service_fee_bind_area_id, service_fee_bind_city_id, service_fee_bind_province_id, service_fee_bing_sales, service_fee_agent, template1, service_fee_template, seller_income_amount
         buyer_id = data['买家']
         seller_id = data['卖家']
         platform_id = data['平台']
@@ -127,21 +128,21 @@ class MoBan:
                 service_fee_bind_province_id = superior[1]['省代理商']
 
                 start_template = [
-                    (buyer_id, 2, 3, goods_price, None, None, '{0}购买商品：扣除买家订单易贝金额'.format(payment_method_data), 1),
+                    (buyer_id, 2, 3, goods_price, None, None, f'{payment_method_data}购买商品：扣除买家订单易贝金额', 1),
                     (buyer_id, 2, 1, pay_cbp_service_fee * -1, None, None,
-                     '{0}购买商品：扣除买家易贝服务费'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费', 1),
                     (buyer_id, 2, 1, pay_cash_service_fee * -1, None, None,
-                     '{0}购买商品：扣除买家现金服务费'.format(payment_method_data), 3),
+                     f'{payment_method_data}购买商品：扣除买家现金服务费', 3),
                     (platform_id, 2, 3, goods_price * -1, None, None,
-                     '{0}购买商品：扣除买家订单易贝金额转入平台'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家订单易贝金额转入平台', 1),
                     (platform_id, 2, 1, pay_cbp_service_fee, None, None,
-                     '{0}购买商品：扣除买家易贝服务费转入平台'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费转入平台', 1),
                     (platform_id, 2, 1, pay_cash_service_fee, None, None,
-                     '{0}购买商品：扣除买家现金服务费转入平台'.format(payment_method_data), 3),
-                    (platform_id, 2, 3, goods_price, None, None, '{0}购买商品：订单易贝金额从平台转出'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家现金服务费转入平台', 3),
+                    (platform_id, 2, 3, goods_price, None, None, f'{payment_method_data}购买商品：订单易贝金额从平台转出', 1),
                     (
                         seller_id, 2, 3, goods_price * -1, None, None,
-                        '{0}购买商品:扣除买家订单易贝金额转给卖家'.format(payment_method_data),
+                        f'{payment_method_data}购买商品:扣除买家订单易贝金额转给卖家',
                         1)]
 
                 if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (
@@ -167,18 +168,18 @@ class MoBan:
 
                 service_fee_template = [
                     (platform_id, 2, 1, pay_cbp_service_fee * -1, None, None,
-                     '{0}购买商品：扣除买家易贝服务费分润(服务费)总金额支出'.format(payment_method_data),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费分润(服务费)总金额支出',
                      1),
                     (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,
-                     '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                     (service_fee_bind_area_id, 2, 2, service_fee_area_commission, None, None,
-                     '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                     (service_fee_bind_city_id, 2, 2, service_fee_city_commission, None, None,
-                     '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                     (service_fee_bind_province_id, 2, 2, service_fee_province_commission, None, None,
-                     '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                     (platform_id, 2, 2, service_fee_platform_commission, None, None,
-                     '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1)]
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1)]
 
             # 抵工资 家人购
             else:
@@ -194,22 +195,22 @@ class MoBan:
                 payer_id = data['出钱方']
 
                 start_template = [
-                    (payer_id, 2, 3, goods_price, None, None, '{0}购买商品：扣除买家订单易贝金额'.format(payment_method_data), 1),
+                    (payer_id, 2, 3, goods_price, None, None, f'{payment_method_data}购买商品：扣除买家订单易贝金额', 1),
                     (payer_id, 2, 1, pay_cbp_service_fee * -1, None, None,
-                     '{0}购买商品：扣除买家易贝服务费'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费', 1),
                     (payer_id, 2, 1, pay_cash_service_fee * -1, None, None,
-                     '{0}购买商品：扣除买家现金服务费'.format(payment_method_data), 3),
+                     f'{payment_method_data}购买商品：扣除买家现金服务费', 3),
                     (platform_id, 2, 3, goods_price * -1, None, None,
-                     '{0}购买商品：扣除买家订单易贝金额转入平台'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家订单易贝金额转入平台', 1),
                     (platform_id, 2, 1, pay_cbp_service_fee, None, None,
-                     '{0}购买商品：扣除买家易贝服务费转入平台'.format(payment_method_data), 1),
+                     f'{payment_method_data}购买商品：扣除买家易贝服务费转入平台', 1),
                     (platform_id, 2, 1, pay_cash_service_fee, None, None,
-                     '{0}购买商品：扣除买家现金服务费转入平台'.format(payment_method_data), 3),
+                     f'{payment_method_data}购买商品：扣除买家现金服务费转入平台', 3),
                     (
-                        platform_id, 2, 3, goods_price, None, None, '{0}购买商品：订单易贝金额从平台转出'.format(payment_method_data),
+                        platform_id, 2, 3, goods_price, None, None, f'{payment_method_data}购买商品：订单易贝金额从平台转出',
                         1),
                     (seller_id, 2, 3, goods_price * -1, None, None,
-                     '{0}购买商品:扣除买家订单易贝金额转给卖家'.format(payment_method_data), 1)]
+                     f'{payment_method_data}购买商品:扣除买家订单易贝金额转给卖家', 1)]
 
                 if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (
                         self.buyer_identity == "公海用户" and self.seller_identity == "非焕商且已绑定个人焕商"):
@@ -231,33 +232,33 @@ class MoBan:
                 if self.payment_method == "抵工资":
                     service_fee_template = [
                         (platform_id, 2, 1, pay_cbp_service_fee * -1, None, None,
-                         '{0}购买商品：扣除买家易贝服务费分润(服务费)总金额支出'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费分润(服务费)总金额支出', 1),
                         (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                         (service_fee_bind_area_id, 2, 2, service_fee_area_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                         (service_fee_bind_city_id, 2, 2, service_fee_city_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                         (service_fee_bind_province_id, 2, 2, service_fee_province_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1),
                         (platform_id, 2, 2, service_fee_platform_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费分润'.format(payment_method_data), 1)]
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费分润', 1)]
                 # 家人购
                 else:
                     service_fee_template = [
                         (platform_id, 2, 1, pay_cbp_service_fee * -1, None, None,
-                         '{0}购买商品：扣除买家易贝服务费进行分润(服务费)总金额支出'.format(payment_method_data),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润(服务费)总金额支出',
                          1),
                         (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1),
                         (service_fee_bind_area_id, 2, 2, service_fee_area_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1),
                         (service_fee_bind_city_id, 2, 2, service_fee_city_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1),
                         (service_fee_bind_province_id, 2, 2, service_fee_province_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1),
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1),
                         (platform_id, 2, 2, service_fee_platform_commission, None, None,
-                         '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1)]
+                         f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1)]
 
         # 生成易贝券流水模板
         elif self.payment_method == "易贝券":
@@ -268,13 +269,13 @@ class MoBan:
             reserve_fund_bind_province_id = superior[1]['省代理商']
 
             start_template = [
-                (buyer_id, 2, 3, goods_price, None, None, '{0}支付购物商品费用：扣除买家订单易贝金额'.format(payment_method_data), 10),
+                (buyer_id, 2, 3, goods_price, None, None, f'{payment_method_data}支付购物商品费用：扣除买家订单易贝金额', 10),
                 (platform_id, 2, 3, goods_price * -1, None, None,
-                 '{0}支付购物商品费用：扣除买家订单易贝金额转入平台'.format(payment_method_data), 1),
-                (platform_id, 2, 3, goods_price, None, None, '{0}支付购物商品费用：订单易贝金额从平台转出'.format(payment_method_data), 1),
+                 f'{payment_method_data}支付购物商品费用：扣除买家订单易贝金额转入平台', 1),
+                (platform_id, 2, 3, goods_price, None, None, f'{payment_method_data}支付购物商品费用：订单易贝金额从平台转出', 1),
                 (
                     seller_id, 2, 3, goods_price * -1, None, None,
-                    '{0}支付购物商品费用:扣除买家订单易贝金额转给卖家'.format(payment_method_data),
+                    f'{payment_method_data}支付购物商品费用:扣除买家订单易贝金额转给卖家',
                     1)]
 
             if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (
@@ -306,17 +307,17 @@ class MoBan:
             reserve_fund_bind_province_id = superior['储备池分佣'][1]['省代理商']
 
             start_template = [
-                (buyer_id, 2, 3, goods_price, None, None, '{0}支付购物商品费用：扣除买家订单金额（现金）'.format(payment_method_data), 2),
+                (buyer_id, 2, 3, goods_price, None, None, '{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）', 2),
                 (platform_id, 2, 3, seller_income_amount, None, None,
-                 '{0}支付购物商品费用：扣除买家订单金额（现金）转入平台(卖家实际应收到的金额)'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）转入平台(卖家实际应收到的金额)', 2),
                 (platform_id, 2, 1, pay_cash_service_fee, None, None,
-                 '{0}支付购物商品费用：扣除卖家（现金）服务费转入平台'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除卖家（现金）服务费转入平台', 2),
                 (platform_id, 2, 3, seller_income_amount * -1, None, None,
-                 '{0}支付购物商品费用：扣除买家订单金额（现金）转从平台(卖家实际应收到的金额)转出'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）转从平台(卖家实际应收到的金额)转出', 2),
                 (seller_id, 2, 3, goods_price * -1, None, None,
-                 '{0}支付购物商品费用：扣除买家订单金额（现金）转给卖家(全部)'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）转给卖家(全部)', 2),
                 (seller_id, 2, 1, pay_cash_service_fee * -1, None, None,
-                 '{0}支付购物商品费用：从卖家现金账户扣除（现金）服务费'.format(payment_method_data), 2)]
+                 f'{payment_method_data}支付购物商品费用：从卖家现金账户扣除（现金）服务费', 2)]
 
             if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (
                     self.buyer_identity == "公海用户" and self.seller_identity == "非焕商且已绑定个人焕商"):
@@ -334,17 +335,17 @@ class MoBan:
 
             service_fee_template = [
                 (platform_id, 2, 1, pay_cash_service_fee * -1, None, None,
-                 '{0}支付购物商品费用：扣除买家现金服务费分润(服务费)总金额支出'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家现金服务费分润(服务费)总金额支出', 2),
                 (service_fee_bind_personal_id, 2, 2, service_fee_personal_commission, None, None,
-                 '{0}支付购物商品费用：扣除买家现金服务费分润'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家现金服务费分润', 2),
                 (service_fee_bind_area_id, 2, 2, service_fee_area_commission, None, None,
-                 '{0}支付购物商品费用：扣除买家现金服务费分润'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家现金服务费分润', 2),
                 (service_fee_bind_city_id, 2, 2, service_fee_city_commission, None, None,
-                 '{0}支付购物商品费用：扣除买家现金服务费分润'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家现金服务费分润', 2),
                 (service_fee_bind_province_id, 2, 2, service_fee_province_commission, None, None,
-                 '{0}支付购物商品费用：扣除买家现金服务费分润'.format(payment_method_data), 2),
+                 f'{payment_method_data}支付购物商品费用：扣除买家现金服务费分润', 2),
                 (platform_id, 2, 2, service_fee_platform_commission, None, None,
-                 '{0}支付购物商品费用：扣除买家现金服务费分润'.format(payment_method_data), 2)]
+                 f'{payment_method_data}支付购物商品费用：扣除买家现金服务费分润', 2)]
 
         # 二级分佣——储备池
         # 只有这两种情况才会有储备池分佣 有储备池分佣才会走二级分佣流程
@@ -507,7 +508,7 @@ class MoBan:
 
                     new_reserve_fund_template = [
                         (reserve_fund_bind_area_id, 2, 10, finally_reserve_fund_commission, None, None,
-                         '购买商品：代理商分佣金额（激励金）收入'.format(payment_method_data), 2),
+                         '购买商品：代理商分佣金额（激励金）收入', 2),
                         (reserve_fund_bing_TCO_id, 2, 11, reserve_fund_bing_TCO_commission,
                          None, None, 'TCO分佣金额（现金）收入', 2),
                         (reserve_fund_bing_sales_id, 2, 11,
@@ -515,7 +516,7 @@ class MoBan:
                          2),
                         (reserve_fund_sales_bing_sale_id, 2, 11,
                          reserve_fund_sales_bing_sale_commission, None, None,
-                         '{0}分佣金额（现金）收入'.format(sales_bing_sales_identity), 2)]
+                         f'{sales_bing_sales_identity}分佣金额（现金）收入', 2)]
 
                     reserve_fund_template = reserve_fund_template[
                                             :2] + new_reserve_fund_template + reserve_fund_template[3:]
@@ -534,7 +535,7 @@ class MoBan:
                          f'{reserve_fund_bing_sales_text}分佣金额（现金）收入', 2),
                         (reserve_fund_sales_bing_sale_id, 2, 11,
                          reserve_fund_sales_bing_sale_commission, None, None,
-                         '{0}分佣金额（现金）收入'.format(sales_bing_sales_identity), 2)]
+                         f'{sales_bing_sales_identity}分佣金额（现金）收入', 2)]
 
                     reserve_fund_template = reserve_fund_template[
                                             :3] + new_reserve_fund_template + reserve_fund_template[4:]
@@ -553,7 +554,7 @@ class MoBan:
                          f'{reserve_fund_bing_sales_text}分佣金额（现金）收入', 2),
                         (reserve_fund_sales_bing_sale_id, 2, 11,
                          reserve_fund_sales_bing_sale_commission, None, None,
-                         '{0}分佣金额（现金）收入'.format(sales_bing_sales_identity), 2)]
+                         f'{sales_bing_sales_identity}分佣金额（现金）收入', 2)]
 
                     reserve_fund_template = reserve_fund_template[
                                             :4] + new_reserve_fund_template + reserve_fund_template[5:]
@@ -695,10 +696,6 @@ class MoBan:
                     my_logger.info(
                         f"买家上级{service_fee_bing_sales}绑定的上级{sales_bing_sales_identity}id是：{service_fee_sales_bing_sales_id}，"
                         f"该{sales_bing_sales_identity}获得的服务费二级分佣是：{service_fee_sales_bing_sales_commission}")
-                # elif service_fee_bing_sales_id != None:
-                #     my_logger.info(f"买家上级{service_fee_bing_sales}没有绑定的上级销售/业务焕商，不会获得分佣")
-                # else:
-                #     my_logger.info(f"买家没有没有绑定的上级销售/业务焕商，不会获得分佣")
 
                 if service_fee_sales_bing_sales_commission == Decimal(
                         '0.00') and service_fee_sales_bing_sales_id != None:
@@ -756,15 +753,15 @@ class MoBan:
                     # 家人购多了两个 进行 两个字，没办法只能区别处理
                     if self.payment_method in ["易贝", "抵工资"]:
                         template1 = [(service_fee_bind_city_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}购买商品：扣除买家{1}服务费分润'.format(self.payment_method, title), 1)]
+                                      f'{self.payment_method}购买商品：扣除买家{title}服务费分润', 1)]
 
                     elif self.payment_method == "家人购":
                         template1 = [(service_fee_bind_city_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1)]
+                                      f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1)]
 
                     elif self.payment_method in ["现金", "微信", "支付宝"]:
                         template1 = [(service_fee_bind_city_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}支付购物商品费用：扣除买家{1}服务费分润'.format(self.payment_method, title), 2)]
+                                      f'{self.payment_method}支付购物商品费用：扣除买家{title}服务费分润', 2)]
 
                     template2 = [(service_fee_bing_TCO_id, 2, 11, service_fee_bing_TCO_commission, None, None,
                                   f'TCO分佣金额（{title}）收入', text),
@@ -783,15 +780,15 @@ class MoBan:
                     # 家人购多了两个 进行 两个字，没办法只能区别处理
                     if self.payment_method in ["易贝", "抵工资"]:
                         template1 = [(service_fee_bind_province_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}购买商品：扣除买家{1}服务费分润'.format(self.payment_method, title), 1)]
+                                      f'{self.payment_method}购买商品：扣除买家{title}服务费分润', 1)]
 
                     elif self.payment_method == "家人购":
                         template1 = [(service_fee_bind_province_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1)]
+                                      f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1)]
 
                     elif self.payment_method in ["现金", "微信", "支付宝"]:
                         template1 = [(service_fee_bind_province_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}支付购物商品费用：扣除买家{1}服务费分润'.format(self.payment_method, title), 2)]
+                                      f'{self.payment_method}支付购物商品费用：扣除买家{title}服务费分润', 2)]
 
                     template2 = [(service_fee_bing_TCO_id, 2, 11, service_fee_bing_TCO_commission, None, None,
                                   f'TCO分佣金额（{title}）收入', text),
@@ -810,15 +807,15 @@ class MoBan:
                     # 家人购多了两个 进行 两个字，没办法只能区别处理
                     if self.payment_method in ["易贝", "抵工资"]:
                         template1 = [(platform_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}购买商品：扣除买家{1}服务费分润'.format(self.payment_method, title), 1)]
+                                      f'{self.payment_method}购买商品：扣除买家{title}服务费分润', 1)]
 
                     elif self.payment_method == "家人购":
                         template1 = [(platform_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}购买商品：扣除买家易贝服务费进行分润'.format(payment_method_data), 1)]
+                                      f'{payment_method_data}购买商品：扣除买家易贝服务费进行分润', 1)]
 
                     elif self.payment_method in ["现金", "微信", "支付宝"]:
                         template1 = [(platform_id, 2, 2, finally_service_fee_commission, None, None,
-                                      '{0}支付购物商品费用：扣除买家{1}服务费分润'.format(self.payment_method, title), 2)]
+                                      f'{self.payment_method}支付购物商品费用：扣除买家{title}服务费分润', 2)]
 
                     template2 = [(service_fee_bing_TCO_id, 2, 11, service_fee_bing_TCO_commission, None, None,
                                   'TCO分佣金额（{title}）收入', text),

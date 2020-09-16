@@ -75,18 +75,17 @@ class ServicesGoodPage(BasePage):
                                   total_price, subsist, stock, text=""):
         doc = text + "发布商企服务商品-"
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok,
-                              doc=doc)
+        PublishGoodCommon(self.driver).upload_product_image(text=doc)
         # 输入商品标题
         self.product_title(product_title, text=doc)
         # 输入商品详情
         self.product_description(product_description, text=doc)
         # 选择分类
-        PublishGoodCommon(self.driver).category(text=text)
+        PublishGoodCommon(self.driver).category(text=doc)
         # 选择二级分类
-        PublishGoodCommon(self.driver).second_category(second_category_name, text=text)
+        PublishGoodCommon(self.driver).second_category(second_category_name, text=doc)
         # 选择三级分类
-        PublishGoodCommon(self.driver).third_category(third_category_name, text=text)
+        PublishGoodCommon(self.driver).third_category(third_category_name, text=doc)
         # 商品总价
         self.total_price(total_price, text=doc)
         # 预付款

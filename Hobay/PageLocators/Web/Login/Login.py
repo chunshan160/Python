@@ -7,7 +7,7 @@
 from selenium.webdriver.common.by import By
 
 # 手机号
-name = (By.XPATH, '//input[@type="number"]')
+phone = (By.XPATH, '//input[@type="number"]')
 # 下一步
 next = (By.XPATH, '//button[text()="下 一 步"]')
 # 错误提示
@@ -37,10 +37,8 @@ retrieve_password = (By.XPATH, '//div[contains(text(),"找回密码")]')
 # 密码登录
 pwd_login = (By.XPATH, '//div[text()="密码登录"]')
 
-# 地区
+# 注册地址
 address = (By.XPATH, '//div[@class="address-box"]')
-# 定位
-location = (By.CLASS_NAME, '//span[text()="获取定位失败"]')
 # 省
 province = (By.XPATH, '//div[contains(text(),"广东省")]')
 # 市
@@ -55,9 +53,8 @@ perfection = (By.XPATH, '//button[contains(text(),"完 成")]')
 tick = (By.XPATH, '//div[@class="checkbox"]')
 
 # 进入首页
-get_index = (By.XPATH, '//button[@class="white-btn"]')
-# 注册成功提示
-register_success_text = (By.XPATH, '//div[contains(text(),"成功加入焕呗")]')
+go_index = (By.XPATH, '//button[@class="white-btn"]')
+
 
 # 输入新密码
 pwd_new = (By.XPATH, '//input[@placeholder="请设置您的新密码"]')
@@ -65,5 +62,3 @@ pwd_new = (By.XPATH, '//input[@placeholder="请设置您的新密码"]')
 pwd_again = (By.XPATH, '//input[@placeholder="请再次确认密码"]')
 # 提交
 submit = (By.XPATH, '//div[@class="submit-btn no-btn"]')
-# 找回密码---找回成功
-msg = (By.XPATH, '//div[contains(text(),"密码找回成功")]')

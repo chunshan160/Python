@@ -6,7 +6,7 @@
 
 import pytest
 import allure
-from PageObjects.Comm_Bus import CommBus
+from PageObjects.Android.Comm_Bus import CommBus
 from TestData.Android.Publish_Data import *
 from PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoodCommon
 from PageObjects.Android.PublishGood.EntityGood_Page import EntityGoodPage
@@ -40,7 +40,7 @@ class TestPublishGood:
         with allure.step("立即上架"):
             PublishGoodCommon(open_app).submit(text=doc)
         with allure.step("断言：立即上架后系统提示：商品审核中"):
-            text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
+            text = BasePage(open_app).get_text(PGOK.title, doc=doc)
             assert text == "商品审核中"
         with allure.step("截图保存到项目中"):
             open_app.save_screenshot(f"{allure_report}/screenshot/发布商品功能-发布实物商品.png")
@@ -65,7 +65,7 @@ class TestPublishGood:
         with allure.step("立即上架"):
             PublishGoodCommon(open_app).submit()
         with allure.step("断言：立即上架后系统提示：商品审核中"):
-            text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
+            text = BasePage(open_app).get_text(PGOK.title, doc=doc)
             assert text == "商品审核中"
         with allure.step("截图保存到项目中"):
             open_app.save_screenshot(f"{allure_report}/screenshot/发布商品功能-发布本地生活商品.png")
@@ -91,7 +91,7 @@ class TestPublishGood:
         with allure.step("立即上架"):
             PublishGoodCommon(open_app).submit(text=doc)
         with allure.step("断言：立即上架后系统提示：商品审核中"):
-            text = BasePage(open_app).get_text(PGOK.good_audit_text, doc=doc)
+            text = BasePage(open_app).get_text(PGOK.title, doc=doc)
             assert text == "商品审核中"
         with allure.step("截图保存到项目中"):
             open_app.save_screenshot(f"{allure_report}/screenshot/发布商品功能-发布商企服务商品.png")

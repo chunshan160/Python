@@ -27,15 +27,17 @@ city=(By.XPATH,'//div[contains(text(),"太原市")]')
 area=(By.XPATH,'//div[contains(text(),"小店区")]')
 #详细地址
 detailed_address=(By.XPATH,'//input[@placeholder="请输入详细地址，如街道、门牌号等"]')
+# 默认地址
+default_address = (By.CLASS_NAME, "van-checkbox")
 # 保存
 save = (By.CLASS_NAME, "save-btn")
+
 #选择第一个地址
 choose_first_address=(By.CLASS_NAME,"address-item")
 
 # 管理地址
 manage_address = (By.XPATH, '//div[contains(text(),"管理地址")]')
-# 默认地址
-default_address = (By.CLASS_NAME, "van-checkbox")
+
 # 优惠券
 coupon = (By.XPATH, '//div[contains(text(),"优惠券")]/following-sibling::div')
 # 买家留言

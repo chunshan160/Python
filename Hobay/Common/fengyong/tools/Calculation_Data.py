@@ -9,7 +9,7 @@ from Common.fengyong.Calculation.calculation import Calculation
 
 class CalculationData:
     def calculation_data(self, ip, payment_method, member_level, buyer_identity, seller_identity, proportion,
-                         charge_amount, reserve_fund, order):
+                         charge_amount, reserve_fund, order,user_id):
 
         if payment_method in ["易贝", "易贝券"]:
             buyer_province_proportion = proportion['省分佣比例']
@@ -45,6 +45,6 @@ class CalculationData:
                                                                                                                   payment_method,
                                                                                                                   order,
                                                                                                                   charge_amount,
-                                                                                                                  reserve_fund)
+                                                                                                                  reserve_fund,user_id)
 
         return calculation_data

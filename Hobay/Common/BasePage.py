@@ -302,10 +302,8 @@ class BasePage:
             raise
 
     # app上传图片
-    def app_upload_image(self, upload_locator, choose_locator, ok_locator, doc=""):
+    def app_upload_image(self, choose_locator, ok_locator, doc=""):
         try:
-            # 点击上传主图
-            self.click_element(upload_locator)
             # 权限-始终允许
             time.sleep(1)
             if self.ele_if_exist(Common.always_allowed):

@@ -36,6 +36,17 @@ class PublishGoodCommon(BasePage):
     '''
 
     '''
+    上传主图
+    '''
+
+    # 上传商品主图
+    def upload_product_image(self, text=""):
+        doc = text + "点击【上传商品主图】-"
+        self.wait_eleVisible(PGCommon.product_image, doc=doc)
+        self.click_element(PGCommon.product_image, doc=doc)
+        self.app_upload_image(PGCommon.check_image, PGCommon.btn_ok, doc=text)
+
+    '''
     分类
     '''
 

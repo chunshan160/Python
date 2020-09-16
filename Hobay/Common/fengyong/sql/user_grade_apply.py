@@ -24,9 +24,10 @@ def user_grade_ratio(ip,user_id):
     elif data[0]['grade_id']==5:
         grade="钻石会员"
 
-    cbp_ratio=cbp[grade]
-    cash_ratio=cash[grade]
-    return cbp_ratio,cash_ratio
+    buy_cbp_ratio=cbp[grade]
+    buy_cash_ratio=cash[grade]
+    sale_cash_ratio=0.1
+    return buy_cbp_ratio,buy_cash_ratio,sale_cash_ratio
 
 if __name__ == '__main__':
     a=user_grade_ratio("192.168.0.101",1000166)

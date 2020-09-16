@@ -11,8 +11,8 @@ from selenium.webdriver.common.by import By
 '''
 
 # 商品审核中文本
-good_audit_text = (By.XPATH, '//div[@class="audit-text"]')
+title = (By.XPATH, '//div[@class="audit-text"]')
 # 审核已提交，工作人员正在为您审核
-good_audit_tip = (By.XPATH, '//div[@class="audit-tip"]')
+prompt = (By.XPATH, '//div[@class="audit-tip"]')
 # 完成
-good_audit_btn = (By.XPATH, '//div[@class="audit-btn"]')
+consummation = (By.XPATH, '//div[@class="audit-btn"]')

@@ -11,9 +11,10 @@ def platform_promotion_ratio(ip):
     select = f"SELECT * FROM `ecloud_user`.`platform_promotion_ratio` WHERE `deleted` = '-1';"
     data = SQL(ip).do_mysql_dict(select)
     if data != ():
-        cbp_ratio = data[0]['cbp_ratio']
-        commission_ratio = data[0]['commission_ratio']
-        return cbp_ratio, commission_ratio
+        buy_cbp_ratio = data[0]['cbp_ratio']
+        buy_cash_ratio = data[0]['commission_ratio']
+        sale_cash_ratio=
+        return buy_cbp_ratio, buy_cash_ratio,sale_cash_ratio
 
 if __name__ == '__main__':
     a=platform_promotion_ratio("192.168.0.101")

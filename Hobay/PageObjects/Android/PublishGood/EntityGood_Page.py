@@ -31,7 +31,7 @@ class EntityGoodPage(BasePage):
     # 输入商品详情
     def product_description(self, product_description, text=""):
         doc = text + "输入商品详情-"
-        self.wait_eleVisible(EG.product_description,doc=doc)
+        self.wait_eleVisible(EG.product_description, doc=doc)
         self.input_text(EG.product_description, product_description, doc=doc)
         UserLog().info("输入商品详情:" + product_description)
 
@@ -40,6 +40,7 @@ class EntityGoodPage(BasePage):
         doc = text + "商品详情页-点击【上传商品图片】按钮-"
         self.wait_eleVisible(EG.description_btn, doc=doc)
         self.click_element(EG.description_btn, doc=doc)
+        self.app_upload_image(PGCommon.check_image, PGCommon.btn_ok, doc=text)
 
     # 点击完成，回到商品详情页
     def finish(self, text=""):
@@ -50,7 +51,7 @@ class EntityGoodPage(BasePage):
     # 点击品相
     def quality(self, text=""):
         doc = text + "点击【品相】选项-"
-        self.wait_eleVisible(EG.quality,doc=doc)
+        self.wait_eleVisible(EG.quality, doc=doc)
         self.click_element(EG.quality, doc=doc)
 
     # 选择全新
@@ -63,7 +64,7 @@ class EntityGoodPage(BasePage):
     # 点击商品类型
     def product_type(self, text=""):
         doc = text + "点击【商品类型】选项-"
-        self.wait_eleVisible(EG.product_type,doc=doc)
+        self.wait_eleVisible(EG.product_type, doc=doc)
         self.click_element(EG.product_type, doc=doc)
 
     # 选择商品类型
@@ -94,7 +95,7 @@ class EntityGoodPage(BasePage):
         self.input_text(EG.property_2, property_2, doc=doc)
 
     # 上传规格图片
-    def upload_specification_image(self, text=""):
+    def click_upload_specification_image(self, text=""):
         doc = text + "点击上传规格图片-"
         self.wait_eleVisible(EG.upload_specification_image, doc=doc)
         self.click_element(EG.upload_specification_image, doc=doc)
@@ -203,52 +204,53 @@ class EntityGoodPage(BasePage):
                                 second_category_name, third_category_name,
                                 property_1, property_2, purchase_price,
                                 sell_price, stock, fare, text=""):
+        doc = text + "发布实物商品-"
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok, doc=text)
+        PublishGoodCommon(self.driver).upload_product_image(text=doc)
         # 输入商品标题
-        self.product_title(product_title, text=text)
+        self.product_title(product_title, text=doc)
         # # 点击商品描述
-        self.product_detail()
+        self.product_detail(text=doc)
         # 输入商品详情
-        self.product_description(product_description, text=text)
+        self.product_description(product_description, text=doc)
         # 商品详情页上传商品
-        self.app_upload_image(EG.description_btn, PGCommon.check_image, PGCommon.btn_ok, doc=text)
+        self.description_image(text=doc)
         # 点击完成，回到商品详情页
-        self.finish(text=text)
+        self.finish(text=doc)
         # 点击品相
-        self.quality(text=text)
+        self.quality(text=doc)
         # 选择全新
-        self.select_quality(quality_name, text=text)
+        self.select_quality(quality_name, text=doc)
         # 选择分类
-        PublishGoodCommon(self.driver).category(text=text)
+        PublishGoodCommon(self.driver).category(text=doc)
         # 选择二级分类
-        PublishGoodCommon(self.driver).second_category(second_category_name, text=text)
+        PublishGoodCommon(self.driver).second_category(second_category_name, text=doc)
         # 选择三级分类
-        PublishGoodCommon(self.driver).third_category(third_category_name, text=text)
+        PublishGoodCommon(self.driver).third_category(third_category_name, text=doc)
         # 点击商品类型
-        self.product_type(text=text)
+        self.product_type(text=doc)
         # 选择商品类型
-        self.select_product_type(product_type, text=text)
+        self.select_product_type(product_type, text=doc)
         # 点击规格
-        self.specification(text=text)
+        self.specification(text=doc)
         # 进入商品规格页面，输入属性
-        self.property_1(property_1, text=text)
-        self.property_2(property_2, text=text)
+        self.property_1(property_1, text=doc)
+        self.property_2(property_2, text=doc)
         # 上传规格图片
-        self.upload_specification_image(text=text)
+        self.click_upload_specification_image(text=doc)
         # 选择规格图片
-        self.check_specification_image(text=text)
+        self.check_specification_image(text=doc)
         # 下一步
-        self.next(text=text)
+        self.next(text=doc)
         # 进货价
-        self.purchase_price(purchase_price, text=text)
+        self.purchase_price(purchase_price, text=doc)
         # 出售价
-        self.sell_price(sell_price, text=text)
+        self.sell_price(sell_price, text=doc)
         # 库存
-        self.stock(stock, text=text)
+        self.stock(stock, text=doc)
         # 确定
-        self.determine(text=text)
+        self.determine(text=doc)
         # 运费
-        self.fare(text=text)
+        self.fare(text=doc)
         # 运费类型
-        self.fare_type(fare, text=text)
+        self.fare_type(fare, text=doc)

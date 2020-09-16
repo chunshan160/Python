@@ -11,8 +11,8 @@ from appium.webdriver.common.mobileby import MobileBy
 '''
 
 # 商品审核中文本
-good_audit_text = (MobileBy.ID, "com.ecloud.hobay:id/tv_tips")
+title = (MobileBy.ID, "com.ecloud.hobay:id/tv_tips")
 # 审核已提交，工作人员正在为您审核
-good_audit_tip = (MobileBy.ID, "com.ecloud.hobay:id/tv_desc")
+prompt = (MobileBy.ID, "com.ecloud.hobay:id/tv_desc")
 # 完成
-good_audit_btn = (MobileBy.ID, "com.ecloud.hobay:id/btn_look_product")
+consummation = (MobileBy.ID, "com.ecloud.hobay:id/btn_look_product")

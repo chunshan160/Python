@@ -11,18 +11,18 @@ from selenium.webdriver.common.by import By
 '''
 
 # 加入焕商
-join = (By.ID, "com.ecloud.hobay:id/tv_join")
+join = (By.CLASS_NAME, "join")
 # 关闭弹窗
-close_pop_ups = (By.ID, "com.ecloud.hobay:id/iv_delete")
+close_pop_ups = (By.XPATH, '//img[@src="/vuespa/static/img/parnter-close.a10995b.png"]')
 # 支付成功
-title = (By.XPATH,'//p[text()="支付成功"]')
+title = (By.CLASS_NAME, "success-text")
 # 支付方式
-pay_method = (By.ID, "com.ecloud.hobay:id/tv_pay_method")
+pay_method = (By.XPATH, '//span[text()="支付方式"]/following-sibling::span')
 # 支付金额
-pay_money = (By.ID, "com.ecloud.hobay:id/tv_pay_money")
+pay_money = (By.XPATH, '//span[text()="支付金额"]/following-sibling::span')
 # 支付服务费
-pay_service = (By.ID, "com.ecloud.hobay:id/tv_pay_service")
+pay_service = (By.XPATH, '//span[text()="支付服务费"]/following-sibling::span')
 # 查看订单
-look_order = (By.ID, "com.ecloud.hobay:id/btn_look_order")
+look_order = (By.CLASS_NAME, "button-div check")
 # 返回首页
-return_home = (By.ID, "com.ecloud.hobay:id/return_home")
+return_home = (By.CLASS_NAME, "button-div index")

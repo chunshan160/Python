@@ -7,7 +7,7 @@
 import time
 import pytest
 from Common.BaseDriver import BaseDriver
-from PageObjects.Comm_Bus import CommBus
+from PageObjects.Android.Comm_Bus import CommBus
 from PageObjects.Android.Login.Login_Page import LoginPage
 from TestData.Android.Publish_Data import Login_data
 from TestData.Android.BuyGoods.BuyGoods import Login

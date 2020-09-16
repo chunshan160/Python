@@ -62,7 +62,7 @@ class GoodDetailPage(BasePage):
         doc = text + "点击【购买数量】输入框-"
         time.sleep(0.5)
         UserLog().info("输入的商品数量是:" + munber)
-        self.input_text(GD.add_munber, munber, doc=doc)
+        self.input_text(GD.add_amount, munber, doc=doc)
 
     # +
     def add(self, text=""):
@@ -75,10 +75,11 @@ class GoodDetailPage(BasePage):
         self.click_element(GD.confirm, doc=doc)
 
     # 购买商品
-    def buy_good(self, munber=False, text=""):
-        self.buy_now(text)
-        if munber is not False:
-            self.add_munber(munber, text)
+    def buy_good(self, munber=1, text=""):
+        doc = text + "购买商品-默认一件-"
+        self.buy_now(text=doc)
+        if munber != 1:
+            self.add_munber(munber, text=doc)
         else:
-            self.add(text)
-        self.confirm(text)
+            self.add(text=doc)
+        self.confirm(text=doc)

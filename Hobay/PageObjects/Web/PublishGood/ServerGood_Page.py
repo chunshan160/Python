@@ -6,9 +6,9 @@
 
 import time
 from Common.user_log import UserLog
-from PageLocators.Android.PubilcGood import ServerGood as SG
-from PageLocators.Android.PubilcGood import PubilcGoodCommon as PGCommon
-from PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoodCommon
+from PageLocators.Web.PubilcGood import ServerGood as SG
+from PageLocators.Web.PubilcGood import PubilcGoodCommon as PGCommon
+from PageObjects.Web.PublishGood.PublishGoodCommon import PublishGoodCommon
 from Common.BasePage import BasePage
 
 
@@ -75,8 +75,7 @@ class ServicesGoodPage(BasePage):
                                   total_price, subsist, stock, text=""):
         doc = text + "发布商企服务商品-"
         # 上传主图-选择图片-点击确定
-        self.app_upload_image(PGCommon.product_image, PGCommon.check_image, PGCommon.btn_ok,
-                              doc=doc)
+        PublishGoodCommon(self.driver).upload_product_image(text=text)
         # 输入商品标题
         self.product_title(product_title, text=doc)
         # 输入商品详情

@@ -25,7 +25,7 @@ buy_now=(MobileBy.ID,"com.ecloud.hobay:id/tv_buy_now")
 #-
 less=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("—")')
 #购买数量
-add_munber=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("0")')
+add_amount=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("0")')
 #+
 add=(MobileBy.ANDROID_UIAUTOMATOR,'new UiSelector().text("＋")')
 #确定
