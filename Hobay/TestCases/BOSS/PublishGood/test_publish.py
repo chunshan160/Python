@@ -11,7 +11,7 @@ from Handle.BOSS.SystemPoint_page import SystemPoint
 from PageLocators.BOSS.PublishGoods import Pubilc
 from TestData.BOSS import Publish_Data as PD
 import unittest
-from TestData import Common_Data as CD
+from TestData.Web import Common_Data as CD
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import ddt

@@ -23,84 +23,86 @@ class TestBuyGoods:
 
     @allure.story("购买实物商品")
     @pytest.mark.smoke
-    @pytest.mark.usefixtures("buy_goods")
+    @pytest.mark.usefixtures("app_buy_goods")
     @pytest.mark.parametrize("data", buy_entity_goods)
-    def test_1_buy_entity_goods(self, buy_goods, data):
+    def test_1_buy_entity_goods(self, app_buy_goods, data):
         doc = "测试购买实物商品-"
+        driver = app_buy_goods
         with allure.step("首页点击搜索"):
-            IndexPage(buy_goods).search(text=doc)
+            IndexPage(driver).search(text=doc)
         with allure.step("输入商品名-点击第一个商品"):
-            SearchGoodPage(buy_goods).send_search(data['goods_name'], text=doc)
+            SearchGoodPage(driver).send_search(data['goods_name'], text=doc)
         with allure.step("商品详情-下单"):
-            GoodDetailPage(buy_goods).buy_good(text=doc)
+            GoodDetailPage(driver).buy_good(text=doc)
         with allure.step("确认订单"):
-            ConfirmOrderPage(buy_goods).entity_goods_submit_order(text=doc)
-            PayPage(buy_goods).payment_method(data['payment_method'], text=doc)
+            ConfirmOrderPage(driver).entity_goods_submit_order(text=doc)
+            PayPage(driver).payment_method(data['payment_method'], text=doc)
         with allure.step("关闭可能出现的 加入焕商 弹窗"):
-            PaySuccessPage(buy_goods).close_windows(text=doc)
+            PaySuccessPage(driver).close_windows(text=doc)
         with allure.step("断言：支付成功后系统提示:支付成功"):
-            text = PaySuccessPage(buy_goods).title_text(text=doc)
+            text = PaySuccessPage(driver).title_text(text=doc)
             assert text == "支付成功"
         with allure.step("截图保存到项目中"):
-            buy_goods.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png")
+            driver.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png")
             allure.attach.file(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png", "附件截图",
                                attachment_type=allure.attachment_type.PNG)
 
     @allure.story("购买本地生活商品")
     @pytest.mark.smoke
-    @pytest.mark.usefixtures("buy_goods")
+    @pytest.mark.usefixtures("app_buy_goods")
     @pytest.mark.parametrize("data", buy_coupon_goods)
-    def test_2_buy_coupon_goods(self, buy_goods, data):
+    def test_2_buy_coupon_goods(self, app_buy_goods, data):
         doc = "测试购买本地生活商品-"
+        driver = app_buy_goods
         with allure.step("首页点击搜索"):
-            IndexPage(buy_goods).search(text=doc)
+            IndexPage(driver).search(text=doc)
         with allure.step("输入商品名-点击第一个商品"):
-            SearchGoodPage(buy_goods).send_search(data['goods_name'], text=doc)
+            SearchGoodPage(driver).send_search(data['goods_name'], text=doc)
         with allure.step("商品详情-下单"):
-            GoodDetailPage(buy_goods).buy_good(text=doc)
+            GoodDetailPage(driver).buy_good(text=doc)
         with allure.step("确认订单"):
-            ConfirmOrderPage(buy_goods).coupon_goods_submit_order(text=doc)
-            PayPage(buy_goods).payment_method(data['payment_method'], text=doc)
+            ConfirmOrderPage(driver).coupon_goods_submit_order(text=doc)
+            PayPage(driver).payment_method(data['payment_method'], text=doc)
         with allure.step("关闭可能出现的 加入焕商 弹窗"):
-            PaySuccessPage(buy_goods).close_windows(text=doc)
+            PaySuccessPage(driver).close_windows(text=doc)
         with allure.step("断言：支付成功后系统提示:支付成功"):
-            text = PaySuccessPage(buy_goods).title_text(text=doc)
+            text = PaySuccessPage(driver).title_text(text=doc)
             assert text == "支付成功"
         with allure.step("截图保存到项目中"):
-            buy_goods.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买本地生活商品-{data['payment_method']}支付.png")
+            driver.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买本地生活商品-{data['payment_method']}支付.png")
             allure.attach.file(f"{allure_report}/screenshot/购买商品功能-购买本地生活商品-{data['payment_method']}支付.png", "附件截图",
                                attachment_type=allure.attachment_type.PNG)
 
-
     @allure.story("购买商企服务商品")
     @pytest.mark.smoke
-    @pytest.mark.usefixtures("buy_goods")
+    @pytest.mark.usefixtures("app_buy_goods")
     @pytest.mark.parametrize("data", buy_server_goods)
-    def test_3_buy_server_goods(self, buy_goods, data):
+    def test_3_buy_server_goods(self, app_buy_goods, data):
         doc = "测试购买商企服务商品-"
+        driver = app_buy_goods
         with allure.step("首页点击搜索"):
-            IndexPage(buy_goods).search(text=doc)
+            IndexPage(driver).search(text=doc)
         with allure.step("输入商品名-点击第一个商品"):
-            SearchGoodPage(buy_goods).send_search(data['goods_name'], text=doc)
+            SearchGoodPage(driver).send_search(data['goods_name'], text=doc)
         with allure.step("商品详情-下单"):
-            GoodDetailPage(buy_goods).buy_good(text=doc)
+            GoodDetailPage(driver).buy_good(text=doc)
         with allure.step("确认订单"):
-            ConfirmOrderPage(buy_goods).server_goods_submit_order(text=doc)
+            ConfirmOrderPage(driver).server_goods_submit_order(text=doc)
         with allure.step(f"{data['payment_method']}支付"):
-            PayPage(buy_goods).payment_method(data['payment_method'], text=doc)
+            PayPage(driver).payment_method(data['payment_method'], text=doc)
         with allure.step("关闭可能出现的 加入焕商 弹窗"):
-            PaySuccessPage(buy_goods).close_windows(text=doc)
+            PaySuccessPage(driver).close_windows(text=doc)
         with allure.step("断言：支付成功后系统提示:支付成功"):
-            text = PaySuccessPage(buy_goods).title_text(text=doc)
+            text = PaySuccessPage(driver).title_text(text=doc)
             assert text == "支付成功"
         with allure.step("截图保存到项目中"):
-            buy_goods.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买商企服务商品-{data['payment_method']}支付.png")
+            driver.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买商企服务商品-{data['payment_method']}支付.png")
             allure.attach.file(f"{allure_report}/screenshot/购买商品功能-购买商企服务商品-{data['payment_method']}支付.png", "附件截图",
                                attachment_type=allure.attachment_type.PNG)
 
 
 if __name__ == '__main__':
     pytest.main(
-        ["-v","-s", "--reruns", "3", "--reruns-delay", "1", "test_BuyGoods.py", "--alluredir",
+        ["-v", "-s", "--reruns", "3", "--reruns-delay", "1", "test_BuyGoods.py", "--alluredir",
          allure_report + "/result"])
     os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

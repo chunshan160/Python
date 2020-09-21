@@ -6,8 +6,15 @@
 
 import yaml
 
-
 def read_yaml(file_path):
     fs = open(file_path, encoding="utf-8")
     data = yaml.load(fs,Loader=yaml.FullLoader)
     return  data
+
+if __name__ == '__main__':
+    from Common.project_path import yamlPath
+
+    config = read_yaml(yamlPath)
+    surroundings = list(config.keys())[0]
+    phone_model = config[surroundings]['phone_model']
+    print(phone_model)

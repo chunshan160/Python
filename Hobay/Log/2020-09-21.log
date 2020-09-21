@@ -1,0 +1,104 @@
+2020-09-21 17:01:31,368 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:01:31,522 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:01:31,523 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:01:33,024 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:01:33,215 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:01:33,216 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:01:33,294 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:01:35,547 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:01:35,599 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:01:35,600 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:01:36,840 - INFO - user_log.py - 春衫 - 日志信息:输入密码失败!
+2020-09-21 17:01:37,988 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-21\2020-09-21-17-01-36-输入密码-.png
+2020-09-21 17:01:51,576 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:01:51,741 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:01:51,742 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:01:53,618 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:01:53,678 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:01:53,679 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:01:53,697 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:01:55,864 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:01:56,008 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:01:56,009 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:01:57,243 - INFO - user_log.py - 春衫 - 日志信息:输入密码失败!
+2020-09-21 17:01:58,479 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-21\2020-09-21-17-01-57-输入密码-.png
+2020-09-21 17:02:11,305 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:02:11,602 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:02:11,603 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:02:13,477 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:02:13,633 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:02:13,634 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:02:13,658 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:02:15,978 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:02:16,059 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:02:16,060 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:02:17,422 - INFO - user_log.py - 春衫 - 日志信息:输入密码失败!
+2020-09-21 17:02:18,567 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-21\2020-09-21-17-02-17-输入密码-.png
+2020-09-21 17:03:54,827 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:03:55,123 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:03:55,124 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:03:56,538 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:03:56,774 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:03:56,775 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:03:56,800 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:03:59,115 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:03:59,171 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:03:59,172 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:04:00,422 - INFO - user_log.py - 春衫 - 日志信息:输入密码失败!
+2020-09-21 17:04:01,497 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-21\2020-09-21-17-04-00-输入密码-.png
+2020-09-21 17:06:57,804 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:06:58,080 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:06:58,081 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:06:59,290 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:06:59,364 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:06:59,365 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:06:59,383 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:07:01,613 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:07:01,691 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:01,692 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:07:03,978 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-09-21 17:07:04,054 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:04,055 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-09-21 17:07:04,078 - INFO - user_log.py - 春衫 - 日志信息:点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-09-21 17:07:18,003 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:07:18,062 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:18,063 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:07:19,483 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:07:19,575 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:19,575 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:07:19,609 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:07:21,782 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:07:21,833 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:21,834 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:07:24,045 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-09-21 17:07:24,097 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:24,098 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-09-21 17:07:24,116 - INFO - user_log.py - 春衫 - 日志信息:点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-09-21 17:07:40,681 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:07:40,764 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:40,765 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:07:42,065 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:07:42,178 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:42,179 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:07:42,214 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:07:44,629 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:07:44,685 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:44,687 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:07:46,844 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-09-21 17:07:46,975 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:07:46,976 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-09-21 17:07:46,998 - INFO - user_log.py - 春衫 - 日志信息:点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-09-21 17:08:01,853 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-09-21 17:08:02,059 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:08:02,060 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-09-21 17:08:03,464 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-09-21 17:08:03,694 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:08:03,695 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-09-21 17:08:03,747 - INFO - user_log.py - 春衫 - 日志信息:点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-09-21 17:08:06,190 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-09-21 17:08:06,516 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:08:06,516 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-09-21 17:08:09,565 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-09-21 17:08:10,014 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-09-21 17:08:10,015 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-09-21 17:08:10,266 - INFO - user_log.py - 春衫 - 日志信息:点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')

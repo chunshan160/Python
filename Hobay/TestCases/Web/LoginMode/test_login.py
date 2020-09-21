@@ -8,7 +8,7 @@
 import unittest
 from selenium import webdriver
 from Handle.H5.za.MyIndex import MyPage
-from TestData import Common_Data as CD
+from TestData.Web import Common_Data as CD
 from TestData.H5 import Login_Data as LD
 from Handle.H5 import SystemPoint
 from Handle.H5.za.Login_page import LoginPage

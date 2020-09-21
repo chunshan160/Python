@@ -1,0 +1,24 @@
+INFO     春衫:user_log.py:56 等待元素('xpath', '//input[@type="number"]')可见
+INFO     春衫:user_log.py:56 等待时长为：0
+INFO     春衫:user_log.py:56 定位方式:by.xpath--->定位值://input[@type="number"]
+INFO     春衫:user_log.py:56 等待元素('xpath', '//button[text()="下 一 步"]')可见
+INFO     春衫:user_log.py:56 等待时长为：0
+INFO     春衫:user_log.py:56 定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+INFO     春衫:user_log.py:56 点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+INFO     春衫:user_log.py:56 等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+INFO     春衫:user_log.py:56 等待时长为：0
+INFO     春衫:user_log.py:56 定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+INFO     春衫:user_log.py:56 输入密码失败!
+INFO     春衫:user_log.py:56 截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-21\2020-09-21-17-01-36-输入密码-.png
+INFO     春衫:user_log.py:56 等待元素('xpath', '//input[@type="number"]')可见
+INFO     春衫:user_log.py:56 等待时长为：0
+INFO     春衫:user_log.py:56 定位方式:by.xpath--->定位值://input[@type="number"]
+INFO     春衫:user_log.py:56 等待元素('xpath', '//button[text()="下 一 步"]')可见
+INFO     春衫:user_log.py:56 等待时长为：0
+INFO     春衫:user_log.py:56 定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+INFO     春衫:user_log.py:56 点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+INFO     春衫:user_log.py:56 等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+INFO     春衫:user_log.py:56 等待时长为：0
+INFO     春衫:user_log.py:56 定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+INFO     春衫:user_log.py:56 输入密码失败!
+INFO     春衫:user_log.py:56 截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-09-21\2020-09-21-17-01-57-输入密码-.png

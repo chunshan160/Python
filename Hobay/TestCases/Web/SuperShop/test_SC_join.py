@@ -7,7 +7,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from Handle.H5.za.Login_page import LoginPage
-from TestData import Common_Data as CD
+from TestData.Web import Common_Data as CD
 from Handle.H5 import PublishGood as PG
 import unittest
 from TestData.H5 import Login_Data as LD

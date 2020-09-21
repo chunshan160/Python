@@ -13,7 +13,7 @@ import unittest
 import pytest
 >>>>>>> origin/master
 from selenium import webdriver
-from TestData import Common_Data as CD
+from TestData.Web import Common_Data as CD
 from Handle.H5.za.Login_page import LoginPage
 from PageLocators.H5.PubilcGood import pubilc_good as PG
 from Business.H5.PublishGood.EntityGood import EntityGoodBusiness

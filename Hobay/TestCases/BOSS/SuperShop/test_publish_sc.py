@@ -15,7 +15,7 @@ from Handle.BOSS import ShangChao
 from Handle.ERP import Check
 from PageLocators.BOSS.PublishGoods import Pubilc
 import unittest
-from TestData import Common_Data as CD
+from TestData.Web import Common_Data as CD
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import ddt

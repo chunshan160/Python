@@ -5,8 +5,8 @@
 # @File :user_grade_apply.py
 
 from Common.DoMySQL import SQL
-from TestData.test_data import cbp
-from TestData.test_data import cash
+from TestData.user_grade import cbp
+from TestData.user_grade import cash
 
 def user_grade_ratio(ip,user_id):
     global grade
@@ -26,7 +26,7 @@ def user_grade_ratio(ip,user_id):
 
     buy_cbp_ratio=cbp[grade]
     buy_cash_ratio=cash[grade]
-    sale_cash_ratio=0.1
+    sale_cash_ratio=buy_cbp_ratio+buy_cash_ratio
     return buy_cbp_ratio,buy_cash_ratio,sale_cash_ratio
 
 if __name__ == '__main__':

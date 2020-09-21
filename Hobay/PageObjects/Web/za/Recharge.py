@@ -7,7 +7,7 @@
 import time
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from PageLocators.H5.za.MyIndex import MyIndex
+from PageLocators.Web.MyIndex import MyIndex
 
 class Recharge:
     def recharge(self,driver):

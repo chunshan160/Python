@@ -8,7 +8,7 @@ from Common.DoMySQL import SQL
 
 def platform_promotion_ratio(ip):
     # 查询是否有活动费率
-    select = f"SELECT * FROM `ecloud_user`.`platform_promotion_ratio` WHERE `deleted` = '-1';"
+    select = "SELECT * FROM `ecloud_user`.`platform_promotion_ratio` WHERE `deleted` = '-1';"
     data = SQL(ip).do_mysql_dict(select)
     if data != ():
         buy_cbp_ratio = data[0]['cbp_ratio']

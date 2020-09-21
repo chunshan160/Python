@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 #@Time :2019/12/31 17:18
 #@Author :春衫
-#@File :Login_page.py
+#@File :Login_Page.py
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC

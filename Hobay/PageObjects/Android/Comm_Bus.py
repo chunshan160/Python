@@ -5,7 +5,7 @@
 # @File :Comm_Bus.py
 
 import time
-from Common.BaseDriver import BaseDriver
+from Driver.AndroidDriver import AndroidDriver
 from PageLocators.Android.Welcome import welcome
 from PageLocators.Android import Common
 from PageObjects.Android.MyIndex.MyIndex import MyIndexPage
@@ -97,5 +97,5 @@ class CommBus(BasePage):
 
 
 if __name__ == '__main__':
-    driver = BaseDriver().base_driver("MI 8")
+    driver = AndroidDriver().android_driver("MI 8")
     CommBus(driver).do_welcome()
