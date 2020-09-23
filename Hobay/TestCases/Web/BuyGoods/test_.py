@@ -8,12 +8,12 @@
 import allure
 import pytest
 
-# from PageObjects.Web.Index.Index import IndexPage
-# from PageObjects.Web.SearchGood.SearchGood import SearchGoodPage
-# from PageObjects.Web.GoodDetail.GoodDetail_Page import GoodDetailPage
-# from PageObjects.Web.ConfirmOrder.ConfirmOrder_Page import ConfirmOrderPage
-# from PageObjects.Web.Pay.Pay import PayPage
-# from PageObjects.Web.SystemPoint.Pay_Success import PaySuccessPage
+from PageObjects.Web.Index.Index import IndexPage
+from PageObjects.Web.SearchGood.SearchGood import SearchGoodPage
+from PageObjects.Web.GoodDetail.GoodDetail_Page import GoodDetailPage
+from PageObjects.Web.ConfirmOrder.ConfirmOrder_Page import ConfirmOrderPage
+from PageObjects.Web.Pay.Pay import PayPage
+from PageObjects.Web.SystemPoint.Pay_Success import PaySuccessPage
 from TestData.Web.BuyGoods.BuyGoods import *
 from Common.project_path import *
 
@@ -28,24 +28,24 @@ class TestBuyGoods:
     def test_1_buy_entity_goods(self, web_buy_goods, data):
         doc = "测试购买实物商品-"
         driver = web_buy_goods
-        # with allure.step("首页点击搜索"):
-        #     IndexPage(driver).search(text=doc)
-        # with allure.step("输入商品名-点击第一个商品"):
-        #     SearchGoodPage(driver).send_search(data['goods_name'], text=doc)
-        # with allure.step("商品详情-下单"):
-        #     GoodDetailPage(driver).buy_good(text=doc)
-        # with allure.step("确认订单"):
-        #     ConfirmOrderPage(driver).entity_goods_submit_order(text=doc)
-        #     PayPage(driver).payment_method(data['payment_method'], text=doc)
-        # with allure.step("关闭可能出现的 加入焕商 弹窗"):
-        #     PaySuccessPage(driver).close_windows(text=doc)
-        # with allure.step("断言：支付成功后系统提示:支付成功"):
-        #     text = PaySuccessPage(driver).title_text(text=doc)
-        #     assert text == "支付成功"
-        # with allure.step("截图保存到项目中"):
-        #     driver.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png")
-        #     allure.attach.file(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png", "附件截图",
-        #                        attachment_type=allure.attachment_type.PNG)
+        with allure.step("首页点击搜索"):
+            IndexPage(driver).search(text=doc)
+        with allure.step("输入商品名-点击第一个商品"):
+            SearchGoodPage(driver).send_search(data['goods_name'], text=doc)
+        with allure.step("商品详情-下单"):
+            GoodDetailPage(driver).buy_good(text=doc)
+        with allure.step("确认订单"):
+            ConfirmOrderPage(driver).entity_goods_submit_order(text=doc)
+            PayPage(driver).payment_method(data['payment_method'], text=doc)
+        with allure.step("关闭可能出现的 加入焕商 弹窗"):
+            PaySuccessPage(driver).close_windows(text=doc)
+        with allure.step("断言：支付成功后系统提示:支付成功"):
+            text = PaySuccessPage(driver).title_text(text=doc)
+            assert text == "支付成功"
+        with allure.step("截图保存到项目中"):
+            driver.save_screenshot(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png")
+            allure.attach.file(f"{allure_report}/screenshot/购买商品功能-购买实物商品-{data['payment_method']}支付.png", "附件截图",
+                               attachment_type=allure.attachment_type.PNG)
 
     # @allure.story("购买本地生活商品")
     # @pytest.mark.smoke
@@ -103,6 +103,6 @@ class TestBuyGoods:
 
 if __name__ == '__main__':
     pytest.main(
-        ["-v", "-s", "--reruns", "1", "--reruns-delay", "1", "test_.py", "--alluredir",
+        ["-v", "-s", "--reruns", "0", "--reruns-delay", "1", "test_.py", "--alluredir",
          allure_report + "/result"])
     # os.system(f"allure generate {allure_report}/result -o {allure_report}/html --clean")

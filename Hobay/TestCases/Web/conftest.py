@@ -56,7 +56,6 @@ from TestData.Web.Common_Data import H5_Login_url
 @pytest.fixture()
 def web_buy_goods():
     doc = "购买商品-通用条件-"
-    print("=======所有测试用例执行之前，setUpClass整个测试类只执行一次==========")
     mobile_emulation = {'deviceName': 'iPhone X'}
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
@@ -64,4 +63,6 @@ def web_buy_goods():
     #跳转登录页面
     driver.get(H5_Login_url)
     #登录
-    LoginPage(driver).login("17777777781","qaz123")
+    LoginPage(driver).login("17777777781","qaz123",text=doc)
+    yield driver
+    driver.refresh()

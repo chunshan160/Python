@@ -3,6 +3,7 @@
 # @Time :2020/7/17 15:52
 # @Author :春衫
 # @File :SearchGood_Business.py
+from selenium.webdriver.common.keys import Keys
 
 from Common.user_log import UserLog
 from PageLocators.Web.SearchGood import SearchGood
@@ -16,7 +17,7 @@ class SearchGoodPage(BasePage):
         doc=text+"搜索框-输入-"
         UserLog().info("搜索框-输入文字是:" + good_name)
         self.input_text(SearchGood.send_search,good_name,doc=doc)
-        self.driver.keyevent(66)
+        self.get_element(SearchGood.send_search, doc).send_keys(Keys.ENTER)
         self.choose_first_good(good_name,text=doc)
 
     # 商品tap

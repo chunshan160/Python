@@ -45,10 +45,10 @@ class PayPage(BasePage):
         doc = text + "点击【微信】选项-"
         self.click_element(Pay.wechat_pay, doc=doc)
 
-    # 支付宝
-    def alibaba_pay(self, text=""):
-        doc = text + "点击【支付宝】选项-"
-        self.click_element(Pay.alibaba_pay, doc=doc)
+    # # 支付宝
+    # def alibaba_pay(self, text=""):
+    #     doc = text + "点击【支付宝】选项-"
+    #     self.click_element(Pay.alibaba_pay, doc=doc)
 
     # 确认支付
     def confirm_pay(self, text=""):
@@ -71,8 +71,8 @@ class PayPage(BasePage):
                 self.cash_pay(text)
             elif payment_method == "微信":
                 self.wechat_pay(text)
-            elif payment_method == "支付宝":
-                self.alibaba_pay(text)
+            # elif payment_method == "支付宝":
+            #     self.alibaba_pay(text)
 
         self.confirm_pay(text)
         self.pay_password(text)

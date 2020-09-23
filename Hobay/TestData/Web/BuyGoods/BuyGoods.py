@@ -9,10 +9,10 @@ Login = {"phone": "17777777781", "password": "qaz123"}
 
 buy_entity_goods = [
                     {"goods_name": "APP实物商品", "payment_method": "易贝"},
-                    {"goods_name": "APP实物商品", "payment_method": "易贝券"},
-                    {"goods_name": "APP实物商品", "payment_method": "抵工资"},
-                    {"goods_name": "APP实物商品", "payment_method": "家人购"},
-                    {"goods_name": "APP实物商品", "payment_method": "现金"},
+                    # {"goods_name": "APP实物商品", "payment_method": "易贝券"},
+                    # {"goods_name": "APP实物商品", "payment_method": "抵工资"},
+                    # {"goods_name": "APP实物商品", "payment_method": "家人购"},
+                    # {"goods_name": "APP实物商品", "payment_method": "现金"},
                     # {"goods_name": "APP实物商品", "payment_method": "微信"},
                     # {"goods_name": "APP实物商品", "payment_method": "支付宝"}
 ]

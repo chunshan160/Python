@@ -7,24 +7,24 @@
 from selenium.webdriver.common.by import By
 
 #搜索框-输入
-send_search=(By.ID,"com.ecloud.hobay:id/et_search")
+send_search=(By.XPATH,'//input[@placeholder="输入关键字"]')
 #商品tap
-good_tap=(By.ACCESSIBILITY_ID,"商品")
+good_tap=(By.XPATH,'//span[text()="商品"]/..')
 #店铺tap
-shop_tap=(By.ACCESSIBILITY_ID,"店铺")
+shop_tap=(By.XPATH,'//span[text()="店铺"]/..')
 #综合
-Comprehensive=(By.ID,"com.ecloud.hobay:id/tv_sort_complex")
+Comprehensive=(By.XPATH,'//div[text()="综合"]')
 #全新
-new=(By.ID,"com.ecloud.hobay:id/tv_sort_new")
+new=(By.XPATH,'//div[text()="全新"]')
 #人气
-hot=(By.ID,"com.ecloud.hobay:id/tv_sort_hot")
+hot=(By.XPATH,'//div[text()="人气"]')
 #价格
-price=(By.ID,"com.ecloud.hobay:id/tv_sort_price")
+price=(By.XPATH,'//div[text()="价格"]')
 #筛选
-filter=(By.ID,"com.ecloud.hobay:id/fl_sort_filter")
+filter=(By.XPATH,'//div[@class="tab-pro"]/div[text()="筛选"]')
 #商品
-good=(By.ID,"com.ecloud.hobay:id/fl_root")
+good=(By.XPATH,'//li[@class="product-item"]')
 #进店
-go_shop=(By.ID,"com.ecloud.hobay:id/tv_go1")
+go_shop=(By.CLASS_NAME,"look-btn")
 #搜索-店铺-商品
-shop_good=(By.ID,"com.ecloud.hobay:id/iv_p1")
+shop_good=(By.XPATH,'//ul[@class="pro-list clearfix"]/li')

@@ -412,6 +412,8 @@ class BasePage:
         new_locator = (locator[0], locator[1].format(name))
         return new_locator
 
+    #回车键
+
 
 if __name__ == '__main__':
     pass
