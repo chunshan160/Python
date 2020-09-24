@@ -1,69 +1,38 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# @Time :2020/9/16 15:16
+# @Time :2020/9/24 17:07
 # @Author :春衫
 # @File :ceshi.py
 
-# !/bin/user/python
-# coding: UTF-8
 
-# from jira import JIRA
+data=[{'expand': 'operations,versionedRepresentations,editmeta,changelog,renderedFields', 'id': '12812', 'self': 'http://10.10.67.25/jira/rest/api/2/issue/12812', 'key': 'KITAS-359', 'fields': {'summary': 'SIT-房抵贷1.1-风控四审：审批拒绝提交报错', 'assignee': {'self': 'http://10.10.67.25/jira/rest/api/2/user?username=xujinglin', 'name': 'xujinglin', 'key': 'JIRAUSER10232', 'emailAddress': 'xu_jinglin@hoperun.com', 'avatarUrls': {'48x48': 'http://10.10.67.25/jira/secure/useravatar?avatarId=10349', '24x24': 'http://10.10.67.25/jira/secure/useravatar?size=small&avatarId=10349', '16x16': 'http://10.10.67.25/jira/secure/useravatar?size=xsmall&avatarId=10349', '32x32': 'http://10.10.67.25/jira/secure/useravatar?size=medium&avatarId=10349'}, 'displayName': '徐菁琳', 'active': True, 'timeZone': 'Asia/Shanghai'}, 'priority': {'self': 'http://10.10.67.25/jira/rest/api/2/priority/2', 'iconUrl': 'http://10.10.67.25/jira/images/icons/priorities/high.svg', 'name': '较高', 'id': '2'}, 'status': {'self': 'http://10.10.67.25/jira/rest/api/2/status/10101', 'description': '验收通过关闭Bug', 'iconUrl': 'http://10.10.67.25/jira/images/icons/statuses/generic.png', 'name': '已关闭', 'id': '10101', 'statusCategory': {'self': 'http://10.10.67.25/jira/rest/api/2/statuscategory/3', 'id': 3, 'key': 'done', 'colorName': 'green', 'name': '完成'}}}},{'expand': 'operations,versionedRepresentations,editmeta,changelog,renderedFields', 'id': '12812', 'self': 'http://10.10.67.25/jira/rest/api/2/issue/12812', 'key': 'KITAS-359', 'fields': {'summary': 'SIT-房抵贷1.1-风控四审：审批拒绝提交报错', 'assignee': {'self': 'http://10.10.67.25/jira/rest/api/2/user?username=xujinglin', 'name': 'xujinglin', 'key': 'JIRAUSER10232', 'emailAddress': 'xu_jinglin@hoperun.com', 'avatarUrls': {'48x48': 'http://10.10.67.25/jira/secure/useravatar?avatarId=10349', '24x24': 'http://10.10.67.25/jira/secure/useravatar?size=small&avatarId=10349', '16x16': 'http://10.10.67.25/jira/secure/useravatar?size=xsmall&avatarId=10349', '32x32': 'http://10.10.67.25/jira/secure/useravatar?size=medium&avatarId=10349'}, 'displayName': '徐菁琳', 'active': True, 'timeZone': 'Asia/Shanghai'}, 'priority': {'self': 'http://10.10.67.25/jira/rest/api/2/priority/2', 'iconUrl': 'http://10.10.67.25/jira/images/icons/priorities/high.svg', 'name': '较高', 'id': '2'}, 'status': {'self': 'http://10.10.67.25/jira/rest/api/2/status/10101', 'description': '验收通过关闭Bug', 'iconUrl': 'http://10.10.67.25/jira/images/icons/statuses/generic.png', 'name': '已分配', 'id': '10101', 'statusCategory': {'self': 'http://10.10.67.25/jira/rest/api/2/statuscategory/3', 'id': 3, 'key': 'done', 'colorName': 'green', 'name': '完成'}}}},{'expand': 'operations,versionedRepresentations,editmeta,changelog,renderedFields', 'id': '12812', 'self': 'http://10.10.67.25/jira/rest/api/2/issue/12812', 'key': 'KITAS-359', 'fields': {'summary': 'SIT-房抵贷1.1-风控四审：审批拒绝提交报错', 'assignee': {'self': 'http://10.10.67.25/jira/rest/api/2/user?username=xujinglin', 'name': 'xujinglin', 'key': 'JIRAUSER10232', 'emailAddress': 'xu_jinglin@hoperun.com', 'avatarUrls': {'48x48': 'http://10.10.67.25/jira/secure/useravatar?avatarId=10349', '24x24': 'http://10.10.67.25/jira/secure/useravatar?size=small&avatarId=10349', '16x16': 'http://10.10.67.25/jira/secure/useravatar?size=xsmall&avatarId=10349', '32x32': 'http://10.10.67.25/jira/secure/useravatar?size=medium&avatarId=10349'}, 'displayName': '张三', 'active': True, 'timeZone': 'Asia/Shanghai'}, 'priority': {'self': 'http://10.10.67.25/jira/rest/api/2/priority/2', 'iconUrl': 'http://10.10.67.25/jira/images/icons/priorities/high.svg', 'name': '较高', 'id': '2'}, 'status': {'self': 'http://10.10.67.25/jira/rest/api/2/status/10101', 'description': '验收通过关闭Bug', 'iconUrl': 'http://10.10.67.25/jira/images/icons/statuses/generic.png', 'name': '已关闭', 'id': '10101', 'statusCategory': {'self': 'http://10.10.67.25/jira/rest/api/2/statuscategory/3', 'id': 3, 'key': 'done', 'colorName': 'green', 'name': '完成'}}}},{'expand': 'operations,versionedRepresentations,editmeta,changelog,renderedFields', 'id': '12812', 'self': 'http://10.10.67.25/jira/rest/api/2/issue/12812', 'key': 'KITAS-359', 'fields': {'summary': 'SIT-房抵贷1.1-风控四审：审批拒绝提交报错', 'assignee': {'self': 'http://10.10.67.25/jira/rest/api/2/user?username=xujinglin', 'name': 'xujinglin', 'key': 'JIRAUSER10232', 'emailAddress': 'xu_jinglin@hoperun.com', 'avatarUrls': {'48x48': 'http://10.10.67.25/jira/secure/useravatar?avatarId=10349', '24x24': 'http://10.10.67.25/jira/secure/useravatar?size=small&avatarId=10349', '16x16': 'http://10.10.67.25/jira/secure/useravatar?size=xsmall&avatarId=10349', '32x32': 'http://10.10.67.25/jira/secure/useravatar?size=medium&avatarId=10349'}, 'displayName': '张三', 'active': True, 'timeZone': 'Asia/Shanghai'}, 'priority': {'self': 'http://10.10.67.25/jira/rest/api/2/priority/2', 'iconUrl': 'http://10.10.67.25/jira/images/icons/priorities/high.svg', 'name': '较高', 'id': '2'}, 'status': {'self': 'http://10.10.67.25/jira/rest/api/2/status/10101', 'description': '验收通过关闭Bug', 'iconUrl': 'http://10.10.67.25/jira/images/icons/statuses/generic.png', 'name': '已关闭', 'id': '10101', 'statusCategory': {'self': 'http://10.10.67.25/jira/rest/api/2/statuscategory/3', 'id': 3, 'key': 'done', 'colorName': 'green', 'name': '完成'}}}}]
 
-import xlwt
+sum1=0
+sum2=0
+# list1=[]
+# renshu=0
+# for b in data:
+#     name = b['fields']['assignee']['displayName']
+#     if name not in list1:
+#         list1.append(name)
+#
+# print(list1)
 
-import os
+list1=['徐菁琳', '张三']
+list2=[]
+list3=['已关闭','已分配']
 
-path = os.getcwd()
+for i in list1:
+    print(i)
+    for c in data:
+        name = c['fields']['assignee']['displayName']
+        bug_status = c['fields']['status']['name']
+        if name==i and bug_status=='已关闭':
+            sum1+=1
+        if name==i and bug_status=='已分配':
+            sum2+=1
+        a={"创建人": name, '已关闭': sum1, '已分配': sum2}
+        list2.append(a)
+    # print(sum1,sum2)
 
-
-# 输入jira账号和密码
-
-def input_user():
-    # 主流程开始
-
-    username = input('请输入用户名: ')
-
-    password = input('输入密码: ')
-
-    if username == '' or password == '':
-        print('用户名和密码不能为空')
-
-    return username, password
-
-
-# 获取jira缺陷数据
-
-def jira_data_repair():
-    # options = {
-    #
-    #     'verify': False,
-    #
-    #     'server': 'http://10.10.67.25/jira/browse/KITAS-362?jql=project%20%3D%20KITAS%20ORDER%20BY%20created%20DESC'}
-    #
-    # jira = JIRA(options=options, basic_auth=('os_wangjuan', '123456'))
-    #
-    # issues = jira.search_issues('project = KITAS ORDER BY created DESC')
-    issues="lala"
-    # 写excel
-
-    workbook = xlwt.Workbook(encoding='utf-8')
-
-    worksheet = workbook.add_sheet('test')
-
-    total = 0
-
-    # 获取缺陷信息
-
-    for u in issues:
-        # print u #打印缺陷的key值
-
-        # 写入内容
-
-        worksheet.write(total, 0, str(u))
-
-        total = total + 1
-
-        # 保存excel
-
-    workbook.save('1123.xls')
-jira_data_repair()
+print(list2)
