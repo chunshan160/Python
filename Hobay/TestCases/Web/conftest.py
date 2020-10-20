@@ -58,6 +58,7 @@ def web_buy_goods():
     doc = "购买商品-通用条件-"
     mobile_emulation = {'deviceName': 'iPhone X'}
     chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument("--auto-open-devtools-for-tabs")
     chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
     driver=BrowserEngine().get_browser(chrome_options)
     #跳转登录页面

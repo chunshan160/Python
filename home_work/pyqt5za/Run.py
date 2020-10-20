@@ -5,20 +5,20 @@
 # @File :runceshi.py
 
 
-#-*-coding:utf-8-*-
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
 import numpy as np
-from learn.ui import Ui_Form
+from pyqt5za.ui import Ui_Form
 
 import matplotlib
 matplotlib.use("Qt5Agg")  # 声明使用QT5
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
+from read import get_data
 
 #创建一个matplotlib图形绘制类
 class MyFigure(FigureCanvas):
@@ -39,25 +39,23 @@ class MainDialogImgBW(QDialog,Ui_Form):
         self.setMinimumSize(0,0)
 
     def plotcos(self):
-        t = np.arange(0.0, 5.0, 0.01)
-        s = np.cos(2 * np.pi * t)
-        self.F.axes.plot(t, s)
+        data=get_data("D:\Pycharm_workspace\home_work\data.xlsx", "ceshi", None, "修复中")
+        x_data = data[0]
+        y_data = data[1]
+        plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签
+        plt.rcParams['axes.unicode_minus'] = False  # 这两行需要手动设置
+        self.F.axes.plot(x_data, y_data)
+        plt.xticks(rotation=45)
         self.F.fig.suptitle("cos")
 
     # 定义搜索按钮的功能
     def onclick(self):
-
-        # self.close()
-        # self.save_date()
-        #第五步：定义MyFigure类的一个实例
+        # 第五步：定义MyFigure类的一个实例
         self.F = MyFigure(width=3, height=2, dpi=100)
-        # self.F.plotsin()
         self.plotcos()
-        #第六步：在GUI的groupBox中创建一个布局，用于添加MyFigure类的实例（即图形）后其他部件。
+        # 第六步：在GUI的groupBox中创建一个布局，用于添加MyFigure类的实例（即图形）后其他部件。
         self.gridlayout = QGridLayout(self.groupBox)  # 继承容器groupBox
-        self.gridlayout.addWidget(self.F,0,1)
-        a = self.comboBox.currentText()
-        print(a)
+        self.gridlayout.addWidget(self.F, 0, 1)
 
     def save_date(self):
         with open("date.txt","w")as f:

@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :paixu.py
 
-from Common.quchong import quchong
+from Common.fengyong.tools import quchong
 
 #获取最小的省/市/区分佣比例
 def paixu(province_proportion, city_proportion, area_proportion):

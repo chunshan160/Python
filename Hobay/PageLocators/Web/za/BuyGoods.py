@@ -6,14 +6,12 @@
 
 from selenium.webdriver.common.by import By
 
-class BuyGoods:
+xuliehao=(By.XPATH,'//div[@class="qr"]//div')
 
-    xuliehao=(By.XPATH,'//div[@class="qr"]//div')
+frist_order=(By.XPATH,'(//div[@class="order-shop"])[1]')
 
-    frist_order=(By.XPATH,'(//div[@class="order-shop"])[1]')
+click_xuliehao=(By.XPATH,'//input[@type="text"]')
+click_queding=(By.XPATH,'//button[contains(text(),"确定")]')
+click_queding2=(By.XPATH,'//li[contains(text(),"确定")]')
 
-    click_xuliehao=(By.XPATH,'//input[@type="text"]')
-    click_queding=(By.XPATH,'//button[contains(text(),"确定")]')
-    click_queding2=(By.XPATH,'//li[contains(text(),"确定")]')
-
-    qianyue=(By.XPATH,'//button[text()="确认签约"]')
+qianyue=(By.XPATH,'//button[text()="确认签约"]')

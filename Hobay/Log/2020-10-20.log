@@ -1,0 +1,196 @@
+2020-10-20 10:10:20,508 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:10:20,591 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:10:20,592 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:10:21,757 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:10:21,794 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:10:21,795 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:10:21,807 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:10:23,927 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-10-20 10:10:23,962 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:10:23,963 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-10-20 10:10:26,095 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-10-20 10:10:26,152 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:10:26,152 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-10-20 10:10:26,164 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-10-20 10:10:26,333 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'search_box')可见
+2020-10-20 10:10:27,503 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:10:27,504 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:search_box
+2020-10-20 10:10:27,610 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-点击【搜索栏】-点击元素('class name', 'search_box')
+2020-10-20 10:10:28,312 - INFO - user_log.py - 春衫 - 日志信息:搜索框-输入文字是:APP实物商品
+2020-10-20 10:10:28,313 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="输入关键字"]')可见
+2020-10-20 10:10:28,478 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:10:28,478 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:10:28,741 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:10:28,847 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//li[@class="product-item"]')可见
+2020-10-20 10:10:29,034 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:10:29,036 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://li[@class="product-item"]
+2020-10-20 10:10:29,048 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-搜索框-输入-点击第一件商品-点击元素('xpath', '//li[@class="product-item"]')
+2020-10-20 10:10:29,209 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'r-server')可见
+2020-10-20 10:10:31,972 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：2
+2020-10-20 10:10:31,973 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:r-server
+2020-10-20 10:10:32,009 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-点击元素('class name', 'r-server')
+2020-10-20 10:10:33,065 - INFO - user_log.py - 春衫 - 日志信息:元素点击操作失败!
+2020-10-20 10:10:34,821 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-10-20\2020-10-20-10-10-33-测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-.png
+2020-10-20 10:12:23,963 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:12:24,023 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:12:24,024 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:12:25,251 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:12:25,290 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:12:25,291 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:12:25,302 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:12:27,409 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-10-20 10:12:30,772 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：3
+2020-10-20 10:12:30,773 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-10-20 10:12:32,960 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-10-20 10:12:33,002 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:12:33,003 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-10-20 10:12:33,016 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-10-20 10:12:33,126 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'search_box')可见
+2020-10-20 10:12:35,008 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:12:35,009 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:search_box
+2020-10-20 10:12:35,286 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-点击【搜索栏】-点击元素('class name', 'search_box')
+2020-10-20 10:12:35,564 - INFO - user_log.py - 春衫 - 日志信息:搜索框-输入文字是:APP实物商品
+2020-10-20 10:12:35,566 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="输入关键字"]')可见
+2020-10-20 10:12:35,770 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:12:35,771 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:12:36,063 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:12:36,263 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//li[@class="product-item"]')可见
+2020-10-20 10:12:36,476 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:12:36,477 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://li[@class="product-item"]
+2020-10-20 10:12:36,493 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-搜索框-输入-点击第一件商品-点击元素('xpath', '//li[@class="product-item"]')
+2020-10-20 10:12:36,650 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'r-server')可见
+2020-10-20 10:12:38,427 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:12:38,428 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:r-server
+2020-10-20 10:12:38,457 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-点击元素('class name', 'r-server')
+2020-10-20 10:12:39,587 - INFO - user_log.py - 春衫 - 日志信息:元素点击操作失败!
+2020-10-20 10:12:41,426 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-10-20\2020-10-20-10-12-39-测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-.png
+2020-10-20 10:14:40,257 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:14:40,296 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:40,296 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:14:41,450 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:14:41,486 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:41,487 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:14:41,498 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:14:43,610 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-10-20 10:14:43,679 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:43,680 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-10-20 10:14:45,911 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-10-20 10:14:45,963 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:45,964 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-10-20 10:14:45,986 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-10-20 10:14:46,118 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'search_box')可见
+2020-10-20 10:14:49,168 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：3
+2020-10-20 10:14:49,169 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:search_box
+2020-10-20 10:14:49,671 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-点击【搜索栏】-点击元素('class name', 'search_box')
+2020-10-20 10:14:50,186 - INFO - user_log.py - 春衫 - 日志信息:搜索框-输入文字是:APP实物商品
+2020-10-20 10:14:50,187 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="输入关键字"]')可见
+2020-10-20 10:14:50,408 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:50,409 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:14:51,010 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:14:51,304 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//li[@class="product-item"]')可见
+2020-10-20 10:14:51,611 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:51,612 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://li[@class="product-item"]
+2020-10-20 10:14:51,664 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-搜索框-输入-点击第一件商品-点击元素('xpath', '//li[@class="product-item"]')
+2020-10-20 10:14:51,894 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'r-server')可见
+2020-10-20 10:14:53,807 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:14:53,808 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:r-server
+2020-10-20 10:14:53,833 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-点击元素('class name', 'r-server')
+2020-10-20 10:14:54,070 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//span[contains(text(),"+")]')可见
+2020-10-20 10:14:54,152 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:14:54,153 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://span[contains(text(),"+")]
+2020-10-20 10:14:54,183 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-购买商品-默认一件-点击数量【+】按钮-点击元素('xpath', '//span[contains(text(),"+")]')
+2020-10-20 10:14:54,330 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'btn buy')可见
+2020-10-20 10:15:26,073 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败!
+2020-10-20 10:15:27,139 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-10-20\2020-10-20-10-15-26-测试购买实物商品-购买商品-默认一件-点击【确定】按钮-.png
+2020-10-20 10:16:01,839 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:16:01,879 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:16:01,880 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:16:03,059 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:16:03,096 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:16:03,096 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:16:03,107 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:16:05,212 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-10-20 10:16:05,248 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:16:05,249 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-10-20 10:16:07,380 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-10-20 10:16:07,413 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:16:07,413 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-10-20 10:16:07,425 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-10-20 10:16:07,534 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'search_box')可见
+2020-10-20 10:16:08,864 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:16:08,865 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:search_box
+2020-10-20 10:16:09,044 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-点击【搜索栏】-点击元素('class name', 'search_box')
+2020-10-20 10:16:09,364 - INFO - user_log.py - 春衫 - 日志信息:搜索框-输入文字是:APP实物商品
+2020-10-20 10:16:09,366 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="输入关键字"]')可见
+2020-10-20 10:16:09,518 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:16:09,519 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:16:09,782 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:16:09,902 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//li[@class="product-item"]')可见
+2020-10-20 10:16:10,061 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:16:10,062 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://li[@class="product-item"]
+2020-10-20 10:16:10,076 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-搜索框-输入-点击第一件商品-点击元素('xpath', '//li[@class="product-item"]')
+2020-10-20 10:16:10,233 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'r-server')可见
+2020-10-20 10:16:11,657 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:16:11,658 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:r-server
+2020-10-20 10:16:11,670 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-点击元素('class name', 'r-server')
+2020-10-20 10:16:12,748 - INFO - user_log.py - 春衫 - 日志信息:元素点击操作失败!
+2020-10-20 10:16:14,342 - INFO - user_log.py - 春衫 - 日志信息:截取网页成功，文件路径为为：D:\Pycharm_workspace\Hobay\Outputs\Error_Image\2020-10-20\2020-10-20-10-16-12-测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-.png
+2020-10-20 10:22:53,889 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:22:53,934 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:22:53,935 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:22:55,079 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:22:55,119 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:22:55,120 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:22:55,139 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:22:57,208 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-10-20 10:22:57,254 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:22:57,255 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-10-20 10:22:59,376 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-10-20 10:22:59,447 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:22:59,448 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-10-20 10:22:59,477 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-10-20 10:23:56,498 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'search_box')可见
+2020-10-20 10:23:56,503 - INFO - user_log.py - 春衫 - 日志信息:等待元素可见失败!
+2020-10-20 10:24:58,763 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:24:58,812 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:24:58,813 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:24:59,940 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:25:00,014 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:25:00,015 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:25:00,039 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:25:37,361 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:25:37,408 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:25:37,409 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:25:38,604 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:26:02,438 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@type="number"]')可见
+2020-10-20 10:26:02,478 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:26:02,478 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@type="number"]
+2020-10-20 10:26:03,632 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[text()="下 一 步"]')可见
+2020-10-20 10:26:03,669 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:26:03,670 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[text()="下 一 步"]
+2020-10-20 10:26:03,680 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【下一步】按钮-点击元素('xpath', '//button[text()="下 一 步"]')
+2020-10-20 10:26:05,780 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="请输入密码"]')可见
+2020-10-20 10:26:05,814 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:26:05,815 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="请输入密码"]
+2020-10-20 10:26:07,948 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//button[contains(text(),"登 录")]')可见
+2020-10-20 10:26:08,000 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:26:08,001 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://button[contains(text(),"登 录")]
+2020-10-20 10:26:08,012 - INFO - user_log.py - 春衫 - 日志信息:购买商品-通用条件-点击【登录】-点击元素('xpath', '//button[contains(text(),"登 录")]')
+2020-10-20 10:26:08,120 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'search_box')可见
+2020-10-20 10:26:09,447 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:26:09,448 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:search_box
+2020-10-20 10:26:09,688 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-点击【搜索栏】-点击元素('class name', 'search_box')
+2020-10-20 10:26:09,875 - INFO - user_log.py - 春衫 - 日志信息:搜索框-输入文字是:APP实物商品
+2020-10-20 10:26:09,876 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//input[@placeholder="输入关键字"]')可见
+2020-10-20 10:26:10,019 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:26:10,020 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:26:10,256 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://input[@placeholder="输入关键字"]
+2020-10-20 10:26:10,359 - INFO - user_log.py - 春衫 - 日志信息:等待元素('xpath', '//li[@class="product-item"]')可见
+2020-10-20 10:26:10,534 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：0
+2020-10-20 10:26:10,535 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.xpath--->定位值://li[@class="product-item"]
+2020-10-20 10:26:10,549 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-搜索框-输入-点击第一件商品-点击元素('xpath', '//li[@class="product-item"]')
+2020-10-20 10:26:10,719 - INFO - user_log.py - 春衫 - 日志信息:等待元素('class name', 'r-server')可见
+2020-10-20 10:26:12,087 - INFO - user_log.py - 春衫 - 日志信息:等待时长为：1
+2020-10-20 10:26:12,088 - INFO - user_log.py - 春衫 - 日志信息:定位方式:by.class name--->定位值:r-server
+2020-10-20 10:26:12,140 - INFO - user_log.py - 春衫 - 日志信息:测试购买实物商品-购买商品-默认一件-点击【立即购卖】按钮-点击元素('class name', 'r-server')
+2020-10-20 10:26:13,208 - INFO - user_log.py - 春衫 - 日志信息:元素点击操作失败!
