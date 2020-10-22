@@ -19,6 +19,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 from read import get_data
+import matplotlib.ticker as ticker
 
 #创建一个matplotlib图形绘制类
 class MyFigure(FigureCanvas):
@@ -30,6 +31,17 @@ class MyFigure(FigureCanvas):
         #第三步：创建一个子图，用于绘制图形用，111表示子图编号，如matlab的subplot(1,1,1)
         self.axes = self.fig.add_subplot(111)
 
+    def test(self):
+        data = get_data("D:\Pycharm_workspace\home_work\data.xlsx", "ceshi", None, "修复中")
+        x = data[0]
+        y = data[1]
+        plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签
+        plt.rcParams['axes.unicode_minus'] = False  # 这两行需要手动设置
+        self.axes.plot(x, y)
+        plt.show()
+
+
+
 
 class MainDialogImgBW(QDialog,Ui_Form):
     def __init__(self):
@@ -38,21 +50,25 @@ class MainDialogImgBW(QDialog,Ui_Form):
         self.setWindowTitle("显示matplotlib绘制图形")
         self.setMinimumSize(0,0)
 
-    def plotcos(self):
-        data=get_data("D:\Pycharm_workspace\home_work\data.xlsx", "ceshi", None, "修复中")
-        x_data = data[0]
-        y_data = data[1]
-        plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签
-        plt.rcParams['axes.unicode_minus'] = False  # 这两行需要手动设置
-        self.F.axes.plot(x_data, y_data)
-        plt.xticks(rotation=45)
-        self.F.fig.suptitle("cos")
+    # def plotcos(self):
+    #     data=get_data("D:\Pycharm_workspace\home_work\data.xlsx", "ceshi", None, "修复中")
+    #     x_list = data[0]
+    #     y_list = data[1]
+    #     plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签
+    #     plt.rcParams['axes.unicode_minus'] = False  # 这两行需要手动设置
+    #     self.F = MyFigure(width=3, height=2, dpi=100)
+    #     fig,ax  = plt.subplots(1,1)
+    #     plt.xticks(rotation=45)
+    #     tick_spacing = 3
+    #     # self.F.fig.suptitle("cos")
+    #     ax.plot(x_list, y_list)
+    #     ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
+    #     plt.show()
 
     # 定义搜索按钮的功能
     def onclick(self):
-        # 第五步：定义MyFigure类的一个实例
         self.F = MyFigure(width=3, height=2, dpi=100)
-        self.plotcos()
+        # self.plotcos()
         # 第六步：在GUI的groupBox中创建一个布局，用于添加MyFigure类的实例（即图形）后其他部件。
         self.gridlayout = QGridLayout(self.groupBox)  # 继承容器groupBox
         self.gridlayout.addWidget(self.F, 0, 1)

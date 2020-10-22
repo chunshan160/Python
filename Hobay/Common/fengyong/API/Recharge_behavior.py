@@ -26,4 +26,9 @@ def recharge_behavior(surroundings, buyer_phone, payPassword, payAmount=100):
 
 
 if __name__ == '__main__':
-    pass
+    surroundings = 'test'
+    buyer_phone = 17777777781
+    payPassword = 'qhr7qcahoKc='
+    payAmount = 100
+    a=recharge_behavior(surroundings, buyer_phone, payPassword, payAmount=100)
+    print(a)

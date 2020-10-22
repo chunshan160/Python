@@ -20,3 +20,8 @@ def chengshihuanshang(ip, user_id):
         data = "区分佣比例"
 
     return data
+
+if __name__ == '__main__':
+    ip='192.168.0.102'
+    a=chengshihuanshang(ip,1000446)
+    print(a)

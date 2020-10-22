@@ -28,10 +28,10 @@ class HttpRequest:
             if res.status_code == 200:
                 my_logger.debug(f"{msg}接口请求成功")
             else:
-                print(f"{msg}接口返回异常，返回的内容是：{res.json()}")
+                my_logger.warning(f"{msg}接口返回异常，返回的内容是：{res.text}")
 
         except Exception as e:
-            print(f"{msg}接口请求失败，失败的原因是：{e}")
+            my_logger.error(f"{msg}接口请求失败，失败的原因是：{e}")
             raise e
         return res
 

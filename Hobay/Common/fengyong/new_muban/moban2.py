@@ -57,6 +57,7 @@ class MoBan:
 
         '''
         global payment_method_data, pay_cbp_service_fee, pay_cash_service_fee, reserve_fund_personal_commission, reserve_fund_area_commission, reserve_fund_city_commission, reserve_fund_province_commission, reserve_fund_platform_commission, service_fee_personal_commission, service_fee_area_commission, service_fee_city_commission, service_fee_province_commission, service_fee_platform_commission, reserve_fund_bing_sales, Identity, reserve_fund_agent, first_region_commission, reserve_fund_template, service_fee_bind_area_id, service_fee_bind_city_id, service_fee_bind_province_id, service_fee_bing_sales, service_fee_agent, template1, service_fee_template, seller_income_amount
+
         buyer_id = data['买家']
         seller_id = data['卖家']
         platform_id = data['平台']
@@ -307,7 +308,7 @@ class MoBan:
             reserve_fund_bind_province_id = superior['储备池分佣'][1]['省代理商']
 
             start_template = [
-                (buyer_id, 2, 3, goods_price, None, None, '{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）', 2),
+                (buyer_id, 2, 3, goods_price, None, None, f'{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）', 2),
                 (platform_id, 2, 3, seller_income_amount, None, None,
                  f'{payment_method_data}支付购物商品费用：扣除买家订单金额（现金）转入平台(卖家实际应收到的金额)', 2),
                 (platform_id, 2, 1, pay_cash_service_fee, None, None,
@@ -374,11 +375,11 @@ class MoBan:
             if bind_buyer_relationship_data != None and reserve_fund_second_payagent_ratio != None:
 
                 # 买家绑定上级的身份 可能是销售，也可能是业务焕商
-                if ("业务焕商" or "销售") in bind_buyer_relationship_data.keys():
+                if "业务焕商" or "销售" in bind_buyer_relationship_data:
 
-                    if "业务焕商" in bind_buyer_relationship_data.keys():
+                    if "业务焕商" in bind_buyer_relationship_data:
                         reserve_fund_bing_sales = "业务焕商"
-                    elif "销售" in bind_buyer_relationship_data.keys():
+                    elif "销售" in bind_buyer_relationship_data:
                         reserve_fund_bing_sales = "销售"
 
                     my_logger.info(f"买家由{reserve_fund_bing_sales}邀请进来,"
@@ -391,7 +392,7 @@ class MoBan:
                     else:
                         my_logger.info(f"买家上级{reserve_fund_bing_sales}不是由销售/业务焕商邀请进来的")
 
-                    if "TCO" in bind_buyer_relationship_data.keys():
+                    if "TCO" in bind_buyer_relationship_data:
                         my_logger.info(f"买家有上级TCO，该TCO的id是：{bind_buyer_relationship_data['TCO']}")
                     else:
                         my_logger.info(f"买家没有上级TCO")
@@ -399,15 +400,15 @@ class MoBan:
                     reserve_fund_bing_sales = None
                     my_logger.info(f"买家不是由销售/业务焕商邀请进来的")
 
-                if ("业务焕商" or "销售") or "TCO" in bind_buyer_relationship_data.keys():
-                    if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data.keys():
-                        my_logger.info(f"{Identity}是由{reserve_fund_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易储备金需要走二级分佣")
+                # if ("业务焕商" or "销售") or "TCO" in bind_buyer_relationship_data:
+                if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data:
+                    my_logger.info(f"{Identity}是由{reserve_fund_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易储备金需要走二级分佣")
+                else:
+                    if "业务焕商" or "销售" in bind_buyer_relationship_data:
+                        my_logger.info(
+                            f"{Identity}是由{reserve_fund_bing_sales}邀请进来的，并且设置了二级分佣比例，所以交易储备金需要走二级分佣")
                     else:
-                        if ("业务焕商" or "销售") in bind_buyer_relationship_data.keys():
-                            my_logger.info(
-                                f"{Identity}是由{reserve_fund_bing_sales}邀请进来的，并且设置了二级分佣比例，所以交易储备金需要走二级分佣")
-                        else:
-                            my_logger.info(f"{Identity}有TCO管理，并且设置了二级分佣比例，所以交易储备金需要走二级分佣")
+                        my_logger.info(f"{Identity}有TCO管理，并且设置了二级分佣比例，所以交易储备金需要走二级分佣")
 
                 my_logger.info("----------这笔交易储备金分佣需要走二级分佣流程----------")
                 my_logger.info("----------开始计算储备金二级分佣----------")
@@ -447,6 +448,7 @@ class MoBan:
                 reserve_fund_commission = calculate_commission(reserve_fund_second_payagent_ratio,
                                                                bind_buyer_relationship_data,
                                                                first_region_commission)
+
 
                 # 储备池买家绑定的上级TCOid
                 reserve_fund_bing_TCO_id = reserve_fund_commission[0]
@@ -596,11 +598,11 @@ class MoBan:
             # 2、买家注册地有区域焕商，但是区域焕商都没有设置二级分佣比例
             if bind_relationship_data != None and service_fee_second_payagent_ratio != None:
 
-                if ("业务焕商" or "销售") in bind_buyer_relationship_data.keys():
+                if "业务焕商" or "销售" in bind_buyer_relationship_data:
 
-                    if "业务焕商" in bind_buyer_relationship_data.keys():
+                    if "业务焕商" in bind_buyer_relationship_data:
                         service_fee_bing_sales = "业务焕商"
-                    elif "销售" in bind_buyer_relationship_data.keys():
+                    elif "销售" in bind_buyer_relationship_data:
                         service_fee_bing_sales = "销售"
                     my_logger.info(f"买家由{service_fee_bing_sales}邀请进来,"
                                    f"该{service_fee_bing_sales}的id是：{bind_buyer_relationship_data[service_fee_bing_sales]}")
@@ -612,7 +614,7 @@ class MoBan:
                     else:
                         my_logger.info(f"买家上级{service_fee_bing_sales}不是由销售/业务焕商邀请进来的")
 
-                    if "TCO" in bind_buyer_relationship_data.keys():
+                    if "TCO" in bind_buyer_relationship_data:
                         my_logger.info(f"买家有上级TCO，该TCO的id是：{bind_buyer_relationship_data['TCO']}")
                     else:
                         my_logger.info(f"买家没有上级TCO")
@@ -620,15 +622,15 @@ class MoBan:
                     service_fee_bing_sales = None
                     my_logger.info(f"买家不是由销售/业务焕商邀请进来的")
 
-                if ("业务焕商" or "销售") or "TCO" in bind_buyer_relationship_data.keys():
-                    if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data.keys():
-                        my_logger.info(f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易服务费需要走二级分佣")
+                # if ("业务焕商" or "销售") or "TCO" in bind_buyer_relationship_data:
+                if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data:
+                    my_logger.info(f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易服务费需要走二级分佣")
+                else:
+                    if "业务焕商" or "销售" in bind_buyer_relationship_data:
+                        my_logger.info(
+                            f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且设置了二级分佣比例，所以交易服务费需要走二级分佣")
                     else:
-                        if ("业务焕商" or "销售") in bind_buyer_relationship_data.keys():
-                            my_logger.info(
-                                f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且设置了二级分佣比例，所以交易服务费需要走二级分佣")
-                        else:
-                            my_logger.info(f"{Identity}有TCO管理，并且设置了二级分佣比例，所以交易服务费需要走二级分佣")
+                        my_logger.info(f"{Identity}有TCO管理，并且设置了二级分佣比例，所以交易服务费需要走二级分佣")
 
                 my_logger.info("----------这笔交易服务费分佣需要走二级分佣流程----------")
                 my_logger.info("----------开始计算交易服务费二级分佣----------")

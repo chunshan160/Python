@@ -8,6 +8,7 @@ from Common.fengyong.Calculation.calculation import Calculation
 
 
 class CalculationData:
+
     def calculation_data(self, ip, payment_method, member_level, buyer_identity, seller_identity, proportion,
                          charge_amount, reserve_fund, order,user_id):
 
@@ -48,3 +49,19 @@ class CalculationData:
                                                                                                                   reserve_fund,user_id)
 
         return calculation_data
+
+if __name__ == '__main__':
+    from decimal import *
+    ip='192.168.0.102'
+    payment_method="易贝券"
+    member_level='钻石会员'
+    buyer_identity='公海用户'
+    seller_identity='个人焕商'
+    proportion={'省分佣比例': Decimal('0.80'), '市分佣比例': Decimal('0.70'), '个人分佣比例': Decimal('0.15'), '区分佣比例': None}
+    charge_amount= Decimal('100')
+    reserve_fund= Decimal('65.00')
+    order='EC-2020102117062200008810'
+    user_id=1000419
+    a=CalculationData().calculation_data(ip, payment_method, member_level, buyer_identity, seller_identity, proportion,
+                         charge_amount, reserve_fund, order,user_id)
+    print(a)

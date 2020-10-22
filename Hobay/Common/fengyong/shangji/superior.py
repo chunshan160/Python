@@ -10,6 +10,8 @@ from Common.fengyong.sql.ratio import ratio
 from Common.user_log import UserLog
 
 my_logger = UserLog()
+
+
 class Superior:
 
     def superior(self, ip, regional_agent, phone):
@@ -39,7 +41,7 @@ class Superior:
                     b["区代理商"] = u2
 
             else:
-                my_logger.debug("上级是城市焕商")
+                my_logger.info("上级是城市焕商")
                 u2 = regional_agent[i]['signed_user_id']
                 if (regional_agent)[i]['area_name'] != "":
                     b["区代理商"] = u2
@@ -61,36 +63,26 @@ class Superior:
         data = ratio(ip, province_id, city_id, area_id, personal_id)
 
         fenyong = {}
-
+        # # [{'user_id': 2000408, 'ratio': Decimal('0.15'), 'type': 4}, {'user_id': 1000445, 'ratio': Decimal('0.30'), 'type': 5}]
+        # data = [{'user_id': 2000408, 'ratio': Decimal('0.15'), 'type': 4},
+        #         {'user_id': 1000446, 'ratio': Decimal('0.60'), 'type': 5},
+        #         {'user_id': 1000445, 'ratio': Decimal('0.30'), 'type': 5}]
         if data != None:
-            for i in data:
+            for i in range(len(data)):
+                if data[i]['type'] == 1:
+                    fenyong["省分佣比例"] = data[i]['ratio']
 
-                if data[0]['type'] != 5:
-                    u1 = i['ratio']
-                    if i['type'] == 1:
-                        fenyong["省分佣比例"] = u1
+                elif data[i]['type'] == 2:
+                    fenyong["市分佣比例"] = data[i]['ratio']
 
-                    elif i['type'] == 2:
-                        fenyong["市分佣比例"] = u1
+                elif data[i]['type'] == 3:
+                    fenyong["区分佣比例"] = data[i]['ratio']
 
-                    elif i['type'] == 3:
-                        fenyong["区分佣比例"] = u1
-
-                    elif i['type'] == 4:
-                        fenyong["个人分佣比例"] = u1
+                elif data[i]['type'] == 4:
+                    fenyong["个人分佣比例"] = data[i]['ratio']
                 else:
-                    if len(data) == 2:
-                        u2 = [data[0]['ratio'], data[1]['ratio']]
-                        if data[0]['ratio'] >= data[1]['ratio']:
-                            fenyong["市分佣比例"] = u2[0]
-                            fenyong["区分佣比例"] = u2[1]
-                        else:
-                            fenyong["市分佣比例"] = u2[1]
-                            fenyong["区分佣比例"] = u2[0]
-                    else:
-                        u3 = data[0]['ratio']
-                        sss = chengshihuanshang(ip, data[0]['user_id'])
-                        fenyong[sss] = u3
+                    sss = chengshihuanshang(ip, data[i]['user_id'])
+                    fenyong[sss] = data[i]['ratio']
 
         if province_id == None:
             fenyong["省分佣比例"] = None
@@ -101,17 +93,11 @@ class Superior:
         if personal_id == None:
             fenyong["个人分佣比例"] = None
 
-        # print("最终",fenyong)
-
         return fenyong
 
 
 if __name__ == '__main__':
     from decimal import *
-    pass
-    # b=[{'type': 1, 'id': 13691}, {'type': 2, 'id': 13947}, {'type': 3, 'id': 14453}]
-    # a=Superior().superior("192.168.0.107",b,17777777786)
-    # print(a)
-    # c = [{'type': 1, 'id': 1000646}]
-    # d = Superior().superior("192.168.0.101", c, 17777777781)
-    # print(d)
+
+    a = Superior().fenyong('192.168.0.102', None, None, 1000445, 2000408)
+    print(a)

@@ -63,7 +63,7 @@ class Calculation:
                                                self.buyer_city_proportion, self.buyer_area_proportion,
                                                self.buyer_personal_proportion).recharge(recharge)  # 返回的是每次充值存入储备池的金额
                 reserve_fund = reserve_fund + reserve_fund_amount
-                my_logger.debug("储备池金额是：%.2f" % reserve_fund)
+                my_logger.info("储备池金额是：%.2f" % reserve_fund)
             else:
                 my_logger.debug("结束了！")
                 break
@@ -78,13 +78,13 @@ class Calculation:
         # 商品价格
         price = ((sql_data[0])[3]) * -1
 
-        my_logger.debug(f"选择的会员等级是：{member_level}")
-        my_logger.debug(f"选择的支付方式是：{payment_method}")
+        my_logger.info(f"选择的会员等级是：{member_level}")
+        my_logger.info(f"选择的支付方式是：{payment_method}")
 
         # 通过调用方法返回的需要支付的易贝/现金服务费
         service_fee_data = PaymentMethod().payment_method(ip, user_id, payment_method, price)
 
-        my_logger.debug("----------------计算支付服务费分佣----------------")
+        my_logger.info("----------------计算支付服务费分佣----------------")
 
         # pay_service_fee方法计算服务费分佣  支付方式 要分佣的服务费 服务费分佣比例
         if payment_method in ["易贝"]:
@@ -92,8 +92,7 @@ class Calculation:
             pay_commission = Dividend(self.buyer_identity, self.seller_identity, self.buyer_province_proportion,
                                       self.buyer_city_proportion, self.buyer_area_proportion,
                                       self.buyer_personal_proportion).pay_service_fee(payment_method,
-                                                                                      service_fee_data[1],
-                                                                                      cbp[member_level])
+                                                                                      service_fee_data[1])
         # 这些支付方式需要考虑 买家上级 和 企业/家人/卖家上级
         elif payment_method in ["抵工资", "家人购", "现金", "微信", "支付宝"]:
             pay_commission = Dividend(self.buyer_identity, self.seller_identity,
@@ -102,18 +101,18 @@ class Calculation:
                                           self.disanfang_province_proportion,
                                           self.disanfang_city_proportion, self.disanfang_area_proportion,
                                           self.disanfang_personal_proportion).pay_service_fee(payment_method,
-                                                                                              service_fee_data[1],
-                                                                                              cbp[member_level])
+                                                                                              service_fee_data[1])
 
         # 公海用户购买个人焕商商品 需要考虑储备池分佣
         if (self.buyer_identity == "公海用户" and self.seller_identity == "个人焕商") or (
                 self.buyer_identity == "公海用户" and self.seller_identity == "非焕商且已绑定个人焕商"):  # 公海用户需要考虑储备池分佣
-            my_logger.debug("----------------计算现金服务费（储备池）分佣----------------")
+            my_logger.info("----------------计算现金服务费（储备池）分佣----------------")
             cash_commission = Dividend(self.buyer_identity, self.seller_identity, self.buyer_province_proportion,
                                        self.buyer_city_proportion, self.buyer_area_proportion,
                                        self.buyer_personal_proportion).cash_service_fee(charge_amount, reserve_fund)
             # 公海用户购买个人焕商商品  易贝券不会有支付服务费分佣 其他的需要
             if payment_method != '易贝券':
+                #服务费 储备池分佣 服务费分佣
                 return service_fee_data, cash_commission, pay_commission
             else:
                 return service_fee_data, cash_commission

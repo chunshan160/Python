@@ -18,7 +18,6 @@ def xunzhao(data):
     -------
 
     '''
-
     if len(data) == 3:
         area_ratio = data[2]
         city_ratio = data[1]
@@ -53,8 +52,7 @@ def xunzhao(data):
                 return province_ratio
         else:
             return city_ratio
-    else:
-        if data != None:
+    elif len(data) == 1:
             ratio = data[0]
             if ratio['sales_ratio'] == Decimal('0.00') and ratio['tco_ratio'] == Decimal(
                     '0.00') and ratio[
@@ -62,12 +60,12 @@ def xunzhao(data):
                 return None
             else:
                 return data[0]
-        else:
-            return None
+    else:
+        return None
 
 
 if __name__ == '__main__':
-    data = [{'agent_id': 13691, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, {'agent_id': 13947, 'sales_ratio': Decimal('0.00'), 'tco_ratio': Decimal('0.00'), 'free_sales_ratio': Decimal('0.00')}]
+    data = [{'agent_id': 1000348, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}]
 
     a = xunzhao(data)
     print(a)

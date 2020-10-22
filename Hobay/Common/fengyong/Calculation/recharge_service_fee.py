@@ -63,7 +63,7 @@ class Dividend:
         return M
 
     # 支付时应出易贝/现金服务费的分佣计算
-    def pay_service_fee(self, payment_method, service_fee, service_fee_ratio):
+    def pay_service_fee(self, payment_method, service_fee):
         '''
 
         :param payment_method: 支付方式
@@ -80,7 +80,6 @@ class Dividend:
             self.buyer_area_proportion = self.disanfang_area_proportion  # 区代分佣比例
             self.buyer_personal_proportion = self.disanfang_personal_proportion  # 个人焕商分佣比例
 
-        my_logger.info("服务费比例是：{0}".format(service_fee_ratio))
         my_logger.info("买家是：{0}，卖家是：{1}".format(self.buyer_identity, self.seller_identity))
 
         if payment_method in ["现金", "微信", "支付宝"]:
@@ -236,7 +235,7 @@ class Dividend:
         '''
         :param recharge：充值金额
         :param reserve_pool: 储备池的金额
-        :return:个人所得分佣、省市区、平台所得分佣
+        :return:个人所得分佣、省市区、平台所得分佣开始计算储备池分佣
         '''
 
         global M1, M2, M3, M4, M5, cash_service_fee, a

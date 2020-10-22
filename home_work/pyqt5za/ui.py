@@ -87,11 +87,6 @@ class Ui_Form(object):
         self.gridLayout.addLayout(self.horizontalLayout, 3, 4, 1, 1)
 
 
-
-
-
-
-
         # 输出
         self.groupBox = QtWidgets.QGroupBox(Form)
         self.groupBox.setGeometry(QtCore.QRect(10, 110, 641, 360))

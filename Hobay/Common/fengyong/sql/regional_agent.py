@@ -23,7 +23,6 @@ def regional_agent(ip, phone):
         phone)
 
     data = SQL(ip).do_mysql_dict(select1)
-    # print(data)
     # 如果查询上级代理商，数据为空 则根据sql2查询上级城市焕商
     if data == ():
         data = SQL(ip).do_mysql_dict(select2)

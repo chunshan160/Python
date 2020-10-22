@@ -45,6 +45,8 @@ class TestCommission:
         data = eval(item['data'])
         buyer_phone = data['buyer_phone']
         seller_phone = data['seller_phone']
+        buyer_id = data["买家"]
+        seller_id=data["卖家"]
 
         with allure.step("获取绑定关系"):
             superior = SuperiorTemplate().superior_template_main(ip, item['payment_method'], item['data'], buyer_phone)
@@ -72,8 +74,7 @@ class TestCommission:
                 with allure.step("充值"):
                     recharge_behavior(surroundings, buyer_phone, payPassword)
                 with allure.step("写回储备池和充值金额"):
-                    user_id = data["买家"]
-                    reserve_fund_data = reserve_fund_sql(ip, user_id)
+                    reserve_fund_data = reserve_fund_sql(ip, buyer_id)
                     DoExcel.write_back_reserve_fund(test_data_path, item['sheet_name'], item['case_id'],
                                                     str(reserve_fund_data))
 
@@ -106,7 +107,7 @@ class TestCommission:
                                          payPassword)
 
         with allure.step("写回订单号"):
-            buyerid = data['买家']
+            # buyerid = data['买家']
             DoExcel.get_order(test_data_path, item['sheet_name'], item['case_id'], order)
 
         with allure.step("获取绑定关系，写回Excel"):
@@ -122,14 +123,14 @@ class TestCommission:
                 my_logger.info("----------开始解除绑定关系----------")
                 with allure.step("买家和卖家解绑"):
                     if seller_identity == "个人焕商":
-                        delete_partner(surroundings, seller_phone, buyerid)
+                        delete_partner(surroundings, seller_phone, buyer_id)
                     elif seller_identity == "非焕商且已绑定个人焕商":
                         bangding_phone = data['bangding_phone']
-                        delete_partner(surroundings, bangding_phone, buyerid)
+                        delete_partner(surroundings, bangding_phone, buyer_id)
 
         my_logger.info("----------前端操作执行完毕----------")
 
-        buyer_id = data['买家']
+        # buyer_id = data['买家']
 
         with allure.step("查询买家是否绑定销售/业务焕商/TCO"):
             with allure.step("获取买家绑定的销售/业务焕商/TCO"):
@@ -154,6 +155,7 @@ class TestCommission:
                                                str(bind_buyer_relationship_id))
 
         with allure.step("获取这笔订单应该【使用】的二级分佣比例"):
+
             transaction_second_payagent_ratio = TransactionSecondPayagentRatio().transaction_second_payagent_ratio(ip,
                                                                                                                    item[
                                                                                                                        'payment_method'],
@@ -181,9 +183,14 @@ class TestCommission:
                 charge_amount = None
                 reserve_fund = None
 
-            calculation_data = CalculationData().calculation_data(ip, item['payment_method'], item['member_level'],
+            if item['payment_method'] in ["易贝", "易贝券","抵工资", "家人购"]:
+                calculation_data = CalculationData().calculation_data(ip, item['payment_method'], item['member_level'],
                                                                   buyer_identity, seller_identity, proportion,
-                                                                  charge_amount, reserve_fund, order)
+                                                                  charge_amount, reserve_fund, order,buyer_id)
+            else:
+                calculation_data = CalculationData().calculation_data(ip, item['payment_method'], item['member_level'],
+                                                                      buyer_identity, seller_identity, proportion,
+                                                                      charge_amount, reserve_fund, order, seller_id)
 
             if item['payment_method'] in ["易贝", "易贝券"]:
                 bind_buyer_relationship_data = bind_buyer_relationship_data

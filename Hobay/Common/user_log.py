@@ -12,8 +12,11 @@ from Common.read_yaml import read_yaml
 
 config = read_yaml(yamlPath)
 surroundings = list(config.keys())[0]
+#收集
 logger_collect_level = config[surroundings]['logger_collect_level']
+#打印
 logger_print_level = config[surroundings]['logger_print_level']
+#输出
 logger_output_level = config[surroundings]['logger_output_level']
 
 
@@ -74,8 +77,14 @@ class UserLog:
     def info(self, msg):
         self.user_log(msg, 'INFO')
 
+    def warning(self, msg):
+        self.user_log(msg, 'WARNING')
+
     def error(self, msg):
         self.user_log(msg, 'ERROR')
+
+    def critical(self,msg):
+        self.user_log(msg,'CRITICAL')
 
 
 if __name__ == '__main__':

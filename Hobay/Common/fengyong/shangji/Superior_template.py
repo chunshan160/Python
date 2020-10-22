@@ -79,6 +79,7 @@ class SuperiorTemplate:
 
         elif payment_method in ["抵工资", "家人购", "现金"]:
             buyer_fenyong = Superior().fenyong(ip, province1_id, city1_id, area1_id, personal1_id)
+
             if buyer_fenyong == None:
                 buyer_fenyong = {'省分佣比例': None, '市分佣比例': None, '区分佣比例': None, '个人分佣比例': None}
 
@@ -139,7 +140,7 @@ class SuperiorTemplate:
 
 if __name__ == '__main__':
     data = '{"buyer_phone":17777777786,"seller_phone":17777777775,"disanfang_phone":13724765586,"bangding_phone":17777777778,"买家":1000173,"出钱方":1000114,"卖家":1000208,"平台":8}'
-    a = SuperiorTemplate().superior_template("192.168.0.107", "现金", data, 17777777786, 17777777775)
+    a = SuperiorTemplate().fenyong_template("192.168.0.102", "抵工资", 1000348,1000284 ,None ,1000505 ,None ,None ,1000445 ,2000408)
     print(a)
     # qqq={'储备池分佣': [{'个人焕商': None}, {'省代理商': 13691, '市代理商': 13947, '区代理商': 14453}], '支付服务费分佣': [{'个人焕商': None}, {'市代理商': 1000168, '省代理商': None, '区代理商': 1000169}]}
     # ww = SuperiorTemplate().fenyong_template("192.168.0.102", "现金", "焕商分佣_dev1", 5, 1000348, 1000284, 1000248, 1000504,None,

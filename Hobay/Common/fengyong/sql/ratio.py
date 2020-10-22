@@ -21,10 +21,14 @@ def ratio(ip, province_id, city_id, area_id, personal_id):
             user_id = user_id[0]
             select = "SELECT user_id,ratio,type FROM ecloud_orders.user_agent_ratio WHERE user_id = {0};".format(
                 user_id)
-        elif user_id != ():
+        else:
             select = "SELECT user_id,ratio,type FROM ecloud_orders.user_agent_ratio WHERE user_id in {0};".format(
                 user_id)
 
         data = SQL(ip).do_mysql_dict(select)
 
     return data
+
+if __name__ == '__main__':
+    a=ratio('192.168.0.102',None ,None ,1000445 ,2000408)
+    print(a)

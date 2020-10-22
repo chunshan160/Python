@@ -32,5 +32,12 @@ def second_payagent_ratio(ip, province_id, city_id, area_id):
 
     data = SQL(ip).do_mysql_dict(select)
     data = xunzhao(data)
-
     return data
+
+if __name__ == '__main__':
+    province_id = None
+    city_id = None
+    area_id = 1000445
+    ip="192.168.0.102"
+    a=second_payagent_ratio(ip, province_id, city_id, area_id)
+    print(a)

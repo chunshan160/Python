@@ -15,6 +15,7 @@ if __name__ == '__main__':
     from Common.project_path import yamlPath
 
     config = read_yaml(yamlPath)
+    print(config)
     surroundings = list(config.keys())[0]
     phone_model = config[surroundings]['phone_model']
     print(phone_model)

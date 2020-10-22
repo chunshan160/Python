@@ -32,15 +32,15 @@ def bind_user_relationship_id(ip, data):
             b["TCO"] = data[i]['business_user_id']
 
     
-    if "业务焕商" in b.keys():
+    if "业务焕商" in b:
         Q = bind_user_relationship2(ip,b["业务焕商"])
 
-    elif "销售" in b.keys():
+    elif "销售" in b:
         Q = bind_user_relationship2(ip,b["销售"])
+
     else:#买家不是由销售/业务焕商邀请进来的，所以不用去查上级的上级
         Q = None
 
-    
 
     if Q != None:
         b["买家上级的上级id"] = Q[0]['business_user_id']
@@ -61,8 +61,8 @@ def bind_user_relationship_id(ip, data):
 
 
 if __name__ == '__main__':
-    ip = '192.168.0.101'
-    data = [{'bind_type': 'TCO', 'business_user_id': 1000794}]
+    ip = '192.168.0.102'
+    data = [{'business_user_id': 1000519, 'bind_type': 'SALES'}, {'business_user_id': 1000520, 'bind_type': 'TCO'}]
     qqq = bind_user_relationship_id(ip, data)
     print(qqq)
 

@@ -5,6 +5,7 @@
 # @File :bind_user_relationship.py
 
 from Common.DoMySQL import SQL
+from Common.fengyong.sql.business_relationship import business_relationship
 
 
 def bind_user_relationship(ip, user_id):
@@ -18,7 +19,19 @@ def bind_user_relationship(ip, user_id):
         user_id)
     data = SQL(ip).do_mysql_dict(select)
 
-    if data == ():
-        data = None
+    if data != ():
+        for i in range(len(data)):
+            business_user_id = data[i]['business_user_id']
+            data2 = business_relationship('192.168.0.102', business_user_id)
+            if data2 == ():
+                data.pop(i)
+    else:
+        data=None
 
     return data
+
+if __name__ == '__main__':
+    ip = "192.168.0.102"
+    user_id = 1000419
+    a=bind_user_relationship(ip, user_id)
+    print(a)

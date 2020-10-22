@@ -30,7 +30,6 @@ def quchong(list, a):
 
 
 if __name__ == '__main__':
-    iii = [13691, 15239, None]
+    iii = [None, None, 111]
     b = quchong(iii, None)
     print(b)
-    print(tuple(b))

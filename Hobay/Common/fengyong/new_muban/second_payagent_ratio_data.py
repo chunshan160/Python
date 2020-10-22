@@ -36,12 +36,12 @@ def second_payagent_ratio_data(ip, province_id, city_id, area_id, platform_id):
 
 
 if __name__ == '__main__':
-    ip = '192.168.0.107'
+    ip = '192.168.0.102'
 
-    province_id = 13691
-    city_id = 13947
-    area_id = None
-    platform_id = 8
+    province_id = None
+    city_id = None
+    area_id = 1000445
+    platform_id = 10
 
     aaa = second_payagent_ratio_data(ip, province_id, city_id, area_id, platform_id)
     print(aaa)
