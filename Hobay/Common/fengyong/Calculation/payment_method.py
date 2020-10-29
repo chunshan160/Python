@@ -61,5 +61,5 @@ class PaymentMethod:
 
 
 if __name__ == '__main__':
-    a = PaymentMethod().payment_method("192.168.0.102", 1000504, "现金", 10)
+    a = PaymentMethod().payment_method("192.168.0.101", 100182, "现金", 100)
     print(a)
