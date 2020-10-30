@@ -1,51 +1,51 @@
 [ {
-  "uid" : "345810e8aaa09fdc",
-  "name" : "test_commission[item0]",
-  "time" : {
-    "start" : 1604040623354,
-    "stop" : 1604040632438,
-    "duration" : 9084
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c4837bf51b88922f",
-  "name" : "test_commission[item3]",
-  "time" : {
-    "start" : 1604040650895,
-    "stop" : 1604040660400,
-    "duration" : 9505
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5120fd273df9edb6",
+  "uid" : "a01edded14c9d9b5",
   "name" : "test_commission[item2]",
   "time" : {
-    "start" : 1604040641367,
-    "stop" : 1604040650888,
-    "duration" : 9521
+    "start" : 1604049655935,
+    "stop" : 1604049665991,
+    "duration" : 10056
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "353943878bc68106",
-  "name" : "test_commission[item4]",
-  "time" : {
-    "start" : 1604040660430,
-    "stop" : 1604040670138,
-    "duration" : 9708
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "4cd228443f284b43",
+  "uid" : "39b1b7b881c6a06c",
   "name" : "test_commission[item1]",
   "time" : {
-    "start" : 1604040632448,
-    "stop" : 1604040641340,
-    "duration" : 8892
+    "start" : 1604049647085,
+    "stop" : 1604049655926,
+    "duration" : 8841
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6396e1f67c592d7",
+  "name" : "test_commission[item0]",
+  "time" : {
+    "start" : 1604049636338,
+    "stop" : 1604049647078,
+    "duration" : 10740
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d51dcc73a44e3716",
+  "name" : "test_commission[item3]",
+  "time" : {
+    "start" : 1604049665998,
+    "stop" : 1604049675869,
+    "duration" : 9871
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "105c3990ec255f7a",
+  "name" : "test_commission[item4]",
+  "time" : {
+    "start" : 1604049675877,
+    "stop" : 1604049685879,
+    "duration" : 10002
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]

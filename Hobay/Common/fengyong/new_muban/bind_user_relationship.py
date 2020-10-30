@@ -62,7 +62,7 @@ def bind_user_relationship_id(ip, data):
 
 if __name__ == '__main__':
     ip = '192.168.0.102'
-    data = [{'business_user_id': 1000519, 'bind_type': 'SALES'}, {'business_user_id': 1000520, 'bind_type': 'TCO'}]
+    data = {"buyer_phone":18888888888,"seller_phone":17777777774,"买家":1000419,"卖家":1000504,"平台":10}
     qqq = bind_user_relationship_id(ip, data)
     print(qqq)
 

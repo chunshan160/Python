@@ -181,10 +181,17 @@ class TestCommission:
                 charge_amount = None
                 reserve_fund = None
 
-            if item['payment_method'] in ["易贝", "易贝券","抵工资", "家人购"]:
+            if item['payment_method'] in ["易贝", "易贝券"]:
                 calculation_data = CalculationData().calculation_data(ip, item['payment_method'], item['member_level'],
                                                                   buyer_identity, seller_identity, proportion,
                                                                   charge_amount, reserve_fund, order,buyer_id)
+
+            elif item['payment_method'] in ["抵工资", "家人购"]:
+                buyer_id=data["出钱方"]
+                calculation_data = CalculationData().calculation_data(ip, item['payment_method'], item['member_level'],
+                                                                  buyer_identity, seller_identity, proportion,
+                                                                  charge_amount, reserve_fund, order,buyer_id)
+
             else:
                 calculation_data = CalculationData().calculation_data(ip, item['payment_method'], item['member_level'],
                                                                       buyer_identity, seller_identity, proportion,

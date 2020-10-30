@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: assert (10, 2, 3, De...364.88'), ...) == (10, 2, 3, Dec...364.88'), ...)\n  At index 3 diff: Decimal('93.00') != Decimal('96.00')\n  Full diff:\n  (10,\n  2,\n  3,\n  -  Decimal('93.00'),\n  ?            ^...\n  \n  ...Full output truncated (10 lines hidden), use '-vv' to show",
+      "name" : "AssertionError: assert (10, 2, 3, De...978.68'), ...) == (10, 2, 3, Dec...978.68'), ...)\n  At index 3 diff: Decimal('93.00') != Decimal('96.00')\n  Full diff:\n  (10,\n  2,\n  3,\n  -  Decimal('93.00'),\n  ?            ^...\n  \n  ...Full output truncated (10 lines hidden), use '-vv' to show",
       "children" : [ {
         "name" : "test_commission[item4]",
-        "uid" : "353943878bc68106",
-        "parentUid" : "15ae227be61b66209e4e30760af1a12a",
+        "uid" : "105c3990ec255f7a",
+        "parentUid" : "1d40ceba02fa915576005516f7239b60",
         "status" : "failed",
         "time" : {
-          "start" : 1604040660430,
-          "stop" : 1604040670138,
-          "duration" : 9708
+          "start" : 1604049675877,
+          "stop" : 1604049685879,
+          "duration" : 10002
         },
         "flaky" : false,
-        "parameters" : [ "{'case_id': 5, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（现金账户）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '现金', 'goodsname': '普通焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': None, 'superior': None, 'order': None, 'reserve_fund': None, 'bind_relationship_data': None, 'second_payagent_ratio': None, 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+        "parameters" : [ "{'case_id': 5, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n\\n使用（现金账户）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '现金', 'goodsname': '普通焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'储备池分佣': {'省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}, '支付服务费分佣': {'市代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '区代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}, '省代理商': {'销售':0.3,'业务焕商':0,'TCO':0.3}}}\", 'proportion': \"{'储备池分佣': {'市分佣比例': Decimal('0.70'), '区分佣比例': Decimal('0.60'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15')}, '支付服务费分佣': {'市分佣比例': Decimal('0.70'), '区分佣比例': Decimal('0.60'), '个人分佣比例': Decimal('0.15'), '省分佣比例': Decimal('0.80')}}\", 'superior': \"{'储备池分佣': [{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}], '支付服务费分佣': [{'个人焕商': 1001259}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]}\", 'order': 'EC-2020103014510300000526', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'储备金二级分佣对象': {'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}, '支付服务费二级分佣对象': {'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000648, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
       } ],
-      "uid" : "15ae227be61b66209e4e30760af1a12a"
+      "uid" : "1d40ceba02fa915576005516f7239b60"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

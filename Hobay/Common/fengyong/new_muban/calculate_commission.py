@@ -25,7 +25,7 @@ def calculate_commission(second_payagent_ratio, bind_relationship_data, first_re
 
     if second_payagent_ratio != None:
 
-        if ("业务焕商" or "销售") in bind_relationship_data:
+        if "业务焕商" in bind_relationship_data or "销售" in bind_relationship_data:
 
             if "业务焕商" in bind_relationship_data:
                 bing_sales_id = bind_relationship_data["业务焕商"]

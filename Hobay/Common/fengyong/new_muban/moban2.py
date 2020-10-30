@@ -375,7 +375,7 @@ class MoBan:
             if bind_buyer_relationship_data != None and reserve_fund_second_payagent_ratio != None:
 
                 # 买家绑定上级的身份 可能是销售，也可能是业务焕商
-                if ("业务焕商" or "销售") in bind_buyer_relationship_data:
+                if "业务焕商" in bind_buyer_relationship_data or "销售" in bind_buyer_relationship_data:
 
                     if "业务焕商" in bind_buyer_relationship_data:
                         reserve_fund_bing_sales = "业务焕商"
@@ -400,7 +400,7 @@ class MoBan:
                     reserve_fund_bing_sales = None
                     my_logger.info(f"买家不是由销售/业务焕商邀请进来的")
 
-                # if ("业务焕商" or "销售") or "TCO" in bind_buyer_relationship_data:
+
                 if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data:
                     my_logger.info(f"{Identity}是由{reserve_fund_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易储备金需要走二级分佣")
                 else:
@@ -598,7 +598,7 @@ class MoBan:
             # 2、买家注册地有区域焕商，但是区域焕商都没有设置二级分佣比例
             if bind_relationship_data != None and service_fee_second_payagent_ratio != None:
 
-                if ("业务焕商" or "销售") in bind_buyer_relationship_data:
+                if "业务焕商" in bind_buyer_relationship_data or "销售" in bind_buyer_relationship_data:
 
                     if "业务焕商" in bind_buyer_relationship_data:
                         service_fee_bing_sales = "业务焕商"
@@ -623,11 +623,11 @@ class MoBan:
                     service_fee_bing_sales = None
                     my_logger.info(f"买家不是由销售/业务焕商邀请进来的")
 
-                # if ("业务焕商" or "销售") or "TCO" in bind_buyer_relationship_data:
+
                 if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data:
                     my_logger.info(f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易服务费需要走二级分佣")
                 else:
-                    if ("业务焕商" or "销售") in bind_buyer_relationship_data:
+                    if "业务焕商" in bind_buyer_relationship_data or "销售" in bind_buyer_relationship_data:
                         my_logger.info(
                             f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且设置了二级分佣比例，所以交易服务费需要走二级分佣")
                     else:

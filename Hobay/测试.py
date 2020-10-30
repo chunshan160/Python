@@ -5,6 +5,6 @@
 # @File :测试.py
 
 
-bind_buyer_relationship_data={'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}
-if ("业务焕商" or "销售") in bind_buyer_relationship_data:
+bind_buyer_relationship_data={'业务焕商': 1000519, 'TCO': 1000520, '买家上级的上级id': None, '买家上级的上级身份': None}
+if "业务焕商"in bind_buyer_relationship_data or "销售"in bind_buyer_relationship_data:
     print("lla")
