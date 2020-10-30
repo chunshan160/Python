@@ -14,13 +14,12 @@ def wallet_detail(ip, order):
     :return: 流水详情
     '''
     # SQL语句
-    select = 'SELECT b.user_id,b.type,b.biz_type,b.changes,b.result,b.current,b.note,b.category from `ecloud_orders`.`orders` a, `ecloud_orders`.`wallet_detail` b where a.order_num="%s" and a.id=b.source_id;' % (
-        order)
+    select = f'SELECT b.user_id,b.type,b.biz_type,b.changes,b.result,b.current,b.note,b.category from `ecloud_orders`.`orders` a, `ecloud_orders`.`wallet_detail` b where a.order_num="{order}" and a.id=b.source_id;'
     # 使用fetchall()方法获取查询结果 (接收全部的返回结果)
     data = SQL(ip).do_mysql_tuple(select)
     return data
 
 
 if __name__ == '__main__':
-    a=wallet_detail("192.168.0.101","EC-2020090913114500003003")
+    a=wallet_detail("192.168.0.101","EC-2020103010170000000456")
     print(a)

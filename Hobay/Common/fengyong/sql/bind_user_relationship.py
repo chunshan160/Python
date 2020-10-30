@@ -22,7 +22,7 @@ def bind_user_relationship(ip, user_id):
     if data != ():
         for i in range(len(data)):
             business_user_id = data[i]['business_user_id']
-            data2 = business_relationship('192.168.0.102', business_user_id)
+            data2 = business_relationship(ip, business_user_id)
             if data2 == ():
                 data.pop(i)
     else:
@@ -31,7 +31,7 @@ def bind_user_relationship(ip, user_id):
     return data
 
 if __name__ == '__main__':
-    ip = "192.168.0.102"
-    user_id = 1000419
+    ip = "192.168.0.101"
+    user_id = 1000656
     a=bind_user_relationship(ip, user_id)
     print(a)

@@ -16,7 +16,7 @@ class BingRelationshipData:
         if payment_method in ["易贝", "易贝券"]:
             # 获取买家绑定的销售/业务焕商/TCO dict
             bind_buyer_relationship = bind_user_relationship(ip, buyer_id)
-
+            print(bind_buyer_relationship)
             if bind_buyer_relationship != None:
                 bind_buyer_relationship_data = bind_user_relationship_id(ip, bind_buyer_relationship)
                 return bind_buyer_relationship_data
@@ -43,10 +43,11 @@ class BingRelationshipData:
 
             return bind_buyer_relationship_data, bind_payer_relationship_data
 
+
 if __name__ == '__main__':
-    ip="192.168.0.102"
-    payment_method= "易贝券"
-    data={"buyer_phone":18888888888,"seller_phone":17777777774,"买家":1000419,"卖家":1000504,"平台":10}
-    buyer_id=1000419
-    a=BingRelationshipData().bing_relationship_data( ip, payment_method, data, buyer_id)
+    ip = "192.168.0.101"
+    payment_method = "易贝"
+    data = {"buyer_phone": 17777777781, "seller_phone": 17777777776, "买家": 1000656, "卖家": 1000650, "平台": 10}
+    buyer_id = 1000656
+    a = BingRelationshipData().bing_relationship_data(ip, payment_method, data, buyer_id)
     print(a)

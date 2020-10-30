@@ -375,7 +375,7 @@ class MoBan:
             if bind_buyer_relationship_data != None and reserve_fund_second_payagent_ratio != None:
 
                 # 买家绑定上级的身份 可能是销售，也可能是业务焕商
-                if "业务焕商" or "销售" in bind_buyer_relationship_data:
+                if ("业务焕商" or "销售") in bind_buyer_relationship_data:
 
                     if "业务焕商" in bind_buyer_relationship_data:
                         reserve_fund_bing_sales = "业务焕商"
@@ -598,12 +598,13 @@ class MoBan:
             # 2、买家注册地有区域焕商，但是区域焕商都没有设置二级分佣比例
             if bind_relationship_data != None and service_fee_second_payagent_ratio != None:
 
-                if "业务焕商" or "销售" in bind_buyer_relationship_data:
+                if ("业务焕商" or "销售") in bind_buyer_relationship_data:
 
                     if "业务焕商" in bind_buyer_relationship_data:
                         service_fee_bing_sales = "业务焕商"
                     elif "销售" in bind_buyer_relationship_data:
                         service_fee_bing_sales = "销售"
+
                     my_logger.info(f"买家由{service_fee_bing_sales}邀请进来,"
                                    f"该{service_fee_bing_sales}的id是：{bind_buyer_relationship_data[service_fee_bing_sales]}")
 
@@ -626,7 +627,7 @@ class MoBan:
                 if "TCO" and ("业务焕商" or "销售") in bind_buyer_relationship_data:
                     my_logger.info(f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且有TCO管理,设置了二级分佣比例，所以交易服务费需要走二级分佣")
                 else:
-                    if "业务焕商" or "销售" in bind_buyer_relationship_data:
+                    if ("业务焕商" or "销售") in bind_buyer_relationship_data:
                         my_logger.info(
                             f"{Identity}是由{service_fee_bing_sales}邀请进来的，并且设置了二级分佣比例，所以交易服务费需要走二级分佣")
                     else:

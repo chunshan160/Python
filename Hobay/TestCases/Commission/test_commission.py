@@ -130,8 +130,6 @@ class TestCommission:
 
         my_logger.info("----------前端操作执行完毕----------")
 
-        # buyer_id = data['买家']
-
         with allure.step("查询买家是否绑定销售/业务焕商/TCO"):
             with allure.step("获取买家绑定的销售/业务焕商/TCO"):
                 if item['payment_method'] in ["易贝", "易贝券"]:

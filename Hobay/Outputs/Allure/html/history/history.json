@@ -1,0 +1,98 @@
+{
+  "73bc33099bae158fd9a79c6b43eb6b2d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5120fd273df9edb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1604040641367,
+        "stop" : 1604040650888,
+        "duration" : 9521
+      }
+    } ]
+  },
+  "3e7d2bab70e61b9d138d7e20f305c5bf" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "353943878bc68106",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (10, 2, 3, De...364.88'), ...) == (10, 2, 3, Dec...364.88'), ...)\n  At index 3 diff: Decimal('93.00') != Decimal('96.00')\n  Full diff:\n  (10,\n  2,\n  3,\n  -  Decimal('93.00'),\n  ?            ^...\n  \n  ...Full output truncated (10 lines hidden), use '-vv' to show",
+      "time" : {
+        "start" : 1604040660430,
+        "stop" : 1604040670138,
+        "duration" : 9708
+      }
+    } ]
+  },
+  "4d2b3a0b4097a4f2aa54ead6459bf131" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4837bf51b88922f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1604040650895,
+        "stop" : 1604040660400,
+        "duration" : 9505
+      }
+    } ]
+  },
+  "7ad04c826286bb32f161fbf96d25139c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4cd228443f284b43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1604040632448,
+        "stop" : 1604040641340,
+        "duration" : 8892
+      }
+    } ]
+  },
+  "314d570a619341cf295f8861f9e12f9d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "345810e8aaa09fdc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1604040623354,
+        "stop" : 1604040632438,
+        "duration" : 9084
+      }
+    } ]
+  }
+}
