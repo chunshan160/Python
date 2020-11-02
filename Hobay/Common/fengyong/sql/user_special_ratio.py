@@ -3,13 +3,16 @@
 # @Time :2020/9/15 14:20
 # @Author :春衫
 # @File :user_special_ratio.py
-
+import time
 from Common.DoMySQL import SQL
 
 def user_special_ratio(ip,user_id):
+
+    now_time=int(round(time.time()*1000))
+
     #查询用户的临时采购费率+临时销售费率
-    select1 = f"SELECT cbp_ratio,commission_ratio FROM `ecloud_user`.`user_special_ratio` WHERE `user_id` = '{user_id}' AND `deleted` = '-1';"
-    select2=f"SELECT * FROM `ecloud_user`.`user_sale_special_ratio` WHERE `user_id` = '{user_id}' AND `deleted` = '-1';"
+    select1 = f"SELECT cbp_ratio,commission_ratio FROM `ecloud_user`.`user_special_ratio` WHERE `user_id` = '{user_id}' AND `deleted` = '-1' AND `end_time` >= {now_time};"
+    select2=f"SELECT * FROM `ecloud_user`.`user_sale_special_ratio` WHERE `user_id` = '{user_id}' AND `deleted` = '-1' AND `end_time` >= {now_time};"
     data1 = SQL(ip).do_mysql_dict(select1)
     data2 = SQL(ip).do_mysql_dict(select2)
 
