@@ -16,9 +16,7 @@ def platform_promotion_ratio(ip):
         buy_cbp_ratio = data[0]['cbp_ratio']
         buy_cash_ratio = data[0]['commission_ratio']
         sale_cash_ratio=data[0]['sale_commission_ratio']
-        buy_ratio_close=data[0]['buy_ratio_close']
-        sale_ratio_close=data[0]['sale_ratio_close']
-        return buy_cbp_ratio, buy_cash_ratio,sale_cash_ratio,buy_ratio_close,sale_ratio_close
+        return buy_cbp_ratio, buy_cash_ratio,sale_cash_ratio
 
 if __name__ == '__main__':
     a=platform_promotion_ratio("192.168.0.101")
