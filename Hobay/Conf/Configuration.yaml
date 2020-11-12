@@ -7,7 +7,7 @@ test:
   browser : "Chrome"
   phone_model : ["MI 8"]
   sheet_name: "焕商分佣_test"
-  TestCase: [5]
+  TestCase: [1,2,3,4,5]
   payPassword: "123456"
 
 #dev1:

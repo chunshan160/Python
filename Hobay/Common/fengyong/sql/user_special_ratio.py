@@ -27,7 +27,12 @@ def user_special_ratio(ip,user_id):
     if data2 !=():
         sale_cash_ratio=data2[0]['commission_ratio']
 
-    return buy_cbp_ratio,buy_cash_ratio,sale_cash_ratio
+    if buy_cbp_ratio==None and buy_cash_ratio==None and sale_cash_ratio==None:
+        data3=None
+    else:
+        data3 = (buy_cbp_ratio,buy_cash_ratio,sale_cash_ratio)
+
+    return data3
 
 if __name__ == '__main__':
     a=user_special_ratio("192.168.0.101",1000656)
