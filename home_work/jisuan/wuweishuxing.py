@@ -4,12 +4,22 @@
 # @Author :春衫
 # @File :wuweishuxing.py
 
+#敏
+def Sensitive(value):
+    #initial_general_attack_coefficient 初始普攻系数
+    igac=0.55
+    #initial_general_attack_speed 初始攻击速度
+    igas=2.5
+    #general_attack_hurt
+    gah=value*igac*igas*1.3
+    print(gah)
+Sensitive(713)
 
-# minjie=713
-# chushipugongxishu=0.55
-# chushipugongcd=2.1
-# a=713*0.55*2.1*1.3
-# print(a)
+
+b=0.0275*713
+print(b)
+
+
 
 # import random
 #
