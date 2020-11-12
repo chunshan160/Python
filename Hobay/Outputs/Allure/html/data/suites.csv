@@ -1,6 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"passed","Commission.test_commission.TestCommission#test_commission[item2]","10056",""
-"passed","Commission.test_commission.TestCommission#test_commission[item1]","8841",""
-"passed","Commission.test_commission.TestCommission#test_commission[item0]","10740",""
-"passed","Commission.test_commission.TestCommission#test_commission[item3]","9871",""
-"failed","Commission.test_commission.TestCommission#test_commission[item4]","10002",""
