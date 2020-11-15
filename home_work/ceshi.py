@@ -4,9 +4,35 @@
 # @Author :春衫
 # @File :ceshi.py
 
-import requests
+def input_number():
+    number = input("请输入四位数字：")
+    if str.isdigit(number):
+        print("输入成功！")
+        return number
+    else:
+        print("请重新输入四位数字！")
 
-url="http://env.hobay.com.cn/zentao/www/index.php?m=bug&f=browse&productID=47&branch=0&browseType=unclosed&param=0&orderBy=&recTotal=90&recPerPage=20&pageID=1&productid=47"
 
-res=requests.get(url)
-print(res.json())
+# input_number=input_number()
+
+def max_number(number):
+    list_number = []
+    for k in range(len(number)):
+        a = number[k]
+        list_number.append(int(a))
+    print(list_number)
+
+    n = len(list_number)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if list_number[j] > list_number[j + 1]:
+                list_number[j], list_number[j + 1] = list_number[j + 1], list_number[j]
+
+    print(list_number)
+    max_number=""
+    for l in range(n):
+        max_number=max_number+str(list_number[l])
+    print(max_number[::-1])
+max_number("1564")
+
+
