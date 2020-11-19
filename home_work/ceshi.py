@@ -4,35 +4,27 @@
 # @Author :春衫
 # @File :ceshi.py
 
-def input_number():
-    number = input("请输入四位数字：")
-    if str.isdigit(number):
-        print("输入成功！")
-        return number
-    else:
-        print("请重新输入四位数字！")
+import grequests
+import requests
 
 
-# input_number=input_number()
+# s=requests.Session()
 
-def max_number(number):
-    list_number = []
-    for k in range(len(number)):
-        a = number[k]
-        list_number.append(int(a))
-    print(list_number)
+login_url = 'http://m.mtest.hobay.com.cn/api/app/user/login'  # 登录
+login_data = {"loginValidateType": "CODE", "phone": 17777777776, "validateValue": "666666"}
+login_res = requests.post(login_url, json=login_data)
+print("登录结果是：", login_res.json())
 
-    n = len(list_number)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if list_number[j] > list_number[j + 1]:
-                list_number[j], list_number[j + 1] = list_number[j + 1], list_number[j]
 
-    print(list_number)
-    max_number=""
-    for l in range(n):
-        max_number=max_number+str(list_number[l])
-    print(max_number[::-1])
-max_number("1564")
+product_data={"ids":[173187],"storageId":"2393"}
+url="http://m.mtest.hobay.com.cn/ribbon-api/product/submitToStorage"
+# res = requests.post(url, json=product_data,headers={"login":""},cookies=login_res.cookies)
+# print("上传已有商品的结果是：", res.json())
+
+
+
+req_list = [grequests.post(url, json=product_data,headers={"login":""},cookies=login_res.cookies) for i in range(100)]
+res_list = grequests.map(req_list)
+print(res_list[0].text)
 
 
