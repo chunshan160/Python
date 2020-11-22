@@ -4,35 +4,31 @@
 # @Author :春衫
 # @File :ceshi.py
 
-def input_number():
-    number = input("请输入四位数字：")
-    if str.isdigit(number):
-        print("输入成功！")
-        return number
-    else:
-        print("请重新输入四位数字！")
+def different(str1, str2):
+    str11 = str1.split(' ')
+    str22 = str2.split(' ')
+    list1 = []
+    list2 = []
+    dic1 = {"周杰伦": "周董", "王力宏": "力宏", "李荣浩": "李荣浩", "李健": "李健", "蔡依林": "蔡妍",
+            "房东的猫": "猫", "薛之谦": "谦谦",
+            "孙燕姿": "孙燕姿", "韩红": "韩红", "郁可唯": "郁可唯"}
+    for i in str11:
+        if i not in str22:
+            if dic1[i] not in str22:
+                list1.append(i)
+            else:
+                list2.append(i)
+
+    print('str1 中所有 str2 中不存在的人名:{}'.format(list1))
+    print('str1 中所有 str2 中存在的人名:{}'.format(list2))#这个是1有2也有的数据
+    print('-------------------------------------------------------------')
+    for j in list2:
+        #只要我把1有2也有的数据从2里面删除，剩下来的就是2有1没有的
+        if dic1[j] in str22:
+            str22.remove(dic1[j])
+    print('str2 中所有 str1 中不存在的人名:{}'.format(str22))
 
 
-# input_number=input_number()
-
-def max_number(number):
-    list_number = []
-    for k in range(len(number)):
-        a = number[k]
-        list_number.append(int(a))
-    print(list_number)
-
-    n = len(list_number)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if list_number[j] > list_number[j + 1]:
-                list_number[j], list_number[j + 1] = list_number[j + 1], list_number[j]
-
-    print(list_number)
-    max_number=""
-    for l in range(n):
-        max_number=max_number+str(list_number[l])
-    print(max_number[::-1])
-max_number("1564")
-
-
+str1 = '周杰伦 王力宏 李荣浩 李健 蔡依林 房东的猫 薛之谦 孙燕姿 韩红 郁可唯'
+str2 = '李荣浩 谦谦 韩红 蔡妍 猫 力宏 周董 张惠妹 苏打绿 黄龄'
+different(str1, str2)
