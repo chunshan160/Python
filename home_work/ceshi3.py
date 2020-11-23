@@ -4,42 +4,16 @@
 # @Author :春衫
 # @File :ceshi3.py
 
-
-import requests
-
-login_url = f'http://boss.test.hobay.com.cn/bosszuul/boss/user/login'  # 登录
-login_data = {"phone": 17777777781, "password": "qaz123"}
-login_res = requests.post(login_url, data=login_data)
-# print(f"BOSS登录结果是：{login_res.json()}")
-
-# url="http://boss.test.hobay.com.cn/bosszuul/activiti/productStorageAudit/queryProductStorage"
-# data={"page":1,"pageSize":100,"isRestrictions":"ALL"}
-# res=requests.post(url,json=data,cookies=login_res.cookies,headers={"login":""})
-# # print(f"商品{res.json()}")
-#
-# product=res.json()['result']
-#
-# for i in range(len(product)):
-#     product_id=product[i]['taskId']
-#     print(product_id)
-#     print("===========")
-#     url2="http://boss.test.hobay.com.cn/bosszuul/activiti/productStorageAudit/fail"
-#     data2={"taskId":product_id}
-#     res2=requests.post(url2,json=data2,cookies=login_res.cookies)
-#     print(res2.status_code)
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 
 
-url3="http://boss.test.hobay.com.cn/bosszuul/product/operateProduct/queryPageProductsByType"
-data3={"currentPage":1,"pageSize":100,"type":1,"sort":"","categoryId":"","createTimeBegin":"","createTimeEnd":"","firstCategoryId":"","name":"实物推荐0库存","parentCategoryId":"","productType":"","qtyNuMEnd":"","qtyNumBegin":"","status":""}
-res3=requests.post(url3,json=data3,cookies=login_res.cookies,headers={"login":""})
-# print(f"商品{res3.json()}")
+fig,ax  = plt.subplots(1,1)
+plt.xticks(rotation=120)   # 设置横坐标显示的角度，角度是逆时针，自己看
+tick_spacing = 3    # 设置密度，比如横坐标9个，设置这个为3,到时候横坐标上就显示 9/3=3个横坐标，
 
-product=res3.json()['result']
-
-for i in range(len(product)):
-    product_id=product[i]['id']
-    print(product_id)
-    print("===========")
-    url4=f"http://boss.test.hobay.com.cn/bosszuul/product/operateProduct/cancelCheckProudct?productId={product_id}"
-    res4=requests.get(url4,cookies=login_res.cookies)
-    print(res4.status_code)
+x_list = [1,2,3,4,5,6,7,8,9]
+y_list = '1 1 1 2 2 2 3 3 3'.split()
+ax.plot(x_list,y_list)
+ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_spacing))
+plt.show()
