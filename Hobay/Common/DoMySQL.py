@@ -52,7 +52,7 @@ class SQL:
 
 if __name__ == '__main__':
     pass
-    a = SQL('192.168.0.101').do_mysql_dict("SELECT phone FROM `ecloud_user`.`user` WHERE  `id` = 1000656;")
+    a = SQL('192.168.0.101').do_mysql_dict("SELECT phone FROM `ecloud_user`.`user` WHERE  `id` = 100000000656;")
     print(a)
 
     # b = SQL('192.168.0.101').bind_user_relationship2(1000745)

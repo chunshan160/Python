@@ -10,6 +10,7 @@
 #         print("*",end='')#end=''  不换行输出
 #     print("")
 
+
 # # #等腰三角形
 # for i in range(1,6):
 #     for j in range(1,6-i):
