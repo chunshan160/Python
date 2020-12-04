@@ -5,12 +5,8 @@
 # @File :runceshi.py
 
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
-import numpy as np
 from pyqt5za.ui import Ui_Form
 
 import matplotlib
@@ -18,8 +14,8 @@ matplotlib.use("Qt5Agg")  # 声明使用QT5
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
-from read import get_data
-import matplotlib.ticker as ticker
+from za.read import get_data
+
 
 #创建一个matplotlib图形绘制类
 class MyFigure(FigureCanvas):
@@ -32,7 +28,7 @@ class MyFigure(FigureCanvas):
         self.axes = self.fig.add_subplot(111)
 
     def test(self):
-        data = get_data("D:\Pycharm_workspace\home_work\data.xlsx", "ceshi", None, "修复中")
+        data = get_data("/za/data.xlsx", "ceshi", None, "修复中")
         x = data[0]
         y = data[1]
         plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签

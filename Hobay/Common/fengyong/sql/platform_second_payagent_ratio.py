@@ -22,3 +22,7 @@ def platform_second_payagent_ratio(ip, platform_id):
     data = xunzhao(data)
 
     return data
+
+if __name__ == '__main__':
+    a=platform_second_payagent_ratio("192.168.0.101", 10)
+    print(a)

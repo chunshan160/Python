@@ -23,7 +23,7 @@
 
 # 满足三个闭包条件:
 # 条件一:函数中嵌套函数
-# 条件二:外层函数返回内存嵌套函数名
+# 条件二:外层函数返回内层嵌套函数名
 # 条件三:内层嵌套函数有引用外层的一个非全局变量
 
 # 作用：实现数据的锁定 提高稳定性
@@ -115,20 +115,20 @@
 # 装饰器装饰类
 # 使用类装饰器的时候，记得要返回被装饰的类调用的结果
 
-def add(func):
-    def fun(*args, **kwargs):
-        print('装饰器的功能代码:登录')
-        return func(*args, **kwargs)  # 装饰类必须要加return 装饰函数就不用
-
-    return fun
-
-
-@add  # MyClass= add(MyClass)
-class MyClass:
-    def __init__(self, name, age):
-        print(name)
-        print(age)
-
-
-m = MyClass("ceshi", "18")
-print('m的值', m)
+# def add(func):
+#     def fun(*args, **kwargs):
+#         print('装饰器的功能代码:登录')
+#         return func(*args, **kwargs)  # 装饰类必须要加return 装饰函数就不用
+#
+#     return fun
+#
+#
+# @add  # MyClass= add(MyClass)
+# class MyClass:
+#     def __init__(self, name, age):
+#         print(name)
+#         print(age)
+#
+#
+# m = MyClass("ceshi", "18")
+# print('m的值', m)

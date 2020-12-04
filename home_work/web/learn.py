@@ -70,166 +70,166 @@ import time
 # ps:这个类多有很判断方法。具体自行了解。
 
 
-driver = webdriver.Chrome()
-# 切换一 iframe
-# 切换iframe =进入了另外一个html
-# 等待iframe存在，可见
-driver.switch_to.frame("login_frame_qq")
-driver.switch_to.frame(driver.find_element_by_xpath('//iframe [@name="login_frame_qq"]'))
-time.sleep(0.5)
-driver.find_element_by_id("switcher_plogin")
-
-# 方式二: iframe切换
-WebDriverWait(driver, 10).until(EC.frame_to_be_available_and_switch_to_it("login_frame_qq"))
-
-# 从iframe当中回到默认的页面当中。
-driver.switch_to.default_content()
-
-# 回到父级页面
-driver.switch_to.parent_frame()
-
-# 切换二 窗口切换
-# step1:获取窗口的总数以及句柄 新打开的窗口，位于最后一个。
-handles = driver.window_handles  # 窗口数=2
-print(handles)
-# 当前窗口的句柄
-print(driver.current_window_handle)
-
-# 打开新窗口
-
-# 等待新的窗口出现
-# new_window_is_opened 会自动获取最新的窗口数 和旧的进行对比
-WebDriverWait(driver, 10).until(EC.new_window_is_opened(handles))
-
-# 重新获取一次窗口
-handles = driver.window_handles  # 窗口数=3
-# 切换最新打开的窗口
-# step2:切换
-driver.switch_to.window(handles[-1])
-
-# 弹出框处理
-# 弹出框有两种:
-# 1、页面弹出框
-# 2、windows弹出框
-# 页面弹出框:
-
-# 原理:
-# 等待弹出框出现之后，再定位弹出框，再去操作弹出框里的元素。
-# 例:百度登陆的弹出框
-
-# Alert弹出框:
-# 1、使用switch_to方法先切换到windows弹出框。
-# driver.switch_to.alert
-
-# 2、Alert类提供了一系列的操作方法。
-# dismiss():否。
-# accept():是。
-# text():获取弹出框里的内容。
-
-# 弹出框可见
-WebDriverWait(driver, 10).until(EC.alert_is_present())
-# alert切换  不是html页面元素
-alert = driver.switch_to.alert
-# 打印弹出框内容
-print(alert.text)
-# 关闭弹出框
-alert.accept()
-
-# 鼠标操作
-# 由selenium的ActionChains类来完成模拟鼠标操作。
-
-# 主要操作流程:
-# 1、存储鼠标操作。
-# 2、perform()来执行鼠标操作。
-
-# 支持的操作如下:
-# double_click 双击操作
-# context_click 右键操作
-# drag_and_drop 拖拽操作。左键按住拖动某一个元素到另外一个区域，然后释放按键
-# move_to_element() 鼠标悬停。
-# perform()
-
-# 引入ActionChains类:
-from selenium.webdriver.common.action_chains import ActionChains
-
-# AC.方法名1().context_click().perform()
-
-
-# 1、先找到鼠标要操作的元素
-ele = driver.find_element_by_id("switcher_plogin")
-# 2、实例化
-ac = ActionChains(driver)
-# 3、将鼠标操作添加到ActionChains列表中 悬停
-ac.move_to_element(ele)
-# 4、调用perfrom()来执行鼠标操作
-ac.perform()
+# driver = webdriver.Chrome()
+# # 切换一 iframe
+# # 切换iframe =进入了另外一个html
+# # 等待iframe存在，可见
+# driver.switch_to.frame("login_frame_qq")
+# driver.switch_to.frame(driver.find_element_by_xpath('//iframe [@name="login_frame_qq"]'))
+# time.sleep(0.5)
+# driver.find_element_by_id("switcher_plogin")
 #
-ActionChains(driver).move_to_element(ele).perform()
-
-# 下拉框操作
-# 观察下拉框页面元素。是否为select/option。
-# 1、菜单栏-点击其中的某个链接跳转。
-# 2、在下拉列表中选择一个值。
-
-# 思路:
-# 1、等待下拉列表和下拉列表中值存在
-# 2、对下拉列表中的元素进行操作
-
-# 两种方式:
-# 一、获取所有的下拉列表值，然后用循环去匹配相同的值。
-# 二、通过text的内容来找到下拉列表的某个值
-
-# Select类-下拉框操作
-# selenium提供了Select类来处理select/option
-# 引入类:
-from selenium.webdriver.support.ui import Select
-
-# 选择下拉列表值:
-# 1、通过下标选择: select_by_index(index) 从0开始;
-# 2、通过value属性: select_by_value(value值)
-# 3、通过文本内容: select_by_visible_text(文本内容)
-
-select_ele = driver.find_element_by_xpath('//select[@name=”ft"]')
-# 2、实例化Select类
-s = Select(select_ele)
-
-# 3、 选择下拉列表值
-# 方式-:下标从0开始
-s.select_by_index(4)
-# 方式二: value值
-s.select_by_value(" all")
-# 方式三: 文本内容
-s.select_by_visible_text('Adobe Acrobat PDF (. pdf)')
-
-driver.find_element_by_xpath("").get_attribute("")
-
-
-#移动
-# 1、移动到元素element对象的"底端”与当前窗口的“底部”对齐:
-# driver.execute_script("arguments[0].scrollIntoView(false);",element)
-# 2、移动到元素element对象的"顶端”与当前窗口的"顶部” 对齐: .
-# driver.execute_script("arguments[0].scrollIntoView();',element)
-# 3、移动到页面底部:
-# driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-# 4、移动到页面顶部:
-# driver.execute_script("window.scrollTo(document.body.scrollHeight,0)")
-
-
-#js语句
-js ='var ele = document.getElementById("train_date");ele.readOnly = false;ele.value = "2018-12-30";'
-driver.execute_script(js)
-
-
-# 上传操作
-# 有两种情况:
-# 1、如果是input可以直接输入路径的，那么直接调send_keys输入路径
-
-# 2、非input标签的上传，则需要借助第三方工具:
-# 2.1 Autolt 我们去调用其生成的au3或exe文件。
-# 2.2 SendKeys第三方库(目前只支持到2.7版本)
-# 网址: https://pypi.python.org/pypi/SendKeys
-# 2.3 Python pywin32库，识别对话框句柄，进而操作
-#pyautoit
-
-# 工具:
-# pywin32和spy++
+# # 方式二: iframe切换
+# WebDriverWait(driver, 10).until(EC.frame_to_be_available_and_switch_to_it("login_frame_qq"))
+#
+# # 从iframe当中回到默认的页面当中。
+# driver.switch_to.default_content()
+#
+# # 回到父级页面
+# driver.switch_to.parent_frame()
+#
+# # 切换二 窗口切换
+# # step1:获取窗口的总数以及句柄 新打开的窗口，位于最后一个。
+# handles = driver.window_handles  # 窗口数=2
+# print(handles)
+# # 当前窗口的句柄
+# print(driver.current_window_handle)
+#
+# # 打开新窗口
+#
+# # 等待新的窗口出现
+# # new_window_is_opened 会自动获取最新的窗口数 和旧的进行对比
+# WebDriverWait(driver, 10).until(EC.new_window_is_opened(handles))
+#
+# # 重新获取一次窗口
+# handles = driver.window_handles  # 窗口数=3
+# # 切换最新打开的窗口
+# # step2:切换
+# driver.switch_to.window(handles[-1])
+#
+# # 弹出框处理
+# # 弹出框有两种:
+# # 1、页面弹出框
+# # 2、windows弹出框
+# # 页面弹出框:
+#
+# # 原理:
+# # 等待弹出框出现之后，再定位弹出框，再去操作弹出框里的元素。
+# # 例:百度登陆的弹出框
+#
+# # Alert弹出框:
+# # 1、使用switch_to方法先切换到windows弹出框。
+# # driver.switch_to.alert
+#
+# # 2、Alert类提供了一系列的操作方法。
+# # dismiss():否。
+# # accept():是。
+# # text():获取弹出框里的内容。
+#
+# # 弹出框可见
+# WebDriverWait(driver, 10).until(EC.alert_is_present())
+# # alert切换  不是html页面元素
+# alert = driver.switch_to.alert
+# # 打印弹出框内容
+# print(alert.text)
+# # 关闭弹出框
+# alert.accept()
+#
+# # 鼠标操作
+# # 由selenium的ActionChains类来完成模拟鼠标操作。
+#
+# # 主要操作流程:
+# # 1、存储鼠标操作。
+# # 2、perform()来执行鼠标操作。
+#
+# # 支持的操作如下:
+# # double_click 双击操作
+# # context_click 右键操作
+# # drag_and_drop 拖拽操作。左键按住拖动某一个元素到另外一个区域，然后释放按键
+# # move_to_element() 鼠标悬停。
+# # perform()
+#
+# # 引入ActionChains类:
+# from selenium.webdriver.common.action_chains import ActionChains
+#
+# # AC.方法名1().context_click().perform()
+#
+#
+# # 1、先找到鼠标要操作的元素
+# ele = driver.find_element_by_id("switcher_plogin")
+# # 2、实例化
+# ac = ActionChains(driver)
+# # 3、将鼠标操作添加到ActionChains列表中 悬停
+# ac.move_to_element(ele)
+# # 4、调用perfrom()来执行鼠标操作
+# ac.perform()
+# #
+# ActionChains(driver).move_to_element(ele).perform()
+#
+# # 下拉框操作
+# # 观察下拉框页面元素。是否为select/option。
+# # 1、菜单栏-点击其中的某个链接跳转。
+# # 2、在下拉列表中选择一个值。
+#
+# # 思路:
+# # 1、等待下拉列表和下拉列表中值存在
+# # 2、对下拉列表中的元素进行操作
+#
+# # 两种方式:
+# # 一、获取所有的下拉列表值，然后用循环去匹配相同的值。
+# # 二、通过text的内容来找到下拉列表的某个值
+#
+# # Select类-下拉框操作
+# # selenium提供了Select类来处理select/option
+# # 引入类:
+# from selenium.webdriver.support.ui import Select
+#
+# # 选择下拉列表值:
+# # 1、通过下标选择: select_by_index(index) 从0开始;
+# # 2、通过value属性: select_by_value(value值)
+# # 3、通过文本内容: select_by_visible_text(文本内容)
+#
+# select_ele = driver.find_element_by_xpath('//select[@name=”ft"]')
+# # 2、实例化Select类
+# s = Select(select_ele)
+#
+# # 3、 选择下拉列表值
+# # 方式-:下标从0开始
+# s.select_by_index(4)
+# # 方式二: value值
+# s.select_by_value(" all")
+# # 方式三: 文本内容
+# s.select_by_visible_text('Adobe Acrobat PDF (. pdf)')
+#
+# driver.find_element_by_xpath("").get_attribute("")
+#
+#
+# #移动
+# # 1、移动到元素element对象的"底端”与当前窗口的“底部”对齐:
+# # driver.execute_script("arguments[0].scrollIntoView(false);",element)
+# # 2、移动到元素element对象的"顶端”与当前窗口的"顶部” 对齐: .
+# # driver.execute_script("arguments[0].scrollIntoView();',element)
+# # 3、移动到页面底部:
+# # driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+# # 4、移动到页面顶部:
+# # driver.execute_script("window.scrollTo(document.body.scrollHeight,0)")
+#
+#
+# #js语句
+# js ='var ele = document.getElementById("train_date");ele.readOnly = false;ele.value = "2018-12-30";'
+# driver.execute_script(js)
+#
+#
+# # 上传操作
+# # 有两种情况:
+# # 1、如果是input可以直接输入路径的，那么直接调send_keys输入路径
+#
+# # 2、非input标签的上传，则需要借助第三方工具:
+# # 2.1 Autolt 我们去调用其生成的au3或exe文件。
+# # 2.2 SendKeys第三方库(目前只支持到2.7版本)
+# # 网址: https://pypi.python.org/pypi/SendKeys
+# # 2.3 Python pywin32库，识别对话框句柄，进而操作
+# #pyautoit
+#
+# # 工具:
+# # pywin32和spy++

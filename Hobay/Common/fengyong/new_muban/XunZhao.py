@@ -18,7 +18,7 @@ def xunzhao(data):
     -------
 
     '''
-    #也许需要考虑没有上级省市区的情况
+
     ratio = None
 
     i = 0
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     #         {'agent_id': 1000349, 'sales_ratio': Decimal('0.00'), 'tco_ratio': Decimal('0.00'),
     #          'free_sales_ratio': Decimal('0.00')}]
 
-    data = []
+    data=[{'agent_id': 10, 'sales_ratio': Decimal('0.00'), 'tco_ratio': Decimal('0.00'), 'free_sales_ratio': Decimal('0.00')}]
 
     a = xunzhao(data)
     print(a)

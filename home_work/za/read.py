@@ -25,5 +25,5 @@ def get_data( file_name,sheet_name,name,type):
     return X_data,Y_data
 
 if __name__ == '__main__':
-    a=get_data("D:\Pycharm_workspace\home_work\data.xlsx", "ceshi", None, "修复中")
+    a=get_data("/za/data.xlsx", "ceshi", None, "修复中")
     print(a)
