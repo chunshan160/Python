@@ -55,32 +55,32 @@ def func():
 # func()
 
 
-class MyTest():
-    age = 20
-
-    def __init__(self, name):
-        self.name = name
-
-    @classmethod  # 被classmethod装饰了之后，该方法就是一个类方法  classmethod只能在类里面调用
-    def cls_method(cls):  # cls 代表的是类本身
-        print("add中的cls：", cls)
-        print("类方法")
-
-    @staticmethod  # 静态方法 实例和类都可以调用
-    def static():  # 默认没有参数
-        print("静态方法")
-
-    @property  # 设置只读属性
-    def read_attr(self):  # Getter 应返回或生成某些内容
-        print("这个装饰器装饰完了之后，该方法可以像属性一样被调用")
-        return "18岁"
-
-    def self_method(self):  # self 代表实例本身
-        print("sub中的self：", self)
-        print("实例方法/对象方法")
-
-
-t = MyTest("chunshan")  # 创建实例t
+# class MyTest():
+#     age = 20
+#
+#     def __init__(self, name):
+#         self.name = name
+#
+#     @classmethod  # 被classmethod装饰了之后，该方法就是一个类方法  classmethod只能在类里面调用
+#     def cls_method(cls):  # cls 代表的是类本身
+#         print("add中的cls：", cls)
+#         print("类方法")
+#
+#     @staticmethod  # 静态方法 实例和类都可以调用
+#     def static():  # 默认没有参数
+#         print("静态方法")
+#
+#     @property  # 设置只读属性
+#     def read_attr(self):  # Getter 应返回或生成某些内容
+#         print("这个装饰器装饰完了之后，该方法可以像属性一样被调用")
+#         return "18岁"
+#
+#     def self_method(self):  # self 代表实例本身
+#         print("sub中的self：", self)
+#         print("实例方法/对象方法")
+#
+#
+# t = MyTest("chunshan")  # 创建实例t
 # t.cls_method()  # <class '__main__.MyTest'>  类
 # t.sub()  # <__main__.MyTest object at 0x000002A975582820> 实例对象
 # MyTest.sub()#报错 类不能调用实例方法
@@ -91,7 +91,7 @@ t = MyTest("chunshan")  # 创建实例t
 
 # t.read_attr()  # TypeError: 'NoneType' object is not callable
 # t.read_attr  # 执行
-print(t.read_attr)  # 默认None return啥就是啥 不可更改
+# print(t.read_attr)  # 默认None return啥就是啥 不可更改
 # t.read_attr = 17  # AttributeError: can't set attribute
 
 # t.name="ceshi"

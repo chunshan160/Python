@@ -26,14 +26,14 @@
 
 # 单例模式
 class MyTest(object):
-    isinstance = None  # 设置一个类属性来记录这个类有没有创建过对象
+    __isinstance = None  # 设置一个类属性来记录这个类有没有创建过对象
 
     def __new__(cls, *args, **kwargs):
-        if not cls.isinstance:  # 初始None=False 不是False时 就是为真 if True 进下一级
-            cls.isinstance = object.__new__(cls)
-            return cls.isinstance
+        if not cls.__isinstance:  # 初始None=False 不是False时 就是为真 if True 进下一级
+            cls.__isinstance = object.__new__(cls)
+            return cls.__isinstance
         else:
-            return cls.isinstance
+            return cls.__isinstance
 
 
 # 装饰器实现单例模式

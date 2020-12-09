@@ -29,6 +29,6 @@ def read_excel(file_path,sheet_name):
     test_data=({ws.cell(1,j).value:ws.cell(i,j).value for j in range(1,col)}for i in range(2,row))
     return test_data
 
-res=read_excel('fenyong_data.xlsx','焕商分佣_test')
+res=read_excel('fenyong_data.xlsx', '焕商分佣_test')
 for i in res:
     print(i)
