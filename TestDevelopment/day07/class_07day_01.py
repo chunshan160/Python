@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/12/9 14:07
 # @Author :春衫
-# @File :class_07_01.py
+# @File :class_07day_01.py
 
 # 自定义属性访问
 

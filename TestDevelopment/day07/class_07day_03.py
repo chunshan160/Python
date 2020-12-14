@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/12/9 15:18
 # @Author :春衫
-# @File :class_07_03.py
+# @File :class_07day_03.py
 
 from django.db import models
 

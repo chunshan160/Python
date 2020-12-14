@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 # @Time :2020/12/9 14:42
 # @Author :春衫
-# @File :class_07_02.py
+# @File :class_07day_02.py
 
 
 # 描述器
