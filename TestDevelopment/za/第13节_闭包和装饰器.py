@@ -77,23 +77,23 @@
 # 装饰器的内部函数中用接收到的参数再调用被装饰的函数。
 # 5.2、有参数的装饰器
 
-# def add(func):
-#     def fun(a, b):
-#         print('相乘:', a * b)
-#         print('相除:', a / b)
-#         func(a, b)
-#         print('相减:', a - b)
-#
-#     return fun
-#
-#
-# @add
-# def add_num(a, b):
-#     # 打印两个数相加
-#     print('相加:', a + b)
-#
-#
-# add_num(11, 22)
+def add(func):
+    def fun(a, b):
+        print('相乘:', a * b)
+        print('相除:', a / b)
+        func(a, b)
+        print('相减:', a - b)
+
+    return fun
+
+
+@add
+def add_num(a, b):
+    # 打印两个数相加
+    print('相加:', a + b)
+
+
+add_num(11, 22)
 
 
 # 执行步骤：

@@ -5,8 +5,8 @@
 # @File :user_grade_apply.py
 
 from Common.DoMySQL import SQL
-from TestData.user_grade import cbp
-from TestData.user_grade import cash
+from Web.TestData.user_grade import cbp
+from Web.TestData.user_grade import cash
 
 def user_grade_ratio(ip,user_id):
     global grade

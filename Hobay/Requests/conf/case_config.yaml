@@ -1,0 +1,6 @@
+register: [1]
+login: [1]
+#getUserInfo: []
+#recharge: []
+#business: "all"
+#invest: "all"

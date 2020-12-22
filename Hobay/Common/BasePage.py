@@ -18,7 +18,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.touch_action import TouchAction
 from Common.project_path import error_image
 from Common.user_log import UserLog
-from PageLocators.Android import Common
+from Android.PageLocators.Android import Common
 
 
 class BasePage:

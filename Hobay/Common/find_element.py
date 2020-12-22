@@ -62,7 +62,7 @@ class FindElement(object):
 
 if __name__ == '__main__':
     desired_caps = {}
-    desired_caps["platformName"] = "Android"  # android的apk还是IOS的ipa
+    desired_caps["platformName"] = "TestData"  # android的apk还是IOS的ipa
     # desired_caps["platfromVersion"] = "8.1"    #Android系统的版本号
     # desired_caps["deviceName"] = "872QEDUQ2224T"   #手机设备名称，通过adb devices
 

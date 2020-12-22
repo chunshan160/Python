@@ -6,7 +6,8 @@
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from PageLocators.Web.za import BuyGoods as BG
+from Web.PageLocators.Web.za import BuyGoods as BG
+
 
 class ReturnTxt:
 

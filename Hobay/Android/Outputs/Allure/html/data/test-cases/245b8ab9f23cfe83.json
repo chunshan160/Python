@@ -1,0 +1,308 @@
+{
+  "uid" : "245b8ab9f23cfe83",
+  "name" : "test_commission[item0]",
+  "fullName" : "Commission.test_commission.TestCommission#test_commission[item0]",
+  "historyId" : "314d570a619341cf295f8861f9e12f9d",
+  "time" : {
+    "start" : 1605162507557,
+    "stop" : 1605162519519,
+    "duration" : 11962
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "获取绑定关系",
+      "time" : {
+        "start" : 1605162507559,
+        "stop" : 1605162507617,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Boss后台运营设置",
+      "time" : {
+        "start" : 1605162507617,
+        "stop" : 1605162507617,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Boss后台设置运营分佣比例",
+      "time" : {
+        "start" : 1605162507618,
+        "stop" : 1605162508392,
+        "duration" : 774
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "充值",
+      "time" : {
+        "start" : 1605162508548,
+        "stop" : 1605162510013,
+        "duration" : 1465
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "写回储备池和充值金额",
+      "time" : {
+        "start" : 1605162510013,
+        "stop" : 1605162510536,
+        "duration" : 523
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "购买实物商品",
+      "time" : {
+        "start" : 1605162510537,
+        "stop" : 1605162512859,
+        "duration" : 2322
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "写回订单号",
+      "time" : {
+        "start" : 1605162512859,
+        "stop" : 1605162513783,
+        "duration" : 924
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "获取绑定关系，写回Excel",
+      "time" : {
+        "start" : 1605162513783,
+        "stop" : 1605162514972,
+        "duration" : 1189
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "获取上级分佣比例，写回Excel",
+      "time" : {
+        "start" : 1605162514972,
+        "stop" : 1605162515752,
+        "duration" : 780
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "买家和卖家解绑",
+      "time" : {
+        "start" : 1605162515753,
+        "stop" : 1605162515964,
+        "duration" : 211
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "查询买家是否绑定销售/业务焕商/TCO",
+      "time" : {
+        "start" : 1605162515965,
+        "stop" : 1605162516616,
+        "duration" : 651
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "获取买家绑定的销售/业务焕商/TCO",
+        "time" : {
+          "start" : 1605162515965,
+          "stop" : 1605162516616,
+          "duration" : 651
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "把买家上级销售/业务焕商的上级写回Excel",
+          "time" : {
+            "start" : 1605162515992,
+            "stop" : 1605162516616,
+            "duration" : 624
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "获取这笔订单应该【使用】的二级分佣比例",
+      "time" : {
+        "start" : 1605162516616,
+        "stop" : 1605162517377,
+        "duration" : 761
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "把这笔订单所使用的二级分佣比例写回Excel",
+        "time" : {
+          "start" : 1605162516641,
+          "stop" : 1605162517377,
+          "duration" : 736
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "df33382f56bf3c27",
+      "name" : "log",
+      "source" : "df33382f56bf3c27.txt",
+      "type" : "text/plain",
+      "size" : 7335
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 15,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试分佣"
+  }, {
+    "name" : "feature",
+    "value" : "测试分佣功能"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Commission"
+  }, {
+    "name" : "suite",
+    "value" : "test_commission"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCommission"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "14152-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Commission.test_commission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "item",
+    "value" : "{'case_id': 1, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '区分佣比例': Decimal('0.60'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020111214221000001006', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "smoke" ]
+  },
+  "source" : "245b8ab9f23cfe83.json",
+  "parameterValues" : [ "{'case_id': 1, 'title': '目的：\\n买家为（公海用户）且绑定省代，市代，区代\\n卖家为（个人焕商）且绑定个人焕商，省代，市代，区代\\n使用（易贝）支付，确定核销，买家和卖家绑定关系，易贝和现金服务费分佣', 'member_level': '钻石会员', 'buyer_identity': '公海用户', 'seller_identity': '个人焕商', 'payment_method': '易贝', 'goodsname': '普通焕商实物商品', 'data': '{\"buyer_phone\":17777777781,\"seller_phone\":17777777776,\"买家\":1000656,\"卖家\":1000650,\"平台\":10}', 'operational_setting': \"{'省代理商':{'销售':0.3,'业务焕商':0,'TCO':0.3},'市代理商':'未设置','区代理商':'未设置'}\", 'proportion': \"{'市分佣比例': Decimal('0.70'), '区分佣比例': Decimal('0.60'), '省分佣比例': Decimal('0.80'), '个人分佣比例': Decimal('0.15')}\", 'superior': \"[{'个人焕商': 1000650}, {'省代理商': 1000646, '市代理商': 1000647, '区代理商': 1000648}]\", 'order': 'EC-2020111214221000001006', 'reserve_fund': \"{'charge_amount': Decimal('100'), 'reserve_fund': Decimal('60.00')}\", 'bind_relationship_data': \"{'TCO': 1000794, '买家上级的上级id': None, '买家上级的上级身份': None}\", 'second_payagent_ratio': \"{'储备金二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}, '支付服务费二级分佣比例': {'agent_id': 1000646, 'sales_ratio': Decimal('0.30'), 'tco_ratio': Decimal('0.30'), 'free_sales_ratio': Decimal('0.00')}}\", 'sheet_name': '焕商分佣_test', 'ip': '192.168.0.101', 'surroundings': 'test', 'payPassword': '123456'}" ]
+}

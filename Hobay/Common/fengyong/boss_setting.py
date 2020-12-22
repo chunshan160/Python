@@ -6,11 +6,11 @@
 
 import time
 from Common.fengyong.sql.user_phone import user_phone
-from PageLocators.BOSS.yunyin import YunYin
+from Web.PageLocators.BOSS import YunYin
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from PageLocators.BOSS.SC import SC as sc
+from Web.PageLocators.BOSS import SC as sc
 
 class BossSetting:
 
