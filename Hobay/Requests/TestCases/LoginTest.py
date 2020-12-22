@@ -5,30 +5,44 @@
 # @File :LoginTest.py
 
 import unittest
-import ddt
+import jmespath
 import requests
+
+from ddt import ddt, data, unpack
 from Requests.tools.do_excel2 import DoExcel
 from Requests.tools.project_path import test_case_path
 from Requests.Base.BaseCase import BaseCase
+from Requests.data.GlobalEnvironment import GlobalEnvironment as gl
 
-@ddt.ddt
+
+@ddt
 class LoginTest(unittest.TestCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path)
-    caseInfoList=BaseCase().paramsReplace(caseInfoList)
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "login")
 
     @classmethod
-    def setUp(cls):
-        print("=======所有测试用例执行之前，setup整个测试类只执行一次==========")
-        # caseInfoList=DoRegx.do_regx(caseInfoList)
+    def setUpClass(cls):
+        print("=======所有测试用例执行之前，setupClass整个测试类只执行一次==========")
+        caseInfoList = BaseCase().paramsReplace(cls.caseInfoList)
 
     @classmethod
-    def tearDown(cls):
-        print("=======所有测试用例执行之后，tearDown整个测试类只执行一次==========")
+    def tearDownClass(cls):
+        print("=======所有测试用例执行之后，tearDownClass整个测试类只执行一次==========")
 
-    @ddt.data(*caseInfoList)
+    @data(*caseInfoList)
     def testLogin(self, caseInfo):
         headers = caseInfo['requestHeader']
         body = caseInfo['inputParams']
-        url="http://api.lemonban.com/futureloan"+caseInfo['url']
-        res =requests.post(url,json=body,headers=headers)
-        print(res.json())
+        url = "http://api.lemonban.com/futureloan" + caseInfo['url']
+        res = requests.post(url, json=body, headers=headers)
+
+        expected = caseInfo['expected']
+        for i in expected.keys():
+            result = jmespath.search(i, res.json())
+            self.assertEqual(expected[i], result)
+
+        member_id = jmespath.search("data.id", res.json())
+        if member_id != None:
+            # 2、保存到环境变量中
+            cookies = res.cookies
+            # gl()._init()
+            gl().set_value("cookies", cookies)

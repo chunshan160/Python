@@ -12,23 +12,23 @@ from Requests.tools.read_config2 import ReadConfig
 class DoExcel:
 
     @classmethod
-    def getCaseDataFromExcel(cls, file_name):
+    def getCaseDataFromExcel(cls, file_name,sheet_name):
 
         wb = load_workbook(file_name)
         mode = ReadConfig().read_config(case_config_path)  # 配置文件的内容 字典
         test_data = []
-        for key in mode:  # 遍历这个存在配置文件里面的字典 也就是表单名
-            sheet = wb[key]  # 打开Excel里的这个表单
-            if mode[key] == ['all']:  # 判断value
-                for i in range(2, sheet.max_row + 1):
-                    row_data = cls.row_data(sheet, i, key)
-                    test_data.append(row_data)
-            elif mode[key] == []:
-                pass
-            else:
-                for case_id in mode[key]:
-                    row_data = cls.row_data(sheet, case_id + 1, key)
-                    test_data.append(row_data)
+        # for key in mode:  # 遍历这个存在配置文件里面的字典 也就是表单名
+        sheet = wb[sheet_name]  # 打开Excel里的这个表单
+        if mode[sheet_name] == ['all']:  # 判断value
+            for i in range(2, sheet.max_row + 1):
+                row_data = cls.row_data(sheet, i, sheet_name)
+                test_data.append(row_data)
+        elif mode[sheet_name] == []:
+            pass
+        else:
+            for case_id in mode[sheet_name]:
+                row_data = cls.row_data(sheet, case_id + 1, sheet_name)
+                test_data.append(row_data)
         return test_data
 
     @classmethod
@@ -73,5 +73,5 @@ class DoExcel:
 
 if __name__ == '__main__':
 
-    test_data = DoExcel.getCaseDataFromExcel(test_case_path)
+    test_data = DoExcel.getCaseDataFromExcel(test_case_path,"login")
     print(test_data)
