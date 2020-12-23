@@ -40,27 +40,17 @@ class BaseCase:
             key = re.search('{{(.*?)}}', str(sourceStr)).group(0)
             value = re.search('{{(.*?)}}', str(sourceStr)).group(1)
             new_value = str(gl().get_value(value))
-
-            if value == "mobile_phone" and new_value == "None":
-                sql = 'SELECT mobile_phone FROM member ORDER BY id DESC LIMIT 1;'
-                res = DoMysql().do_mysql(sql)
-                mobile_phone = eval(res[0][0]) + 1
-                sourceStr = str(sourceStr).replace(key, str(mobile_phone))
-                gl().set_value("mobile_phone", str(mobile_phone))
-                gl().set_value("mobile_phone+1", str(mobile_phone+1))
-            else:
-                if value == "mobile_phone+1":
-                    mobile_phone = eval(gl().get_value("mobile_phone+1"))
-                    sourceStr = str(sourceStr).replace(key, str(mobile_phone))
-                    # gl().set_value("mobile_phone", str(mobile_phone))
-                    gl().set_value("mobile_phone", str(mobile_phone + 1))
-                else:
-                    mobile_phone = eval(gl().get_value("mobile_phone"))
-                    sourceStr = str(sourceStr).replace(key, new_value)
-                    gl().set_value("mobile_phone", str(mobile_phone + 1))
-
+            sourceStr = str(sourceStr).replace(key, new_value)
 
         return sourceStr
+
+    def get_phone(self):
+        sql = 'SELECT mobile_phone FROM member ORDER BY id DESC LIMIT 1;'
+        res = DoMysql().do_mysql(sql)
+        mobile_phone = eval(res[0][0])
+        gl().set_value("mobile_phone", str(mobile_phone + 1))
+        gl().set_value("mobile_phone1", str(mobile_phone + 2))
+        gl().set_value("mobile_phone2", str(mobile_phone + 3))
 
 
 if __name__ == '__main__':

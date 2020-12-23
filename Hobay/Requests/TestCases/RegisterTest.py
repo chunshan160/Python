@@ -25,6 +25,7 @@ class RegisterTest(unittest.TestCase):
     def setUpClass(cls) :
         print("=======所有测试用例执行之前，setUpClass==========")
         gl()._init()
+        BaseCase().get_phone()
         caseInfoList = BaseCase().paramsReplace(cls.caseInfoList)
 
     @classmethod

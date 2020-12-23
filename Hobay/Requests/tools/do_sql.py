@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :learn_sql.py
 
-import mysql.connector
+import pymysql
 from Requests.tools.project_path import db_config_path
 from Requests.tools.read_config2 import ReadConfig
 
@@ -16,7 +16,7 @@ class DoMysql:
         # db_config = eval(ReadConfig().read_config(case_config_path,'DB','db_config'))
         db_config=ReadConfig().read_config(db_config_path)
         # 创建一个数据库连接  **关键字参数
-        cnn = mysql.connector.connect(**db_config)
+        cnn = pymysql.connect(**db_config)
         # 游标cursor
         cursor = cnn.cursor()
 
