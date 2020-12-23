@@ -12,7 +12,7 @@ from Requests.tools.read_config2 import ReadConfig
 class DoExcel:
 
     @classmethod
-    def getCaseDataFromExcel(cls, file_name,sheet_name):
+    def getCaseDataFromExcel(cls, file_name, sheet_name):
 
         wb = load_workbook(file_name)
         mode = ReadConfig().read_config(case_config_path)  # 配置文件的内容 字典
@@ -41,15 +41,15 @@ class DoExcel:
         # 用例标题
         row_data['title'] = sheet.cell(i, 3).value
         # 请求头
-        row_data['requestHeader'] = eval(sheet.cell(i, 4).value)
+        row_data['requestHeader'] = sheet.cell(i, 4).value
         # 请求方式
         row_data['method'] = sheet.cell(i, 5).value
         # 接口地址
         row_data['url'] = sheet.cell(i, 6).value
         # 参数输入
-        row_data['inputParams'] = eval(sheet.cell(i, 7).value)
+        row_data['inputParams'] = sheet.cell(i, 7).value
         # 期望返回结果
-        row_data['expected'] = eval(sheet.cell(i, 8).value)
+        row_data['expected'] = sheet.cell(i, 8).value
         # 表单名
         row_data['sheet_name'] = key
         return row_data
@@ -72,6 +72,5 @@ class DoExcel:
 
 
 if __name__ == '__main__':
-
-    test_data = DoExcel.getCaseDataFromExcel(test_case_path,"login")
+    test_data = DoExcel.getCaseDataFromExcel(test_case_path, "register")
     print(test_data)

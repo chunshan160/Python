@@ -6,6 +6,7 @@
 
 import re
 from Requests.data.GlobalEnvironment import GlobalEnvironment as gl
+from Requests.tools.do_sql import DoMysql
 
 
 class BaseCase:
@@ -16,8 +17,7 @@ class BaseCase:
             # 如果数据是为空的，没有必要去进行参数化的处理
             if caseInfo['requestHeader'] != None:
                 requestHeader = self.regexReplace(caseInfo['requestHeader'])
-                caseInfo['requestHeader'] = requestHeader
-
+                caseInfo['requestHeader'] = eval(requestHeader)
 
             if caseInfo['url'] != None:
                 url = self.regexReplace(caseInfo['url'])
@@ -25,31 +25,63 @@ class BaseCase:
 
             if caseInfo['inputParams'] != None:
                 inputParams = self.regexReplace(caseInfo['inputParams'])
-                caseInfo['inputParams'] = inputParams
+                caseInfo['inputParams'] = eval(inputParams)
 
             if caseInfo['expected'] != None:
                 expected = self.regexReplace(caseInfo['expected'])
-                caseInfo['expected'] = expected
+                caseInfo['expected'] = eval(expected)
 
         return caseInfoList
 
     def regexReplace(self, sourceStr):
+
         # 对四块做参数化处理（请求头、接口地址、参数输入、期望返回结果）
         while re.search('{{(.*?)}}', str(sourceStr)):
             key = re.search('{{(.*?)}}', str(sourceStr)).group(0)
             value = re.search('{{(.*?)}}', str(sourceStr)).group(1)
-            new_value = gl().get_value(value)
-            data = str(sourceStr).replace(key, new_value)
-            sourceStr = data
+            new_value = str(gl().get_value(value))
+
+            if value == "mobile_phone" and new_value == "None":
+                sql = 'SELECT mobile_phone FROM member ORDER BY id DESC LIMIT 1;'
+                res = DoMysql().do_mysql(sql)
+                mobile_phone = eval(res[0][0]) + 1
+                sourceStr = str(sourceStr).replace(key, str(mobile_phone))
+                gl().set_value("mobile_phone", str(mobile_phone))
+                gl().set_value("mobile_phone+1", str(mobile_phone+1))
+            else:
+                if value == "mobile_phone+1":
+                    mobile_phone = eval(gl().get_value("mobile_phone+1"))
+                    sourceStr = str(sourceStr).replace(key, str(mobile_phone))
+                    # gl().set_value("mobile_phone", str(mobile_phone))
+                    gl().set_value("mobile_phone", str(mobile_phone + 1))
+                else:
+                    mobile_phone = eval(gl().get_value("mobile_phone"))
+                    sourceStr = str(sourceStr).replace(key, new_value)
+                    gl().set_value("mobile_phone", str(mobile_phone + 1))
+
 
         return sourceStr
 
 
 if __name__ == '__main__':
-    s = [{'caseId': 1, 'interface': 'login', 'title': '正常登录',
-          'requestHeader': {'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json'},
-          'method': 'POST', 'url': '/member/login',
-          'inputParams': {'mobile_phone': '{{mobile_phone}}', 'pwd': '{{pwd}}'},
-          'expected': {'code': 0, 'msg': 'OK', 'data.mobile_phone': '{{mobile_phone}}'}, 'sheet_name': 'login'}]
+    s = [{'caseId': 1, 'interface': 'register', 'title': '正常注册-管理员，昵称10位',
+          'requestHeader': '{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}',
+          'method': 'POST', 'url': '/member/register',
+          'inputParams': '{\n  "mobile_phone": "{{mobile_phone}}",\n  "pwd": "lemon123456",\n  "type":"0",\n  "reg_name":"管理员用户lemon"\n}',
+          'expected': '{\n  "code": 0,\n  "msg": "OK",\n  "data.mobile_phone": "{{mobile_phone}}"\n}',
+          'sheet_name': 'register'},
+         {'caseId': 2, 'interface': 'register', 'title': '正常注册-普通用户，type为空，密码8位',
+          'requestHeader': '{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}',
+          'method': 'POST', 'url': '/member/register',
+          'inputParams': '{\n  "mobile_phone": "{{mobile_phone+1}}",\n  "pwd": "lemon666",\n  "type":"",\n  "reg_name":"tudou"\n}',
+          'expected': '{\n  "code": 0,\n  "msg": "OK",\n  "data.mobile_phone": "{{mobile_phone}}"\n}',
+          'sheet_name': 'register'},
+         {'caseId': 3, 'interface': 'register', 'title': '正常注册-普通用户，昵称为空，密码16位',
+          'requestHeader': '{"X-Lemonban-Media-Type":"lemonban.v2","Content-Type":"application/json"}',
+          'method': 'POST', 'url': '/member/register',
+          'inputParams': '{\n  "mobile_phone": "{{mobile_phone+1}}",\n  "pwd": "lemon12345678901",\n  "type":"1",\n  "reg_name":""\n}',
+          'expected': '{\n  "code": 0,\n  "msg": "OK",\n  "data.mobile_phone": "{{mobile_phone}}"\n}',
+          'sheet_name': 'register'}]
+    gl()._init()
     res = BaseCase().paramsReplace(s)
     print(res)
