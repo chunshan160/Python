@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# @Time :2020/12/23 11:20
+# @Time :2020/12/28 15:32
 # @Author :春衫
-# @File :GetUserInfoTest.py
+# @File :AddLoanTest.py
 
 import unittest
 
@@ -16,8 +16,8 @@ from Requests.tools.project_path import test_case_path
 
 
 @ddt
-class GetUserInfoTest(unittest.TestCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "getUserInfo")
+class AddLoanTest(unittest.TestCase):
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "addLoan")
 
     @classmethod
     def setUpClass(cls):
@@ -29,11 +29,11 @@ class GetUserInfoTest(unittest.TestCase):
         print("=======所有测试用例执行之后，tearDownClass整个测试类只执行一次==========")
 
     @data(*caseInfoList)
-    def testGetUserInfo(self, caseInfo):
+    def testAddLoan(self, caseInfo):
         headers = caseInfo['requestHeader']
         body = caseInfo['inputParams']
         url = "http://api.lemonban.com/futureloan" + caseInfo['url']
-        res = requests.get(url, json=body, headers=headers)
+        res = requests.post(url, json=body, headers=headers)
 
         # 断言
         # 1、响应结果断言

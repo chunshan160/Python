@@ -7,87 +7,54 @@
 from Requests.tools.project_path import *
 from openpyxl import load_workbook
 from Requests.tools.read_config import ReadConfig
-from Requests.tools.get_data import GetData
 
 
 class DoExcel:
 
     @classmethod
-    def get_data(cls, file_name):
+    def getCaseDataFromExcel(cls, file_name, sheet_name):
+
         wb = load_workbook(file_name)
-        mode = eval(ReadConfig().read_config(case_config_path, 'MODE', 'mode'))  # 配置文件的内容 字典
-
-        tel = getattr(GetData, 'NoRegTel')  # 从Excel里面拿到的手机号 int
+        mode = ReadConfig().read_config(case_config_path)  # 配置文件的内容 字典
         test_data = []
-        for key in mode:  # 遍历这个存在配置文件里面的字典 也就是表单名
-            sheet = wb[key]  # 打开Excel里的这个表单
-            if mode[key] == 'all':  # 判断value
-                for i in range(2, sheet.max_row + 1):
-                    row_data = {}
-                    row_data['case_id'] = sheet.cell(i, 1).value
-                    row_data['title'] = sheet.cell(i, 2).value
-                    row_data['url'] = sheet.cell(i, 3).value
-                    # 做手机号的替换 正常登录用
-                    if sheet.cell(i, 4).value.find('${tel}') != -1:  # -1是不存在 其他是存在该字符串
-                        row_data['data'] = sheet.cell(i, 4).value.replace("${tel}", str(tel))  # 替换
-                        cls.updata_tel(tel + 1, file_name, 'init')  # 更新手机号
-
-                    # 加标
-                    elif sheet.cell(i, 4).value.find('${admin_tel}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(i, 4).value.replace("${admin_tel}",
-                                                                          str(getattr(GetData, 'admin_tel')))  # 替换
-                    elif sheet.cell(i, 4).value.find('${loan_member_id}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(i, 4).value.replace("${loan_member_id}",
-                                                                          str(getattr(GetData, 'loan_member_id')))  # 替换
-                    elif sheet.cell(i, 4).value.find('${normal_tel}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(i, 4).value.replace("${normal_tel}",
-                                                                          str(getattr(GetData, 'normal_tel')))  # 替换
-                    elif sheet.cell(i, 4).value.find('${memberId}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(i, 4).value.replace("${memberId}",
-                                                                          str(getattr(GetData,
-                                                                                      'memberId')))  # 替换
-                    else:
-                        row_data['data'] = sheet.cell(i, 4).value
-                    row_data['http_method'] = sheet.cell(i, 5).value
-                    row_data['expected_code'] = str(sheet.cell(i, 6).value)
-                    row_data['sheet_name'] = key
-                    test_data.append(row_data)
-
-            else:
-                for case_id in mode[key]:
-                    row_data = {}
-                    row_data['case_id'] = sheet.cell(case_id + 1, 1).value
-                    row_data['title'] = sheet.cell(case_id + 1, 2).value
-                    row_data['url'] = sheet.cell(case_id + 1, 3).value
-                    # 做手机号的替换 正常登录用
-                    if sheet.cell(case_id + 1, 4).value.find('${tel}') != -1:  # -1是不存在 其他是存在该字符串
-                        row_data['data'] = sheet.cell(case_id + 1, 4).value.replace("${tel}", str(tel))  # 替换
-                        cls.updata_tel(tel + 1, file_name, 'init')  # 更新手机号
-                    # 加标
-                    elif sheet.cell(case_id + 1, 4).value.find('${admin_tel}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(case_id + 1, 4).value.replace("${admin_tel}",
-                                                                                    str(getattr(GetData,
-                                                                                                'admin_tel')))  # 替换
-                    elif sheet.cell(case_id + 1, 4).value.find('${loan_member_id}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(case_id + 1, 4).value.replace("${loan_member_id}",
-                                                                                    str(getattr(GetData,
-                                                                                                'loan_member_id')))  # 替换
-                    elif sheet.cell(case_id + 1, 4).value.find('${normal_tel}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(case_id + 1, 4).value.replace("${normal_tel}",
-                                                                                    str(getattr(GetData,
-                                                                                                'normal_tel')))  # 替换
-                    elif sheet.cell(case_id + 1, 4).value.find('${memberId}') != -1:  # -1 存在该字符串
-                        row_data['data'] = sheet.cell(case_id + 1, 4).value.replace("${memberId}",
-                                                                                    str(getattr(GetData,
-                                                                                                'memberId')))  # 替换
-                    else:
-                        row_data['data'] = sheet.cell(case_id + 1, 4).value
-                    row_data['http_method'] = sheet.cell(case_id + 1, 5).value
-                    row_data['expected_code'] = str(sheet.cell(case_id + 1, 6).value)
-                    row_data['sheet_name'] = key
-                    test_data.append(row_data)
-
+        # for key in mode:  # 遍历这个存在配置文件里面的字典 也就是表单名
+        sheet = wb[sheet_name]  # 打开Excel里的这个表单
+        if mode[sheet_name] == ['all']:  # 判断value
+            for i in range(2, sheet.max_row + 1):
+                row_data = cls.row_data(sheet, i, sheet_name)
+                test_data.append(row_data)
+        elif mode[sheet_name] == []:
+            pass
+        else:
+            for case_id in mode[sheet_name]:
+                row_data = cls.row_data(sheet, case_id + 1, sheet_name)
+                test_data.append(row_data)
         return test_data
+
+    @classmethod
+    def row_data(cls, sheet, i, key):
+        row_data = {}
+        # 序号
+        row_data['caseId'] = sheet.cell(i, 1).value
+        # 接口模块
+        row_data['interface'] = sheet.cell(i, 2).value
+        # 用例标题
+        row_data['title'] = sheet.cell(i, 3).value
+        # 请求头
+        row_data['requestHeader'] = sheet.cell(i, 4).value
+        # 请求方式
+        row_data['method'] = sheet.cell(i, 5).value
+        # 接口地址
+        row_data['url'] = sheet.cell(i, 6).value
+        # 参数输入
+        row_data['inputParams'] = sheet.cell(i, 7).value
+        # 期望返回结果
+        row_data['expected'] = sheet.cell(i, 8).value
+        # 数据库校验
+        row_data['checkSQL'] = sheet.cell(i, 9).value
+        # 表单名
+        row_data['sheet_name'] = key
+        return row_data
 
     @staticmethod
     def write_back(file_name, sheet_name, i, result, TestResult):  # 专门写回数据  i行号  result结果
@@ -107,5 +74,5 @@ class DoExcel:
 
 
 if __name__ == '__main__':
-    test_data = DoExcel.get_data(test_case_path)
+    test_data = DoExcel.getCaseDataFromExcel(test_case_path, "register")
     print(test_data)

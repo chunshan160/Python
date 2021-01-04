@@ -9,13 +9,17 @@ import HTMLTestReportCN
 from Requests.TestCases.RegisterTest import RegisterTest
 from Requests.TestCases.LoginTest import LoginTest
 from Requests.TestCases.GetUserInfoTest import GetUserInfoTest
-from Requests.tools.project_path import *
+from Requests.TestCases.RechargeTest import RechargeTest
+from Requests.TestCases.AddLoanTest import AddLoanTest
+# from Requests.tools.project_path import *
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
 suite.addTest(loader.loadTestsFromTestCase(RegisterTest))
 suite.addTest(loader.loadTestsFromTestCase(LoginTest))
 suite.addTest(loader.loadTestsFromTestCase(GetUserInfoTest))
+suite.addTest(loader.loadTestsFromTestCase(RechargeTest))
+suite.addTest(loader.loadTestsFromTestCase(AddLoanTest))
 
 
 

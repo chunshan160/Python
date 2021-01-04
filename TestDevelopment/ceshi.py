@@ -12,7 +12,7 @@ def lower_to_capital(dict_info):
     for i, j in list(dict_info.items()):
         dict_info.pop(i)
         dict_info[i.upper()] = j
-
+    
     return dict_info
 
 

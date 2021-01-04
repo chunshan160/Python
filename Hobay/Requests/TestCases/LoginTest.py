@@ -9,10 +9,10 @@ import jmespath
 import requests
 
 from ddt import ddt, data
-from Requests.tools.do_excel2 import DoExcel
+from Requests.tools.do_excel import DoExcel
 from Requests.tools.project_path import test_case_path
 from Requests.Base.BaseCase import BaseCase
-from Requests.data.GlobalEnvironment import GlobalEnvironment as gl
+from Requests.Base.GlobalEnvironment import GlobalEnvironment
 
 
 @ddt
@@ -22,7 +22,7 @@ class LoginTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print("=======所有测试用例执行之前，setupClass整个测试类只执行一次==========")
-        caseInfoList = BaseCase().paramsReplace(cls.caseInfoList)
+        caseInfoList = BaseCase().params_replace_all_case_info(cls.caseInfoList)
 
     @classmethod
     def tearDownClass(cls):
@@ -34,16 +34,22 @@ class LoginTest(unittest.TestCase):
         body = caseInfo['inputParams']
         url = "http://api.lemonban.com/futureloan" + caseInfo['url']
         res = requests.post(url, json=body, headers=headers)
-        print(body)
-        expected = caseInfo['expected']
-        for i in expected.keys():
-            result = jmespath.search(i, res.json())
-            self.assertEqual(expected[i], result)
+
+        # 断言
+        # 1、响应结果断言
+        BaseCase().assert_expected(caseInfo, res)
 
         member_id = jmespath.search("data.id", res.json())
         if member_id != None:
-            # 2、保存到环境变量中
             token = jmespath.search("data.token_info.token", res.json())
-            print(token)
-            gl().set_value("token", token)
-            gl().set_value("member_id", member_id)
+            if caseInfo["caseId"] == 1:
+                # 2、保存到环境变量中
+                GlobalEnvironment().put("token1", token)
+
+            elif caseInfo["caseId"] == 2:
+                # 2、保存到环境变量中
+                GlobalEnvironment().put("token2", token)
+
+            elif caseInfo["caseId"] == 3:
+                # 2、保存到环境变量中
+                GlobalEnvironment().put("token3", token)

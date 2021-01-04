@@ -11,22 +11,20 @@ import jmespath
 import requests
 
 from Requests.Base.BaseCase import BaseCase
-from Requests.data.GlobalEnvironment import GlobalEnvironment as gl
+from Requests.Base.GlobalEnvironment import GlobalEnvironment
 
-from Requests.tools.do_excel2 import DoExcel
+from Requests.tools.do_excel import DoExcel
 from Requests.tools.project_path import test_case_path
-# from Requests.Base.BaseCase import BaseCase
+
 
 @ddt.ddt
 class RegisterTest(unittest.TestCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path,"register")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "register")
 
     @classmethod
-    def setUpClass(cls) :
+    def setUpClass(cls):
         print("=======所有测试用例执行之前，setUpClass==========")
-        gl()._init()
-        BaseCase().get_phone()
-        caseInfoList = BaseCase().paramsReplace(cls.caseInfoList)
+        GlobalEnvironment()._init()
 
     @classmethod
     def tearDownClass(cls):
@@ -34,24 +32,50 @@ class RegisterTest(unittest.TestCase):
 
     @ddt.data(*caseInfoList)
     def testRegister(self, caseInfo):
+        # 读数据库获取没有注册过的手机号码
+        if caseInfo["caseId"] == 1:
+            mobile_phone = BaseCase().get_random_phone()
+            GlobalEnvironment().put("mobile_phone1", str(mobile_phone + 1))
+        elif caseInfo["caseId"] == 2:
+            mobile_phone = BaseCase().get_random_phone()
+            GlobalEnvironment().put("mobile_phone2", str(mobile_phone + 2))
+        elif caseInfo["caseId"] == 3:
+            mobile_phone = BaseCase().get_random_phone()
+            GlobalEnvironment().put("mobile_phone3", str(mobile_phone + 3))
+
+        # 对当前的case进行参数化替换
+        caseInfo = BaseCase().params_replace_current_case_info(caseInfo)
+
         headers = caseInfo['requestHeader']
         body = caseInfo['inputParams']
         url = "http://api.lemonban.com/futureloan" + caseInfo['url']
         res = requests.post(url, json=body, headers=headers)
-        expected = caseInfo['expected']
-        print(body)
-        for i in expected.keys():
-            result = jmespath.search(i, res.json())
-            self.assertEqual(expected[i], result)
+
+        # 断言
+        # 1、响应结果断言
+        BaseCase().assert_expected(caseInfo, res)
+        # 2、数据库断言
+        BaseCase().assert_SQL(caseInfo)
 
         memberId = jmespath.search("data.id", res.json())
         if memberId != None:
-            # 2、保存到环境变量中
             mobile_phone = jmespath.search("data.mobile_phone", res.json())
-            # print("保存到环境变量中mobile_phone：：" + mobilephone)
-            gl().set_value("mobile_phone", mobile_phone)
             # 3、注册成功的密码--从用例数据里面
             pwd = caseInfo['inputParams']['pwd']
-            # print("保存到环境变量中pwd：：" + pwd)
-            gl().set_value("pwd", pwd)
+            if caseInfo["caseId"] == 1:
+                # 2、保存到环境变量中
+                GlobalEnvironment().put("mobile_phone1", mobile_phone)
+                GlobalEnvironment().put("member_id1", memberId)
+                GlobalEnvironment().put("pwd1", pwd)
 
+            elif caseInfo["caseId"] == 2:
+                # 2、保存到环境变量中
+                GlobalEnvironment().put("mobile_phone2", mobile_phone)
+                GlobalEnvironment().put("member_id2", memberId)
+                GlobalEnvironment().put("pwd2", pwd)
+
+            elif caseInfo["caseId"] == 3:
+                # 2、保存到环境变量中
+                GlobalEnvironment().put("mobile_phone3", mobile_phone)
+                GlobalEnvironment().put("member_id3", memberId)
+                GlobalEnvironment().put("pwd3", pwd)

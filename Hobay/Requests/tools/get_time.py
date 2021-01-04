@@ -4,9 +4,8 @@
 #@Time :2020/7/30 0030 15:05
 #@Author :dongdong
 #@File :get_time.py
-from http_request import HttpRequest
 
-import time ,datetime
+import time
 
 
 def getTime(data):

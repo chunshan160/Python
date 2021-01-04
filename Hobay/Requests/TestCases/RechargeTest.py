@@ -1,23 +1,22 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# @Time :2020/12/23 11:20
+# @Time :2020/12/28 13:29
 # @Author :春衫
-# @File :GetUserInfoTest.py
+# @File :RechargeTest.py
 
 import unittest
-
-import jmespath
 import requests
-from ddt import ddt, data
 
+from ddt import ddt, data
 from Requests.Base.BaseCase import BaseCase
 from Requests.tools.do_excel import DoExcel
 from Requests.tools.project_path import test_case_path
 
 
 @ddt
-class GetUserInfoTest(unittest.TestCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "getUserInfo")
+class RechargeTest(unittest.TestCase):
+
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "recharge")
 
     @classmethod
     def setUpClass(cls):
@@ -29,12 +28,14 @@ class GetUserInfoTest(unittest.TestCase):
         print("=======所有测试用例执行之后，tearDownClass整个测试类只执行一次==========")
 
     @data(*caseInfoList)
-    def testGetUserInfo(self, caseInfo):
+    def testRecharge(self, caseInfo):
         headers = caseInfo['requestHeader']
         body = caseInfo['inputParams']
         url = "http://api.lemonban.com/futureloan" + caseInfo['url']
-        res = requests.get(url, json=body, headers=headers)
+        res = requests.post(url, json=body, headers=headers)
 
         # 断言
         # 1、响应结果断言
         BaseCase().assert_expected(caseInfo, res)
+        # 2、数据库断言
+        BaseCase().assert_SQL(caseInfo)
