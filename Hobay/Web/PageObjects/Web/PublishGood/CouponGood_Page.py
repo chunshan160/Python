@@ -5,10 +5,10 @@
 # @File :CouponGood_Page.py
 
 
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Web.PageLocators.Web.PubilcGood import CouponGood as CG
 from Web.PageObjects.Web import PublishGoodCommon
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 发布本地生活

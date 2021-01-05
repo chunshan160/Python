@@ -4,7 +4,7 @@
 # @Author :春衫
 # @File :RetrievePassword.py
 
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 找回密码成功

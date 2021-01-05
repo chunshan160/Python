@@ -3,9 +3,9 @@
 # @Time :2020/8/3 13:37
 # @Author :春衫
 # @File :PubilcGoodCommon.py
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Web.PageLocators.Web.PubilcGood import PubilcGoodCommon as PGCommon
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class PublishGoodCommon(BasePage):

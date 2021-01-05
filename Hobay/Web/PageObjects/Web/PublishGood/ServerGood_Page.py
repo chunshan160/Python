@@ -4,10 +4,10 @@
 # @Author :春衫
 # @File :ServerGood_Page.py
 
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Web.PageLocators.Web.PubilcGood import PubilcGoodCommon as PGCommon, ServerGood as SG
 from Web.PageObjects.Web import PublishGoodCommon
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 发布商企服务

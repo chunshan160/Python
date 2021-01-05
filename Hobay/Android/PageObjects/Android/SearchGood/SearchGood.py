@@ -4,9 +4,9 @@
 # @Author :春衫
 # @File :SearchGood_Business.py
 
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Android.PageLocators.Android.SearchGood import SearchGood
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class SearchGoodPage(BasePage):

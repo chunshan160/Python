@@ -7,25 +7,25 @@ import os
 
 import allure
 import pytest
-from Common.DoExcel import DoExcel
-from Common.fengyong.sql.reserve_fund_sql import reserve_fund_sql
-from Common.fengyong.sql.wallet_detail import wallet_detail
-from Common.fengyong.new_muban.moban2 import MoBan
-from Common.fengyong.new_muban.Fan_Hui import fan_hui
-from Common.fengyong.shangji.Superior_template import SuperiorTemplate
-from Common.fengyong.tools.Calculation_Data import CalculationData
-from Common.project_path import test_data_path
-from Common.user_log import UserLog
-from Common.fengyong.API.BuyEntityGoods import bug_entity_goods
-from Common.fengyong.API.BuyCouponGoods import buy_coupon_goods
-from Common.fengyong.API.BuyServerGoods import buy_server_goods
-from Common.fengyong.tools.boss_setting import BossSetting
-from Common.fengyong.tools.bing_relationship_data import BingRelationshipData
-from Common.fengyong.tools.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
-from Common.fengyong.API.delete_partner import delete_partner
-from Common.fengyong.API.Recharge_behavior import recharge_behavior
-from Common.fengyong.tools.get_js import get_js
-from Common.project_path import allure_report
+from Web.Common import DoExcel
+from Web.Common import reserve_fund_sql
+from Web.Common.fengyong.sql.wallet_detail import wallet_detail
+from Web.Common import MoBan
+from Web.Common.fengyong.new_muban.Fan_Hui import fan_hui
+from Web.Common.fengyong.shangji.Superior_template import SuperiorTemplate
+from Web.Common.fengyong.tools.Calculation_Data import CalculationData
+from Web.Common import test_data_path
+from Web.Common import UserLog
+from Web.Common import bug_entity_goods
+from Web.Common.fengyong.API.BuyCouponGoods import buy_coupon_goods
+from Web.Common.fengyong.API.BuyServerGoods import buy_server_goods
+from Web.Common.fengyong.tools.boss_setting import BossSetting
+from Web.Common import BingRelationshipData
+from Web.Common.fengyong.tools.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
+from Web.Common import delete_partner
+from Web.Common.fengyong.API.Recharge_behavior import recharge_behavior
+from Web.Common import get_js
+from Web.Common import allure_report
 
 my_logger = UserLog()
 test_data = DoExcel().get_data(test_data_path)

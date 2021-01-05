@@ -5,10 +5,10 @@
 # @File :publishcommodity_page.py
 
 import time
-from Common.project_path import image_path
-from Common.user_log import UserLog
+from Web.Common import image_path
+from Web.Common import UserLog
 from Web.PageLocators.Web.PubilcGood import EntityGood as EG
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 from Web.PageObjects.Web import PublishGoodCommon
 
 

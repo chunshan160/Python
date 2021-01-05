@@ -7,8 +7,8 @@
 import time
 import pytest
 
-from Common.project_path import yamlPath
-from Common.read_yaml import read_yaml
+from Web.Common import yamlPath
+from Web.Common.read_yaml import read_yaml
 from Web.Driver.AndroidDriver import AndroidDriver
 from Android.PageObjects.Android.Comm_Bus import CommBus
 from Android.PageObjects.Android.Login.Login_Page import LoginPage

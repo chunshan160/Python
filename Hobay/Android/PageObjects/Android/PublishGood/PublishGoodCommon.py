@@ -4,9 +4,9 @@
 # @Author :春衫
 # @File :PubilcGoodCommon.py
 
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Android.PageLocators.Android.PubilcGood import PubilcGoodCommon as PGCommon
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class PublishGoodCommon(BasePage):

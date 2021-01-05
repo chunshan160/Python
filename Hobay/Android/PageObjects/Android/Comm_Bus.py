@@ -11,7 +11,7 @@ from Android.PageLocators.Android import Common
 from Android.PageObjects.Android.MyIndex import MyIndexPage
 from Android.PageObjects.Android.MyIndex import SettingPage
 from Android.PageLocators.Android.MyIndex import MyIndex
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 from Android.PageObjects.Android.Login.Login_Page import LoginPage
 
 

@@ -7,7 +7,7 @@
 import time
 
 from Web.PageLocators.Web.Login import Login
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class LoginPage(BasePage):

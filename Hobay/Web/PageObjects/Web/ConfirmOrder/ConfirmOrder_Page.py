@@ -6,7 +6,7 @@
 
 import time
 from Web.PageLocators.Web.ConfirmOrder import ConfirmOrder as CO
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class ConfirmOrderPage(BasePage):

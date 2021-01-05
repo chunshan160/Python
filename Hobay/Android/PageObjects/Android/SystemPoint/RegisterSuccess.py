@@ -5,7 +5,7 @@
 # @File :RegisterSuccess.py
 
 
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 注册成功

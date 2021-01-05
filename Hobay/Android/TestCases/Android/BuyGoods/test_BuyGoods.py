@@ -14,7 +14,6 @@ from Android.PageObjects.Android.GoodDetail.GoodDetail_Page import GoodDetailPag
 from Android.PageObjects.Android.ConfirmOrder import ConfirmOrderPage
 from Android.PageObjects.Android.Pay import PayPage
 from Android.PageObjects.Android.SystemPoint import PaySuccessPage
-from Common.project_path import *
 
 
 @allure.feature('购买商品功能')

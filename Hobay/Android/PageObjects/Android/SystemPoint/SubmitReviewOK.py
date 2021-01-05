@@ -4,7 +4,7 @@
 #@Author :春衫
 #@File :SubmitReviewOK_Page.py
 
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 提交审核成功

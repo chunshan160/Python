@@ -1,6 +1,0 @@
-register: [1,2,3]
-login: [1]
-getUserInfo: [1]
-#recharge: []
-#business: "all"
-#invest: "all"

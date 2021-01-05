@@ -5,9 +5,9 @@
 # @File :SearchGood_Business.py
 from selenium.webdriver.common.keys import Keys
 
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Web.PageLocators.Web.SearchGood import SearchGood
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class SearchGoodPage(BasePage):

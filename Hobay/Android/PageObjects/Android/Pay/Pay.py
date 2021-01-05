@@ -5,7 +5,7 @@
 # @File :Pay_Business.py
 
 from Android.PageLocators.Android.Pay import Pay
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class PayPage(BasePage):

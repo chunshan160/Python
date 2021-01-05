@@ -12,26 +12,26 @@ import time
 from selenium.webdriver.common.action_chains import ActionChains
 # from Handle.TestData.za.BuyGood_page import BuyGoods
 # from Handle.za.Untie_Partner import UntiePartner
-from Common.fengyong.Superior.Superior_template import SuperiorTemplate
-from Common.URL import url
+from Web.Common import SuperiorTemplate
+from Web.Common import url
 import unittest
 from ddt import ddt, data
-from Common.DoExcel import DoExcel
-from Common.DoMySQL import SQL
-from Common.fengyong.Calculation_Data import CalculationData
+from Web.Common import DoExcel
+from Web.Common.DoMySQL import SQL
+from Web.Common import CalculationData
 from Web.TestData.user_grade import IP
-from Common.user_log import UserLog
+from Web.Common import UserLog
 import warnings
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Common.fengyong.new_muban.moban2 import MoBan
-from Common.fengyong.boss_setting import BossSetting
+from Web.Common import MoBan
+from Web.Common import BossSetting
 # from PageObjects import Recharge
 # from Handle.za.Seach_Goods import Seach_Goods
 # from Handle.za.Receipt_Delivery import ReceiptDelivery
-from Common.fengyong.bing_relationship_data import BingRelationshipData
-from Common.fengyong.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
-from Common.fengyong.new_muban.Fan_Hui import FanHui
+from Web.Common import BingRelationshipData
+from Web.Common.fengyong.TransactionSecondPayagentRatio import TransactionSecondPayagentRatio
+from Web.Common.fengyong.new_muban.Fan_Hui import FanHui
 import HTMLTestReportCN
 
 my_logger = UserLog()

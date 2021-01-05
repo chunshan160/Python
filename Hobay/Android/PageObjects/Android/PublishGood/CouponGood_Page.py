@@ -4,11 +4,11 @@
 # @Author :春衫
 # @File :CouponGood_Page.py
 
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Android.PageLocators.Android.PubilcGood import CouponGood as CG
 from Android.PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoodCommon
 
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 发布本地生活

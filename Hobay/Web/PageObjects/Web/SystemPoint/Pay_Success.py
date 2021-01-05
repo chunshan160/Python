@@ -9,7 +9,7 @@
 '''
 import time
 
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 # 支付成功

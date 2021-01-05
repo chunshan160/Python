@@ -6,7 +6,7 @@
 
 import time
 from Web.PageLocators.Web.MyIndex.Setting import Setting
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class SettingPage(BasePage):

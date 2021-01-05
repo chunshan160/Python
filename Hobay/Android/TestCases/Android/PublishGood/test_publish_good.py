@@ -11,9 +11,8 @@ from Android.PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoo
 from Android.PageObjects.Android.PublishGood.EntityGood_Page import EntityGoodPage
 from Android.PageObjects.Android.PublishGood.CouponGood_Page import CouponGoodPage
 from Android.PageObjects.Android import ServicesGoodPage
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 from Android.PageLocators.Android.SystemPoint import PublishGoodOK as PGOK
-from Common.project_path import *
 
 
 @allure.feature('发布商品功能')

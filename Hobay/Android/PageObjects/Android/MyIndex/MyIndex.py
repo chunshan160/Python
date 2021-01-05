@@ -5,7 +5,7 @@
 #@File :MyIndex.py
 
 from Android.PageLocators.Android.MyIndex import MyIndex
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class MyIndexPage(BasePage):

@@ -5,8 +5,8 @@
 # @File :WebDriver.py
 
 from selenium import webdriver
-from Common.project_path import yamlPath
-from Common.read_yaml import read_yaml
+from Web.Common import yamlPath
+from Web.Common.read_yaml import read_yaml
 
 config = read_yaml(yamlPath)
 surroundings = list(config.keys())[0]

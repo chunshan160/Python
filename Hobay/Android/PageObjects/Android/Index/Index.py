@@ -5,7 +5,7 @@
 # @File :Index.py
 import time
 from Android.PageLocators.Android.Index import Index
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class IndexPage(BasePage):

@@ -1,0 +1,8 @@
+register: ["all"]
+login: ["all"]
+getUserInfo: ["all"]
+recharge: ["all"]
+addLoan: ["all"]
+auditLoan: ["all"]
+invest: ["all"]
+#business: "all"

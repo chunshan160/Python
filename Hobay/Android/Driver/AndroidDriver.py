@@ -6,7 +6,7 @@
 
 import yaml
 from appium import webdriver
-from Common.project_path import caps_dir
+from Web.Common import caps_dir
 
 
 class AndroidDriver:

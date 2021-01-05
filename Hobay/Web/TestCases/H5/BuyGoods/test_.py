@@ -14,7 +14,6 @@ from Web.PageObjects.Web import GoodDetailPage
 from Web.PageObjects.Web import ConfirmOrderPage
 from Web.PageObjects.Web import PayPage
 from Web.PageObjects.Web import PaySuccessPage
-from Common.project_path import *
 
 
 @allure.feature('购买商品功能')

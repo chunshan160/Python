@@ -6,7 +6,7 @@
 
 import time
 from Web.PageLocators.Web.Index import Index
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class IndexPage(BasePage):

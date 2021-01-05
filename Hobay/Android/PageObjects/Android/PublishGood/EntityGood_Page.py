@@ -5,9 +5,9 @@
 # @File :publishcommodity_page.py
 
 import time
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Android.PageLocators.Android.PubilcGood import EntityGood as EG, PubilcGoodCommon as PGCommon
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 from Android.PageObjects.Android.PublishGood.PublishGoodCommon import PublishGoodCommon
 
 

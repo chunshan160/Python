@@ -5,7 +5,7 @@
 # @File :Pay_Business.py
 
 from Web.PageLocators.Web.Pay import Pay
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class PayPage(BasePage):

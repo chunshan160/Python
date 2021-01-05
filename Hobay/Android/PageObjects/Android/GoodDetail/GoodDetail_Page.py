@@ -5,9 +5,9 @@
 # @File :GoodDetail_Page.py
 
 import time
-from Common.user_log import UserLog
+from Web.Common import UserLog
 from Android.PageLocators.Android.GoodDetail import GoodDetail as GD
-from Common.BasePage import BasePage
+from Web.Common.BasePage import BasePage
 
 
 class GoodDetailPage(BasePage):

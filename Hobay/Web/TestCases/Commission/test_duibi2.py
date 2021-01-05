@@ -6,15 +6,15 @@
 
 import unittest
 from ddt import ddt, data
-from Common.DoExcel import DoExcel
-from Common.DoMySQL import SQL
-from Common.fengyong.Calculation_Data import CalculationData
+from Web.Common import DoExcel
+from Web.Common.DoMySQL import SQL
+from Web.Common import CalculationData
 from Web.TestData.user_grade import IP
 # 别删这个decimal 也别注释掉
-from Common.user_log import UserLog
+from Web.Common import UserLog
 import warnings
-from Common.fengyong.new_muban.moban2 import MoBan
-from Common.fengyong.new_muban.Fan_Hui import FanHui
+from Web.Common import MoBan
+from Web.Common.fengyong.new_muban.Fan_Hui import FanHui
 
 test_data = DoExcel().get_data(test_case_path)
 my_logger = UserLog()

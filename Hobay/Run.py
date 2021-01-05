@@ -3,11 +3,10 @@
 # @Time :2020/9/10 17:38
 # @Author :春衫
 # @File :Run.py
-import os
 import pytest
-from Common.project_path import allure_report
+from Web.Common import allure_report
 
-from Common.project_path import TestCases
+from Web.Common import TestCases
 
 pytest.main(
     ["-v", "-s", TestCases + "/test_commission.py", "--alluredir", allure_report + "/result", "--clean-alluredir"])
