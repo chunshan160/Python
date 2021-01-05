@@ -9,10 +9,17 @@ import jmespath
 import requests
 
 from ddt import ddt, data
+<<<<<<< HEAD:Hobay/Requests_Unittest/TestCases/LoginTest.py
 from Requests_Unittest.tools.do_excel import DoExcel
 from Requests_Unittest.tools.project_path import test_case_path
 from Requests_Unittest.Base.BaseCase import BaseCase
 from Requests_Unittest.Base.GlobalEnvironment import GlobalEnvironment
+=======
+from Requests.tools.do_excel import DoExcel
+from Requests.tools.project_path import test_case_path
+from Requests.Base.BaseCase import BaseCase
+from Requests.Base.GlobalEnvironment import GlobalEnvironment
+>>>>>>> fa779a6d0b1dea49d1cf17bbd4d8db0c1dc7f8af:Hobay/Requests/TestCases/LoginTest.py
 
 
 @ddt

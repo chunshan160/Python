@@ -4,19 +4,20 @@
 # @Author :春衫
 # @File :read_config.py
 
-import configparser
+import yaml
 
 
 class ReadConfig:
 
-    def read_config(self, file_name, section, option):
-        cf = configparser.ConfigParser()
-        cf.read(file_name, encoding='utf-8')
-        return cf[section][option]
+    def read_config(self, caps_dir):
+        fs = open(caps_dir, encoding="utf-8")
+        datas = yaml.load(fs, Loader=yaml.FullLoader)
+        return datas
 
 
 if __name__ == '__main__':
-    from tools.project_path import *
+    from Requests.tools.project_path import *
 
-    res = ReadConfig().read_config(case_config_path, 'MODE', 'mode')
+    res = ReadConfig().read_config(case_config_path)
+    print(type(res))
     print(res)
