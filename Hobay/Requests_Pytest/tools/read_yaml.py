@@ -12,10 +12,4 @@ def read_yaml(file_path):
     return  data
 
 if __name__ == '__main__':
-    from Web.Common import yamlPath
-
-    config = read_yaml(yamlPath)
-    print(config)
-    surroundings = list(config.keys())[0]
-    phone_model = config[surroundings]['phone_model']
-    print(phone_model)
+    pass

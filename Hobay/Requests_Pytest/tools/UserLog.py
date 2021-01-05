@@ -40,14 +40,15 @@ class UserLog:
         ch.setFormatter(formatter)
 
         # 日志文件名格式
-        folder_path=log_path+"\\"+interface
-
+        folder_path = log_path + "\\" + interface
+        # 创建文件夹
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
 
         log_file_name = interface + "_" + str(case_id) + ".log"
         file_path = folder_path + "\\" + log_file_name
 
+        #创建文件
         if not os.path.exists(file_path):
             os.system(file_path)
 
